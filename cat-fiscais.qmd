@@ -1,0 +1,125 @@
+---
+title: "Incentivos fiscais"
+subtitle: "Quando o Estado abre mão de arrecadar — e o que exige em troca"
+author: "Prof. Dr. Lindomar Pegorini Daniel — UNEMAT, Campus de Sinop"
+engine: knitr
+---
+
+::: {.logo-topo}
+![](logo-unemat.png){width="110"}
+:::
+
+<span class="nat nat-fis">Fiscal</span> — o Estado não transfere dinheiro; deixa de cobrar tributo que receberia. Não há edital nem disputa: o benefício é um **direito**, desde que a empresa cumpra os requisitos. Em troca exige regime tributário específico, documentação e a disposição de defender o enquadramento depois.
+
+*Fichas levantadas em 28/08/2026.*
+
+## Lei do Bem — Lei 11.196/2005 {.ficha .fis}
+
+O maior instrumento de apoio à inovação do país, e o mais subutilizado.
+
+### Quem pode usar
+
+| Requisito | Detalhe |
+|---|---|
+| Regime tributário | **Lucro real** obrigatório — exclui Simples Nacional e lucro presumido |
+| Lucro fiscal | **Necessário no ano-base.** O benefício é exclusão da base de cálculo, não crédito: empresa no prejuízo não aproveita naquele ano |
+| Regularidade fiscal | Certidão negativa, ou positiva com efeitos de negativa, de débitos federais |
+| Controle contábil | Custos controlados analiticamente **por projeto** |
+| Obrigação acessória | Envio do FormP&D ao MCTI no ano seguinte |
+
+::: {.callout-important}
+## Não há aprovação prévia
+
+A empresa se **autoenquadra** na apuração do imposto e informa o MCTI depois. Isso explica a atratividade — não se disputa nada, não se espera edital — e explica também o risco: a glosa vem depois, quando o dinheiro já foi usado. Daí a importância da documentação.
+:::
+
+### O que a empresa ganha
+
+**Exclusão adicional da base do IRPJ e da CSLL.** Além de deduzir os dispêndios como despesa normal, a empresa **exclui novamente** uma parcela:
+
+| Percentual | Condição |
+|---|---|
+| **60%** | Base, sem condição adicional |
+| **70%** | Se aumentou o número de pesquisadores exclusivos em menos de 5% |
+| **80%** | Se aumentou o número de pesquisadores exclusivos em 5% ou mais |
+| **+20%** | Sobre dispêndios de projeto com **patente concedida** ou cultivar registrada — no ano da concessão, não do depósito. Cumulativo |
+| **100%** | Teto combinado |
+
+Além disso: **redução de 50% do IPI** em equipamentos destinados a P&D (pleiteada **na aquisição**, com indicação na nota fiscal — não é retroativa); **depreciação integral** no próprio ano de aquisição de máquinas novas usadas em P&D; e **alíquota zero de IRRF** em remessas ao exterior para manter marcas, patentes e cultivares.
+
+Consultorias estimam economia efetiva entre **20% e 27%** do custo dos projetos de P&D. É estimativa de mercado, não parâmetro legal — o valor real depende do degrau de exclusão e da alíquota efetiva da empresa.
+
+### O FormP&D e o prazo que muita gente perde
+
+Formulário eletrônico anual ao MCTI, declarando projetos e dispêndios do ano-base. **Prazo: 31 de agosto**, 23h59 — mudou de 31 de julho pela Portaria MCTI 9.563/2025.
+
+Novidades da versão 2026: identificador único por projeto, análise simplificada para projetos com chancela **EMBRAPII, FINEP ou Lei de TICs**, importação de dados por planilha e **integração direta com bases da Receita Federal**.
+
+::: {.callout-note}
+## A Portaria 9.563/2025 mudou o jogo
+
+Revogou a Portaria 6.536/2022 e deslocou o eixo de **declarar** para **comprovar**: mínimo de dois avaliadores por projeto, análises automatizadas e métodos estatísticos, intimação automática após 10 dias sem ciência, contestação em 30 dias corridos e recurso em apenas 10.
+
+Para a empresa isso significa uma coisa prática: **sem governança documental de P&D ao longo do ano, não há como responder no prazo.** O incentivo deixou de ser um exercício de fim de exercício contábil.
+:::
+
+### Os números, e o que eles escondem
+
+Ano-base 2024: **R\$ 51,6 bilhões** em P&D amparados, cerca de 14 mil projetos, mais de 4.200 empresas, **R\$ 12 bilhões** de renúncia fiscal estimada.
+
+A série mostra crescimento consistente — 3.012 empresas em 2021, 3.492 em 2022, 3.878 em 2023, mais de 4.200 em 2024. E, ainda assim:
+
+- Segundo a **PINTEC**, apenas **26,4%** das empresas industriais inovadoras com 100 ou mais pessoas ocupadas usaram a Lei do Bem.
+- Segundo a **Fiesp**, 63% das empresas pesquisadas investem em inovação, mas **83% não usam incentivo fiscal nenhum**.
+
+As razões apontadas são sempre as mesmas: desconhecimento; não enquadramento no lucro real; não se reconhecerem como quem faz P&D, por não entenderem o conceito legal de avanço tecnológico; insegurança jurídica percebida; ausência de processo interno para documentar; e receio de glosa.
+
+[Lei 11.196/2005](https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2005/lei/l11196.htm) · [Portaria MCTI 9.563/2025](https://antigo.mctic.gov.br/mctic/opencms/legislacao/portarias/Portaria_MCTI_n_9563_de_03112025.html)
+
+## Lei de TICs — Lei 8.248/1991 {.ficha .fis}
+
+Vertical: vale apenas para quem **fabrica bens de tecnologia da informação e comunicação**, com habilitação e cumprimento do Processo Produtivo Básico.
+
+Depois da Lei 13.969/2019, o benefício deixou de ser redução de IPI e passou a ser **crédito financeiro** compensável com tributos federais, com multiplicadores conforme região e tipo de produto.
+
+**A contrapartida é obrigatória e vinculada:** no mínimo **5% do faturamento** de bens incentivados no mercado interno deve ir para P&D. Desses, no mínimo 2,3% têm destinação amarrada — **≥1%** para convênios com ICTs, **≥0,8% para instituições da SUDAM, SUDENE e Centro-Oeste**, **≥0,5%** para depósito no FNDCT. Obrigação acessória: Relatório Demonstrativo Anual.
+
+::: {.callout-tip}
+## Duas lógicas diferentes de política industrial
+
+A **Lei do Bem** é horizontal: qualquer setor, sem aprovação prévia, benefício automático para quem preencher os requisitos. É uma aposta em que as empresas sabem melhor que o Estado onde investir.
+
+A **Lei de TICs** é vertical: setor específico, habilitação, Processo Produtivo Básico e contrapartida com destinação carimbada. É uma aposta contrária — o Estado decide o setor e para onde o dinheiro deve ir.
+
+E repare no piso de **0,8% destinado ao Centro-Oeste**: é recurso de empresa de fora que chega a instituições daqui por obrigação legal. Uma ICT de Mato Grosso pode captá-lo sem que nenhuma empresa local esteja envolvida.
+:::
+
+[Lei 8.248/1991 compilada](https://www.planalto.gov.br/ccivil_03/leis/l8248compilado.htm)
+
+## Encomenda tecnológica — ETEC {.ficha .fis}
+
+Não é bem um incentivo: é **receita**. A administração pública contrata o desenvolvimento de uma solução que **não existe pronta no mercado**, assumindo o risco de que não dê certo.
+
+**Base legal:** art. 20 da Lei 10.973/2004, com a redação da Lei 13.243/2016, regulamentado pelo Decreto 9.283/2018, arts. 27 a 32. Texto do dispositivo:
+
+> "Os órgãos e entidades da administração pública, em matéria de interesse público, poderão contratar diretamente ICT, entidades de direito privado sem fins lucrativos ou empresas [...] visando à realização de atividades de pesquisa, desenvolvimento e inovação que envolvam **risco tecnológico**, para solução de problema técnico específico ou obtenção de produto, serviço ou processo inovador."
+
+**O risco tecnológico é o elemento definidor.** É ele que distingue a ETEC de uma compra comum: o Estado paga pela tentativa, não apenas pelo resultado. Faixa típica de maturidade: TRL 2 a 7.
+
+::: {.callout-warning}
+## Atenção à base legal — muita fonte está desatualizada
+
+A contratação de ETEC é hipótese de **dispensa de licitação**, hoje fundada no **art. 75, inciso V, da Lei 14.133/2021**:
+
+> "**Art. 75.** É dispensável a licitação: [...] **V –** para contratação com vistas ao cumprimento do disposto nos arts. 3º, 3º-A, 4º, 5º e 20 da Lei nº 10.973, de 2 de dezembro de 2004 [...]"
+
+Note que a Lei 14.133 **não menciona "encomenda tecnológica"** — a remissão é indireta, via o art. 20 da Lei de Inovação. E note que é **dispensa**, não inexigibilidade.
+
+Boa parte do material disponível na internet — inclusive manuais oficiais publicados em 2021 — ainda cita o art. 24, XXXI da **Lei 8.666/1993**, revogada pelo art. 193, II da Lei 14.133/2021. Citar a lei revogada em uma proposta é o tipo de erro que custa credibilidade.
+:::
+
+O § 4º do art. 20 prevê ainda que o **fornecimento posterior** do produto ou processo resultante pode ser contratado mediante dispensa, inclusive com o próprio desenvolvedor da encomenda. A propriedade intelectual é definida em contrato: titularidade compartilhada, exclusiva do executor ou exclusiva do contratante.
+
+**Casos:** a vacina COVID-19 da AstraZeneca/Oxford contratada junto a Bio-Manguinhos/Fiocruz — a primeira ETEC na saúde pública brasileira; e o sistema de navegação inercial para veículos lançadores da Agência Espacial Brasileira, acompanhado pelo TCU.
+
+[Lei 10.973/2004](https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l10.973.htm) · [Lei 14.133/2021](https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm) · [Cartilha ETEC do TCU](https://portal.tcu.gov.br/publicacoes-institucionais/cartilha-manual-ou-tutorial/encomenda-tecnologica-etec)

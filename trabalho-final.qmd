@@ -1,0 +1,98 @@
+---
+title: "Trabalho final"
+subtitle: "Plano de captação de recursos para um projeto de inovação"
+author: "Prof. Dr. Lindomar Pegorini Daniel — UNEMAT, Campus de Sinop"
+engine: knitr
+---
+
+::: {.logo-topo}
+![](logo-unemat.png){width="110"}
+:::
+
+::: {.callout-important}
+## O essencial
+
+**O que:** um plano de captação de recursos para um projeto de inovação concreto.
+**Extensão:** 4 a 6 páginas, sem contar capa e referências.
+**Formato:** PDF.
+**Individual ou em dupla.**
+**Onde entregar:** na tarefa aberta no SIGAA.
+**Peso:** é o único instrumento de nota da disciplina.
+:::
+
+::: {.callout-tip}
+## Baixe o modelo
+
+[**modelo-nota-tecnica.docx**](modelo-nota-tecnica.docx) — traz a capa de identificação, as seis seções com as orientações de cada uma, um espaço para as fontes consultadas e a rubrica na última página.
+
+As orientações estão em cinza e itálico: **apague todas antes de entregar**.
+:::
+
+## De que empresa se trata
+
+Escolha um dos [dez casos](casos.qmd). Se você tem um projeto de inovação próprio, ou trabalha numa empresa que tem, use o seu — é melhor, e só precisa avisar antes.
+
+## O roteiro
+
+São seis seções. Sigam a ordem: cada uma depende da anterior.
+
+### 1 · O projeto
+
+O que a empresa quer fazer, em que estágio está, **o que precisa de dinheiro para quê** e quanto. Meia página basta.
+
+Cuidado com o erro mais comum: descrever a empresa e esquecer de descrever o projeto. O financiador não financia empresa — financia um projeto delimitado, com começo, meio e entrega.
+
+### 2 · O mapa
+
+Quais instrumentos do [catálogo](cat-escada.qmd) são cabíveis, **e por que os demais foram descartados**.
+
+Os descartes valem tanto quanto as escolhas. Dizer "o BNDES não serve porque o mínimo é R\$ 20 milhões e o projeto custa R\$ 750 mil" mostra que você conhece o mapa. Não mencionar o BNDES não mostra nada.
+
+### 3 · A escolha
+
+Um instrumento específico e real: edital, linha de crédito ou incentivo, com nome e número. Requisitos de elegibilidade, contrapartida exigida, prazos, e o que a empresa precisa ter pronto para submeter ou contratar.
+
+Se o instrumento escolhido é um edital com prazo já encerrado, diga isso e diga quando se espera o próximo — planejar para o ciclo seguinte é uma decisão legítima, desde que explícita.
+
+### 4 · A conta
+
+Quanto essa fonte custa **de fato**, comparada à segunda melhor opção. Contrapartida em dinheiro, juros, diluição, tempo de prestação de contas.
+
+É aqui que o [Laboratório 4](lab04-custo-das-fontes.qmd) é aplicado. Não precisa ser sofisticado: precisa ser honesto e comparável.
+
+### 5 · A medida
+
+Que indicadores mostrariam que o recurso deu resultado, e como seriam apurados. Distinga o que é **produto** (o que o projeto entrega) do que é **resultado** (o que muda na empresa por causa disso).
+
+Todo edital cobra isso na prestação de contas. Quem pensa nos indicadores no fim do projeto os inventa; quem pensa no começo os mede.
+
+### 6 · Riscos e plano B
+
+O que pode dar errado — na submissão, na execução, na prestação de contas — e qual é a segunda fonte se a primeira não vier.
+
+## Rubrica
+
+| Critério | Peso |
+|---|---:|
+| Clareza do projeto e do que precisa ser financiado | 15% |
+| Pertinência do mapa e **qualidade da justificativa dos descartes** | 20% |
+| Realismo da escolha — o instrumento existe, está acessível e cabe no estágio | 20% |
+| Consistência da comparação de custo entre as fontes | 20% |
+| Coerência dos indicadores propostos | 15% |
+| Tratamento honesto dos riscos e do plano B | 10% |
+
+::: {.callout-tip}
+## O que distingue um plano bom de um plano correto
+
+Um plano **correto** identifica um instrumento compatível e descreve seus requisitos.
+
+Um plano **bom** faz três coisas a mais: descarta instrumentos com argumento, e não por omissão; **data as informações** que usa, porque taxa de juros e prazo de edital mudam — as condições do Inovacred mudaram duas vezes em dezoito meses; e admite o que não sabe. "A contrapartida não consta do release e não consegui abrir o edital" é uma frase que aumenta a nota, não que a diminui.
+:::
+
+::: {.callout-warning}
+## Uma exigência de método
+
+Toda informação sobre valores, prazos e requisitos precisa vir com **a fonte e a data da consulta**. Release de imprensa não substitui edital; página de consultoria não substitui norma.
+
+Esta não é uma formalidade acadêmica. É a diferença entre uma proposta que sobrevive à análise e uma que é desclassificada por citar uma regra que mudou.
+:::

@@ -1,0 +1,80 @@
+---
+title: "Capital privado"
+subtitle: "Dinheiro que não se paga — porque se paga com a empresa"
+author: "Prof. Dr. Lindomar Pegorini Daniel — UNEMAT, Campus de Sinop"
+engine: knitr
+---
+
+::: {.logo-topo}
+![](logo-unemat.png){width="110"}
+:::
+
+<span class="nat nat-eq">Equity</span> — o investidor compra uma parte da empresa. Não há parcela nem juros, e é isso que faz o instrumento parecer barato. O custo aparece depois: participação, diluição a cada nova rodada, e um sócio que precisa de uma saída dentro de um prazo.
+
+*Fichas levantadas em 28/08/2026.*
+
+## Investimento-anjo {.ficha .eq}
+
+Pessoa física, em geral empresário experiente, que aporta capital próprio em estágio inicial e costuma entregar também rede de contatos e conselho.
+
+**Mercado brasileiro em 2025:** R\$ 919 milhões investidos, crescimento de 4,2% sobre 2024; **8.044 investidores-anjo**, queda de 1%; **ticket médio de R\$ 114 mil** por investidor, alta de 5,3%.
+
+Mais dinheiro, menos gente — o mercado se concentra. A entidade do setor estima que, pela proporção do PIB brasileiro em relação ao americano, o Brasil "deveria estar em cerca de R\$ 7,5 bilhões": o mercado real é cerca de 12% do potencial.
+
+Para um projeto em Mato Grosso, a implicação prática é que a rede importa mais do que o número: **o anjo investe em quem ele conhece ou em quem alguém que ele confia apresentou.**
+
+[Pesquisa Anual Anjos do Brasil](https://anjosdobrasil.net/pesquisa-anual-investimento-anjo-2026-anjos-do-brasil/)
+
+## Aceleradoras {.ficha .eq}
+
+Programas de três a seis meses, com mentoria, metodologia e rede, em troca de participação — tipicamente **5% a 10%** do capital. Aportes de aceleradoras brasileiras conhecidas ficam entre R\$ 80 mil e R\$ 250 mil; algumas não aportam nada e não pedem participação.
+
+O valor da aceleradora raramente está no cheque. Está no que ela obriga a empresa a fazer em seis meses — e na porta que abre para a rodada seguinte. Avalie por esse critério, não pelo valor do aporte.
+
+## Corporate venture {.ficha .eq}
+
+Empresas grandes investindo em startups do próprio setor. No Brasil, o levantamento setorial mais recente aponta **71 fundos corporativos existentes, mas apenas 42 investindo ativamente** — eram mais de 100 no pico de 2021. Volume de US\$ 700 milhões em 66 operações, com ticket médio de Série B saltando de US\$ 7,4 para US\$ 34,6 milhões.
+
+Menos negócios, cheques maiores, e uma exigência crescente de aderência estratégica ao negócio da investidora. Para o agronegócio de Mato Grosso, é o segmento com maior potencial de conexão — tradings, cooperativas e fabricantes de máquinas têm braços de investimento.
+
+## Venture capital {.ficha .eq}
+
+**Brasil em 2025:** US\$ 4,5 bilhões captados, queda de 13%, em 459 rodadas, queda de 22%. Desse total, US\$ 2,4 bilhões foram dívida (FIDCs) e US\$ 1,74 bilhão, equity propriamente dito. O ticket médio latino-americano subiu de US\$ 5,2 para US\$ 6,1 milhões, e os múltiplos comprimiram: SaaS em Série A ou B negocia a 8–14 vezes a receita, contra 25–35 vezes no pico de 2021.
+
+::: {.callout-important}
+## Quando um projeto NÃO é caso de venture capital
+
+Este é provavelmente o conteúdo mais útil desta página, e vem de um fundo brasileiro explicando publicamente quando **não** procurá-lo.
+
+A matemática do fundo é uma distribuição de lei de potência: um número muito pequeno de empresas do portfólio precisa gerar retorno suficiente para cobrir as perdas de todas as outras. Consequência: **o fundo não pode investir em empresa que "só" dê certo.** Ele precisa de retornos de 10, 20 ou 30 vezes o capital, em quatro a dez anos, e tem prazo determinado para devolver o dinheiro aos seus próprios cotistas — o que exige aquisição ou abertura de capital dentro de sete a dez anos. Pelo critério de um fundo brasileiro, o negócio precisa de potencial de valor mínimo na casa de **US\$ 100 milhões em cerca de sete anos**; uma saída de US\$ 20 a 30 milhões "não é suficiente".
+
+**Portanto, não é caso de venture capital:**
+
+- negócio de serviços ou não escalável, em que a receita cresce junto com o número de pessoas;
+- empresa que pretende permanecer privada;
+- mercado endereçável pequeno, ainda que o negócio seja muito lucrativo;
+- projeto cuja saída realista está na casa de dezenas de milhões;
+- **inovação incremental dentro de empresa já estabelecida** — caso típico de Lei do Bem, não de equity.
+
+Para uma turma com projetos em agronegócio, serviços e manufatura de porte médio, o recado é direto: **a maioria dos bons projetos de inovação não é caso de venture capital, e isso não é defeito do projeto.** Receber "não" de um fundo raramente significa que o negócio é ruim — significa desalinhamento com um modelo que tem exigências muito particulares.
+:::
+
+[MAYA Capital — "Faz sentido tentar captar de um Venture Capital?"](https://mayacapital.medium.com/faz-sentido-tentar-captar-de-um-venture-capital-2f73a048e476)
+
+## Equity crowdfunding — Resolução CVM 88/2022 {.ficha .eq}
+
+Captação junto a muitos investidores pequenos, por plataforma autorizada pela CVM. Regras **em vigor**:
+
+| Parâmetro | Limite |
+|---|---|
+| Captação por empresa | **R\$ 15 milhões** por período de 12 meses, somando todas as plataformas |
+| Prazo da oferta | 180 dias |
+| Limite por investidor | **R\$ 20 mil** por ano-calendário |
+| Exceções ao limite | Investidor líder; investidor qualificado; ou até 10% da renda bruta anual ou dos investimentos financeiros, quando superiores a R\$ 200 mil |
+| Receita da emissora | Até **R\$ 40 milhões** por ano |
+
+**Uma reforma está em curso.** A Consulta Pública SDM 05/2025 encerrou em 23/01/2026 e consta da Agenda Regulatória 2026 da CVM, mas **a norma nova ainda não foi publicada — a Resolução 88 continua integralmente em vigor**. Entre as mudanças propostas: elevar a captação por empresa de R\$ 15 para R\$ 25 milhões, eliminar o teto de receita da emissora e passar o limite do investidor a valer por plataforma em vez de globalmente.
+
+Se o seu trabalho final considerar crowdfunding, use as regras vigentes e mencione a consulta como risco regulatório — é exatamente o tipo de observação que separa um plano informado de um plano copiado.
+
+[Resolução CVM 88 consolidada](https://conteudo.cvm.gov.br/export/sites/cvm/legislacao/resolucoes/anexos/001/resol088consolid.pdf) · [Consulta pública da reforma](https://www.gov.br/cvm/pt-br/assuntos/noticias/2025/cvm-lanca-consulta-publica-sobre-a-reforma-da-resolucao-cvm-88)

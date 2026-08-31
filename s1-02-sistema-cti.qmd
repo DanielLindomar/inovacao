@@ -1,0 +1,118 @@
+---
+title: "O sistema brasileiro de CT&I"
+subtitle: "Sábado 1 · Bloco 2 — quem é quem, e o que cada um faz com o dinheiro"
+author: "Prof. Dr. Lindomar Pegorini Daniel — UNEMAT, Campus de Sinop"
+engine: knitr
+---
+
+::: {.logo-topo}
+![](logo-unemat.png){width="110"}
+:::
+
+::: {.callout-note}
+## Objetivos de aprendizagem
+
+Ao final deste bloco você será capaz de:
+
+- identificar os principais atores do sistema brasileiro de ciência, tecnologia e inovação e o papel de cada um;
+- dizer, diante de uma necessidade concreta, **em que porta bater**;
+- explicar o que a Lei de Inovação e o Marco Legal da CT&I permitiram que antes não era possível;
+- reconhecer o papel de uma ICT e de um NIT numa captação;
+- localizar os atores que operam em Mato Grosso.
+:::
+
+## O sistema como mapa de portas
+
+Existe um Sistema Nacional de CT&I, com organograma, competências e legislação. Para um gestor, porém, o que importa é outra coisa: **cada instituição entrega um tipo diferente de recurso**, e bater na porta errada custa meses.
+
+A pergunta que organiza este bloco não é "quem é quem", mas **"do que eu preciso?"**:
+
+| Você precisa de… | Procure |
+|---|---|
+| Dinheiro que não volta, para desenvolver algo | FINEP, FAPEMAT, EMBRAPII |
+| Gente qualificada dentro da empresa | CNPq (RHAE), programas de bolsa |
+| Competência técnica que a empresa não tem | Unidade EMBRAPII, ICT, NIT |
+| Empréstimo barato e longo | Desenvolve MT, FINEP, BNDES |
+| Desconto no imposto sobre P&D que já faz | Receita Federal, via MCTI |
+| Consultoria subsidiada | SEBRAE |
+| Um cliente para uma solução que não existe | O próprio poder público, por encomenda tecnológica |
+
+O resto deste bloco explica quem é cada um — e o [catálogo](cat-escada.qmd) traz as condições de cada instrumento.
+
+## A base legal, em três normas
+
+**Lei de Inovação — Lei 10.973/2004.** A norma fundadora. Autorizou o Estado a apoiar diretamente a inovação em empresas privadas, criou a figura da subvenção econômica, permitiu parcerias entre ICTs e empresas com compartilhamento de resultados, e instituiu a encomenda tecnológica. Antes dela, transferir dinheiro público a uma empresa para desenvolver tecnologia era juridicamente frágil.
+
+**Marco Legal da CT&I — Lei 13.243/2016**, com o Decreto 9.283/2018. Reformou a Lei de Inovação e desamarrou a operação: facilitou o uso compartilhado de laboratórios públicos por empresas, flexibilizou a atuação de pesquisadores públicos em projetos com empresas, simplificou importação de insumos de pesquisa e regulamentou a encomenda tecnológica em detalhe.
+
+**Emenda Constitucional 85/2015.** Deu status constitucional ao tema e autorizou os estados a legislar e a transferir recursos entre entes para CT&I — o que permitiu leis estaduais de inovação e a operação das fundações estaduais como agentes de fomento à empresa.
+
+::: {.callout-tip}
+## O que essas leis significam na prática
+
+Antes de 2004, uma empresa que quisesse trabalhar com uma universidade pública enfrentava um vazio jurídico. Hoje existe base legal para: a universidade prestar serviço remunerado, o pesquisador público participar de projeto com empresa, o laboratório público ser usado pela empresa, a propriedade intelectual ser compartilhada ou cedida, e o Estado comprar desenvolvimento sem licitação convencional.
+
+Nada disso é automático — cada instituição tem seus procedimentos. Mas nada disso é impossível, e a maior parte da resistência que se encontra em campo é desconhecimento da norma, não proibição.
+:::
+
+## Os atores federais
+
+**MCTI — Ministério da Ciência, Tecnologia e Inovação.** Formula a política. Não financia diretamente empresa, mas administra a **Lei do Bem** — recebe o FormP&D, analisa os projetos e decide o que é P&D para efeito do incentivo. É o ator com quem a empresa se relaciona **depois** de usar o benefício.
+
+**FINEP.** A agência financeira do sistema. Faz as duas coisas: **subvenção** (dinheiro que não volta, por chamada pública) e **crédito** (empréstimo com taxa subsidiada, direto ou descentralizado por agentes estaduais). É a principal fonte federal de recursos para empresa.
+
+**FNDCT e fundos setoriais.** O fundo que abastece boa parte disso. Não se relaciona com a empresa: financia a FINEP e o CNPq.
+
+**CNPq.** Trabalha com **pessoas**, não com projetos de empresa. Bolsas, formação, e programas que colocam pesquisador dentro da empresa — o **RHAE** é o que mais interessa aqui. Quando a necessidade é qualificação e não equipamento, a porta é esta.
+
+**BNDES.** Crédito de grande porte e o Funtec, fundo não reembolsável em que **a ICT é a proponente** e a empresa entra como parceira. Os valores mínimos colocam o banco fora do alcance da maioria das empresas médias.
+
+**EMBRAPII.** Não é agência nem banco: é **intermediação**. Credencia unidades de pesquisa, garante que operem em ritmo empresarial e cofinancia projetos sem edital. Detalhes no [bloco dedicado](s2-02-embrapii.qmd).
+
+**SEBRAE.** Atua por serviço subsidiado, não por transferência de dinheiro — o **Sebraetec** cobre até 70% do custo de consultoria tecnológica para micro e pequena empresa. É a porta de menor atrito de todo o sistema.
+
+## Os atores em Mato Grosso
+
+**SECITECI** — Secretaria de Estado de Ciência, Tecnologia e Inovação. Formula a política estadual e opera o Parque Tecnológico de Mato Grosso.
+
+**FAPEMAT** — a fundação estadual de amparo à pesquisa. É o braço que executa as chamadas para empresa no estado, seja com recurso próprio (Startup Mato Grosso) ou descentralizando programas federais (Tecnova, Centelha).
+
+**Desenvolve MT** — a agência de fomento do estado. É por ela que o crédito da FINEP chega à empresa mato-grossense, na linha Inovacred.
+
+**Unidade EMBRAPII do IFMT**, em Cuiabá, credenciada em 2026 com competência em tecnologias digitais para o agronegócio e a indústria. Primeira do estado.
+
+**ICTs e NITs.** Instituição Científica, Tecnológica e de Inovação é o nome legal de universidades e institutos de pesquisa — a UNEMAT é uma. O **NIT**, Núcleo de Inovação Tecnológica, é o setor obrigatório em cada ICT que cuida de propriedade intelectual, contratos e parcerias com empresas.
+
+::: {.callout-important}
+## Por que o NIT importa para quem capta
+
+Um número crescente de chamadas **exige ICT parceira** — a Chamada 774 da FINEP, aberta agora, é uma delas. Para a empresa, isso significa encontrar um grupo de pesquisa com a competência necessária e formalizar a parceria antes de submeter.
+
+O NIT é a porta de entrada para isso. Ele sabe quais grupos existem, negocia o instrumento jurídico e cuida da propriedade intelectual. Uma empresa que descobre a exigência de ICT parceira **na semana do prazo** não consegue cumprir; uma que mantém relação prévia com um NIT resolve em dias.
+
+Isto vale como conselho concreto: se a empresa que você analisa no [trabalho final](trabalho-final.qmd) pretende disputar chamadas federais, a articulação com uma ICT é um item do plano, não um detalhe de execução.
+:::
+
+## Como o dinheiro circula
+
+Vale ter clara a cadeia, porque ela explica os prazos:
+
+**Orçamento federal → FNDCT → FINEP e CNPq → empresa** (direto, por chamada) **ou → FAPs estaduais → empresa** (descentralizado).
+
+O caminho descentralizado — Tecnova, Centelha — é mais longo: a FINEP lança a chamada às fundações, elas se habilitam, negociam a contrapartida estadual e só então publicam o edital para empresas. É por isso que a rodada anunciada em junho de 2026 só deve virar edital estadual em 2027.
+
+O caminho direto é mais rápido, mas as chamadas federais têm pisos de valor que excluem a empresa média — a Chamada 774 não aceita projeto abaixo de R\$ 5 milhões.
+
+**Nas duas pontas dessa cadeia há atalhos que não dependem de edital nenhum:** a EMBRAPII e o Sebraetec. Foi o que a [agenda de setembro](cat-escada.qmd) mostrou.
+
+## Atividade do bloco
+
+Com o [catálogo](cat-escada.qmd) aberto, em salas simultâneas: [**seis situações concretas**](atividade-mapa.qmd), uma por grupo. Cada grupo volta com o instrumento que recomendaria, os descartes justificados, e — o item mais importante nesta altura do curso — a pergunta que não conseguiu responder.
+
+::: {.callout-note}
+## O que você deve conseguir explicar depois deste bloco
+
+1. A diferença entre o que a FINEP faz, o que o CNPq faz e o que a EMBRAPII faz — e por que não são substitutos.
+2. Por que uma chamada descentralizada demora anos entre o anúncio federal e o edital estadual.
+3. O que é um NIT e por que ele entra no plano de captação antes da submissão, e não depois.
+:::

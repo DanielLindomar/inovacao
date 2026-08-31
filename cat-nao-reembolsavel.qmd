@@ -1,0 +1,186 @@
+---
+title: "Não reembolsável"
+subtitle: "O dinheiro que não volta — e o que ele cobra no lugar"
+author: "Prof. Dr. Lindomar Pegorini Daniel — UNEMAT, Campus de Sinop"
+engine: knitr
+---
+
+::: {.logo-topo}
+![](logo-unemat.png){width="110"}
+:::
+
+<span class="nat nat-nr">Não reembolsável</span> — o recurso é aportado no projeto e não precisa ser devolvido. Em troca exige contrapartida financeira da empresa, prestação de contas, prazo de execução e, na maioria dos casos, a disputa de um edital.
+
+*Fichas levantadas em 28/08/2026. Prazos e condições mudam — confira na fonte antes de decidir.*
+
+## EMBRAPII {.ficha .nr}
+
+O instrumento mais mal compreendido do conjunto, e provavelmente o mais acessível para empresa de médio porte em Mato Grosso. **Não há edital.**
+
+| | |
+|---|---|
+| **Como se acessa** | A empresa escolhe uma Unidade credenciada e a procura diretamente. Contratação típica em cerca de um mês |
+| **Quanto a EMBRAPII aporta** | Até **1/3 (33%)** do valor do projeto na regra geral. Sobe para **50%** quando a empresa tem receita bruta até R\$ 90 milhões, em projetos cooperativos com ao menos uma PME, para empresas da Região Norte e em projetos de defesa com ICT das Forças Armadas |
+| **Contrapartida da empresa** | **Só vale aporte financeiro em dinheiro**, depositado em conta do projeto vinculada à Unidade. Horas de equipe e bens **não** contam. Piso de 10% do valor do projeto |
+| **Maturidade** | TRL 3 a 6 — etapa pré-competitiva |
+| **Propriedade intelectual** | Negociada entre empresa e Unidade, sem participação da EMBRAPII. A Unidade **pode ceder à empresa a totalidade dos direitos**. Há cláusula de reversão: se a empresa não explorar comercialmente, a PI volta para a Unidade |
+| **Restrição setorial** | Montadoras (CNAE 29.1 e 29.2) não contratam individualmente — precisam de parceria com fornecedores |
+| **Escala** | 91 Unidades ativas, 4.306 projetos, R\$ 8,79 bilhões em P&D, 2.945 empresas atendidas |
+
+::: {.callout-important}
+## Há Unidade EMBRAPII em Mato Grosso
+
+O **IFMT, em Cuiabá**, foi credenciado em 2026 como a primeira Unidade EMBRAPII do estado, com competência em **Tecnologias Digitais para o Agronegócio e Indústria** — plataformas digitais para agronegócio e sistemas inteligentes com automação. É o perfil exato da economia mato-grossense.
+
+Outras seis Unidades no Centro-Oeste: AGROTEC-UFMS e SENAI ISI Biomassa (MS), CEIA-UFG, IF-Goiano e IF-Goiás (GO), Embrapa Agroenergia (DF).
+
+Catálogo completo: [embrapii.org.br/nossas-unidades](https://embrapii.org.br/nossas-unidades/)
+:::
+
+### EMBRAPII + SEBRAE — a combinação mais vantajosa para MPE
+
+- EMBRAPII aporta até **50%** do projeto
+- SEBRAE cobre até **70% da contrapartida financeira** da empresa
+- Cobertura combinada: **até cerca de 90%** do valor do projeto
+- Tetos SEBRAE: **R\$ 150 mil** (uma MPE), **R\$ 200 mil** (encadeamento com média ou grande empresa), **R\$ 300 mil** (aglomeração de MPEs)
+- Elegibilidade: MPE com faturamento até **R\$ 4,8 milhões**, ou startup com até 10 anos
+- Sem edital
+
+[FAQ EMBRAPII](https://embrapii.org.br/perguntas-frequentes/) · [Manual de Operação v6.0](https://storage.googleapis.com/uploads-site-embrapii/2025/01/Manual_EMBRAPII_UE_versao-6.0-de-20.10.20.pdf) · [EMBRAPII e SEBRAE](https://embrapii.org.br/sebrae/)
+
+## FINEP — subvenção econômica {.ficha .nr}
+
+Programa **Mais Inovação Brasil, Rodada 2**: treze chamadas publicadas em 06/02/2026, somando cerca de R\$ 3,3 bilhões, alinhadas às missões da Nova Indústria Brasil.
+
+**A mais aderente a Mato Grosso — Chamada 774, Cadeias Agroindustriais Sustentáveis:**
+
+| | |
+|---|---|
+| **Recursos** | R\$ 300 milhões, com **mínimo de R\$ 90 milhões reservados a Norte, Nordeste e Centro-Oeste** |
+| **Por projeto** | Arranjo simples: R\$ 5 a 25 milhões · Arranjo em rede: a partir de R\$ 5 milhões (**confira o teto no edital** — as fontes divergem entre R\$ 40 e R\$ 50 milhões) |
+| **Prazo** | **30/09/2026, 18h** de Brasília |
+| **Maturidade** | TRL 3 a 8 |
+| **Elegíveis** | Empresas brasileiras com fins lucrativos, de qualquer porte, inclusive startups. **A participação de uma ICT como parceira é obrigatória** |
+| **Contrapartida** | Financeira obrigatória, variável conforme porte e arranjo |
+
+Também abertas até 30/09/2026: **Base Industrial de Defesa** e **Tecnologias Digitais** (R\$ 300 milhões cada).
+
+::: {.callout-warning}
+## O piso de R\$ 5 milhões é uma barreira real
+
+Nenhuma dessas chamadas aceita projeto abaixo de R\$ 5 milhões. Para a maior parte das empresas desta turma, elas servem como **referência do que existe** e como possibilidade em consórcio com uma ICT — não como caminho imediato. O caminho imediato de porte menor é a EMBRAPII, o Sebraetec e o RHAE.
+:::
+
+Chamadas: [finep.gov.br/chamadas-publicas](http://www.finep.gov.br/chamadas-publicas) — a 774 está em `/chamadapublica/774`
+
+## CNPq — RHAE, pesquisador na empresa {.ficha .nr}
+
+**Chamada 29/2026 — RHAE Inteligência Artificial.** O instrumento federal mais acessível a MPE aberto neste momento.
+
+| | |
+|---|---|
+| **Objeto** | Inserir pesquisadores em empresas inovadoras e startups para desenvolver soluções de inteligência artificial |
+| **Recursos** | R\$ 50 milhões · **até R\$ 300 mil por proposta**, em bolsas |
+| **Reserva regional** | **Mínimo de 30% dos recursos para Norte, Nordeste e Centro-Oeste** |
+| **Elegíveis** | Micro e pequenas empresas (LC 123/2006) ou startups (LC 182/2021), cadastradas no Diretório de Instituições do CNPq. Uma proposta por empresa |
+| **Obrigatório** | Ao menos uma bolsa SET para mestre ou doutor, com duração mínima de 12 meses |
+| **Contrapartida** | Mínimo 20% do valor solicitado — **aceita recursos não financeiros** |
+| **Prazo** | **09/10/2026** · resultado em dezembro |
+
+[Chamada 29/2026 no CNPq](https://www.gov.br/cnpq/pt-br/chamadas/todas-as-chamadas/chamadas-2026/chamada-no-29-2026/chamada-publica-cnpq-N-29-2026)
+
+Outras chamadas do CNPq abertas: **30/2026 MAI/DAI** (mestrado e doutorado para inovação em parceria com empresas, até 11/12/2026).
+
+## FAPEMAT e o ciclo estadual {.ficha .nr}
+
+### Chamada 04/2026 — Startup Mato Grosso
+
+Subvenção de até **R\$ 150 mil por projeto**, R\$ 1,5 milhão no total, até 10 empresas. **Inscrições encerradas em 31/07/2026; resultado em 16/09/2026** — entre os dois encontros desta disciplina.
+
+**Elegibilidade:** empresas com sede em Mato Grosso, receita bruta em 2025 de até **R\$ 16 milhões**, com registro na Junta Comercial e atividade operacional comprovada. **Temas aceitos** (fora deles a proposta é eliminada na etapa formal): agropecuária e agroindústria; biodiversidade e biotecnologia; educação; energia e renováveis; logística de transporte; recursos hídricos e mudanças climáticas; recursos minerais; saúde; segurança pública; TIC; turismo.
+
+**Contrapartida financeira mínima**, calculada sobre o valor solicitado:
+
+| Receita operacional bruta em 2025 | Contrapartida mínima |
+|---|---|
+| Até R\$ 360.000,00 | **2,5%** |
+| De R\$ 360.000,01 a R\$ 4.800.000,00 | **5,0%** |
+| De R\$ 4.800.000,01 a R\$ 16.000.000,00 | **10,0%** |
+
+O edital permite que a empresa **financie a própria contrapartida** junto a programas de crédito — o que conecta este instrumento diretamente com o [catálogo de crédito](cat-credito.qmd).
+
+**O que o recurso paga:** passagens nacionais da equipe; material de consumo; serviços de terceiros, incluindo consultoria, plano de negócio e até veiculação de anúncios; serviços de contabilidade. **Equipamentos e material permanente até 30%** do valor solicitado, e **bolsa Sócio Empreendedor até 30%**.
+
+**O que não paga:** obras e instalações; eventos, recepções e coffee break; apoio administrativo; qualquer pagamento a servidor público; **salários, estagiários e pró-labore**; multas e encargos; veículos; terceirização das atividades básicas de inovação; passagens e diárias internacionais.
+
+**Como a proposta é julgada.** Duas etapas. A primeira é formal e eliminatória — elegibilidade, teto do valor solicitado, contrapartida mínima, prazo de execução e aderência aos temas. Quem passa vai a dois avaliadores *ad hoc*, que pontuam de 1 a 10 nestes critérios:
+
+| Critério | Peso |
+|---|:--:|
+| Grau de inovação para o mercado nacional ou mundial | **4** |
+| Alcance e potencial mercadológico da aplicação | 2 |
+| Consistência da proposta — metas, atividades, indicadores, orçamento e prazos | 2 |
+| Capacitação técnica da equipe executora | 1 |
+| Parcerias e articulações institucionais | 1 |
+
+Corte: média ponderada mínima de 3,0. Desempate pela nota no critério 1, depois no 2, e assim por diante; persistindo, vence quem enviou a proposta mais cedo.
+
+::: {.callout-tip}
+## O que essa tabela ensina, e vale para quase todo edital
+
+O critério de **grau de inovação pesa 4 de 10** — o dobro do segundo colocado. Uma proposta que descreve muito bem a empresa, a equipe e o cronograma, mas não deixa claro o que exatamente há de novo ali, está disputando com 60% da nota.
+
+E repare no último desempate: **quem envia antes ganha**. Não é detalhe burocrático; é uma decisão de projeto sobre quando começar a escrever.
+:::
+
+### Tecnova — o ciclo que vale acompanhar
+
+O **Tecnova** é subvenção da FINEP descentralizada pelas fundações estaduais. Mato Grosso participou do Tecnova III via FAPEMAT.
+
+A regra de **contrapartida escalonada é nacional** — a mesma tabela de 2,5%, 5% e 10% aparece nos editais do Espírito Santo, Pernambuco, Bahia e Mato Grosso do Sul. Os **valores por projeto, esses variam por estado**: no Tecnova III ficaram entre cerca de R\$ 400 mil e R\$ 625 mil, conforme a fundação. Prazo de execução de 24 a 36 meses.
+
+**A nova rodada — Tecnova IV** foi anunciada em 16/06/2026: **R\$ 360 milhões do FNDCT**, cerca de R\$ 588 milhões com as contrapartidas estaduais, meta de até **713 micro e pequenas empresas**, teto de faturamento mantido em R\$ 16 milhões. Pela primeira vez o programa abrange **os 27 estados**, e cerca de **58% dos recursos federais vão para Norte, Nordeste e Centro-Oeste**.
+
+As fundações tinham até 03/08/2026 para submeter propostas à FINEP. **Até o fim de agosto de 2026 nenhuma FAP havia lançado edital estadual da nova rodada** — eles são esperados em 2027, e não há lista pública das fundações participantes. Se a FAPEMAT submeteu proposta, isso não foi divulgado.
+
+Para quem está começando um projeto agora, é o instrumento a ter no radar — e há um detalhe que favorece Mato Grosso: cerca de **58% dos recursos federais estão direcionados a Norte, Nordeste e Centro-Oeste**.
+
+::: {.callout-warning}
+## Não confunda três coisas diferentes
+
+**Tecnova** é programa nacional da FINEP, executado pelas fundações estaduais, em ciclos de anos.
+
+**Centelha** é outro programa nacional, para quem ainda não tem empresa.
+
+**Startup Mato Grosso** (Chamada FAPEMAT 04/2026) é recurso **estadual**, da FAPEMAT com a SECITECI — não é Tecnova nem FINEP. As buscas na internet misturam os três o tempo todo, e também confundem o Tecnova de Mato Grosso com o de Mato Grosso do Sul, que é outro edital, de outro valor.
+:::
+
+### Centelha
+
+Capital semente para quem ainda **não tem empresa**. É a resposta do sistema ao estágio mais difícil de financiar.
+
+- **Pessoa física pode se inscrever.** Não se exige CNPJ na primeira fase; a empresa precisa ser constituída depois da aprovação, em prazo curto — 30 dias, nos editais recentes
+- Quem já tem empresa: constituída há no máximo 12 meses e faturamento até R\$ 4,8 milhões
+- Enquadramento aceito: ME, EPP ou Inova Simples. **MEI é vedado**
+- Duas fases eliminatórias com capacitação entre elas: primeiro a ideia, depois o projeto com viabilidade comercial e modelo de negócio. Pitch em vídeo obrigatório na segunda
+- Execução em 12 meses, prorrogáveis
+
+**Em Mato Grosso**, a terceira edição foi lançada em outubro de 2025 e teve resultado em **02/07/2026**: 813 ideias inscritas, 1.832 empreendedores, 45 municípios, **47 projetos aprovados** e R\$ 6,1 milhões. Está em execução — não há inscrição aberta. Ciclos de dois a três anos.
+
+Valores variam por estado: em MT, até R\$ 86 mil de subvenção por projeto mais bolsas.
+
+## Sebraetec {.ficha .nr}
+
+**Aberto agora, fluxo contínuo, sem edital.** Subsídio de **até 70% do custo** de serviços de consultoria tecnológica — a empresa paga os 30% restantes.
+
+Elegíveis: microempresa (faturamento de R\$ 81 mil a R\$ 360 mil) e empresa de pequeno porte (até R\$ 4,8 milhões). MEI não consta como elegível. Áreas atendidas: desenvolvimento de produto, prospecção tecnológica, automação industrial, design, layout produtivo, segurança alimentar e rotulagem, NR-12, ensaios laboratoriais.
+
+É o instrumento de menor atrito de todo este catálogo: não há edital, não há disputa e o valor sai rápido. Em compensação, financia **serviço**, não equipamento nem folha.
+
+[Sebraetec no SENAI-MT](https://novidades.senaimt.ind.br/sebraetec)
+
+## BNDES Funtec {.ficha .nr}
+
+Não reembolsável, mas com uma inversão importante: **quem propõe é a ICT**, não a empresa. A empresa entra como parceira. É por este fundo que opera a parceria BNDES–EMBRAPII, com mais de 40 Unidades habilitadas. Valores e contrapartida não estão publicados na página do produto.
+
+[BNDES Funtec](https://www.bndes.gov.br/wps/portal/site/home/financiamento/produto/bndes-funtec/)

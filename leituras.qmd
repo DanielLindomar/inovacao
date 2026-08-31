@@ -1,0 +1,97 @@
+---
+title: "Leituras"
+subtitle: "O que ler, quando, e onde encontrar"
+author: "Prof. Dr. Lindomar Pegorini Daniel — UNEMAT, Campus de Sinop"
+engine: knitr
+---
+
+::: {.logo-topo}
+![](logo-unemat.png){width="110"}
+:::
+
+::: {.callout-note}
+## Como usar esta página
+
+As páginas de **aula** já trazem o conteúdo por extenso — não é preciso ler nada além delas para acompanhar os encontros.
+
+O que está aqui é para depois: as fontes que sustentam o que foi dito, os estudos que a disciplina cita, e a bibliografia da ficha oficial. Marquei com **acesso livre** tudo o que abre sem assinatura.
+:::
+
+## Leitura obrigatória
+
+Uma só, para a plenária do primeiro sábado:
+
+- SHIMADA, E.; KANNEBLEY JR., S.; DE NEGRI, F. **Efetividade da Lei do Bem no estímulo ao investimento em P&D: uma análise com dados em painel.** ANPEC, 2013. **Páginas 5 a 13.** [Acesso livre](https://www.anpec.org.br/encontro/2013/files_I/i9-10d0885d8e8543656887a8a4cb6c4466.pdf)
+
+O contexto e as perguntas estão em [o caso da Lei do Bem](caso-lei-do-bem.qmd).
+
+## Avaliações da Lei do Bem
+
+Três estudos, com resultados diferentes — e é justamente a divergência que interessa.
+
+| Estudo | Método | Resultado |
+|---|---|---|
+| **Shimada, Kannebley Jr. & De Negri (2013)** · [livre](https://www.anpec.org.br/encontro/2013/files_I/i9-10d0885d8e8543656887a8a4cb6c4466.pdf) | Pareamento + efeitos fixos, painel 1999–2009 | Dispêndio em P&D **86% a 108% maior**; sem efeito em setores de alta tecnologia |
+| **Colombo & Cruz (2018)**, *Revista Brasileira de Inovação* · [livre](https://periodicos.sbu.unicamp.br/ojs/index.php/rbi/article/download/8651500/18480) | Pareamento **+ diferenças-em-diferenças**, com teste de sensibilidade a viés oculto | Efeito de cerca de **R\$ 1,1 milhão** por beneficiária, ou 17% do gasto médio delas |
+| **Avellar & Botelho (2016)**, *Estudos Econômicos* · [livre no SciELO](https://www.scielo.br/j/ee/a/GSy6cxDyDvRFGvBwY5GCBcQ/?lang=pt) | Pareamento **sem** dimensão temporal | Para a Lei do Bem isoladamente, entre pequenas empresas: **efeito não significante** |
+
+::: {.callout-tip}
+## Por que três estudos sérios chegam a resultados diferentes
+
+Não é porque um deles errou a conta. É porque avaliam **populações diferentes** — todas as empresas da PINTEC, ou só as pequenas — com **estratégias de identificação diferentes**, e cada estratégia sustenta um conjunto distinto de hipóteses.
+
+O terceiro estudo usa pareamento sem as duas diferenças. Compare com o que você viu no [Laboratório 2](lab02-did.qmd) e pergunte-se o que se perde ao abrir mão da dimensão temporal.
+
+Ler avaliação é sempre ler **o método antes do número**.
+:::
+
+Há ainda a dissertação de SANTANA, B. G. *Retornos do P&D e incentivos fiscais* (FEA-RP/USP, 2017), que encontra impactos entre 11% e 48% conforme o período e sugere substituição parcial de recurso privado depois de 2009. [Acesso livre](https://www.teses.usp.br/teses/disponiveis/96/96131/tde-23082017-143614/publico/BrunaGSantana_Original.pdf)
+
+## Para as técnicas de avaliação
+
+- GERTLER, P. et al. **Avaliação de Impacto na Prática.** 2. ed. Banco Mundial / BID. Em português e de acesso livre. Capítulos 3 e 6 cobrem contrafactual e diferenças-em-diferenças. É o melhor ponto de partida para quem não é da área.
+- MENEZES FILHO, N. (Org.). **Avaliação Econômica de Projetos Sociais.** Fundação Itaú Social. Aulas 1 a 3 para o processo de avaliação; acesso livre.
+- CUNNINGHAM, S. **Causal Inference: The Mixtape.** Yale University Press, 2021. Em inglês, livre online. Para quem quiser ir fundo.
+
+## Fontes primárias do catálogo
+
+Não são leitura de curso — são os documentos que você vai consultar quando montar o [trabalho final](trabalho-final.qmd), e depois dele.
+
+**Normas**
+
+- [Lei 11.196/2005](https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2005/lei/l11196.htm) — Lei do Bem
+- [Portaria MCTI 9.563/2025](https://antigo.mctic.gov.br/mctic/opencms/legislacao/portarias/Portaria_MCTI_n_9563_de_03112025.html) — prestação de informações e análise dos projetos
+- [Lei 10.973/2004](https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l10.973.htm) — Lei de Inovação, com a encomenda tecnológica no art. 20
+- [Lei 14.133/2021](https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm) — dispensa de licitação para encomenda no art. 75, V
+- [Lei 8.248/1991 compilada](https://www.planalto.gov.br/ccivil_03/leis/l8248compilado.htm) — Lei de TICs
+- [Resolução CVM 88/2022](https://conteudo.cvm.gov.br/export/sites/cvm/legislacao/resolucoes/anexos/001/resol088consolid.pdf) — crowdfunding de investimento
+
+**Onde as chamadas aparecem**
+
+- [FAPEMAT — chamadas públicas](https://www.fapemat.mt.gov.br/chamadas-publicas)
+- [FINEP — chamadas públicas](http://www.finep.gov.br/chamadas-publicas)
+- [CNPq — chamadas abertas](https://www.gov.br/cnpq/pt-br/chamadas/abertas-para-submissao)
+- [EMBRAPII — nossas unidades](https://embrapii.org.br/nossas-unidades/) e [perguntas frequentes](https://embrapii.org.br/perguntas-frequentes/)
+- [Desenvolve MT — linhas de crédito](https://desenvolve.mt.gov.br/linhasdecredito/inovacred)
+- [Sebraetec no SENAI-MT](https://novidades.senaimt.ind.br/sebraetec)
+
+**Manuais e condições**
+
+- [FINEP — Condições Operacionais](https://www.finep.gov.br/images/a-finep/Condicoes_Operacionais/CondicoesOperacionais.pdf) — taxas, prazos e elegibilidade de todas as linhas
+- [EMBRAPII — Manual de Operação das Unidades](https://storage.googleapis.com/uploads-site-embrapii/2025/01/Manual_EMBRAPII_UE_versao-6.0-de-20.10.20.pdf)
+
+## Bibliografia da ficha da disciplina
+
+- CORRÊA, G. G. *Elaboração e implementação de políticas públicas.* Porto Alegre: Grupo A, 2017.
+- MENEZES FILHO, N. (Org.). *Avaliação Econômica de Projetos Sociais.* São Paulo: Fundação Itaú Social, 2016.
+- RUA, M. G. *Políticas públicas.* Florianópolis: UFSC/CAPES/UAB, 2014. Acesso livre.
+- SECCHI, L. *Análise de Políticas Públicas.* São Paulo: Cengage, 2016.
+- SECCHI, L.; COELHO, F. S.; PIRES, V. *Políticas Públicas: conceitos, casos práticos, questões de concursos.* São Paulo: Cengage, 2019.
+
+::: {.callout-warning}
+## Um aviso sobre datas
+
+Tudo o que envolve valor, prazo ou taxa neste site foi conferido em **agosto de 2026**. Chamada fecha, edital muda, taxa de crédito é revista — as condições do Inovacred mudaram duas vezes em dezoito meses.
+
+Antes de usar qualquer número num documento seu, abra a fonte e confira. É a mesma exigência que o [trabalho final](trabalho-final.qmd) faz.
+:::

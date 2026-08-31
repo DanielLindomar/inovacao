@@ -1,0 +1,118 @@
+---
+title: "Políticas públicas: conceito e ciclo"
+subtitle: "Sábado 1 · Bloco 1 — por que o Estado financia pesquisa que a empresa poderia pagar sozinha"
+author: "Prof. Dr. Lindomar Pegorini Daniel — UNEMAT, Campus de Sinop"
+engine: knitr
+---
+
+::: {.logo-topo}
+![](logo-unemat.png){width="110"}
+:::
+
+::: {.callout-note}
+## Objetivos de aprendizagem
+
+Ao final deste bloco você será capaz de:
+
+- definir política pública e situar a inovação como objeto de política;
+- percorrer o ciclo de políticas públicas e dizer em que fase está um instrumento concreto;
+- explicar, com o argumento econômico, por que o Estado transfere dinheiro público a empresas privadas;
+- reconhecer que esse argumento tem limites, e quais são as objeções sérias a ele;
+- prever, a partir do ciclo, quando uma janela de financiamento abre e quando fecha.
+:::
+
+## O gasto que abre a disciplina
+
+Em 2024, mais de 4.200 empresas brasileiras deixaram de pagar cerca de **R\$ 12 bilhões** em tributos por terem investido em pesquisa e desenvolvimento. Não houve edital, não houve disputa, não houve escolha caso a caso. Foi uma regra geral, aplicada automaticamente a quem cumprisse requisitos.
+
+Alguém decidiu que isso deveria existir. Alguém escreveu a lei, alguém a regulamentou, alguém fiscaliza. E, em algum momento, alguém vai perguntar se valeu a pena.
+
+Esse conjunto de decisões é uma **política pública**. Entender como ela se forma, se implementa e se avalia é o que permite a um gestor prever onde o dinheiro vai estar no ano que vem.
+
+## O que é política pública
+
+A definição operacional mais útil é simples: **política pública é uma diretriz elaborada para enfrentar um problema público**. Três elementos, e nenhum é dispensável.
+
+**Há um problema.** Não basta uma situação indesejada: é preciso que alguém a reconheça como problema e como responsabilidade coletiva. Empresas brasileiras investirem pouco em P&D é um fato há décadas; virou problema público quando passou a ser lido como causa de baixa produtividade e de perda de competitividade.
+
+**O problema é público.** Isso não significa que o Estado o resolva sozinho — significa que a solução é de interesse coletivo. Boa parte das políticas de inovação é executada por entes privados, cooperativas, institutos e universidades.
+
+**Há uma diretriz intencional.** Política pública não é o que acontece; é o que se decidiu fazer. Omissão deliberada também é política — decidir não financiar um setor é uma decisão de política tanto quanto financiá-lo.
+
+::: {.callout-tip}
+## Um erro comum que custa caro na captação
+
+Muita gente trata edital como oportunidade avulsa: "abriu, vamos concorrer". Mas todo edital é a ponta visível de uma política, e ele **quer** alguma coisa — a chamada de cadeias agroindustriais quer transformar a agroindústria, não distribuir recursos.
+
+Quem lê o edital sem entender a política escreve propostas tecnicamente boas e desalinhadas. Quem entende a política escreve a proposta que aquele edital estava procurando.
+:::
+
+## O ciclo das políticas públicas
+
+O ciclo é um modelo analítico, não uma descrição da realidade — na prática as fases se sobrepõem, retrocedem e às vezes acontecem fora de ordem. Ainda assim, é a ferramenta mais útil para localizar onde um instrumento está.
+
+**1 · Formação da agenda.** Entre os milhares de problemas existentes, poucos entram na pauta. O que os faz entrar: uma crise, um dado novo, uma pressão organizada, uma janela política. A retomada da PINTEC pelo IBGE, por exemplo, recoloca dados de inovação na agenda depois de anos sem medição.
+
+**2 · Formulação de alternativas.** Definido o problema, desenham-se soluções. Aqui se decide a natureza do instrumento: transferir dinheiro, renunciar a tributo, emprestar barato, comprar. Cada escolha carrega uma teoria sobre por que as empresas não investem.
+
+**3 · Tomada de decisão.** A alternativa vira lei, decreto, portaria ou edital. É o momento em que os limites aparecem — faturamento máximo, temas prioritários, percentuais de contrapartida.
+
+**4 · Implementação.** A política encontra a realidade. Sistemas eletrônicos, prazos, capacidade das equipes, disponibilidade orçamentária. É a fase em que mais política morre: aprovada no papel e inexequível na prática.
+
+**5 · Avaliação.** Funcionou? A que custo? Comparado a quê? É o tema do [terceiro bloco](s1-03-avaliacao.qmd) — e a razão de existir da segunda metade desta disciplina.
+
+::: {.callout-important}
+## O ciclo explica a agenda de editais
+
+Um programa como o Tecnova não abre todo ano porque cada rodada percorre o ciclo inteiro: negociação orçamentária, chamada da FINEP às fundações estaduais, habilitação, edital estadual, seleção, contratação, execução, prestação de contas.
+
+Por isso o intervalo entre rodadas é de anos — 2013, 2019, 2024, e a próxima com editais estaduais previstos para 2027. **Quem entende o ciclo não fica esperando o edital: prepara o projeto no intervalo.**
+:::
+
+## Por que o Estado financia P&D privada
+
+Esta é a pergunta desconfortável do bloco, e ela merece resposta honesta. Uma empresa privada existe para gerar retorno aos donos. Por que dinheiro público entraria nisso?
+
+O argumento central é o de **apropriabilidade imperfeita**. Quem financia uma pesquisa não captura todo o valor que ela gera. O conhecimento vaza: pelo produto que os concorrentes examinam, pelos técnicos que mudam de emprego, pelos fornecedores que aprendem a atender uma especificação nova, pela patente que expira.
+
+Do ponto de vista da empresa, a decisão racional é investir até o ponto em que o retorno **privado** compensa. Do ponto de vista da sociedade, o retorno **social** é maior — e o investimento que maximiza o bem-estar coletivo é maior do que o que a empresa faria sozinha. A diferença entre os dois é o espaço da política.
+
+Três razões adicionais reforçam o argumento:
+
+**Risco e incerteza.** P&D pode não dar em nada, e isso não é falha de execução — é a natureza da atividade. Uma empresa média não tem portfólio para diluir esse risco; o Estado tem.
+
+**Horizonte.** O retorno de desenvolvimento tecnológico chega em anos. Crédito comercial não financia isso, e o caixa de uma empresa média tampouco.
+
+**Assimetria de informação.** O banco não consegue avaliar se a tecnologia vai funcionar. Na dúvida, nega ou cobra caro. Daí existirem linhas de crédito específicas, com taxa subsidiada e carência longa.
+
+::: {.callout-warning}
+## As objeções sérias — e por que vale conhecê-las
+
+O argumento acima é o mais aceito, mas não é consenso, e um bom gestor conhece as críticas:
+
+**Peso morto.** Parte do incentivo paga pesquisa que aconteceria de qualquer forma. Se uma empresa ia investir R\$ 1 milhão e recebe R\$ 300 mil de benefício para investir R\$ 1 milhão, o dinheiro público virou lucro, não pesquisa adicional. **É exatamente isso que a avaliação de impacto mede** — e a razão de a segunda metade do primeiro sábado existir.
+
+**Captura.** Quem já sabe navegar o sistema capta melhor. Instrumentos de acesso complexo tendem a beneficiar empresas maiores e mais organizadas, não necessariamente as mais inovadoras.
+
+**Escolha de vencedores.** Quando o Estado define temas prioritários, aposta em setores. Às vezes acerta; às vezes financia a tecnologia errada com muita convicção.
+
+Nenhuma dessas objeções derruba o argumento. Todas delimitam o que se pode esperar dele — e é essa delimitação que separa o gestor informado do entusiasta.
+:::
+
+## O que isso muda para quem capta
+
+Três consequências práticas, e todas aparecem no seu [trabalho final](trabalho-final.qmd):
+
+1. **O instrumento tem uma teoria por trás.** Subvenção pressupõe que falta dinheiro; incentivo fiscal pressupõe que falta estímulo na margem; crédito pressupõe que falta prazo. Escolher o instrumento é aderir a um diagnóstico sobre o próprio projeto.
+2. **As prioridades mudam com o ciclo político.** Os temas de hoje não são os de cinco anos atrás. Ler a política vigente é ler onde o dinheiro vai estar.
+3. **A prestação de contas não é burocracia.** Ela existe porque a política precisa provar que funcionou. Quem entende isso escreve indicadores que fazem sentido, em vez de preencher campo.
+
+::: {.callout-note}
+## O que você deve conseguir explicar depois deste bloco
+
+1. Por que a empresa investe menos em P&D do que seria socialmente desejável — e por que isso justifica dinheiro público.
+2. Em que fase do ciclo está um instrumento cujo edital ainda não saiu, e o que fazer nesse intervalo.
+3. O que é peso morto, e por que ele é a principal crítica aos incentivos à inovação.
+:::
+
+**Leitura de apoio:** SECCHI, L. *Análise de Políticas Públicas* (cap. 1 e 2) · RUA, M. G. *Políticas públicas* (disponível livremente pela CAPES/UAB).

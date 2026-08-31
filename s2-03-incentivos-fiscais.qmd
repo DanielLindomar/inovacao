@@ -1,0 +1,141 @@
+---
+title: "Incentivos fiscais"
+subtitle: "Sábado 2 · Bloco 3 — Lei do Bem, Lei de TICs e encomenda tecnológica"
+author: "Prof. Dr. Lindomar Pegorini Daniel — UNEMAT, Campus de Sinop"
+engine: knitr
+---
+
+::: {.logo-topo}
+![](logo-unemat.png){width="110"}
+:::
+
+::: {.callout-note}
+## Objetivos de aprendizagem
+
+Ao final deste bloco você será capaz de:
+
+- explicar a diferença entre o Estado **transferir** dinheiro e o Estado **deixar de arrecadar**;
+- verificar, em poucos minutos, se uma empresa pode usar a Lei do Bem;
+- estimar a ordem de grandeza do benefício e identificar o que aumenta o percentual;
+- explicar por que a maioria das empresas elegíveis não usa o maior incentivo do país;
+- distinguir a lógica horizontal da Lei do Bem da lógica vertical da Lei de TICs;
+- reconhecer uma situação em que o Estado é **cliente**, e não financiador.
+:::
+
+## Duas formas de o Estado apoiar a mesma coisa
+
+No bloco anterior, o Estado transferiu dinheiro: escolheu projetos, assinou convênios, cobrou prestação de contas. Aqui ele faz o oposto — **não escolhe ninguém e não transfere nada**. Apenas deixa de cobrar tributo de quem investiu em pesquisa.
+
+A diferença é maior do que parece.
+
+| | Subvenção | Incentivo fiscal |
+|---|---|---|
+| Quem escolhe o projeto | O Estado, por mérito | A empresa |
+| Quando entra o dinheiro | Durante o projeto | Depois, no ajuste do imposto |
+| Quem pode | Quem vence o edital | Quem preenche requisitos |
+| Risco | Não ganhar | Ser glosado depois |
+| Escala | Centenas de projetos | Milhares de empresas |
+
+A subvenção é seletiva e cara de administrar. O incentivo fiscal é automático e alcança muito mais gente — em 2024, mais de 4.200 empresas e R\$ 51,6 bilhões de dispêndio amparados, ao custo de cerca de R\$ 12 bilhões de renúncia.
+
+::: {.callout-tip}
+## Por que essa distinção importa para quem capta
+
+Subvenção é dinheiro **novo** entrando na empresa. Incentivo fiscal é desconto sobre gasto que a empresa **já vai fazer**.
+
+Um projeto que só acontece se alguém pagar precisa de subvenção ou crédito. Um projeto que vai acontecer de qualquer forma deve buscar o incentivo fiscal — e é dinheiro que muita empresa está deixando na mesa sem saber.
+:::
+
+## Lei do Bem: quem pode, em quatro perguntas
+
+O detalhamento está na [ficha do catálogo](cat-fiscais.qmd). O que interessa aqui é o teste rápido:
+
+1. **A empresa apura pelo lucro real?** Se está no Simples ou no lucro presumido, para aqui. Esta pergunta sozinha elimina a maior parte das empresas brasileiras — e três dos [nossos dez casos](casos.qmd).
+2. **Teve lucro fiscal no ano-base?** O benefício é exclusão da base de cálculo, não crédito. Empresa no prejuízo não tem de que abater.
+3. **Está regular com o fisco federal?**
+4. **Consegue mostrar os custos separados por projeto?** Não é exigência formal de sistema, é exigência de rastreabilidade.
+
+Quatro sins, e a empresa tem direito ao benefício. Não precisa pedir autorização a ninguém.
+
+## O que ela ganha
+
+Além de deduzir os gastos com P&D como despesa normal, a empresa **exclui novamente** uma parcela da base do IRPJ e da CSLL:
+
+- **60%** de partida;
+- **70%** se aumentou o número de pesquisadores exclusivos em menos de 5%;
+- **80%** se aumentou 5% ou mais;
+- **mais 20%** sobre os gastos de projeto com **patente concedida** — concedida, não depositada;
+- teto combinado de 100%.
+
+Some a isso a redução de metade do IPI em equipamentos de P&D, a depreciação integral no ano da compra e a alíquota zero de imposto de renda retido em remessas para manter patentes no exterior.
+
+Consultorias estimam que o conjunto reduza entre 20% e 27% o custo dos projetos. É estimativa de mercado, não parâmetro legal — mas dá a ordem de grandeza.
+
+::: {.callout-important}
+## Não há aprovação prévia — e é isso que assusta
+
+A empresa se autoenquadra na apuração e informa o MCTI depois, pelo **FormP&D**, até **31 de agosto** do ano seguinte.
+
+Ou seja: usa o benefício primeiro e é analisada depois. Se o MCTI não reconhecer o projeto como P&D, vem a glosa — e o dinheiro já foi gasto.
+
+A **Portaria MCTI 9.563/2025** apertou esse ciclo: mínimo de dois avaliadores por projeto, análises automatizadas, cruzamento direto com bases da Receita Federal, intimação automática após dez dias e recurso em apenas dez dias corridos.
+
+A leitura prática é uma só: **sem documentar os projetos ao longo do ano, não há como responder no prazo.** O incentivo deixou de ser um exercício de fechamento contábil e virou um processo contínuo.
+:::
+
+## Por que 83% não usam
+
+Segundo a Fiesp, 63% das empresas pesquisadas investem em inovação — e 83% não usam nenhum incentivo fiscal. Pela PINTEC, apenas 26,4% das industriais inovadoras com cem ou mais empregados usaram a Lei do Bem.
+
+As razões, em ordem de frequência, são todas resolvíveis:
+
+1. **Não sabem que existe** — ou acham que é para "empresa de tecnologia".
+2. **Não são elegíveis** — lucro presumido ou Simples, e isso não tem contorno.
+3. **Não se reconhecem como quem faz P&D.** Um frigorífico que desenvolve um processo de recirculação de água está fazendo desenvolvimento experimental. Quem só chama de P&D o que acontece em laboratório com jaleco não se enxerga na lei.
+4. **Insegurança jurídica percebida.** Tratam como tese tributária arriscada o que é norma de vinte anos, amplamente regulamentada.
+5. **Falta de processo interno** para documentar.
+6. **Medo de glosa.**
+
+A terceira razão é a mais interessante para esta turma, e é ela que a atividade do bloco ataca.
+
+## Lei de TICs: a outra lógica
+
+Vale só para quem **fabrica bens de tecnologia da informação e comunicação**, com habilitação e Processo Produtivo Básico. O benefício virou crédito financeiro compensável, e vem com contrapartida amarrada: no mínimo 5% do faturamento incentivado em P&D, com destinação carimbada — ao menos 1% para ICTs, **0,8% para instituições da SUDAM, SUDENE e Centro-Oeste** e 0,5% para o FNDCT.
+
+::: {.callout-tip}
+## Duas apostas opostas de política industrial
+
+A **Lei do Bem** é horizontal: qualquer setor, sem escolha estatal, benefício automático. É uma aposta em que a empresa sabe melhor que o Estado onde investir.
+
+A **Lei de TICs** é vertical: o Estado escolhe o setor, exige habilitação e determina para onde o dinheiro da contrapartida vai. Aposta contrária.
+
+E repare no piso de 0,8% destinado ao Centro-Oeste: é recurso de empresa de fora que chega a instituições daqui por obrigação legal. Uma ICT de Mato Grosso pode captá-lo sem que nenhuma empresa local esteja envolvida.
+:::
+
+## Encomenda tecnológica: quando o Estado é cliente
+
+Aqui não há incentivo nenhum. O poder público **compra** o desenvolvimento de uma solução que não existe pronta, assumindo o risco de que não funcione.
+
+O elemento definidor é o **risco tecnológico**: o Estado paga pela tentativa, não só pelo resultado. É o que distingue a encomenda de uma licitação comum, onde ninguém paga por fracasso.
+
+Base legal: art. 20 da Lei 10.973/2004, regulamentado pelo Decreto 9.283/2018. A contratação é hipótese de **dispensa de licitação**, hoje fundada no **art. 75, inciso V, da Lei 14.133/2021**.
+
+::: {.callout-warning}
+## Um cuidado que vale nota no trabalho final
+
+Boa parte do material disponível na internet — inclusive manuais oficiais publicados em 2021, do TCU e da AGU — ainda cita o art. 24, XXXI da **Lei 8.666/1993** como fundamento. Aquela lei foi revogada.
+
+Citar dispositivo revogado numa proposta ao poder público é o tipo de erro que custa credibilidade antes de qualquer discussão de mérito. E ilustra por que a disciplina insiste em fonte primária: a Lei 14.133 está no Planalto, e leva três minutos para conferir.
+:::
+
+## Atividade do bloco
+
+Em salas simultâneas: [**cinco perfis de empresa**](atividade-elegibilidade.qmd). Para cada um, decidam se pode usar a Lei do Bem, digam qual requisito decide e estimem a ordem de grandeza do benefício. Depois, para os que não podem, apontem o que sobra no [catálogo](cat-escada.qmd).
+
+::: {.callout-note}
+## O que você deve conseguir explicar depois deste bloco
+
+1. A diferença entre dinheiro novo e desconto sobre gasto já previsto — e qual dos dois o seu projeto precisa.
+2. Por que o regime tributário decide, sozinho, o acesso ao maior instrumento de apoio à inovação do país.
+3. Por que um projeto de melhoria de processo numa indústria comum pode ser P&D para efeito da lei.
+:::

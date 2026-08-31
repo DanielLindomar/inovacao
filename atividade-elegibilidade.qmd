@@ -1,0 +1,159 @@
+---
+title: "Esta empresa pode usar a Lei do Bem?"
+subtitle: "Atividade em grupo — sábado 2, ao fim da manhã"
+author: "Prof. Dr. Lindomar Pegorini Daniel — UNEMAT, Campus de Sinop"
+engine: knitr
+---
+
+::: {.logo-topo}
+![](logo-unemat.png){width="110"}
+:::
+
+::: {.callout-note}
+## O que esta atividade resolve
+
+Cinco empresas. Para cada uma, três perguntas:
+
+1. **Pode usar a Lei do Bem?** Sim ou não, sem meio-termo.
+2. **Por quê?** Aponte o requisito que decide.
+3. **Se pode, quanto vale?** Ordem de grandeza, não centavos.
+
+Quarenta minutos em sala simultânea, mais a plenária. Sem nota.
+:::
+
+## O teste, em quatro perguntas
+
+Você já viu na [aula deste bloco](s2-03-incentivos-fiscais.qmd) e na [ficha do catálogo](cat-fiscais.qmd). Vale ter à mão:
+
+1. Apura pelo **lucro real**?
+2. Teve **lucro fiscal** no ano-base?
+3. Está **regular** com o fisco federal?
+4. Consegue **separar os custos por projeto**?
+
+E, se as quatro respostas forem sim, o degrau da exclusão adicional: **60%** de partida, **70%** se aumentou pesquisadores exclusivos em menos de 5%, **80%** se aumentou 5% ou mais, **mais 20%** sobre projeto com patente concedida.
+
+::: {.callout-tip}
+## Como estimar a ordem de grandeza
+
+O benefício não é o percentual sobre o gasto — é a **redução do imposto**. Com IRPJ e CSLL somando 34% na margem, a conta de bolso é:
+
+> economia ≈ gasto em P&D × percentual de exclusão × 34%
+
+Um gasto de R\$ 1 milhão com exclusão de 60% gera cerca de R\$ 204 mil de economia. É essa a conta que se espera de vocês — não a apuração completa.
+:::
+
+---
+
+## Perfil 1 · Frigorífico Serra Azul
+
+**Cáceres · abate e processamento de bovinos · 340 funcionários**
+
+Fatura R\$ 210 milhões, apura pelo **lucro real** e teve lucro fiscal nos últimos quatro exercícios. Está em dia com o fisco federal.
+
+Tem um departamento de engenharia com sete pessoas. No ano passado, três delas trabalharam em tempo integral no desenvolvimento de um sistema de recirculação e tratamento de água para o abate, que reduza o consumo em 40% mantendo a conformidade sanitária. **Não existe solução pronta no mercado que atenda às duas exigências ao mesmo tempo.** Gastou R\$ 2,1 milhões no projeto.
+
+O contador da empresa nunca ouviu falar em Lei do Bem. O diretor industrial acha que "P&D é coisa de laboratório".
+
+::: {.callout-note collapse="true" title="Depois da plenária — comentário"}
+**Pode, e provavelmente é o caso mais claro dos cinco.** Lucro real, lucro fiscal, regularidade. E o projeto é **desenvolvimento experimental** no sentido da lei: há incerteza técnica, não há solução disponível, e busca-se avanço tecnológico.
+
+Com R\$ 2,1 milhões e exclusão de 60%, a economia fica na casa de **R\$ 430 mil**. Se as três pessoas dedicadas caracterizarem aumento de pesquisadores exclusivos acima de 5%, o degrau sobe para 80% e a economia passa de R\$ 570 mil.
+
+**O obstáculo aqui não é jurídico, é de percepção.** A empresa faz P&D e não se reconhece como quem faz. Este é o perfil por trás do dado da Fiesp: 63% investem em inovação, 83% não usam incentivo.
+:::
+
+---
+
+## Perfil 2 · Rota Norte Logística
+
+**Sinop · transporte rodoviário de grãos · 88 funcionários, 54 carretas**
+
+Fatura R\$ 14 milhões e apura pelo **lucro presumido**. Regular com o fisco.
+
+Contratou uma consultoria e dois analistas por um ano para desenvolver um sistema de roteirização com previsão de demanda, a partir de cinco anos de dados próprios de viagem. Gastou R\$ 480 mil. O objetivo é reduzir o retorno vazio, hoje em 31% dos quilômetros rodados.
+
+::: {.callout-note collapse="true" title="Depois da plenária — comentário"}
+**Não pode.** O lucro presumido elimina, e não há contorno dentro do instrumento — nem argumento de mérito, nem qualidade do projeto muda isso.
+
+A questão que sobra é de planejamento tributário, e ela é séria: **valeria a pena migrar para o lucro real?** A resposta depende da margem efetiva da empresa e não se decide pelo incentivo isoladamente. Mas é uma conversa que a empresa deveria estar tendo com o contador, e provavelmente não está.
+
+O que resta para este projeto está no [catálogo](cat-escada.qmd): o gasto é quase todo em **pessoal qualificado**, e há uma chamada aberta que financia exatamente isso, com reserva regional para o Centro-Oeste.
+:::
+
+---
+
+## Perfil 3 · AgroDados Gestão
+
+**Sinop · software de gestão para fazendas · 9 funcionários**
+
+Cinco anos de operação, R\$ 1,2 milhão de receita recorrente anual, 140 fazendas clientes. Apura pelo **lucro presumido**. Regular com o fisco.
+
+Sete dos nove funcionários são desenvolvedores. A empresa lança versões novas continuamente e está construindo um módulo de previsão de produtividade por talhão, usando aprendizado de máquina sobre dados de safra. Investe praticamente toda a margem em desenvolvimento.
+
+::: {.callout-note collapse="true" title="Depois da plenária — comentário"}
+**Não pode** — pelo mesmo motivo do perfil anterior, e o contraste é o ponto da atividade.
+
+É a empresa mais "de tecnologia" das cinco. Sete de nove funcionários são desenvolvedores. E, ainda assim, está fora do maior incentivo à inovação do país, enquanto o frigorífico do perfil 1 está dentro.
+
+**O critério não é ser inovadora. É o regime tributário.** Quem imagina a Lei do Bem como um instrumento para empresas de tecnologia entende o instrumento ao contrário.
+
+Vale notar: uma parcela do desenvolvimento contínuo de software é manutenção e melhoria incremental, que não caracteriza avanço tecnológico. Mesmo no lucro real, nem tudo o que a AgroDados gasta seria enquadrável — o módulo de previsão, provavelmente sim; a versão nova da tela de cadastro, não.
+:::
+
+---
+
+## Perfil 4 · Solar Cerrado Energia
+
+**Rondonópolis · instalação de sistemas fotovoltaicos · 24 funcionários**
+
+Fatura R\$ 8 milhões e apura pelo **lucro real**. Regular com o fisco. No último exercício, porém, teve um ano difícil: **o lucro fiscal foi de apenas R\$ 120 mil**.
+
+Desenvolveu, com um engenheiro dedicado e um técnico em meio período, um sistema automatizado de limpeza de placas para as condições do cerrado — poeira intensa na seca, crosta após as primeiras chuvas. Os equipamentos importados disponíveis não funcionam bem nessas condições. Gastou R\$ 750 mil no ano.
+
+::: {.callout-note collapse="true" title="Depois da plenária — comentário"}
+**Pode — mas o benefício é muito menor do que a conta ingênua sugere.** É o perfil mais sutil dos cinco.
+
+A conta de bolso daria R\$ 750 mil × 60% × 34% ≈ R\$ 153 mil. Só que o benefício é uma **exclusão da base de cálculo**, e a base disponível é o lucro fiscal de R\$ 120 mil. Não se pode excluir mais do que existe: a empresa aproveita, no máximo, o imposto correspondente àquela base — algo em torno de R\$ 40 mil — e **perde o restante**, porque a exclusão não gera crédito nem se transporta para exercícios seguintes.
+
+A lição prática: **lucro real é condição necessária, não suficiente.** O que determina o valor do benefício é o lucro fiscal, e uma empresa com margem apertada captura pouco de um incentivo que, no papel, parece generoso.
+
+Para esta empresa, os R\$ 750 mil provavelmente se financiam melhor por outro caminho — e é isso que o [Laboratório 4](lab04-custo-das-fontes.qmd) ensina a comparar.
+:::
+
+---
+
+## Perfil 5 · Verde Grão Sementes
+
+**Sorriso · beneficiamento de sementes de soja · 62 funcionários**
+
+Fatura R\$ 38 milhões, apura pelo **lucro real**, com lucro fiscal robusto nos últimos três exercícios. Regular com o fisco. A contabilidade já é organizada por centro de custo.
+
+No ano passado desenvolveu um classificador de lotes por visão computacional. Tinha um agrônomo dedicado a testes de qualidade; contratou mais um engenheiro em tempo integral para o projeto. Gastou R\$ 1,4 milhão. **Depositou pedido de patente** do mecanismo de amostragem automatizada, ainda em análise no INPI.
+
+::: {.callout-note collapse="true" title="Depois da plenária — comentário"}
+**Pode, e no melhor degrau disponível.**
+
+Passou de um para dois pesquisadores exclusivos — aumento de 100%, muito acima dos 5%. Vai ao degrau de **80%**: R\$ 1,4 milhão × 80% × 34% ≈ **R\$ 380 mil** de economia.
+
+Sobre a patente, atenção à armadilha de leitura: o bônus adicional de 20% vale para projeto com patente **concedida**, não depositada, e no ano da concessão. O pedido está em análise — o bônus ainda não se aplica. Quando sair a carta-patente, aí sim, e no exercício correspondente.
+
+Note ainda que esta empresa cumpre o quarto requisito — contabilidade por centro de custo — quase por acidente, e isso vale muito. É justamente o que a Portaria 9.563/2025 tornou mais exigente, com cruzamento direto de bases da Receita.
+:::
+
+---
+
+## Na plenária
+
+Cada grupo apresenta um perfil, com as três respostas. Depois discutimos duas perguntas que atravessam todos:
+
+**Por que o frigorífico está dentro e a empresa de software está fora?** A resposta diz mais sobre a lógica do instrumento do que qualquer definição.
+
+**Qual dos cinco perfis mais se parece com a empresa do seu [caso](casos.qmd)?** Essa comparação já é meio caminho da seção 2 do [trabalho final](trabalho-final.qmd).
+
+::: {.callout-note}
+## O que você deve conseguir explicar depois desta atividade
+
+1. Por que o regime tributário decide o acesso, e não o quanto a empresa inova.
+2. Por que lucro real não basta — e o que o lucro fiscal faz com o valor do benefício.
+3. A diferença entre patente depositada e patente concedida, para efeito do bônus.
+:::

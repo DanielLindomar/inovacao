@@ -1,0 +1,216 @@
+---
+title: "Laboratório 3 — Vale a pena? VPL, TIR e payback"
+subtitle: "O projeto se paga? Em quanto tempo?"
+author: "Prof. Dr. Lindomar Pegorini Daniel — UNEMAT, Campus de Sinop"
+engine: knitr
+---
+
+::: {.logo-topo}
+![](logo-unemat.png){width="110"}
+:::
+
+::: {.callout-note}
+## Objetivos de aprendizagem
+
+Ao final deste laboratório você será capaz de:
+
+- montar o fluxo de caixa de um projeto de inovação;
+- calcular e interpretar o valor presente líquido;
+- calcular a taxa interna de retorno e dizer o que ela significa;
+- calcular o prazo de retorno, com e sem desconto;
+- explicar por que a taxa de desconto escolhida muda a decisão.
+:::
+
+## Contexto: o projeto de R\$ 500 mil
+
+Uma empresa quer desenvolver um produto novo. O investimento inicial é de **R\$ 500 mil**. Nos anos seguintes há custeio — manutenção, equipe, insumos — e receita incremental gerada pelo produto.
+
+Todos os valores estão em **milhares de reais**. Rode o primeiro bloco antes dos demais.
+
+```{webr}
+projeto <- read.csv("dados/projeto_inovacao.csv")
+projeto
+```
+
+::: {.callout-tip}
+## Como ler essa tabela
+
+Uma linha por ano. O **ano 0** é o momento do investimento: sai dinheiro, não entra nada. Do ano 1 em diante o produto começa a gerar receita, e há custeio para mantê-lo funcionando.
+
+A coluna `fluxo_liquido` é a soma das três anteriores — é com ela que se trabalha daqui para frente. Repare que ela ainda é **negativa no ano 1**: a receita inicial não cobre o custeio. Projeto de inovação costuma piorar antes de melhorar.
+:::
+
+## Por que não basta somar
+
+A tentação é somar os fluxos e ver se dá positivo.
+
+```{webr}
+sum(projeto$fluxo_liquido)
+```
+
+O número é positivo. E é enganoso: ele trata R\$ 320 mil recebidos daqui a cinco anos como equivalentes a R\$ 320 mil hoje.
+
+Não são. Dinheiro hoje pode ser aplicado, pode quitar dívida, pode financiar outra coisa. **Todo valor futuro precisa ser trazido a valor presente** antes de ser somado.
+
+## Valor presente líquido
+
+A fórmula desconta cada fluxo pelo tempo que falta para recebê-lo:
+
+$$VPL = \sum_{t=0}^{n} \frac{F_t}{(1+r)^t}$$
+
+Em R, com a taxa de desconto `r`:
+
+```{webr}
+vpl <- function(fluxos, r) {
+  sum(fluxos / (1 + r)^(seq_along(fluxos) - 1))
+}
+
+r <- 0.12                        # ALTERE AQUI: taxa de desconto ao ano
+vpl(projeto$fluxo_liquido, r)
+```
+
+::: {.callout-tip}
+## Como ler esse número
+
+O VPL é positivo, em torno de R\$ 183 mil. Significa: **depois de remunerar o capital a 12% ao ano, ainda sobram R\$ 183 mil em valor de hoje.**
+
+A regra de decisão é direta: VPL positivo, o projeto cria valor; negativo, destrói. Zero significa que o projeto rende exatamente a taxa exigida, nem mais nem menos.
+
+Volte ao bloco, troque `r` por 0.20 e rode de novo. Depois por 0.25. Veja a que altura o número muda de sinal.
+:::
+
+### Exercício 1 — a sensibilidade à taxa
+
+Calcule o VPL para várias taxas de uma vez, usando `sapply()`.
+
+```{webr}
+#| exercise: ex_sens
+taxas <- c(0.06, 0.10, 0.12, 0.18, 0.22, 0.26)
+resultado <- sapply(taxas, function(t) vpl(projeto$______, t))
+data.frame(taxa = taxas, vpl = round(resultado, 1))
+```
+
+::: {.callout-tip collapse="true" title="Dica"}
+A coluna com os fluxos líquidos chama-se `fluxo_liquido`.
+:::
+
+::: {.callout-note collapse="true" title="Solução"}
+```r
+taxas <- c(0.06, 0.10, 0.12, 0.18, 0.22, 0.26)
+resultado <- sapply(taxas, function(t) vpl(projeto$fluxo_liquido, t))
+data.frame(taxa = taxas, vpl = round(resultado, 1))
+```
+O VPL cai à medida que a taxa sobe, e em algum ponto entre 22% e 26% ele cruza o zero. Esse ponto tem nome.
+:::
+
+## Taxa interna de retorno
+
+A **TIR** é a taxa que zera o VPL. Interpretação: é o rendimento anual do projeto, em termos próprios.
+
+Não há fórmula fechada — encontra-se por busca. O bloco abaixo faz uma busca por bisseção: testa o meio do intervalo, vê o sinal, e reduz o intervalo pela metade, duzentas vezes.
+
+```{webr}
+tir <- function(fluxos) {
+  lo <- 0; hi <- 3
+  for (i in 1:200) {
+    m <- (lo + hi) / 2
+    if (vpl(fluxos, m) > 0) lo <- m else hi <- m
+  }
+  lo
+}
+
+round(tir(projeto$fluxo_liquido) * 100, 1)
+```
+
+::: {.callout-tip}
+## Como ler esse número
+
+A TIR fica em torno de **22%** ao ano. Significa que o projeto remunera o capital investido a essa taxa.
+
+A regra de decisão: se a TIR supera o custo de capital da empresa, o projeto vale a pena. Se a empresa capta a 12%, um projeto que rende 22% cria valor.
+
+**Uma advertência:** a TIR é sedutora porque vira uma frase única — "o projeto rende 22% ao ano". Mas ela ignora o tamanho do projeto. Render 40% sobre R\$ 50 mil é menos dinheiro do que render 22% sobre R\$ 500 mil. Quando os dois indicadores discordarem, **prefira o VPL**.
+:::
+
+## Prazo de retorno
+
+Quanto tempo até o projeto devolver o que se investiu? A versão simples soma os fluxos até o acumulado virar positivo.
+
+```{webr}
+acumulado <- cumsum(projeto$fluxo_liquido)
+data.frame(ano = projeto$ano,
+           fluxo = projeto$fluxo_liquido,
+           acumulado = round(acumulado, 1))
+```
+
+::: {.callout-tip}
+## Como ler essa tabela
+
+Percorra a coluna `acumulado` de cima para baixo e localize onde ela deixa de ser negativa. Aquele é o ano do retorno.
+
+Esse cálculo, porém, ignora o valor do dinheiro no tempo — soma reais de anos diferentes como se fossem iguais. O exercício abaixo corrige isso.
+:::
+
+### Exercício 2 — payback descontado
+
+Calcule o acumulado dos fluxos **descontados** a 12% e veja em que ano ele cruza o zero.
+
+```{webr}
+#| exercise: ex_payback
+r <- 0.12
+descontados <- projeto$fluxo_liquido / (1 + r)^(projeto$ano)
+data.frame(ano = projeto$ano,
+           descontado = round(descontados, 1),
+           acumulado  = round(______(descontados), 1))
+```
+
+::: {.callout-tip collapse="true" title="Dica"}
+A função que acumula uma soma ao longo de um vetor é `cumsum()`.
+:::
+
+::: {.callout-note collapse="true" title="Solução"}
+```r
+r <- 0.12
+descontados <- projeto$fluxo_liquido / (1 + r)^(projeto$ano)
+data.frame(ano = projeto$ano,
+           descontado = round(descontados, 1),
+           acumulado  = round(cumsum(descontados), 1))
+```
+O payback descontado é mais longo que o simples. A diferença é o custo de esperar — e é a razão de projetos com retorno distante serem mais difíceis de financiar.
+:::
+
+## Um gráfico do fluxo acumulado
+
+```{webr}
+r <- 0.12
+desc <- projeto$fluxo_liquido / (1 + r)^(projeto$ano)
+
+plot(projeto$ano, cumsum(desc), type = "b", pch = 19, lwd = 2, col = "#1E2761",
+     xlab = "Ano", ylab = "Fluxo acumulado descontado (R$ mil)",
+     main = "Quando o projeto se paga")
+abline(h = 0, lty = 2, col = "#B45309", lwd = 2)
+```
+
+::: {.callout-tip}
+## Como ler esse gráfico
+
+A curva mergulha no ano 0 com o investimento, afunda um pouco mais no ano 1 — quando a receita ainda não cobre o custeio — e depois sobe. O ponto em que cruza a linha tracejada é o payback descontado.
+
+A altura em que ela termina, no ano 5, é o VPL.
+:::
+
+## Por que isso importa para a captação
+
+Os números que você acabou de calcular entram diretamente em três lugares do [trabalho final](trabalho-final.qmd):
+
+- **na seção 1**, para justificar quanto o projeto precisa e por quê;
+- **na seção 4**, para comparar o custo das fontes — é o que o [Laboratório 4](lab04-custo-das-fontes.qmd) faz;
+- **na avaliação de mérito de um edital**, no critério de consistência da proposta. Um projeto que apresenta fluxo de caixa e VPL demonstra que pensou no depois.
+
+::: {.callout-note}
+## O que você deve conseguir explicar depois deste laboratório
+
+1. Por que somar os fluxos sem descontar leva a decisão errada.
+2. O que significa, em palavras, um VPL de R\$ 183 mil a uma taxa de 12%.
+3. Por que, entre VPL e TIR, o VPL é o critério a seguir quando eles discordam.
+:::

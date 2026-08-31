@@ -1,0 +1,357 @@
+---
+title: "Por que existe esse dinheiro"
+subtitle: "Políticas e incentivos para a inovação e avaliação de impacto · Sábado 1"
+author: "Prof. Dr. Lindomar Pegorini Daniel · UNEMAT — Campus de Sinop"
+date: "2026-09-12"
+date-format: "DD/MM/YYYY"
+format:
+  revealjs:
+    theme: [default, estilo-slides.scss]
+    slide-number: true
+    incremental: false
+    lang: pt-BR
+    logo: logo-unemat.png
+    footer: "financiamento da inovação · UNEMAT"
+---
+
+## Antes de começar {.smaller}
+
+::: {.sala}
+**O combinado do dia**
+
+- Blocos de 50 minutos, pausa de 10. A pausa é de verdade — eu também saio.
+- **Nada que está no site será repetido aqui.** O encontro é para o que só funciona ao vivo.
+- Metade dos blocos acontece em salas simultâneas. Câmera aberta lá e nas plenárias.
+- Um documento compartilhado por sábado, uma seção por grupo. É o produto do dia.
+- A gravação vai para o SIGAA.
+:::
+
+---
+
+::: {.numerao}
+R\$ 12 bilhões
+:::
+::: {.numerao-leg}
+renúncia fiscal da Lei do Bem — ano-base 2024
+:::
+
+. . .
+
+::: {.numerao-leg}
+4.200 empresas · R\$ 51,6 bilhões declarados em P&D
+:::
+
+---
+
+::: {.pergunta}
+Isso gerou pesquisa que não aconteceria de qualquer forma?
+:::
+
+## As duas perguntas da disciplina
+
+::: {.pergunta}
+De onde vem o dinheiro — e o que ele cobra em troca?
+:::
+
+::: {.pergunta}
+Como se sabe se aquele dinheiro fez diferença?
+:::
+
+## Agora, no documento compartilhado {.smaller}
+
+::: {.sala}
+Uma frase, no seu nome:
+
+**qual projeto de inovação você vai trabalhar nesta disciplina?**
+
+Pode ser um dos dez casos do site, pode ser da sua empresa. Cinco minutos.
+:::
+
+# Bloco 1 · Políticas públicas
+
+## O que é uma política pública {.smaller}
+
+Três elementos, e nenhum é dispensável:
+
+| | |
+|---|---|
+| **Há um problema** | alguém o reconhece como coletivo |
+| **Ele é público** | a solução interessa a todos, mesmo que executada por privados |
+| **Há uma diretriz intencional** | não é o que acontece; é o que se decidiu fazer |
+
+. . .
+
+**Omissão deliberada também é política.**
+
+## O ciclo
+
+1. Formação da agenda
+2. Formulação de alternativas
+3. Tomada de decisão
+4. Implementação
+5. **Avaliação**
+
+. . .
+
+::: {.rodape}
+Tecnova: 2013 · 2019 · 2024 · editais estaduais previstos para 2027.
+Quem entende o ciclo não espera o edital — prepara o projeto no intervalo.
+:::
+
+---
+
+::: {.pergunta}
+Por que dinheiro público entra numa empresa privada?
+:::
+
+## Apropriabilidade imperfeita {.smaller}
+
+Quem financia a pesquisa não captura todo o valor que ela gera.
+
+O conhecimento vaza: pelo produto que o concorrente examina, pelo técnico que muda de emprego, pelo fornecedor que aprende, pela patente que expira.
+
+. . .
+
+| | |
+|---|---|
+| Retorno **privado** | o que a empresa captura |
+| Retorno **social** | o que a sociedade ganha |
+| A diferença | **o espaço da política** |
+
+. . .
+
+Somam-se: **risco**, **horizonte longo** e **assimetria de informação** com o financiador.
+
+## E as objeções? {.smaller}
+
+::: {.sala}
+**Peso morto** — parte do incentivo paga pesquisa que aconteceria de qualquer forma.
+
+**Captura** — quem já sabe navegar o sistema capta melhor.
+
+**Escolha de vencedores** — o Estado aposta em setores, e às vezes erra com convicção.
+:::
+
+. . .
+
+A primeira delas é o que a **avaliação de impacto** mede. Voltamos a ela à tarde.
+
+# Bloco 2 · Quem é quem
+
+## A pergunta certa não é "quem é quem" {.smaller}
+
+| Preciso de… | Porta |
+|---|---|
+| Dinheiro que não volta | FINEP · FAPEMAT · EMBRAPII |
+| Gente qualificada dentro da empresa | CNPq — RHAE |
+| Competência técnica que não tenho | Unidade EMBRAPII · ICT · NIT |
+| Empréstimo barato e longo | Desenvolve MT · FINEP · BNDES |
+| Desconto no imposto sobre o que já gasto | Receita, via MCTI |
+| Consultoria subsidiada | SEBRAE |
+| Um cliente para algo que não existe | Encomenda tecnológica |
+
+## Três normas que abriram tudo isso
+
+- **Lei 10.973/2004** — Lei de Inovação. Criou a subvenção econômica e a encomenda tecnológica.
+- **Lei 13.243/2016** — Marco Legal da CT&I. Desamarrou a operação: laboratório público para empresa, pesquisador público em projeto privado, PI compartilhada.
+- **EC 85/2015** — deu status constitucional e permitiu que os estados operassem.
+
+## Vamos abrir o catálogo {.smaller}
+
+::: {.sala}
+**Site · Catálogo · A escada do financiamento**
+
+Duas perguntas de uma vez: em que estágio o projeto está, e o que aquele dinheiro cobra.
+
+Reparem na coluna **Ideia**. E reparem em quantos instrumentos **não têm edital**.
+:::
+
+# Bloco 3 · Salas simultâneas
+
+## Mapa de instrumentos {.smaller}
+
+::: {.sala}
+**40 minutos. Grupos de quatro.**
+
+Cada grupo recebe **uma das seis situações** — site → *Avaliação · Mapa de instrumentos*.
+
+Voltem com:
+
+1. o instrumento que vocês recomendariam;
+2. **por que os outros foram descartados**;
+3. a pergunta que vocês não conseguiram responder.
+
+Escrevam na seção do grupo, no documento compartilhado.
+:::
+
+# Bloco 4 · Plenária
+
+## Três minutos por grupo
+
+- O caso, em uma frase
+- A recomendação
+- O descarte mais difícil
+
+. . .
+
+::: {.rodape}
+O que ficou sem resposta é o programa do sábado 2.
+:::
+
+# Bloco 5 · O processo de avaliação
+
+## Monitorar não é avaliar {.smaller}
+
+| | Monitoramento | Avaliação |
+|---|---|---|
+| Pergunta | Está saindo como planejado? | Funcionou? Valeu a pena? |
+| Olha para | execução | efeitos |
+| Exemplo | 8 das 10 empresas contratadas | o dispêndio subiu **por causa** do programa |
+
+. . .
+
+**Um programa pode ter execução impecável e efeito zero.**
+
+## A cadeia de resultados
+
+**Insumo** → **Produto** → **Resultado** → **Impacto**
+
+. . .
+
+R\$ 150 mil → protótipo → o custo unitário caiu → a produtividade do setor subiu
+
+. . .
+
+::: {.rodape}
+Quanto mais se desce, menos controle e mais relevância.
+No trabalho final, prometa **produto e resultado**. Impacto não se mede num projeto de R\$ 150 mil.
+:::
+
+## Teoria de mudança {.smaller}
+
+> **Se** desenvolver o classificador, **então** inspeciona 100% dos lotes.
+> **Se** inspeciona tudo, **então** a variabilidade cai.
+> **Se** a variabilidade cai, **então** dá para cobrar prêmio.
+> **Se** cobra prêmio, **então** o investimento se paga.
+
+. . .
+
+**Três premissas apareceram.** Quais?
+
+. . .
+
+::: {.rodape}
+A teoria de mudança não enfeita a proposta. É o mapa de onde o projeto pode dar errado.
+:::
+
+# Bloco 6 · O contrafactual
+
+---
+
+::: {.pergunta}
+Comparado com o quê?
+:::
+
+## O problema, em uma frase {.smaller}
+
+Para saber se o incentivo fez diferença, seria preciso comparar o que aconteceu com
+
+**o que teria acontecido com a mesma empresa, sem o incentivo.**
+
+. . .
+
+Esse cenário não existe. Nunca vai existir.
+
+## Quem consegue usar a Lei do Bem? {.smaller}
+
+- está no **lucro real** → já indica porte
+- teve **lucro fiscal** → já indica saúde
+- tem contabilidade por projeto → já indica organização
+- **já fazia P&D** → senão não teria o que abater
+
+. . .
+
+::: {.pergunta}
+As beneficiárias já eram diferentes antes de existir incentivo.
+:::
+
+## A conta que engana
+
+**Diferença observada = efeito do programa + diferença que já existia**
+
+. . .
+
+Se você não separa as duas, não sabe qual é qual.
+
+# Bloco 7 · Salas simultâneas
+
+## O caso da Lei do Bem {.smaller}
+
+Dispêndio médio anual em P&D, em R\$ mil:
+
+|  | Antes | Depois |
+|---|---:|---:|
+| **Beneficiárias** | 820 | 1.150 |
+| **Não beneficiárias** | 610 | 790 |
+
+::: {.sala}
+**50 minutos.** Quatro passos, no site → *Avaliação · O caso da Lei do Bem*.
+
+Escrevam as respostas das seis perguntas no documento compartilhado.
+:::
+
+# Bloco 8 · Plenária
+
+## A decomposição {.smaller}
+
+|  | |
+|---|---:|
+| Comparação bruta (só o depois) | **360** |
+| Viés de seleção (só o antes) | **210** |
+| Diferenças-em-diferenças | **150** |
+
+. . .
+
+**360 = 210 + 150.** Não é aproximação — é identidade.
+
+. . .
+
+::: {.rodape}
+E o segundo número só vale se uma hipótese for verdadeira. Qual?
+:::
+
+## Tendências paralelas {.smaller}
+
+Sem o programa, os dois grupos teriam evoluído **em paralelo**.
+
+Não iguais. Paralelos.
+
+. . .
+
+::: {.pergunta}
+E se a soja tivesse disparado no período?
+:::
+
+. . .
+
+::: {.rodape}
+A defesa não é estatística. É conhecer o setor.
+:::
+
+# Fechamento
+
+## Até 25/09 {.smaller}
+
+::: {.sala}
+**No site, cerca de 6 horas:**
+
+1. Reler as quatro páginas de aula de hoje.
+2. Fazer os **Laboratórios 1 e 2** — R rodando no navegador, nada para instalar.
+3. Percorrer o **catálogo** e trazer **três instrumentos** aplicáveis ao seu projeto: prazo, valor, contrapartida, critérios.
+
+Sem entrega e sem nota. É o insumo da oficina do dia 26.
+:::
+
+. . .
+
+**No dia 26 falamos de dinheiro.**

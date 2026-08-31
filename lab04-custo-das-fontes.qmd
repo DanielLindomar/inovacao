@@ -1,0 +1,224 @@
+---
+title: "Laboratório 4 — O custo real de cada fonte"
+subtitle: "Subvenção, crédito ou equity: com qual sobra mais para o dono?"
+author: "Prof. Dr. Lindomar Pegorini Daniel — UNEMAT, Campus de Sinop"
+engine: knitr
+---
+
+::: {.logo-topo}
+![](logo-unemat.png){width="110"}
+:::
+
+::: {.callout-note}
+## Objetivos de aprendizagem
+
+Ao final deste laboratório você será capaz de:
+
+- montar o fluxo de caixa **do dono** sob três formas de financiamento;
+- calcular o custo efetivo da contrapartida, dos juros e da diluição;
+- comparar as três fontes por um critério único e defensável;
+- incorporar a probabilidade de aprovação a uma decisão de captação;
+- reconhecer quais premissas mudam a resposta.
+:::
+
+## A pergunta
+
+O mesmo projeto de R\$ 500 mil do [Laboratório 3](lab03-vpl-tir.qmd), financiado de três formas:
+
+**a) Subvenção** — R\$ 150 mil não reembolsáveis, o teto da chamada da FAPEMAT. A empresa aporta o restante e assume o custo administrativo da prestação de contas.
+
+**b) Crédito** — R\$ 500 mil na linha Desenvolve Inovação, a 6,07% ao ano, um ano de carência e quatro de amortização.
+
+**c) Equity** — um investidor-anjo aporta R\$ 500 mil em troca de participação societária.
+
+A pergunta não é "qual é mais barata", e sim: **em qual delas sobra mais para o dono?**
+
+Rode o primeiro bloco antes dos demais.
+
+```{webr}
+projeto <- read.csv("dados/projeto_inovacao.csv")
+fluxo   <- projeto$fluxo_liquido        # ano 0 a 5, em R$ mil
+r       <- 0.12                         # taxa de desconto do dono
+
+vpl <- function(f, taxa = r) sum(f / (1 + taxa)^(seq_along(f) - 1))
+
+fluxo
+```
+
+::: {.callout-important}
+## Uma premissa que precisa estar explícita: o valor terminal
+
+No ano 5 o projeto não acaba — a empresa continua existindo e gerando resultado. Sem contabilizar isso, o equity pareceria barato: o investidor levaria uma fatia de apenas cinco anos de fluxo.
+
+Vamos supor que, ao fim do ano 5, a empresa valha **oito vezes** o resultado daquele ano. É uma convenção grosseira, e o objetivo é justamente deixá-la visível — você poderá alterá-la e ver o que muda.
+:::
+
+```{webr}
+valor_terminal <- 8 * fluxo[6]     # 8x o resultado do ano 5
+valor_terminal
+```
+
+## Cenário A — Subvenção
+
+A subvenção reduz o desembolso inicial do dono. Em compensação, há custo administrativo: prestação de contas, relatórios, conciliação — estimemos duas anuidades de R\$ 8 mil.
+
+```{webr}
+subvencao <- 150                                  # ALTERE AQUI
+custo_adm <- c(0, -8, -8, 0, 0, 0)                # ALTERE AQUI
+
+fluxo_a <- fluxo + custo_adm
+fluxo_a[1] <- fluxo_a[1] + subvencao              # ano 0: sai menos dinheiro
+fluxo_a[6] <- fluxo_a[6] + valor_terminal         # dono fica com 100% da empresa
+
+vpl_a <- vpl(fluxo_a)
+cat("Desembolso do dono no ano 0:", fluxo_a[1], "\n")
+cat("VPL para o dono:            ", round(vpl_a, 1), "\n")
+```
+
+## Cenário B — Crédito
+
+O banco entra com os R\$ 500 mil no ano 0 — o dono não desembolsa nada de início. Depois paga: juros no ano 1 e quatro parcelas iguais do ano 2 ao 5.
+
+```{webr}
+principal <- 500
+i         <- 0.0607                               # ALTERE AQUI: taxa ao ano
+n         <- 4                                    # anos de amortizacao
+
+juros_carencia <- principal * i
+parcela        <- principal * i / (1 - (1 + i)^(-n))
+
+fluxo_b    <- fluxo
+fluxo_b[1] <- fluxo_b[1] + principal              # entra o emprestimo
+fluxo_b[2] <- fluxo_b[2] - juros_carencia         # ano 1: so juros
+fluxo_b[3:6] <- fluxo_b[3:6] - parcela            # anos 2 a 5: parcelas
+fluxo_b[6] <- fluxo_b[6] + valor_terminal         # dono fica com 100%
+
+vpl_b <- vpl(fluxo_b)
+cat("Juros no ano de carência:", round(juros_carencia, 1), "\n")
+cat("Parcela anual:           ", round(parcela, 1), "\n")
+cat("VPL para o dono:         ", round(vpl_b, 1), "\n")
+```
+
+## Cenário C — Equity
+
+O investidor aporta os R\$ 500 mil. Não há parcela nem juros. O dono, porém, deixa de ser dono de tudo.
+
+Se a empresa vale R\$ 1,5 milhão antes do aporte, passa a valer R\$ 2 milhões depois — e o investidor fica com um quarto dela.
+
+```{webr}
+valuation_pre <- 1500                             # ALTERE AQUI
+aporte        <- 500
+participacao_investidor <- aporte / (valuation_pre + aporte)
+fatia_dono    <- 1 - participacao_investidor
+
+fluxo_c    <- fluxo
+fluxo_c[1] <- 0                                   # o investidor paga o investimento
+fluxo_c[2:6] <- fluxo_c[2:6] * fatia_dono         # dono fica com sua fatia dos fluxos
+fluxo_c[6] <- fluxo_c[6] + valor_terminal * fatia_dono
+
+vpl_c <- vpl(fluxo_c)
+cat("Participação do investidor:", round(participacao_investidor * 100, 1), "%\n")
+cat("VPL para o dono:           ", round(vpl_c, 1), "\n")
+```
+
+## O confronto
+
+```{webr}
+comparacao <- data.frame(
+  fonte = c("Subvenção", "Crédito", "Equity"),
+  vpl_dono = round(c(vpl_a, vpl_b, vpl_c), 1)
+)
+comparacao$diferenca <- round(comparacao$vpl_dono - max(comparacao$vpl_dono), 1)
+comparacao[order(-comparacao$vpl_dono), ]
+```
+
+::: {.callout-tip}
+## Como ler essa tabela
+
+Três resultados, e nenhum deles é o que a intuição prevê.
+
+**A subvenção ganha — mas por pouco.** A vantagem sobre o crédito fica na casa de algumas dezenas de milhares de reais, não das centenas. O motivo é que a subvenção cobre R\$ 150 mil de um projeto de R\$ 500 mil: os outros R\$ 350 mil saem do caixa do dono de qualquer forma, e ainda há o custo administrativo.
+
+**O crédito fica perto.** Juros subsidiados por quatro anos custam bem menos do que a maioria das pessoas imagina.
+
+**O equity é o mais caro** — e por uma razão que só aparece no ano 5: um quarto do valor da empresa. O aporte "sem custo" custa uma fatia perpétua do negócio.
+:::
+
+## A conta que muda a decisão
+
+A comparação acima supõe que a subvenção foi **obtida**. Mas a chamada da FAPEMAT selecionava **dez empresas**. Se cem concorrem, a chance é de 10%.
+
+```{webr}
+vantagem <- vpl_a - vpl_b                # ganho da subvencao sobre o credito
+horas_proposta <- 80                     # ALTERE AQUI
+valor_hora     <- 0.15                   # R$ mil por hora (R$ 150)
+custo_proposta <- horas_proposta * valor_hora
+
+for (p in c(0.05, 0.10, 0.25, 0.50)) {
+  ganho_esperado <- p * vantagem - custo_proposta
+  cat(sprintf("chance de %3.0f%%  ->  ganho esperado = %7.1f mil\n",
+              p * 100, ganho_esperado))
+}
+```
+
+::: {.callout-important}
+## O que essa conta revela
+
+Escrever uma boa proposta custa dezenas de horas de gente qualificada. Se a vantagem da subvenção sobre o crédito é pequena e a chance de aprovação é baixa, **o ganho esperado pode ser negativo** — perseguir o edital custa mais do que rende.
+
+Isso não é argumento contra editais. É argumento contra persegui-los sem fazer a conta. E muda conforme o instrumento: uma chamada que financia R\$ 5 milhões tem vantagem muito maior, e compensa mesmo com chance baixa.
+
+**Repare no que acabou de acontecer:** a decisão não saiu da natureza do dinheiro, saiu da aritmética. É esse tipo de argumento que se espera na seção 4 do [trabalho final](trabalho-final.qmd).
+:::
+
+### Exercício 1 — a subvenção que vira o jogo
+
+Volte ao Cenário A e aumente `subvencao` para 350. Recalcule os três VPLs e a tabela. A que valor a vantagem sobre o crédito passa a compensar uma chance de 10%?
+
+::: {.callout-tip collapse="true" title="Dica"}
+Depois de alterar `subvencao`, rode de novo o bloco do Cenário A, depois o bloco do confronto e por fim o bloco do ganho esperado. Os objetos são recalculados na ordem em que você executa.
+:::
+
+### Exercício 2 — o valuation que muda tudo
+
+No Cenário C, altere `valuation_pre` para 4000 — uma empresa mais madura, avaliada em R\$ 4 milhões antes do aporte.
+
+```{webr}
+#| exercise: ex_valuation
+valuation_pre <- ______
+participacao_investidor <- aporte / (valuation_pre + aporte)
+cat("Participação do investidor:", round(participacao_investidor * 100, 1), "%\n")
+```
+
+::: {.callout-tip collapse="true" title="Dica"}
+O enunciado pede 4000 — quatro milhões, na mesma unidade de milhares usada em toda a página.
+:::
+
+::: {.callout-note collapse="true" title="Solução"}
+```r
+valuation_pre <- 4000
+participacao_investidor <- aporte / (valuation_pre + aporte)
+cat("Participação do investidor:", round(participacao_investidor * 100, 1), "%\n")
+```
+A participação cai de 25% para 11%. **O custo do equity não está no aporte: está no valor da empresa no momento em que ela capta.** Captar cedo, quando a empresa vale pouco, é o que sai caro — e é por isso que se recomenda buscar equity depois de ter evidência de que o negócio funciona.
+:::
+
+### Exercício 3 — o seu caso
+
+Volte aos [dez casos](casos.qmd) e escolha o que você vai usar no trabalho final. Substitua o investimento, os fluxos e as condições pelas dele. Não precisa de precisão contábil: precisa de ordem de grandeza defensável.
+
+::: {.callout-warning}
+## Sobre as premissas
+
+Este laboratório está cheio delas: a taxa de desconto de 12%, o valor terminal de oito vezes o resultado, o custo administrativo de R\$ 8 mil ao ano, as 80 horas de proposta. Todas discutíveis, e é por isso que estão em variáveis nomeadas, em blocos que você pode editar.
+
+Não é defeito do exercício — é a natureza da análise. **Um plano honesto não é o que esconde as premissas: é o que as declara e mostra o que acontece quando mudam.**
+:::
+
+::: {.callout-note}
+## O que você deve conseguir explicar depois deste laboratório
+
+1. Por que a vantagem da subvenção sobre o crédito é menor do que a intuição sugere.
+2. Onde exatamente aparece o custo do equity, e por que ele não está no aporte.
+3. Como a probabilidade de aprovação entra numa decisão de captação — e quando ela recomenda não concorrer.
+:::

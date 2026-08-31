@@ -1,0 +1,107 @@
+---
+title: "Crédito e capital privado"
+subtitle: "Sábado 2 · Bloco 4 — dívida, equity e a escada do financiamento"
+author: "Prof. Dr. Lindomar Pegorini Daniel — UNEMAT, Campus de Sinop"
+engine: knitr
+---
+
+::: {.logo-topo}
+![](logo-unemat.png){width="110"}
+:::
+
+::: {.callout-note}
+## Objetivos de aprendizagem
+
+Ao final deste bloco você será capaz de:
+
+- comparar o custo real de subvenção, crédito e equity para um mesmo projeto;
+- explicar por que dívida às vezes é melhor do que dinheiro que não precisa ser devolvido;
+- descrever o que um investidor compra quando compra participação;
+- argumentar por que a maior parte dos bons projetos de inovação **não** é caso de venture capital;
+- montar a combinação de fontes adequada ao estágio de um projeto concreto.
+:::
+
+## O dinheiro que volta
+
+Depois de duas horas falando de recurso não reembolsável e de renúncia fiscal, propor empréstimo parece um retrocesso. É o contrário.
+
+Crédito de fomento à inovação tem três propriedades que nenhum dos instrumentos anteriores tem: **está disponível o ano inteiro**, **não exige que você vença ninguém** e **não dilui a empresa**. Em troca, cobra juros — que, nas linhas de fomento, ficam bem abaixo do mercado.
+
+Em Mato Grosso, a porta mais direta é o **Desenvolve Inovação**, repasse da FINEP operado pela agência estadual: até R\$ 5 milhões, TR + 6,068% ao ano para micro e pequenas, 24 meses de carência, 96 de prazo. Detalhes e as demais linhas estão no [catálogo](cat-credito.qmd).
+
+::: {.callout-warning}
+## Um detalhe que virou regra de método nesta disciplina
+
+Essa mesma linha estava, em janeiro de 2025, a TR + 4,236% com prazo de 120 meses. Em setembro de 2025, a TR + 6,068%, ainda com 120. Hoje, TR + 6,068% com 96.
+
+Nada disso é irregularidade — é linha de repasse, e as condições acompanham o custo do funding. Mas significa que **um plano de captação que cite taxa e prazo sem dizer a data da consulta já nasce errado**. No seu trabalho final, date tudo.
+:::
+
+## Quando dívida ganha de subvenção
+
+Parece contraintuitivo preferir dinheiro que se devolve. A comparação honesta pesa quatro coisas:
+
+1. **A contrapartida.** Subvenção exige aporte da empresa — de 2,5% a 10% no Tecnova, conforme o faturamento, no mínimo 10% na EMBRAPII. Esse dinheiro sai do caixa de qualquer jeito.
+2. **A janela.** Crédito está aberto sempre; edital abre quando abre. Um projeto que precisa começar em março não espera até 2027.
+3. **O custo administrativo.** Prestação de contas de convênio consome horas de gente que poderia estar executando o projeto.
+4. **A probabilidade.** Uma chamada com dez vagas e duzentas propostas tem valor esperado baixo. Crédito aprovado é certeza.
+
+O [Laboratório 4](lab04-custo-das-fontes.qmd) põe números nisso: o mesmo projeto de R\$ 500 mil, financiado de três formas, e quanto sobra para o dono em cada uma. O resultado costuma inverter a intuição da sala.
+
+## O que o investidor compra
+
+Equity é a única fonte que não se paga com dinheiro. Paga-se com **empresa**.
+
+O investidor não empresta: compra uma fatia. Não há parcela, não há juros, não há vencimento — e é por isso que parece barato para quem está com o caixa apertado. O custo aparece de três formas:
+
+- **Participação.** A cada rodada, a fatia dos fundadores encolhe.
+- **Governança.** Sócio novo tem direito a voz, e muitas vezes a veto sobre decisões relevantes.
+- **Prazo.** O investidor precisa de uma saída — venda ou abertura de capital — dentro de um horizonte que não é o do empreendedor.
+
+No Brasil, o investimento-anjo movimentou R\$ 919 milhões em 2025, com ticket médio de R\$ 114 mil por investidor e uma base de pouco mais de oito mil pessoas. Aceleradoras pedem tipicamente de 5% a 10% do capital. O detalhamento está no [catálogo](cat-privado.qmd).
+
+## Por que a maioria dos bons projetos não é caso de venture capital
+
+::: {.callout-important}
+## A conta que o fundo faz
+
+Um fundo de venture capital opera sob distribuição de lei de potência: um número muito pequeno de empresas do portfólio precisa gerar retorno suficiente para cobrir as perdas de todas as outras. A consequência é dura e pouco intuitiva — **o fundo não pode investir numa empresa que "só" dê certo.**
+
+Ele precisa de retornos de dez, vinte ou trinta vezes o capital, em quatro a dez anos. E tem prazo determinado para devolver dinheiro aos seus próprios cotistas, o que exige aquisição ou abertura de capital em sete a dez anos. Pelo critério público de um fundo brasileiro, o negócio precisa de potencial de valor na casa de **US\$ 100 milhões em cerca de sete anos**; uma saída de US\$ 20 a 30 milhões "não é suficiente".
+
+Não é caso de venture capital, portanto:
+
+- negócio de serviços ou não escalável, em que a receita cresce junto com o número de pessoas;
+- empresa que pretende continuar privada;
+- mercado endereçável pequeno, ainda que o negócio seja muito lucrativo;
+- projeto cuja saída realista está na casa de dezenas de milhões;
+- **inovação incremental dentro de empresa já estabelecida** — caso de Lei do Bem, não de equity.
+
+Para uma turma com projetos em agronegócio, serviços e manufatura de porte médio, o recado é direto: **a maioria dos bons projetos de inovação não é venture-backable, e isso não é defeito do projeto.** Receber "não" de um fundo raramente significa que o negócio é ruim. Significa desalinhamento com um modelo de exigências muito particulares.
+:::
+
+Esse é, provavelmente, o conteúdo mais útil do dia. Boa parte do que se lê sobre financiamento de inovação foi escrita por e para o ecossistema de startups, e trata o venture capital como destino natural de quem inova. Para a economia real de Mato Grosso, ele é a exceção — e confundir isso leva empresas a gastarem meses perseguindo a fonte errada.
+
+## A escada, enfim
+
+Com as quatro naturezas discutidas, a [escada do financiamento](cat-escada.qmd) pode ser lida inteira. Ela responde a duas perguntas ao mesmo tempo: *em que estágio meu projeto está* e *o que esse dinheiro cobra de mim*.
+
+Três leituras que só aparecem quando se olha a tabela como um todo:
+
+**A coluna "Ideia" é quase vazia**, e o pouco que há é de valor baixo. Não é falha do sistema: ninguém financia ideia, financia-se evidência de que a ideia funciona. O trabalho do primeiro estágio é produzir essa evidência gastando o mínimo possível.
+
+**A Lei do Bem atravessa quase toda a escada, mas só a partir do piloto.** Ela não capta recurso: desconta o que já se está gastando. Empresa que ainda não gasta não tem o que abater.
+
+**Quase nenhum projeto se resolve com uma fonte só.** O desenho realista combina: subvenção ou EMBRAPII para o desenvolvimento, incentivo fiscal para o custeio recorrente, crédito para o equipamento, equity só se o perfil do negócio pedir.
+
+## Atividade do bloco
+
+Apresentação do [Laboratório 4](lab04-custo-das-fontes.qmd) ao vivo, com a turma acompanhando as três simulações. Em seguida, a oficina do [trabalho final](trabalho-final.qmd): cada um monta o esqueleto do próprio plano com o [catálogo](cat-escada.qmd) aberto.
+
+::: {.callout-note}
+## O que você deve conseguir explicar depois deste bloco
+
+1. Três razões pelas quais crédito pode ser preferível a subvenção, mesmo custando juros.
+2. O que o empreendedor entrega quando aceita equity, além da participação.
+3. Por que um bom negócio, lucrativo e bem administrado, pode ser recusado por um fundo de venture capital sem que isso diga nada sobre a qualidade do negócio.
+:::

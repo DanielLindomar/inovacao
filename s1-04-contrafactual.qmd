@@ -1,0 +1,125 @@
+---
+title: "O contrafactual"
+subtitle: "Sábado 1 · Bloco 4 — por que \"quem usou o incentivo inova mais\" não prova nada"
+author: "Prof. Dr. Lindomar Pegorini Daniel — UNEMAT, Campus de Sinop"
+engine: knitr
+---
+
+::: {.logo-topo}
+![](logo-unemat.png){width="110"}
+:::
+
+::: {.callout-note}
+## Objetivos de aprendizagem
+
+Ao final deste bloco você será capaz de:
+
+- explicar o que é o contrafactual e por que ele nunca é observado;
+- identificar viés de seleção num caso concreto de política de inovação;
+- explicar por que a comparação entre beneficiários e não beneficiários engana;
+- descrever a lógica das duas diferenças e a hipótese que a sustenta;
+- ler criticamente uma avaliação publicada, apontando o que ela consegue e o que não consegue afirmar.
+:::
+
+## O problema, em uma frase
+
+Para saber se o incentivo fez diferença, seria preciso comparar o que aconteceu com **o que teria acontecido com a mesma empresa, no mesmo período, sem o incentivo**.
+
+Esse segundo cenário não existe. Nunca vai existir. A empresa ou usou o benefício, ou não usou — não há como observar as duas versões dela.
+
+Isso é o **problema fundamental da inferência causal**, e é a razão de a avaliação de impacto ser um campo inteiro em vez de uma conta. Tudo o que se faz daqui para frente é procurar um **substituto plausível** para esse cenário inobservável. Esse substituto tem nome: **contrafactual**.
+
+## Por que a comparação óbvia falha
+
+A tentação é comparar quem usou com quem não usou. É o que quase todo relatório faz.
+
+O problema é que os dois grupos **não são parecidos** — e não por acaso. Pense em quem consegue usar a Lei do Bem:
+
+- está no **lucro real**, o que já indica porte;
+- teve **lucro fiscal** no ano, o que indica saúde financeira;
+- tem **contabilidade capaz de separar custos por projeto**;
+- e, sobretudo, **já fazia P&D** — senão não teria o que abater.
+
+Ou seja: as empresas beneficiárias já eram, antes de qualquer incentivo, maiores, mais lucrativas, mais organizadas e mais inovadoras que as demais.
+
+Comparar os dois grupos depois e atribuir a diferença ao incentivo é confundir o **efeito do programa** com o **efeito de quem entrou nele**. Esse segundo pedaço tem nome: **viés de seleção**.
+
+::: {.callout-important}
+## Correlação e causalidade, sem chavão
+
+Dizer que "correlação não é causalidade" virou frase de efeito, repetida sem consequência prática. A versão útil é outra:
+
+**Toda diferença observada entre tratados e não tratados é a soma de duas coisas** — o efeito do tratamento e a diferença que já existia entre eles. Se você não consegue separar as duas, não sabe qual é qual.
+
+E, no caso da Lei do Bem, dá para argumentar que a segunda parcela é grande. Empresa que faz P&D adere; empresa que não faz, não tem o que declarar. A seleção não é aleatória: é quase o oposto disso.
+:::
+
+## A ideia das duas diferenças
+
+Se não podemos observar a mesma empresa nos dois cenários, podemos observar **como cada grupo evoluiu no tempo**.
+
+A intuição: se as beneficiárias já eram melhores antes, essa vantagem prévia aparece nos dados de antes. Subtraindo-a, sobra o que mudou depois — e é isso que pode ser atribuído ao programa.
+
+Formalmente são duas diferenças:
+
+1. **Primeira diferença:** quanto cada grupo variou entre antes e depois.
+2. **Segunda diferença:** quanto a variação de um grupo superou a do outro.
+
+Esse segundo número é a estimativa de **diferenças-em-diferenças**. Ele descarta tudo o que era constante em cada grupo — inclusive as características que os tornavam diferentes desde o início.
+
+::: {.callout-tip}
+## A hipótese que sustenta tudo — tendências paralelas
+
+O método não é mágica, e a mágica que ele não faz precisa ser dita: ele exige que, **na ausência do programa, os dois grupos teriam evoluído em paralelo**.
+
+Não exige que fossem iguais. Exige que a distância entre eles tivesse se mantido.
+
+Essa hipótese não pode ser provada — ela fala de um cenário que não aconteceu. O que se pode fazer é reunir evidência a favor: mostrar que os grupos vinham evoluindo em paralelo **antes** do programa; verificar se nada específico atingiu um dos grupos no período; e testar se o resultado se mantém com recortes diferentes.
+
+Uma avaliação séria mostra o gráfico das trajetórias anteriores. Uma avaliação que só apresenta o número final está pedindo confiança.
+:::
+
+## Quando a hipótese quebra
+
+O caso mais instrutivo para esta turma é local. Suponha que a maior parte das empresas beneficiárias seja do agronegócio, e que no período avaliado o preço das commodities tenha disparado.
+
+As beneficiárias ficariam mais lucrativas e investiriam mais — **por causa do preço, não do incentivo**. As não beneficiárias, de outros setores, não teriam o mesmo empurrão. As trajetórias divergiriam sem que o programa tivesse nada a ver com isso.
+
+O método atribuiria ao incentivo um efeito que foi da soja. E ninguém perceberia olhando só o número final.
+
+É por isso que a leitura crítica de uma avaliação começa sempre pela mesma pergunta: **o que mais aconteceu nesse período que atingiu um grupo e não o outro?**
+
+## Efeito médio, e sobre quem
+
+Duas medidas que os relatórios costumam misturar:
+
+- **Efeito médio de tratamento (ATE):** qual seria o efeito se o programa alcançasse todo mundo.
+- **Efeito sobre os tratados (ATT):** qual foi o efeito sobre quem de fato participou.
+
+Quase toda avaliação de política de inovação estima o **ATT** — e ele não se generaliza. Que o incentivo funcione para empresas que já fazem P&D e estão no lucro real não diz nada sobre o que aconteceria com uma empresa do Simples que nunca pesquisou.
+
+Confundir os dois é o erro mais comum na leitura de avaliações, e o mais usado para vender programa.
+
+## O que fazer com isso como gestor
+
+Você provavelmente não vai estimar impacto. Vai **ler** avaliações, e às vezes ser cobrado por resultados. Três hábitos bastam:
+
+1. **Pergunte sempre "comparado com o quê?"** Diante de qualquer número de efeito, essa pergunta separa a avaliação séria do folheto.
+2. **Desconfie de comparação bruta entre quem entrou e quem não entrou.** Peça a trajetória anterior dos dois grupos.
+3. **Pergunte a quem o resultado se aplica.** Efeito estimado sobre grandes empresas do lucro real não vale para a sua micro empresa de Sinop.
+
+## Atividade da tarde
+
+Em salas simultâneas: [o caso da Lei do Bem](caso-lei-do-bem.qmd). Quatro números, aritmética simples, e a decomposição que separa o efeito do viés. Depois, plenária com a leitura de um trecho de avaliação publicada.
+
+No período entre os encontros, o [Laboratório 2](lab02-did.qmd) refaz o raciocínio em R com 2.000 empresas — e, por serem dados simulados, com o efeito verdadeiro conhecido. Você vai poder verificar se o método acertou, o que nenhuma avaliação real permite.
+
+::: {.callout-note}
+## O que você deve conseguir explicar depois deste bloco
+
+1. Por que o contrafactual nunca é observado, e o que se usa no lugar dele.
+2. Por que as empresas que usam a Lei do Bem já eram diferentes antes — e o que isso faz com a comparação.
+3. Qual hipótese sustenta o diferenças-em-diferenças, e um exemplo concreto de situação em que ela quebra.
+:::
+
+**Leitura de apoio:** GERTLER, P. et al. *Avaliação de Impacto na Prática*, 2ª ed. — capítulos 3 e 6. Disponível livremente em português pelo Banco Mundial.
