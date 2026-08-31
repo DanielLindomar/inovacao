@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Prof.&nbsp;Dr.&nbsp;Lindomar Pegorini Daniel — UNEMAT, Campus de Sinop">
+
+<title>Laboratório 1 — Explorando os dados de um programa – Financiamento da Inovação · UNEMAT</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-fd752720f2d24a8c7db4647d255b9a3e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/live-runtime/live-runtime.js" type="module"></script>
+<link href="site_libs/quarto-contrib/live-runtime/live-runtime.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+<style>
+
+      .quarto-title-block .quarto-title-banner h1,
+      .quarto-title-block .quarto-title-banner h2,
+      .quarto-title-block .quarto-title-banner h3,
+      .quarto-title-block .quarto-title-banner h4,
+      .quarto-title-block .quarto-title-banner h5,
+      .quarto-title-block .quarto-title-banner h6
+      {
+        color: white;
+      }
+
+      .quarto-title-block .quarto-title-banner {
+        color: white;
+background: #1E2761;
+      }
+</style>
+<script type="module" src="site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
+
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Financiamento da Inovação · UNEMAT</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Procurar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Alternar de navegação" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Início</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-aulas" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Aulas</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-aulas">    
+        <li class="dropdown-header">— Sábado 1 · 12/09 —</li>
+        <li>
+    <a class="dropdown-item" href="./s1-01-politicas-publicas.html">
+ <span class="dropdown-text">Políticas públicas: conceito e ciclo</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./s1-02-sistema-cti.html">
+ <span class="dropdown-text">O sistema brasileiro de CT&amp;I</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./s1-03-avaliacao.html">
+ <span class="dropdown-text">Avaliação: o que o financiador cobra</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./s1-04-contrafactual.html">
+ <span class="dropdown-text">O contrafactual</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">— Sábado 2 · 26/09 —</li>
+        <li>
+    <a class="dropdown-item" href="./s2-01-nao-reembolsavel.html">
+ <span class="dropdown-text">Fomento não reembolsável</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./s2-02-embrapii.html">
+ <span class="dropdown-text">EMBRAPII: o instrumento sem edital</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./s2-03-incentivos-fiscais.html">
+ <span class="dropdown-text">Incentivos fiscais</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./s2-04-credito-e-capital-privado.html">
+ <span class="dropdown-text">Crédito e capital privado</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-catálogo" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Catálogo</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-catálogo">    
+        <li>
+    <a class="dropdown-item" href="./cat-escada.html">
+ <span class="dropdown-text">A escada do financiamento</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./cat-nao-reembolsavel.html">
+ <span class="dropdown-text">Não reembolsável</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./cat-fiscais.html">
+ <span class="dropdown-text">Incentivos fiscais</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./cat-credito.html">
+ <span class="dropdown-text">Crédito</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./cat-privado.html">
+ <span class="dropdown-text">Capital privado</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-laboratórios" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Laboratórios</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-laboratórios">    
+        <li>
+    <a class="dropdown-item" href="./lab01-explorando-dados.html">
+ <span class="dropdown-text">Laboratório 1 — Explorando os dados de um programa</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./lab02-did.html">
+ <span class="dropdown-text">Laboratório 2 — Diferenças-em-diferenças</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./lab03-vpl-tir.html">
+ <span class="dropdown-text">Laboratório 3 — Vale a pena? VPL, TIR e payback</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./lab04-custo-das-fontes.html">
+ <span class="dropdown-text">Laboratório 4 — O custo real de cada fonte</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-avaliação" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Avaliação</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-avaliação">    
+        <li>
+    <a class="dropdown-item" href="./casos.html">
+ <span class="dropdown-text">Os dez casos</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./atividade-mapa.html">
+ <span class="dropdown-text">Mapa de instrumentos</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./caso-lei-do-bem.html">
+ <span class="dropdown-text">O caso da Lei do Bem</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./atividade-elegibilidade.html">
+ <span class="dropdown-text">Esta empresa pode usar a Lei do Bem?</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./trabalho-final.html">
+ <span class="dropdown-text">Trabalho final</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-slides" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Slides</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-slides">    
+        <li>
+    <a class="dropdown-item" href="./slides-s1.html">
+ <span class="dropdown-text">Por que existe esse dinheiro</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./slides-s2.html">
+ <span class="dropdown-text">De onde vem o dinheiro</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./leituras.html"> 
+<span class="menu-text">Leituras</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Laboratório 1 — Explorando os dados de um programa</h1>
+            <p class="subtitle lead">Quem são os beneficiários? A diferença bruta mede o efeito?</p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Autor</div>
+      <div class="quarto-title-meta-contents">
+               <p>Prof.&nbsp;Dr.&nbsp;Lindomar Pegorini Daniel — UNEMAT, Campus de Sinop </p>
+            </div>
+    </div>
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#contexto-um-programa-de-incentivo-a-pd" id="toc-contexto-um-programa-de-incentivo-a-pd" class="nav-link active" data-scroll-target="#contexto-um-programa-de-incentivo-a-pd"><span class="header-section-number">1</span> Contexto: um programa de incentivo a P&amp;D</a></li>
+  <li><a href="#abrindo-a-base" id="toc-abrindo-a-base" class="nav-link" data-scroll-target="#abrindo-a-base"><span class="header-section-number">2</span> Abrindo a base</a>
+  <ul class="collapse">
+  <li><a href="#exercício-1-o-tamanho-da-base" id="toc-exercício-1-o-tamanho-da-base" class="nav-link" data-scroll-target="#exercício-1-o-tamanho-da-base"><span class="header-section-number">2.1</span> Exercício 1 — o tamanho da base</a></li>
+  </ul></li>
+  <li><a href="#quem-aderiu-ao-incentivo" id="toc-quem-aderiu-ao-incentivo" class="nav-link" data-scroll-target="#quem-aderiu-ao-incentivo"><span class="header-section-number">3</span> Quem aderiu ao incentivo</a>
+  <ul class="collapse">
+  <li><a href="#exercício-2-adesão-por-porte" id="toc-exercício-2-adesão-por-porte" class="nav-link" data-scroll-target="#exercício-2-adesão-por-porte"><span class="header-section-number">3.1</span> Exercício 2 — adesão por porte</a></li>
+  </ul></li>
+  <li><a href="#o-dispêndio-médio-por-grupo" id="toc-o-dispêndio-médio-por-grupo" class="nav-link" data-scroll-target="#o-dispêndio-médio-por-grupo"><span class="header-section-number">4</span> O dispêndio médio, por grupo</a></li>
+  <li><a href="#a-comparação-bruta" id="toc-a-comparação-bruta" class="nav-link" data-scroll-target="#a-comparação-bruta"><span class="header-section-number">5</span> A comparação bruta</a>
+  <ul class="collapse">
+  <li><a href="#exercício-3-a-diferença-que-já-existia" id="toc-exercício-3-a-diferença-que-já-existia" class="nav-link" data-scroll-target="#exercício-3-a-diferença-que-já-existia"><span class="header-section-number">5.1</span> Exercício 3 — a diferença que já existia</a></li>
+  </ul></li>
+  <li><a href="#um-gráfico-que-mostra-o-problema" id="toc-um-gráfico-que-mostra-o-problema" class="nav-link" data-scroll-target="#um-gráfico-que-mostra-o-problema"><span class="header-section-number">6</span> Um gráfico que mostra o problema</a></li>
+  <li><a href="#antes-de-sair" id="toc-antes-de-sair" class="nav-link" data-scroll-target="#antes-de-sair"><span class="header-section-number">7</span> Antes de sair</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<div class="logo-topo">
+<p><img src="logo-unemat.png" class="img-fluid" width="110"></p>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Objetivos de aprendizagem
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Ao final deste laboratório você será capaz de:</p>
+<ul>
+<li>abrir uma base de dados e reconhecer sua estrutura;</li>
+<li>calcular médias por grupo e interpretá-las;</li>
+<li>descrever <strong>quem</strong> adere a um programa de incentivo, e por quê;</li>
+<li>calcular a comparação bruta entre beneficiários e não beneficiários;</li>
+<li>explicar por que essa comparação, sozinha, não mede o efeito do programa.</li>
+</ul>
+</div>
+</div>
+<section id="contexto-um-programa-de-incentivo-a-pd" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="contexto-um-programa-de-incentivo-a-pd"><span class="header-section-number">1</span> Contexto: um programa de incentivo a P&amp;D</h2>
+<p>Você vai trabalhar com dados de <strong>1.500 empresas</strong>, observadas em dois momentos: <strong>2022</strong>, antes do programa de incentivo, e <strong>2025</strong>, depois. Parte delas aderiu ao incentivo; parte não.</p>
+<p>A variável de interesse é <code>pd</code>: o dispêndio anual em pesquisa e desenvolvimento, em <strong>milhares de reais</strong>.</p>
+<p>A pergunta de fundo é a da disciplina inteira: <strong>o incentivo aumentou o investimento em P&amp;D?</strong></p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Importante</span>Os dados são simulados — e é isso que os torna valiosos
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Esta base foi gerada por computador, com um efeito verdadeiro <strong>conhecido</strong>. No <a href="./lab02-did.html">Laboratório 2</a> esse número será revelado, e você poderá conferir se o método acertou.</p>
+<p>Nenhuma avaliação com dados reais permite isso. É a mesma ideia das <em>Aplicações</em> do site de Econometria: reconstruir a situação com parâmetros conhecidos para poder verificar o método.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Importante</span>A primeira execução precisa de internet — e demora
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Ao clicar em <strong>Run Code</strong> pela primeira vez, o navegador baixa o R compilado para WebAssembly (cerca de 30 MB) do servidor do projeto webR. Isso acontece <strong>uma vez por navegador</strong>; depois fica em cache e a execução é instantânea.</p>
+<p>Consequências práticas: a primeira execução leva de alguns segundos a alguns minutos, conforme a conexão, e <strong>não funciona offline</strong>. Se você vai fazer os laboratórios num lugar de conexão ruim, abra a página e rode o primeiro bloco antes — deixe carregar enquanto faz outra coisa.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Importante</span>Comece pelo bloco 1
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Todos os blocos compartilham a mesma sessão do R. Rode o <strong>primeiro</strong> antes dos demais: é ele que cria o objeto <code>dados</code>, usado em toda a página.</p>
+</div>
+</div>
+</section>
+<section id="abrindo-a-base" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="abrindo-a-base"><span class="header-section-number">2</span> Abrindo a base</h2>
+<p>A função <code>read.csv()</code> lê o arquivo; <code>head()</code> mostra as primeiras linhas. O símbolo <code>&lt;-</code> guarda o resultado num objeto.</p>
+<div class="cell">
+<div>
+<div id="webr-1" class="exercise-cell">
+
+</div>
+<script type="webr-1-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiZGFkb3MgPC0gcmVhZC5jc3YoXCJkYWRvcy9mb21lbnRvX3NpbS5jc3ZcIilcbmhlYWQoZGFkb3MpIn0=
+</script>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Como ler essa saída
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Cada linha é <strong>uma empresa em um ano</strong> — por isso cada empresa aparece duas vezes, em 2022 e em 2025. Esse formato, com uma linha por observação e não por empresa, é o que os métodos de painel exigem.</p>
+<p>As colunas: <code>empresa</code> identifica; <code>ano</code> e <code>pos</code> marcam o momento (<code>pos = 0</code> antes, <code>pos = 1</code> depois); <code>beneficiaria</code> diz se a empresa aderiu ao incentivo; <code>setor</code>, <code>porte</code>, <code>faturamento_mi</code> e <code>lucro_real</code> descrevem a empresa; e <code>pd</code> é o que queremos explicar.</p>
+</div>
+</div>
+<section id="exercício-1-o-tamanho-da-base" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="exercício-1-o-tamanho-da-base"><span class="header-section-number">2.1</span> Exercício 1 — o tamanho da base</h3>
+<p>Descubra quantas linhas a base tem. Lembre: são duas linhas por empresa.</p>
+<div class="cell" data-exercise="ex_nrow">
+<div>
+<div id="webr-2" class="exercise-cell">
+
+</div>
+<script type="webr-2-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiX19fX19fKGRhZG9zKSJ9
+</script>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Dica">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Dica
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><code>nrow()</code> devolve o número de linhas de um <em>data frame</em>. A prima dela, <code>ncol()</code>, devolve o número de colunas.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Solução">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Solução
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(dados)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<p>São 3.000 linhas: 1.500 empresas × 2 anos.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="quem-aderiu-ao-incentivo" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="quem-aderiu-ao-incentivo"><span class="header-section-number">3</span> Quem aderiu ao incentivo</h2>
+<p>Antes de medir efeito, é preciso saber com quem se está lidando. A função <code>table()</code> conta quantas observações caem em cada categoria.</p>
+<div class="cell">
+<div>
+<div id="webr-3" class="exercise-cell">
+
+</div>
+<script type="webr-3-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiIyBxdWFudGFzIGVtcHJlc2FzIGFkZXJpcmFtIChjb250YW5kbyBzbyBvIGFubyBkZSAyMDIyLCBwYXJhIG5hbyBkdXBsaWNhcilcbmFudGVzIDwtIGRhZG9zW2RhZG9zJHBvcyA9PSAwLCBdXG50YWJsZShhbnRlcyRiZW5lZmljaWFyaWEpIn0=
+</script>
+</div>
+</div>
+<p>Agora o cruzamento que interessa: a adesão depende do regime tributário?</p>
+<div class="cell">
+<div>
+<div id="webr-4" class="exercise-cell">
+
+</div>
+<script type="webr-4-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoidGFibGUoYW50ZXMkbHVjcm9fcmVhbCwgYW50ZXMkYmVuZWZpY2lhcmlhKSJ9
+</script>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Como ler essa saída
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>As linhas são o regime tributário (0 = fora do lucro real, 1 = lucro real) e as colunas, a adesão. Compare as <strong>proporções</strong>, não os totais: entre as empresas do lucro real, que fração aderiu? E entre as demais?</p>
+<p>A diferença é enorme — e não é acaso. O incentivo simplesmente não está disponível para quem não apura pelo lucro real. Guarde essa observação: ela é a semente do problema deste laboratório.</p>
+</div>
+</div>
+<section id="exercício-2-adesão-por-porte" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="exercício-2-adesão-por-porte"><span class="header-section-number">3.1</span> Exercício 2 — adesão por porte</h3>
+<p>Faça o mesmo cruzamento, agora entre <code>porte</code> e <code>beneficiaria</code>.</p>
+<div class="cell" data-exercise="ex_porte">
+<div>
+<div id="webr-5" class="exercise-cell">
+
+</div>
+<script type="webr-5-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoidGFibGUoYW50ZXMkX19fX19fLCBhbnRlcyRiZW5lZmljaWFyaWEpIn0=
+</script>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Dica">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Dica
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>A coluna se chama <code>porte</code>. Depois de rodar, experimente <code>prop.table(table(antes$porte, antes$beneficiaria), 1)</code> — o <code>1</code> pede as proporções por linha.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Solução">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Solução
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(antes<span class="sc">$</span>porte, antes<span class="sc">$</span>beneficiaria)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">prop.table</span>(<span class="fu">table</span>(antes<span class="sc">$</span>porte, antes<span class="sc">$</span>beneficiaria), <span class="dv">1</span>)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<p>A adesão cresce com o porte. Empresas médias aderem muito mais que microempresas.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="o-dispêndio-médio-por-grupo" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="o-dispêndio-médio-por-grupo"><span class="header-section-number">4</span> O dispêndio médio, por grupo</h2>
+<p>A função <code>aggregate()</code> calcula uma estatística por grupo. Aqui, a média de <code>pd</code> para cada combinação de adesão e momento.</p>
+<div class="cell">
+<div>
+<div id="webr-6" class="exercise-cell">
+
+</div>
+<script type="webr-6-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiYWdncmVnYXRlKHBkIH4gYmVuZWZpY2lhcmlhICsgcG9zLCBkYXRhID0gZGFkb3MsIEZVTiA9IG1lYW4pIn0=
+</script>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Como ler essa saída
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Quatro números — os mesmos quatro do <a href="./caso-lei-do-bem.html">caso discutido em aula</a>, agora calculados a partir de 3.000 observações reais da base.</p>
+<p>Leia com atenção a linha em que <code>pos = 0</code>, ou seja, <strong>antes de qualquer incentivo existir</strong>. As beneficiárias já gastavam mais? Quanto mais?</p>
+<p>Essa diferença aconteceu antes do programa. Ela não pode ser efeito dele.</p>
+</div>
+</div>
+</section>
+<section id="a-comparação-bruta" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="a-comparação-bruta"><span class="header-section-number">5</span> A comparação bruta</h2>
+<p>Agora a conta que quase todo relatório apresenta: a diferença entre os dois grupos <strong>no período final</strong>.</p>
+<div class="cell">
+<div>
+<div id="webr-7" class="exercise-cell">
+
+</div>
+<script type="webr-7-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiZGVwb2lzIDwtIGRhZG9zW2RhZG9zJHBvcyA9PSAxLCBdXG5tZWRpYV9iZW5lZiAgICA8LSBtZWFuKGRlcG9pcyRwZFtkZXBvaXMkYmVuZWZpY2lhcmlhID09IDFdKVxubWVkaWFfbmFvYmVuZWYgPC0gbWVhbihkZXBvaXMkcGRbZGVwb2lzJGJlbmVmaWNpYXJpYSA9PSAwXSlcblxuY2F0KFwiQmVuZWZpY2nDoXJpYXM6ICAgIFwiLCByb3VuZChtZWRpYV9iZW5lZiwgMSksIFwiXFxuXCIpXG5jYXQoXCJOw6NvIGJlbmVmaWNpw6FyaWFzOlwiLCByb3VuZChtZWRpYV9uYW9iZW5lZiwgMSksIFwiXFxuXCIpXG5jYXQoXCJEaWZlcmVuw6dhIGJydXRhOiAgXCIsIHJvdW5kKG1lZGlhX2JlbmVmIC0gbWVkaWFfbmFvYmVuZWYsIDEpLCBcIlxcblwiKSJ9
+</script>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Este número está errado — e é o número que costuma ser publicado
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A diferença que você acabou de calcular seria manchete: “empresas beneficiárias investem X a mais em P&amp;D”.</p>
+<p>Ela é aritmeticamente correta e causalmente inútil. Você já viu por quê: os dois grupos <strong>já eram diferentes antes</strong>, e essa diferença prévia continua embutida no número final.</p>
+<p>Quanto do que você calculou é efeito do programa e quanto é a diferença que já existia? O <a href="./lab02-did.html">Laboratório 2</a> separa os dois.</p>
+</div>
+</div>
+<section id="exercício-3-a-diferença-que-já-existia" class="level3" data-number="5.1">
+<h3 data-number="5.1" class="anchored" data-anchor-id="exercício-3-a-diferença-que-já-existia"><span class="header-section-number">5.1</span> Exercício 3 — a diferença que já existia</h3>
+<p>Calcule a mesma diferença entre os grupos, mas <strong>no período anterior</strong> (<code>pos == 0</code>). Esse número é o viés de seleção.</p>
+<div class="cell" data-exercise="ex_vies">
+<div>
+<div id="webr-8" class="exercise-cell">
+
+</div>
+<script type="webr-8-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiYW50ZXMgPC0gZGFkb3NbZGFkb3MkX19fX19fID09IDAsIF1cbm1lYW4oYW50ZXMkcGRbYW50ZXMkYmVuZWZpY2lhcmlhID09IDFdKSAtIG1lYW4oYW50ZXMkcGRbYW50ZXMkYmVuZWZpY2lhcmlhID09IDBdKSJ9
+</script>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Dica">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Dica
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>A coluna que marca o momento é <code>pos</code>. Vale 0 no período anterior e 1 no posterior.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Solução">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Solução
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-14" class="callout-14-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>antes <span class="ot">&lt;-</span> dados[dados<span class="sc">$</span>pos <span class="sc">==</span> <span class="dv">0</span>, ]</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(antes<span class="sc">$</span>pd[antes<span class="sc">$</span>beneficiaria <span class="sc">==</span> <span class="dv">1</span>]) <span class="sc">-</span> <span class="fu">mean</span>(antes<span class="sc">$</span>pd[antes<span class="sc">$</span>beneficiaria <span class="sc">==</span> <span class="dv">0</span>])</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<p>O resultado fica em torno de 255 mil reais. <strong>Toda essa diferença é anterior ao programa</strong> — e continua dentro da comparação bruta que você calculou acima.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="um-gráfico-que-mostra-o-problema" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="um-gráfico-que-mostra-o-problema"><span class="header-section-number">6</span> Um gráfico que mostra o problema</h2>
+<div class="cell">
+<div>
+<div id="webr-9" class="exercise-cell">
+
+</div>
+<script type="webr-9-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoibWVkaWFzIDwtIGFnZ3JlZ2F0ZShwZCB+IGJlbmVmaWNpYXJpYSArIHBvcywgZGF0YSA9IGRhZG9zLCBGVU4gPSBtZWFuKVxuXG5wbG90KG1lZGlhcyRwb3NbbWVkaWFzJGJlbmVmaWNpYXJpYSA9PSAxXSwgbWVkaWFzJHBkW21lZGlhcyRiZW5lZmljaWFyaWEgPT0gMV0sXG4gICAgIHR5cGUgPSBcImJcIiwgcGNoID0gMTksIGNvbCA9IFwiIzFFMjc2MVwiLCBsd2QgPSAyLFxuICAgICB4bGltID0gYygtMC4yLCAxLjIpLCB5bGltID0gYyg0MDAsIDEyMDApLCB4YXh0ID0gXCJuXCIsXG4gICAgIHhsYWIgPSBcIlwiLCB5bGFiID0gXCJEaXNww6puZGlvIG3DqWRpbyBlbSBQJkQgKFIkIG1pbClcIixcbiAgICAgbWFpbiA9IFwiQW50ZXMgZSBkZXBvaXMsIHBvciBncnVwb1wiKVxubGluZXMobWVkaWFzJHBvc1ttZWRpYXMkYmVuZWZpY2lhcmlhID09IDBdLCBtZWRpYXMkcGRbbWVkaWFzJGJlbmVmaWNpYXJpYSA9PSAwXSxcbiAgICAgIHR5cGUgPSBcImJcIiwgcGNoID0gMTksIGNvbCA9IFwiI0I0NTMwOVwiLCBsd2QgPSAyKVxuYXhpcygxLCBhdCA9IGMoMCwgMSksIGxhYmVscyA9IGMoXCJBbnRlcyAoMjAyMilcIiwgXCJEZXBvaXMgKDIwMjUpXCIpKVxubGVnZW5kKFwidG9wbGVmdFwiLCBjKFwiQmVuZWZpY2nDoXJpYXNcIiwgXCJOw6NvIGJlbmVmaWNpw6FyaWFzXCIpLFxuICAgICAgIGNvbCA9IGMoXCIjMUUyNzYxXCIsIFwiI0I0NTMwOVwiKSwgbHdkID0gMiwgcGNoID0gMTksIGJ0eSA9IFwiblwiKSJ9
+</script>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Como ler esse gráfico
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Duas linhas. Repare em três coisas, nesta ordem:</p>
+<ol type="1">
+<li><strong>Onde elas começam.</strong> A linha azul já está acima no ponto inicial. Essa distância é o viés.</li>
+<li><strong>A inclinação de cada uma.</strong> Ambas sobem — o mundo mudou para todo mundo entre 2022 e 2025.</li>
+<li><strong>A diferença entre as inclinações.</strong> É <em>isso</em> que o programa pode ter causado. E é bem menor que a distância vertical no ponto final.</li>
+</ol>
+<p>O <a href="./lab02-did.html">Laboratório 2</a> transforma essa leitura visual em número.</p>
+</div>
+</div>
+</section>
+<section id="antes-de-sair" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="antes-de-sair"><span class="header-section-number">7</span> Antes de sair</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>O que você deve conseguir explicar depois deste laboratório
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>Por que a adesão a um incentivo fiscal não é aleatória — e quais características da empresa a determinam nesta base.</li>
+<li>Por que a diferença entre os grupos no período final <strong>não</strong> é o efeito do programa.</li>
+<li>O que a distância entre as duas linhas no ponto inicial do gráfico representa.</li>
+</ol>
+</div>
+</div>
+
+
+<script type="webr-data">
+eyJvcHRpb25zIjp7ImJhc2VVcmwiOiJodHRwczovL3dlYnIuci13YXNtLm9yZy92MC42LjAvIn0sInBhY2thZ2VzIjp7InBrZ3MiOlsiZXZhbHVhdGUiLCJrbml0ciIsImh0bWx0b29scyJdLCJyZXBvcyI6W119LCJyZW5kZXJfZGYiOiJkZWZhdWx0In0=
+</script>
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W3siY2VsbE5hbWUiOiJ3ZWJyLXdpZGdldC05IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoie1xyXG4gIC8vIFdhaXQgZm9yIG91dHB1dCB0byBiZSB3cml0dGVuIHRvIHRoZSBET00sIHRoZW4gdHJpZ2dlciB3aWRnZXQgcmVuZGVyaW5nXHJcbiAgYXdhaXQgX3dlYnJfdmFsdWVfOTtcclxuICBpZiAod2luZG93LkhUTUxXaWRnZXRzKSB7XHJcbiAgICB3aW5kb3cuSFRNTFdpZGdldHMuc3RhdGljUmVuZGVyKCk7XHJcbiAgfVxyXG4gIGlmICh3aW5kb3cuUGFnZWRUYWJsZURvYykge1xyXG4gICAgd2luZG93LlBhZ2VkVGFibGVEb2MuaW5pdEFsbCgpO1xyXG4gIH1cclxufVxyXG4ifSx7ImNlbGxOYW1lIjoid2Vici05IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfd2Vicl9lZGl0b3JfOSA9IHtcclxuICBjb25zdCB7IFdlYlJFeGVyY2lzZUVkaXRvciwgYjY0RGVjb2RlIH0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xyXG4gIGNvbnN0IHNjcmlwdENvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwid2Vici05LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcclxuICBjb25zdCBibG9jayA9IEpTT04ucGFyc2UoYjY0RGVjb2RlKHNjcmlwdENvbnRlbnQpKTtcclxuXHJcbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHdlYnItOS1jb250ZW50c2AgfSwgYmxvY2suYXR0cik7XHJcbiAgY29uc3QgZWRpdG9yID0gbmV3IFdlYlJFeGVyY2lzZUVkaXRvcih3ZWJST2pzLndlYlJQcm9taXNlLCBibG9jay5jb2RlLCBvcHRpb25zKTtcclxuXHJcbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XHJcbn1cclxuX3dlYnJfdmFsdWVfOSA9IHdlYlJPanMucHJvY2Vzcyhfd2Vicl9lZGl0b3JfOSwge30pO1xyXG4ifSx7ImNlbGxOYW1lIjoid2Vici13aWRnZXQtOCIsImlubGluZSI6ZmFsc2UsIm1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6IntcclxuICAvLyBXYWl0IGZvciBvdXRwdXQgdG8gYmUgd3JpdHRlbiB0byB0aGUgRE9NLCB0aGVuIHRyaWdnZXIgd2lkZ2V0IHJlbmRlcmluZ1xyXG4gIGF3YWl0IF93ZWJyX3ZhbHVlXzg7XHJcbiAgaWYgKHdpbmRvdy5IVE1MV2lkZ2V0cykge1xyXG4gICAgd2luZG93LkhUTUxXaWRnZXRzLnN0YXRpY1JlbmRlcigpO1xyXG4gIH1cclxuICBpZiAod2luZG93LlBhZ2VkVGFibGVEb2MpIHtcclxuICAgIHdpbmRvdy5QYWdlZFRhYmxlRG9jLmluaXRBbGwoKTtcclxuICB9XHJcbn1cclxuIn0seyJjZWxsTmFtZSI6IndlYnItOCIsImlubGluZSI6ZmFsc2UsIm1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJzb3VyY2UiOiJ2aWV3b2YgX3dlYnJfZWRpdG9yXzggPSB7XHJcbiAgY29uc3QgeyBXZWJSRXhlcmNpc2VFZGl0b3IsIGI2NERlY29kZSB9ID0gd2luZG93Ll9leGVyY2lzZV9vanNfcnVudGltZTtcclxuICBjb25zdCBzY3JpcHRDb250ZW50ID0gZG9jdW1lbnQucXVlcnlTZWxlY3Rvcihgc2NyaXB0W3R5cGU9XFxcIndlYnItOC1jb250ZW50c1xcXCJdYCkudGV4dENvbnRlbnQ7XHJcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XHJcblxyXG4gIGNvbnN0IG9wdGlvbnMgPSBPYmplY3QuYXNzaWduKHsgaWQ6IGB3ZWJyLTgtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xyXG4gIGNvbnN0IGVkaXRvciA9IG5ldyBXZWJSRXhlcmNpc2VFZGl0b3Iod2ViUk9qcy53ZWJSUHJvbWlzZSwgYmxvY2suY29kZSwgb3B0aW9ucyk7XHJcblxyXG4gIHJldHVybiBlZGl0b3IuY29udGFpbmVyO1xyXG59XHJcbl93ZWJyX3ZhbHVlXzggPSB3ZWJST2pzLnByb2Nlc3MoX3dlYnJfZWRpdG9yXzgsIHt9KTtcclxuIn0seyJjZWxsTmFtZSI6IndlYnItd2lkZ2V0LTciLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJ7XHJcbiAgLy8gV2FpdCBmb3Igb3V0cHV0IHRvIGJlIHdyaXR0ZW4gdG8gdGhlIERPTSwgdGhlbiB0cmlnZ2VyIHdpZGdldCByZW5kZXJpbmdcclxuICBhd2FpdCBfd2Vicl92YWx1ZV83O1xyXG4gIGlmICh3aW5kb3cuSFRNTFdpZGdldHMpIHtcclxuICAgIHdpbmRvdy5IVE1MV2lkZ2V0cy5zdGF0aWNSZW5kZXIoKTtcclxuICB9XHJcbiAgaWYgKHdpbmRvdy5QYWdlZFRhYmxlRG9jKSB7XHJcbiAgICB3aW5kb3cuUGFnZWRUYWJsZURvYy5pbml0QWxsKCk7XHJcbiAgfVxyXG59XHJcbiJ9LHsiY2VsbE5hbWUiOiJ3ZWJyLTciLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0Iiwic291cmNlIjoidmlld29mIF93ZWJyX2VkaXRvcl83ID0ge1xyXG4gIGNvbnN0IHsgV2ViUkV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XHJcbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJ3ZWJyLTctY29udGVudHNcXFwiXWApLnRleHRDb250ZW50O1xyXG4gIGNvbnN0IGJsb2NrID0gSlNPTi5wYXJzZShiNjREZWNvZGUoc2NyaXB0Q29udGVudCkpO1xyXG5cclxuICBjb25zdCBvcHRpb25zID0gT2JqZWN0LmFzc2lnbih7IGlkOiBgd2Vici03LWNvbnRlbnRzYCB9LCBibG9jay5hdHRyKTtcclxuICBjb25zdCBlZGl0b3IgPSBuZXcgV2ViUkV4ZXJjaXNlRWRpdG9yKHdlYlJPanMud2ViUlByb21pc2UsIGJsb2NrLmNvZGUsIG9wdGlvbnMpO1xyXG5cclxuICByZXR1cm4gZWRpdG9yLmNvbnRhaW5lcjtcclxufVxyXG5fd2Vicl92YWx1ZV83ID0gd2ViUk9qcy5wcm9jZXNzKF93ZWJyX2VkaXRvcl83LCB7fSk7XHJcbiJ9LHsiY2VsbE5hbWUiOiJ3ZWJyLXdpZGdldC02IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoie1xyXG4gIC8vIFdhaXQgZm9yIG91dHB1dCB0byBiZSB3cml0dGVuIHRvIHRoZSBET00sIHRoZW4gdHJpZ2dlciB3aWRnZXQgcmVuZGVyaW5nXHJcbiAgYXdhaXQgX3dlYnJfdmFsdWVfNjtcclxuICBpZiAod2luZG93LkhUTUxXaWRnZXRzKSB7XHJcbiAgICB3aW5kb3cuSFRNTFdpZGdldHMuc3RhdGljUmVuZGVyKCk7XHJcbiAgfVxyXG4gIGlmICh3aW5kb3cuUGFnZWRUYWJsZURvYykge1xyXG4gICAgd2luZG93LlBhZ2VkVGFibGVEb2MuaW5pdEFsbCgpO1xyXG4gIH1cclxufVxyXG4ifSx7ImNlbGxOYW1lIjoid2Vici02IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfd2Vicl9lZGl0b3JfNiA9IHtcclxuICBjb25zdCB7IFdlYlJFeGVyY2lzZUVkaXRvciwgYjY0RGVjb2RlIH0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xyXG4gIGNvbnN0IHNjcmlwdENvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwid2Vici02LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcclxuICBjb25zdCBibG9jayA9IEpTT04ucGFyc2UoYjY0RGVjb2RlKHNjcmlwdENvbnRlbnQpKTtcclxuXHJcbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHdlYnItNi1jb250ZW50c2AgfSwgYmxvY2suYXR0cik7XHJcbiAgY29uc3QgZWRpdG9yID0gbmV3IFdlYlJFeGVyY2lzZUVkaXRvcih3ZWJST2pzLndlYlJQcm9taXNlLCBibG9jay5jb2RlLCBvcHRpb25zKTtcclxuXHJcbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XHJcbn1cclxuX3dlYnJfdmFsdWVfNiA9IHdlYlJPanMucHJvY2Vzcyhfd2Vicl9lZGl0b3JfNiwge30pO1xyXG4ifSx7ImNlbGxOYW1lIjoid2Vici13aWRnZXQtNSIsImlubGluZSI6ZmFsc2UsIm1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6IntcclxuICAvLyBXYWl0IGZvciBvdXRwdXQgdG8gYmUgd3JpdHRlbiB0byB0aGUgRE9NLCB0aGVuIHRyaWdnZXIgd2lkZ2V0IHJlbmRlcmluZ1xyXG4gIGF3YWl0IF93ZWJyX3ZhbHVlXzU7XHJcbiAgaWYgKHdpbmRvdy5IVE1MV2lkZ2V0cykge1xyXG4gICAgd2luZG93LkhUTUxXaWRnZXRzLnN0YXRpY1JlbmRlcigpO1xyXG4gIH1cclxuICBpZiAod2luZG93LlBhZ2VkVGFibGVEb2MpIHtcclxuICAgIHdpbmRvdy5QYWdlZFRhYmxlRG9jLmluaXRBbGwoKTtcclxuICB9XHJcbn1cclxuIn0seyJjZWxsTmFtZSI6IndlYnItNSIsImlubGluZSI6ZmFsc2UsIm1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJzb3VyY2UiOiJ2aWV3b2YgX3dlYnJfZWRpdG9yXzUgPSB7XHJcbiAgY29uc3QgeyBXZWJSRXhlcmNpc2VFZGl0b3IsIGI2NERlY29kZSB9ID0gd2luZG93Ll9leGVyY2lzZV9vanNfcnVudGltZTtcclxuICBjb25zdCBzY3JpcHRDb250ZW50ID0gZG9jdW1lbnQucXVlcnlTZWxlY3Rvcihgc2NyaXB0W3R5cGU9XFxcIndlYnItNS1jb250ZW50c1xcXCJdYCkudGV4dENvbnRlbnQ7XHJcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XHJcblxyXG4gIGNvbnN0IG9wdGlvbnMgPSBPYmplY3QuYXNzaWduKHsgaWQ6IGB3ZWJyLTUtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xyXG4gIGNvbnN0IGVkaXRvciA9IG5ldyBXZWJSRXhlcmNpc2VFZGl0b3Iod2ViUk9qcy53ZWJSUHJvbWlzZSwgYmxvY2suY29kZSwgb3B0aW9ucyk7XHJcblxyXG4gIHJldHVybiBlZGl0b3IuY29udGFpbmVyO1xyXG59XHJcbl93ZWJyX3ZhbHVlXzUgPSB3ZWJST2pzLnByb2Nlc3MoX3dlYnJfZWRpdG9yXzUsIHt9KTtcclxuIn0seyJjZWxsTmFtZSI6IndlYnItd2lkZ2V0LTQiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJ7XHJcbiAgLy8gV2FpdCBmb3Igb3V0cHV0IHRvIGJlIHdyaXR0ZW4gdG8gdGhlIERPTSwgdGhlbiB0cmlnZ2VyIHdpZGdldCByZW5kZXJpbmdcclxuICBhd2FpdCBfd2Vicl92YWx1ZV80O1xyXG4gIGlmICh3aW5kb3cuSFRNTFdpZGdldHMpIHtcclxuICAgIHdpbmRvdy5IVE1MV2lkZ2V0cy5zdGF0aWNSZW5kZXIoKTtcclxuICB9XHJcbiAgaWYgKHdpbmRvdy5QYWdlZFRhYmxlRG9jKSB7XHJcbiAgICB3aW5kb3cuUGFnZWRUYWJsZURvYy5pbml0QWxsKCk7XHJcbiAgfVxyXG59XHJcbiJ9LHsiY2VsbE5hbWUiOiJ3ZWJyLTQiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0Iiwic291cmNlIjoidmlld29mIF93ZWJyX2VkaXRvcl80ID0ge1xyXG4gIGNvbnN0IHsgV2ViUkV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XHJcbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJ3ZWJyLTQtY29udGVudHNcXFwiXWApLnRleHRDb250ZW50O1xyXG4gIGNvbnN0IGJsb2NrID0gSlNPTi5wYXJzZShiNjREZWNvZGUoc2NyaXB0Q29udGVudCkpO1xyXG5cclxuICBjb25zdCBvcHRpb25zID0gT2JqZWN0LmFzc2lnbih7IGlkOiBgd2Vici00LWNvbnRlbnRzYCB9LCBibG9jay5hdHRyKTtcclxuICBjb25zdCBlZGl0b3IgPSBuZXcgV2ViUkV4ZXJjaXNlRWRpdG9yKHdlYlJPanMud2ViUlByb21pc2UsIGJsb2NrLmNvZGUsIG9wdGlvbnMpO1xyXG5cclxuICByZXR1cm4gZWRpdG9yLmNvbnRhaW5lcjtcclxufVxyXG5fd2Vicl92YWx1ZV80ID0gd2ViUk9qcy5wcm9jZXNzKF93ZWJyX2VkaXRvcl80LCB7fSk7XHJcbiJ9LHsiY2VsbE5hbWUiOiJ3ZWJyLXdpZGdldC0zIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoie1xyXG4gIC8vIFdhaXQgZm9yIG91dHB1dCB0byBiZSB3cml0dGVuIHRvIHRoZSBET00sIHRoZW4gdHJpZ2dlciB3aWRnZXQgcmVuZGVyaW5nXHJcbiAgYXdhaXQgX3dlYnJfdmFsdWVfMztcclxuICBpZiAod2luZG93LkhUTUxXaWRnZXRzKSB7XHJcbiAgICB3aW5kb3cuSFRNTFdpZGdldHMuc3RhdGljUmVuZGVyKCk7XHJcbiAgfVxyXG4gIGlmICh3aW5kb3cuUGFnZWRUYWJsZURvYykge1xyXG4gICAgd2luZG93LlBhZ2VkVGFibGVEb2MuaW5pdEFsbCgpO1xyXG4gIH1cclxufVxyXG4ifSx7ImNlbGxOYW1lIjoid2Vici0zIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfd2Vicl9lZGl0b3JfMyA9IHtcclxuICBjb25zdCB7IFdlYlJFeGVyY2lzZUVkaXRvciwgYjY0RGVjb2RlIH0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xyXG4gIGNvbnN0IHNjcmlwdENvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwid2Vici0zLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcclxuICBjb25zdCBibG9jayA9IEpTT04ucGFyc2UoYjY0RGVjb2RlKHNjcmlwdENvbnRlbnQpKTtcclxuXHJcbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHdlYnItMy1jb250ZW50c2AgfSwgYmxvY2suYXR0cik7XHJcbiAgY29uc3QgZWRpdG9yID0gbmV3IFdlYlJFeGVyY2lzZUVkaXRvcih3ZWJST2pzLndlYlJQcm9taXNlLCBibG9jay5jb2RlLCBvcHRpb25zKTtcclxuXHJcbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XHJcbn1cclxuX3dlYnJfdmFsdWVfMyA9IHdlYlJPanMucHJvY2Vzcyhfd2Vicl9lZGl0b3JfMywge30pO1xyXG4ifSx7ImNlbGxOYW1lIjoid2Vici13aWRnZXQtMiIsImlubGluZSI6ZmFsc2UsIm1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6IntcclxuICAvLyBXYWl0IGZvciBvdXRwdXQgdG8gYmUgd3JpdHRlbiB0byB0aGUgRE9NLCB0aGVuIHRyaWdnZXIgd2lkZ2V0IHJlbmRlcmluZ1xyXG4gIGF3YWl0IF93ZWJyX3ZhbHVlXzI7XHJcbiAgaWYgKHdpbmRvdy5IVE1MV2lkZ2V0cykge1xyXG4gICAgd2luZG93LkhUTUxXaWRnZXRzLnN0YXRpY1JlbmRlcigpO1xyXG4gIH1cclxuICBpZiAod2luZG93LlBhZ2VkVGFibGVEb2MpIHtcclxuICAgIHdpbmRvdy5QYWdlZFRhYmxlRG9jLmluaXRBbGwoKTtcclxuICB9XHJcbn1cclxuIn0seyJjZWxsTmFtZSI6IndlYnItMiIsImlubGluZSI6ZmFsc2UsIm1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJzb3VyY2UiOiJ2aWV3b2YgX3dlYnJfZWRpdG9yXzIgPSB7XHJcbiAgY29uc3QgeyBXZWJSRXhlcmNpc2VFZGl0b3IsIGI2NERlY29kZSB9ID0gd2luZG93Ll9leGVyY2lzZV9vanNfcnVudGltZTtcclxuICBjb25zdCBzY3JpcHRDb250ZW50ID0gZG9jdW1lbnQucXVlcnlTZWxlY3Rvcihgc2NyaXB0W3R5cGU9XFxcIndlYnItMi1jb250ZW50c1xcXCJdYCkudGV4dENvbnRlbnQ7XHJcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XHJcblxyXG4gIGNvbnN0IG9wdGlvbnMgPSBPYmplY3QuYXNzaWduKHsgaWQ6IGB3ZWJyLTItY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xyXG4gIGNvbnN0IGVkaXRvciA9IG5ldyBXZWJSRXhlcmNpc2VFZGl0b3Iod2ViUk9qcy53ZWJSUHJvbWlzZSwgYmxvY2suY29kZSwgb3B0aW9ucyk7XHJcblxyXG4gIHJldHVybiBlZGl0b3IuY29udGFpbmVyO1xyXG59XHJcbl93ZWJyX3ZhbHVlXzIgPSB3ZWJST2pzLnByb2Nlc3MoX3dlYnJfZWRpdG9yXzIsIHt9KTtcclxuIn0seyJjZWxsTmFtZSI6IndlYnItd2lkZ2V0LTEiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJ7XHJcbiAgLy8gV2FpdCBmb3Igb3V0cHV0IHRvIGJlIHdyaXR0ZW4gdG8gdGhlIERPTSwgdGhlbiB0cmlnZ2VyIHdpZGdldCByZW5kZXJpbmdcclxuICBhd2FpdCBfd2Vicl92YWx1ZV8xO1xyXG4gIGlmICh3aW5kb3cuSFRNTFdpZGdldHMpIHtcclxuICAgIHdpbmRvdy5IVE1MV2lkZ2V0cy5zdGF0aWNSZW5kZXIoKTtcclxuICB9XHJcbiAgaWYgKHdpbmRvdy5QYWdlZFRhYmxlRG9jKSB7XHJcbiAgICB3aW5kb3cuUGFnZWRUYWJsZURvYy5pbml0QWxsKCk7XHJcbiAgfVxyXG59XHJcbiJ9LHsiY2VsbE5hbWUiOiJ3ZWJyLTEiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0Iiwic291cmNlIjoidmlld29mIF93ZWJyX2VkaXRvcl8xID0ge1xyXG4gIGNvbnN0IHsgV2ViUkV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XHJcbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJ3ZWJyLTEtY29udGVudHNcXFwiXWApLnRleHRDb250ZW50O1xyXG4gIGNvbnN0IGJsb2NrID0gSlNPTi5wYXJzZShiNjREZWNvZGUoc2NyaXB0Q29udGVudCkpO1xyXG5cclxuICBjb25zdCBvcHRpb25zID0gT2JqZWN0LmFzc2lnbih7IGlkOiBgd2Vici0xLWNvbnRlbnRzYCB9LCBibG9jay5hdHRyKTtcclxuICBjb25zdCBlZGl0b3IgPSBuZXcgV2ViUkV4ZXJjaXNlRWRpdG9yKHdlYlJPanMud2ViUlByb21pc2UsIGJsb2NrLmNvZGUsIG9wdGlvbnMpO1xyXG5cclxuICByZXR1cm4gZWRpdG9yLmNvbnRhaW5lcjtcclxufVxyXG5fd2Vicl92YWx1ZV8xID0gd2ViUk9qcy5wcm9jZXNzKF93ZWJyX2VkaXRvcl8xLCB7fSk7XHJcbiJ9LHsiY2VsbE5hbWUiOiJ3ZWJyLXByZWx1ZGUiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJ3ZWJST2pzID0ge1xyXG4gIGNvbnN0IHsgV2ViUiwgQ2hhbm5lbFR5cGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWUuV2ViUjtcclxuICBjb25zdCB7XHJcbiAgICBXZWJSRXZhbHVhdG9yLFxyXG4gICAgV2ViUkVudmlyb25tZW50TWFuYWdlcixcclxuICAgIHNldHVwUixcclxuICAgIGI2NERlY29kZSxcclxuICAgIGNvbGxhcHNlUGF0aFxyXG4gIH0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xyXG5cclxuICBjb25zdCBzdGF0dXNDb250YWluZXIgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZChcImV4ZXJjaXNlLWxvYWRpbmctc3RhdHVzXCIpO1xyXG4gIGNvbnN0IGluZGljYXRvckNvbnRhaW5lciA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKFwiZXhlcmNpc2UtbG9hZGluZy1pbmRpY2F0b3JcIik7XHJcbiAgaW5kaWNhdG9yQ29udGFpbmVyLmNsYXNzTGlzdC5yZW1vdmUoXCJkLW5vbmVcIik7XHJcblxyXG4gIGxldCBzdGF0dXNUZXh0ID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudChcImRpdlwiKVxyXG4gIHN0YXR1c1RleHQuY2xhc3NMaXN0ID0gXCJleGVyY2lzZS1sb2FkaW5nLWRldGFpbHNcIjtcclxuICBzdGF0dXNUZXh0ID0gc3RhdHVzQ29udGFpbmVyLmFwcGVuZENoaWxkKHN0YXR1c1RleHQpO1xyXG4gIHN0YXR1c1RleHQudGV4dENvbnRlbnQgPSBgSW5pdGlhbGlzZWA7XHJcblxyXG4gIC8vIEhvaXN0IGluZGljYXRvciBvdXQgZnJvbSBmaW5hbCBzbGlkZSB3aGVuIHJ1bm5pbmcgdW5kZXIgcmV2ZWFsXHJcbiAgY29uc3QgcmV2ZWFsU3RhdHVzID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5yZXZlYWwgLmV4ZXJjaXNlLWxvYWRpbmctaW5kaWNhdG9yXCIpO1xyXG4gIGlmIChyZXZlYWxTdGF0dXMpIHtcclxuICAgIHJldmVhbFN0YXR1cy5yZW1vdmUoKTtcclxuICAgIGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIucmV2ZWFsID4gLnNsaWRlc1wiKS5hcHBlbmRDaGlsZChyZXZlYWxTdGF0dXMpO1xyXG4gIH1cclxuXHJcbiAgLy8gTWFrZSBhbnkgcmV2ZWFsIHNsaWRlcyB3aXRoIGxpdmUgY2VsbHMgc2Nyb2xsYWJsZVxyXG4gIGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3JBbGwoXCIucmV2ZWFsIC5leGVyY2lzZS1jZWxsXCIpLmZvckVhY2goKGVsKSA9PiB7XHJcbiAgICBlbC5jbG9zZXN0KCdzZWN0aW9uLnNsaWRlJykuY2xhc3NMaXN0LmFkZChcInNjcm9sbGFibGVcIik7XHJcbiAgfSlcclxuXHJcbiAgLy8gd2ViUiBzdXBwbGVtZW50YWwgZGF0YSBhbmQgb3B0aW9uc1xyXG4gIGNvbnN0IGRhdGFDb250ZW50ID0gZG9jdW1lbnQucXVlcnlTZWxlY3Rvcihgc2NyaXB0W3R5cGU9XFxcIndlYnItZGF0YVxcXCJdYCkudGV4dENvbnRlbnQ7XHJcbiAgY29uc3QgZGF0YSA9IEpTT04ucGFyc2UoYjY0RGVjb2RlKGRhdGFDb250ZW50KSk7XHJcblxyXG4gIC8vIEdyYWIgbGlzdCBvZiByZXNvdXJjZXMgdG8gYmUgZG93bmxvYWRlZFxyXG4gIGNvbnN0IGZpbGVzQ29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJ2ZnMtZmlsZVxcXCJdYCkudGV4dENvbnRlbnQ7XHJcbiAgY29uc3QgZmlsZXMgPSBKU09OLnBhcnNlKGI2NERlY29kZShmaWxlc0NvbnRlbnQpKTtcclxuXHJcbiAgLy8gSW5pdGlhbGlzZSB3ZWJSIGFuZCBzZXR1cCBmb3IgUiBjb2RlIGV2YWx1YXRpb25cclxuICBsZXQgd2ViUlByb21pc2UgPSAoYXN5bmMgKHdlYlIpID0+IHtcclxuICAgIHN0YXR1c1RleHQudGV4dENvbnRlbnQgPSBgRG93bmxvYWRpbmcgd2ViUmA7XHJcbiAgICBhd2FpdCB3ZWJSLmluaXQoKTtcclxuXHJcbiAgICAvLyBJbnN0YWxsIHByb3ZpZGVkIGxpc3Qgb2YgcGFja2FnZXNcclxuICAgIC8vIEVuc3VyZSB3ZWJSIGRlZmF1bHQgcmVwbyBpcyBpbmNsdWRlZFxyXG4gICAgZGF0YS5wYWNrYWdlcy5yZXBvcy5wdXNoKFwiaHR0cHM6Ly9yZXBvLnItd2FzbS5vcmdcIilcclxuICAgIGF3YWl0IGRhdGEucGFja2FnZXMucGtncy5tYXAoKHBrZykgPT4gKCkgPT4ge1xyXG4gICAgICBzdGF0dXNUZXh0LnRleHRDb250ZW50ID0gYERvd25sb2FkaW5nIHBhY2thZ2U6ICR7cGtnfWA7XHJcbiAgICAgIHJldHVybiB3ZWJSLmV2YWxSVm9pZChgXHJcbiAgICAgICAgd2Vicjo6aW5zdGFsbChwa2csIHJlcG9zID0gcmVwb3MpXHJcbiAgICAgICAgbGlicmFyeShwa2csIGNoYXJhY3Rlci5vbmx5ID0gVFJVRSlcclxuICAgICAgYCwgeyBlbnY6IHtcclxuICAgICAgICBwa2c6IHBrZyxcclxuICAgICAgICByZXBvczogZGF0YS5wYWNrYWdlcy5yZXBvcyxcclxuICAgICAgfX0pO1xyXG4gICAgfSkucmVkdWNlKChjdXIsIG5leHQpID0+IGN1ci50aGVuKG5leHQpLCBQcm9taXNlLnJlc29sdmUoKSk7XHJcblxyXG4gICAgLy8gRG93bmxvYWQgYW5kIGluc3RhbGwgcmVzb3VyY2VzXHJcbiAgICBhd2FpdCBmaWxlcy5tYXAoKGZpbGUpID0+IGFzeW5jICgpID0+IHtcclxuICAgICAgY29uc3QgbmFtZSA9IGZpbGUuc3Vic3RyaW5nKGZpbGUubGFzdEluZGV4T2YoJy8nKSArIDEpO1xyXG4gICAgICBzdGF0dXNUZXh0LnRleHRDb250ZW50ID0gYERvd25sb2FkaW5nIHJlc291cmNlOiAke25hbWV9YDtcclxuICAgICAgY29uc3QgcmVzcG9uc2UgPSBhd2FpdCBmZXRjaChmaWxlKTtcclxuICAgICAgaWYgKCFyZXNwb25zZS5vaykge1xyXG4gICAgICAgIHRocm93IG5ldyBFcnJvcihgQ2FuJ3QgZG93bmxvYWQgXFxgJHtmaWxlfVxcYC4gRXJyb3IgJHtyZXNwb25zZS5zdGF0dXN9OiBcIiR7cmVzcG9uc2Uuc3RhdHVzVGV4dH1cIi5gKTtcclxuICAgICAgfVxyXG4gICAgICBjb25zdCBkYXRhID0gYXdhaXQgcmVzcG9uc2UuYXJyYXlCdWZmZXIoKTtcclxuXHJcbiAgICAgIC8vIFN0b3JlIFVSTHMgaW4gdGhlIGN3ZCB3aXRob3V0IGFueSBzdWJkaXJlY3Rvcnkgc3RydWN0dXJlXHJcbiAgICAgIGlmIChmaWxlLmluY2x1ZGVzKFwiOi8vXCIpKSB7XHJcbiAgICAgICAgZmlsZSA9IG5hbWU7XHJcbiAgICAgIH1cclxuXHJcbiAgICAgIC8vIENvbGxhcHNlIGhpZ2hlciBkaXJlY3Rvcnkgc3RydWN0dXJlXHJcbiAgICAgIGZpbGUgPSBjb2xsYXBzZVBhdGgoZmlsZSk7XHJcblxyXG4gICAgICAvLyBDcmVhdGUgZGlyZWN0b3J5IHRyZWUsIGlnbm9yaW5nIFwiZGlyZWN0b3J5IGV4aXN0c1wiIFZGUyBlcnJvcnNcclxuICAgICAgY29uc3QgcGFydHMgPSBmaWxlLnNwbGl0KCcvJykuc2xpY2UoMCwgLTEpO1xyXG4gICAgICBsZXQgcGF0aCA9ICcnO1xyXG4gICAgICB3aGlsZSAocGFydHMubGVuZ3RoID4gMCkge1xyXG4gICAgICAgIHBhdGggKz0gcGFydHMuc2hpZnQoKSArICcvJztcclxuICAgICAgICBjb25zdCBhbmFseXNpcyA9IGF3YWl0IHdlYlIuRlMuYW5hbHl6ZVBhdGgocGF0aCk7XHJcbiAgICAgICAgaWYgKCFhbmFseXNpcy5leGlzdHMpIHtcclxuICAgICAgICAgIHRyeSB7XHJcbiAgICAgICAgICAgIGF3YWl0IHdlYlIuRlMubWtkaXIocGF0aCk7XHJcbiAgICAgICAgICB9IGNhdGNoIChlKSB7XHJcbiAgICAgICAgICAgIHRocm93IG5ldyBFcnJvcihgRmlsZXN5c3RlbSBFcnJvcjogXCIke2UubWVzc2FnZX1cIi5gKTtcclxuICAgICAgICAgIH1cclxuICAgICAgICB9XHJcbiAgICAgIH1cclxuXHJcbiAgICAgIC8vIFdyaXRlIHRoaXMgZmlsZSB0byB0aGUgVkZTXHJcbiAgICAgIHJldHVybiBhd2FpdCB3ZWJSLkZTLndyaXRlRmlsZShmaWxlLCBuZXcgVWludDhBcnJheShkYXRhKSk7XHJcbiAgICB9KS5yZWR1Y2UoKGN1ciwgbmV4dCkgPT4gY3VyLnRoZW4obmV4dCksIFByb21pc2UucmVzb2x2ZSgpKTtcclxuXHJcbiAgICBzdGF0dXNUZXh0LnRleHRDb250ZW50ID0gYEluc3RhbGxpbmcgd2ViUiBzaGltc2A7XHJcbiAgICBhd2FpdCB3ZWJSLmV2YWxSVm9pZChgd2Vicjo6c2hpbV9pbnN0YWxsKClgKTtcclxuXHJcbiAgICBzdGF0dXNUZXh0LnRleHRDb250ZW50ID0gYFdlYlIgZW52aXJvbm1lbnQgc2V0dXBgO1xyXG4gICAgYXdhaXQgc2V0dXBSKHdlYlIsIGRhdGEpO1xyXG5cclxuICAgIHN0YXR1c1RleHQucmVtb3ZlKCk7XHJcbiAgICBpZiAoc3RhdHVzQ29udGFpbmVyLmNoaWxkcmVuLmxlbmd0aCA9PSAwKSB7XHJcbiAgICAgIHN0YXR1c0NvbnRhaW5lci5wYXJlbnROb2RlLnJlbW92ZSgpO1xyXG4gICAgfVxyXG4gICAgcmV0dXJuIHdlYlI7XHJcbiAgfSkobmV3IFdlYlIoZGF0YS5vcHRpb25zKSk7XHJcblxyXG4gIC8vIEtlZXAgdHJhY2sgb2YgaW5pdGlhbCBPSlMgYmxvY2sgcmVuZGVyXHJcbiAgY29uc3QgcmVuZGVyZWRPanMgPSB7fTtcclxuXHJcbiAgY29uc3QgcHJvY2VzcyA9IGFzeW5jIChjb250ZXh0LCBpbnB1dHMpID0+IHtcclxuICAgIGNvbnN0IHdlYlIgPSBhd2FpdCB3ZWJSUHJvbWlzZTtcclxuICAgIGNvbnN0IGV2YWx1YXRvciA9IG5ldyBXZWJSRXZhbHVhdG9yKHdlYlIsIGNvbnRleHQpXHJcbiAgICBhd2FpdCBldmFsdWF0b3IucHJvY2VzcyhpbnB1dHMpO1xyXG4gICAgcmV0dXJuIGV2YWx1YXRvci5jb250YWluZXI7XHJcbiAgfVxyXG5cclxuICByZXR1cm4ge1xyXG4gICAgcHJvY2VzcyxcclxuICAgIHdlYlJQcm9taXNlLFxyXG4gICAgcmVuZGVyZWRPanMsXHJcbiAgfTtcclxufVxyXG4ifV19
+</script>
+<div id="exercise-loading-indicator" class="exercise-loading-indicator d-none d-flex align-items-center gap-2">
+<div id="exercise-loading-status" class="d-flex gap-2">
+
+</div>
+<div class="spinner-grow spinner-grow-sm">
+
+</div>
+</div>
+<script type="vfs-file">
+WyJkYWRvcy8vQ09NTy1GT1JBTS1HRVJBRE9TLm1kIiwiZGFkb3MvL3Byb2pldG9faW5vdmFjYW8uY3N2IiwiZGFkb3MvL2ZvbWVudG9fc2ltLmNzdiIsImxvZ28tdW5lbWF0LnBuZyIsIm1vZGVsby1ub3RhLXRlY25pY2EuZG9jeCJd
+</script>
+</section>
+
+</main> <!-- /main -->
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W119
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../..";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiada");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiada");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/DanielLindomar\.github\.io\/inovacao\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>Políticas e incentivos para a inovação e avaliação de impacto · Prof.&nbsp;Dr.&nbsp;Lindomar Pegorini Daniel · UNEMAT — Campus de Sinop</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

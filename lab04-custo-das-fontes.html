@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Prof.&nbsp;Dr.&nbsp;Lindomar Pegorini Daniel — UNEMAT, Campus de Sinop">
+
+<title>Laboratório 4 — O custo real de cada fonte – Financiamento da Inovação · UNEMAT</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-fd752720f2d24a8c7db4647d255b9a3e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/live-runtime/live-runtime.js" type="module"></script>
+<link href="site_libs/quarto-contrib/live-runtime/live-runtime.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+<style>
+
+      .quarto-title-block .quarto-title-banner h1,
+      .quarto-title-block .quarto-title-banner h2,
+      .quarto-title-block .quarto-title-banner h3,
+      .quarto-title-block .quarto-title-banner h4,
+      .quarto-title-block .quarto-title-banner h5,
+      .quarto-title-block .quarto-title-banner h6
+      {
+        color: white;
+      }
+
+      .quarto-title-block .quarto-title-banner {
+        color: white;
+background: #1E2761;
+      }
+</style>
+<script type="module" src="site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
+
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Financiamento da Inovação · UNEMAT</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Procurar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Alternar de navegação" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Início</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-aulas" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Aulas</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-aulas">    
+        <li class="dropdown-header">— Sábado 1 · 12/09 —</li>
+        <li>
+    <a class="dropdown-item" href="./s1-01-politicas-publicas.html">
+ <span class="dropdown-text">Políticas públicas: conceito e ciclo</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./s1-02-sistema-cti.html">
+ <span class="dropdown-text">O sistema brasileiro de CT&amp;I</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./s1-03-avaliacao.html">
+ <span class="dropdown-text">Avaliação: o que o financiador cobra</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./s1-04-contrafactual.html">
+ <span class="dropdown-text">O contrafactual</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">— Sábado 2 · 26/09 —</li>
+        <li>
+    <a class="dropdown-item" href="./s2-01-nao-reembolsavel.html">
+ <span class="dropdown-text">Fomento não reembolsável</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./s2-02-embrapii.html">
+ <span class="dropdown-text">EMBRAPII: o instrumento sem edital</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./s2-03-incentivos-fiscais.html">
+ <span class="dropdown-text">Incentivos fiscais</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./s2-04-credito-e-capital-privado.html">
+ <span class="dropdown-text">Crédito e capital privado</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-catálogo" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Catálogo</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-catálogo">    
+        <li>
+    <a class="dropdown-item" href="./cat-escada.html">
+ <span class="dropdown-text">A escada do financiamento</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./cat-nao-reembolsavel.html">
+ <span class="dropdown-text">Não reembolsável</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./cat-fiscais.html">
+ <span class="dropdown-text">Incentivos fiscais</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./cat-credito.html">
+ <span class="dropdown-text">Crédito</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./cat-privado.html">
+ <span class="dropdown-text">Capital privado</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-laboratórios" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Laboratórios</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-laboratórios">    
+        <li>
+    <a class="dropdown-item" href="./lab01-explorando-dados.html">
+ <span class="dropdown-text">Laboratório 1 — Explorando os dados de um programa</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./lab02-did.html">
+ <span class="dropdown-text">Laboratório 2 — Diferenças-em-diferenças</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./lab03-vpl-tir.html">
+ <span class="dropdown-text">Laboratório 3 — Vale a pena? VPL, TIR e payback</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./lab04-custo-das-fontes.html">
+ <span class="dropdown-text">Laboratório 4 — O custo real de cada fonte</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-avaliação" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Avaliação</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-avaliação">    
+        <li>
+    <a class="dropdown-item" href="./casos.html">
+ <span class="dropdown-text">Os dez casos</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./atividade-mapa.html">
+ <span class="dropdown-text">Mapa de instrumentos</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./caso-lei-do-bem.html">
+ <span class="dropdown-text">O caso da Lei do Bem</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./atividade-elegibilidade.html">
+ <span class="dropdown-text">Esta empresa pode usar a Lei do Bem?</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./trabalho-final.html">
+ <span class="dropdown-text">Trabalho final</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-slides" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Slides</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-slides">    
+        <li>
+    <a class="dropdown-item" href="./slides-s1.html">
+ <span class="dropdown-text">Por que existe esse dinheiro</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./slides-s2.html">
+ <span class="dropdown-text">De onde vem o dinheiro</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./leituras.html"> 
+<span class="menu-text">Leituras</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Laboratório 4 — O custo real de cada fonte</h1>
+            <p class="subtitle lead">Subvenção, crédito ou equity: com qual sobra mais para o dono?</p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Autor</div>
+      <div class="quarto-title-meta-contents">
+               <p>Prof.&nbsp;Dr.&nbsp;Lindomar Pegorini Daniel — UNEMAT, Campus de Sinop </p>
+            </div>
+    </div>
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#a-pergunta" id="toc-a-pergunta" class="nav-link active" data-scroll-target="#a-pergunta"><span class="header-section-number">1</span> A pergunta</a></li>
+  <li><a href="#cenário-a-subvenção" id="toc-cenário-a-subvenção" class="nav-link" data-scroll-target="#cenário-a-subvenção"><span class="header-section-number">2</span> Cenário A — Subvenção</a></li>
+  <li><a href="#cenário-b-crédito" id="toc-cenário-b-crédito" class="nav-link" data-scroll-target="#cenário-b-crédito"><span class="header-section-number">3</span> Cenário B — Crédito</a></li>
+  <li><a href="#cenário-c-equity" id="toc-cenário-c-equity" class="nav-link" data-scroll-target="#cenário-c-equity"><span class="header-section-number">4</span> Cenário C — Equity</a></li>
+  <li><a href="#o-confronto" id="toc-o-confronto" class="nav-link" data-scroll-target="#o-confronto"><span class="header-section-number">5</span> O confronto</a></li>
+  <li><a href="#a-conta-que-muda-a-decisão" id="toc-a-conta-que-muda-a-decisão" class="nav-link" data-scroll-target="#a-conta-que-muda-a-decisão"><span class="header-section-number">6</span> A conta que muda a decisão</a>
+  <ul class="collapse">
+  <li><a href="#exercício-1-a-subvenção-que-vira-o-jogo" id="toc-exercício-1-a-subvenção-que-vira-o-jogo" class="nav-link" data-scroll-target="#exercício-1-a-subvenção-que-vira-o-jogo"><span class="header-section-number">6.1</span> Exercício 1 — a subvenção que vira o jogo</a></li>
+  <li><a href="#exercício-2-o-valuation-que-muda-tudo" id="toc-exercício-2-o-valuation-que-muda-tudo" class="nav-link" data-scroll-target="#exercício-2-o-valuation-que-muda-tudo"><span class="header-section-number">6.2</span> Exercício 2 — o valuation que muda tudo</a></li>
+  <li><a href="#exercício-3-o-seu-caso" id="toc-exercício-3-o-seu-caso" class="nav-link" data-scroll-target="#exercício-3-o-seu-caso"><span class="header-section-number">6.3</span> Exercício 3 — o seu caso</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<div class="logo-topo">
+<p><img src="logo-unemat.png" class="img-fluid" width="110"></p>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Objetivos de aprendizagem
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Ao final deste laboratório você será capaz de:</p>
+<ul>
+<li>montar o fluxo de caixa <strong>do dono</strong> sob três formas de financiamento;</li>
+<li>calcular o custo efetivo da contrapartida, dos juros e da diluição;</li>
+<li>comparar as três fontes por um critério único e defensável;</li>
+<li>incorporar a probabilidade de aprovação a uma decisão de captação;</li>
+<li>reconhecer quais premissas mudam a resposta.</li>
+</ul>
+</div>
+</div>
+<section id="a-pergunta" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="a-pergunta"><span class="header-section-number">1</span> A pergunta</h2>
+<p>O mesmo projeto de R$ 500 mil do <a href="./lab03-vpl-tir.html">Laboratório 3</a>, financiado de três formas:</p>
+<p><strong>a) Subvenção</strong> — R$ 150 mil não reembolsáveis, o teto da chamada da FAPEMAT. A empresa aporta o restante e assume o custo administrativo da prestação de contas.</p>
+<p><strong>b) Crédito</strong> — R$ 500 mil na linha Desenvolve Inovação, a 6,07% ao ano, um ano de carência e quatro de amortização.</p>
+<p><strong>c) Equity</strong> — um investidor-anjo aporta R$ 500 mil em troca de participação societária.</p>
+<p>A pergunta não é “qual é mais barata”, e sim: <strong>em qual delas sobra mais para o dono?</strong></p>
+<p>Rode o primeiro bloco antes dos demais.</p>
+<div class="cell">
+<div>
+<div id="webr-1" class="exercise-cell">
+
+</div>
+<script type="webr-1-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoicHJvamV0byA8LSByZWFkLmNzdihcImRhZG9zL3Byb2pldG9faW5vdmFjYW8uY3N2XCIpXG5mbHV4byAgIDwtIHByb2pldG8kZmx1eG9fbGlxdWlkbyAgICAgICAgIyBhbm8gMCBhIDUsIGVtIFIkIG1pbFxuciAgICAgICA8LSAwLjEyICAgICAgICAgICAgICAgICAgICAgICAgICMgdGF4YSBkZSBkZXNjb250byBkbyBkb25vXG5cbnZwbCA8LSBmdW5jdGlvbihmLCB0YXhhID0gcikgc3VtKGYgLyAoMSArIHRheGEpXihzZXFfYWxvbmcoZikgLSAxKSlcblxuZmx1eG8ifQ==
+</script>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Importante</span>Uma premissa que precisa estar explícita: o valor terminal
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>No ano 5 o projeto não acaba — a empresa continua existindo e gerando resultado. Sem contabilizar isso, o equity pareceria barato: o investidor levaria uma fatia de apenas cinco anos de fluxo.</p>
+<p>Vamos supor que, ao fim do ano 5, a empresa valha <strong>oito vezes</strong> o resultado daquele ano. É uma convenção grosseira, e o objetivo é justamente deixá-la visível — você poderá alterá-la e ver o que muda.</p>
+</div>
+</div>
+<div class="cell">
+<div>
+<div id="webr-2" class="exercise-cell">
+
+</div>
+<script type="webr-2-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoidmFsb3JfdGVybWluYWwgPC0gOCAqIGZsdXhvWzZdICAgICAjIDh4IG8gcmVzdWx0YWRvIGRvIGFubyA1XG52YWxvcl90ZXJtaW5hbCJ9
+</script>
+</div>
+</div>
+</section>
+<section id="cenário-a-subvenção" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="cenário-a-subvenção"><span class="header-section-number">2</span> Cenário A — Subvenção</h2>
+<p>A subvenção reduz o desembolso inicial do dono. Em compensação, há custo administrativo: prestação de contas, relatórios, conciliação — estimemos duas anuidades de R$ 8 mil.</p>
+<div class="cell">
+<div>
+<div id="webr-3" class="exercise-cell">
+
+</div>
+<script type="webr-3-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoic3VidmVuY2FvIDwtIDE1MCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAjIEFMVEVSRSBBUVVJXG5jdXN0b19hZG0gPC0gYygwLCAtOCwgLTgsIDAsIDAsIDApICAgICAgICAgICAgICAgICMgQUxURVJFIEFRVUlcblxuZmx1eG9fYSA8LSBmbHV4byArIGN1c3RvX2FkbVxuZmx1eG9fYVsxXSA8LSBmbHV4b19hWzFdICsgc3VidmVuY2FvICAgICAgICAgICAgICAjIGFubyAwOiBzYWkgbWVub3MgZGluaGVpcm9cbmZsdXhvX2FbNl0gPC0gZmx1eG9fYVs2XSArIHZhbG9yX3Rlcm1pbmFsICAgICAgICAgIyBkb25vIGZpY2EgY29tIDEwMCUgZGEgZW1wcmVzYVxuXG52cGxfYSA8LSB2cGwoZmx1eG9fYSlcbmNhdChcIkRlc2VtYm9sc28gZG8gZG9ubyBubyBhbm8gMDpcIiwgZmx1eG9fYVsxXSwgXCJcXG5cIilcbmNhdChcIlZQTCBwYXJhIG8gZG9ubzogICAgICAgICAgICBcIiwgcm91bmQodnBsX2EsIDEpLCBcIlxcblwiKSJ9
+</script>
+</div>
+</div>
+</section>
+<section id="cenário-b-crédito" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="cenário-b-crédito"><span class="header-section-number">3</span> Cenário B — Crédito</h2>
+<p>O banco entra com os R$ 500 mil no ano 0 — o dono não desembolsa nada de início. Depois paga: juros no ano 1 e quatro parcelas iguais do ano 2 ao 5.</p>
+<div class="cell">
+<div>
+<div id="webr-4" class="exercise-cell">
+
+</div>
+<script type="webr-4-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoicHJpbmNpcGFsIDwtIDUwMFxuaSAgICAgICAgIDwtIDAuMDYwNyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAjIEFMVEVSRSBBUVVJOiB0YXhhIGFvIGFub1xubiAgICAgICAgIDwtIDQgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAjIGFub3MgZGUgYW1vcnRpemFjYW9cblxuanVyb3NfY2FyZW5jaWEgPC0gcHJpbmNpcGFsICogaVxucGFyY2VsYSAgICAgICAgPC0gcHJpbmNpcGFsICogaSAvICgxIC0gKDEgKyBpKV4oLW4pKVxuXG5mbHV4b19iICAgIDwtIGZsdXhvXG5mbHV4b19iWzFdIDwtIGZsdXhvX2JbMV0gKyBwcmluY2lwYWwgICAgICAgICAgICAgICMgZW50cmEgbyBlbXByZXN0aW1vXG5mbHV4b19iWzJdIDwtIGZsdXhvX2JbMl0gLSBqdXJvc19jYXJlbmNpYSAgICAgICAgICMgYW5vIDE6IHNvIGp1cm9zXG5mbHV4b19iWzM6Nl0gPC0gZmx1eG9fYlszOjZdIC0gcGFyY2VsYSAgICAgICAgICAgICMgYW5vcyAyIGEgNTogcGFyY2VsYXNcbmZsdXhvX2JbNl0gPC0gZmx1eG9fYls2XSArIHZhbG9yX3Rlcm1pbmFsICAgICAgICAgIyBkb25vIGZpY2EgY29tIDEwMCVcblxudnBsX2IgPC0gdnBsKGZsdXhvX2IpXG5jYXQoXCJKdXJvcyBubyBhbm8gZGUgY2Fyw6puY2lhOlwiLCByb3VuZChqdXJvc19jYXJlbmNpYSwgMSksIFwiXFxuXCIpXG5jYXQoXCJQYXJjZWxhIGFudWFsOiAgICAgICAgICAgXCIsIHJvdW5kKHBhcmNlbGEsIDEpLCBcIlxcblwiKVxuY2F0KFwiVlBMIHBhcmEgbyBkb25vOiAgICAgICAgIFwiLCByb3VuZCh2cGxfYiwgMSksIFwiXFxuXCIpIn0=
+</script>
+</div>
+</div>
+</section>
+<section id="cenário-c-equity" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="cenário-c-equity"><span class="header-section-number">4</span> Cenário C — Equity</h2>
+<p>O investidor aporta os R$ 500 mil. Não há parcela nem juros. O dono, porém, deixa de ser dono de tudo.</p>
+<p>Se a empresa vale R$ 1,5 milhão antes do aporte, passa a valer R$ 2 milhões depois — e o investidor fica com um quarto dela.</p>
+<div class="cell">
+<div>
+<div id="webr-5" class="exercise-cell">
+
+</div>
+<script type="webr-5-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoidmFsdWF0aW9uX3ByZSA8LSAxNTAwICAgICAgICAgICAgICAgICAgICAgICAgICAgICAjIEFMVEVSRSBBUVVJXG5hcG9ydGUgICAgICAgIDwtIDUwMFxucGFydGljaXBhY2FvX2ludmVzdGlkb3IgPC0gYXBvcnRlIC8gKHZhbHVhdGlvbl9wcmUgKyBhcG9ydGUpXG5mYXRpYV9kb25vICAgIDwtIDEgLSBwYXJ0aWNpcGFjYW9faW52ZXN0aWRvclxuXG5mbHV4b19jICAgIDwtIGZsdXhvXG5mbHV4b19jWzFdIDwtIDAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICMgbyBpbnZlc3RpZG9yIHBhZ2EgbyBpbnZlc3RpbWVudG9cbmZsdXhvX2NbMjo2XSA8LSBmbHV4b19jWzI6Nl0gKiBmYXRpYV9kb25vICAgICAgICAgIyBkb25vIGZpY2EgY29tIHN1YSBmYXRpYSBkb3MgZmx1eG9zXG5mbHV4b19jWzZdIDwtIGZsdXhvX2NbNl0gKyB2YWxvcl90ZXJtaW5hbCAqIGZhdGlhX2Rvbm9cblxudnBsX2MgPC0gdnBsKGZsdXhvX2MpXG5jYXQoXCJQYXJ0aWNpcGHDp8OjbyBkbyBpbnZlc3RpZG9yOlwiLCByb3VuZChwYXJ0aWNpcGFjYW9faW52ZXN0aWRvciAqIDEwMCwgMSksIFwiJVxcblwiKVxuY2F0KFwiVlBMIHBhcmEgbyBkb25vOiAgICAgICAgICAgXCIsIHJvdW5kKHZwbF9jLCAxKSwgXCJcXG5cIikifQ==
+</script>
+</div>
+</div>
+</section>
+<section id="o-confronto" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="o-confronto"><span class="header-section-number">5</span> O confronto</h2>
+<div class="cell">
+<div>
+<div id="webr-6" class="exercise-cell">
+
+</div>
+<script type="webr-6-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiY29tcGFyYWNhbyA8LSBkYXRhLmZyYW1lKFxuICBmb250ZSA9IGMoXCJTdWJ2ZW7Dp8Ojb1wiLCBcIkNyw6lkaXRvXCIsIFwiRXF1aXR5XCIpLFxuICB2cGxfZG9ubyA9IHJvdW5kKGModnBsX2EsIHZwbF9iLCB2cGxfYyksIDEpXG4pXG5jb21wYXJhY2FvJGRpZmVyZW5jYSA8LSByb3VuZChjb21wYXJhY2FvJHZwbF9kb25vIC0gbWF4KGNvbXBhcmFjYW8kdnBsX2Rvbm8pLCAxKVxuY29tcGFyYWNhb1tvcmRlcigtY29tcGFyYWNhbyR2cGxfZG9ubyksIF0ifQ==
+</script>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Como ler essa tabela
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Três resultados, e nenhum deles é o que a intuição prevê.</p>
+<p><strong>A subvenção ganha — mas por pouco.</strong> A vantagem sobre o crédito fica na casa de algumas dezenas de milhares de reais, não das centenas. O motivo é que a subvenção cobre R$ 150 mil de um projeto de R$ 500 mil: os outros R$ 350 mil saem do caixa do dono de qualquer forma, e ainda há o custo administrativo.</p>
+<p><strong>O crédito fica perto.</strong> Juros subsidiados por quatro anos custam bem menos do que a maioria das pessoas imagina.</p>
+<p><strong>O equity é o mais caro</strong> — e por uma razão que só aparece no ano 5: um quarto do valor da empresa. O aporte “sem custo” custa uma fatia perpétua do negócio.</p>
+</div>
+</div>
+</section>
+<section id="a-conta-que-muda-a-decisão" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="a-conta-que-muda-a-decisão"><span class="header-section-number">6</span> A conta que muda a decisão</h2>
+<p>A comparação acima supõe que a subvenção foi <strong>obtida</strong>. Mas a chamada da FAPEMAT selecionava <strong>dez empresas</strong>. Se cem concorrem, a chance é de 10%.</p>
+<div class="cell">
+<div>
+<div id="webr-7" class="exercise-cell">
+
+</div>
+<script type="webr-7-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoidmFudGFnZW0gPC0gdnBsX2EgLSB2cGxfYiAgICAgICAgICAgICAgICAjIGdhbmhvIGRhIHN1YnZlbmNhbyBzb2JyZSBvIGNyZWRpdG9cbmhvcmFzX3Byb3Bvc3RhIDwtIDgwICAgICAgICAgICAgICAgICAgICAgIyBBTFRFUkUgQVFVSVxudmFsb3JfaG9yYSAgICAgPC0gMC4xNSAgICAgICAgICAgICAgICAgICAjIFIkIG1pbCBwb3IgaG9yYSAoUiQgMTUwKVxuY3VzdG9fcHJvcG9zdGEgPC0gaG9yYXNfcHJvcG9zdGEgKiB2YWxvcl9ob3JhXG5cbmZvciAocCBpbiBjKDAuMDUsIDAuMTAsIDAuMjUsIDAuNTApKSB7XG4gIGdhbmhvX2VzcGVyYWRvIDwtIHAgKiB2YW50YWdlbSAtIGN1c3RvX3Byb3Bvc3RhXG4gIGNhdChzcHJpbnRmKFwiY2hhbmNlIGRlICUzLjBmJSUgIC0+ICBnYW5obyBlc3BlcmFkbyA9ICU3LjFmIG1pbFxcblwiLFxuICAgICAgICAgICAgICBwICogMTAwLCBnYW5ob19lc3BlcmFkbykpXG59In0=
+</script>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Importante</span>O que essa conta revela
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Escrever uma boa proposta custa dezenas de horas de gente qualificada. Se a vantagem da subvenção sobre o crédito é pequena e a chance de aprovação é baixa, <strong>o ganho esperado pode ser negativo</strong> — perseguir o edital custa mais do que rende.</p>
+<p>Isso não é argumento contra editais. É argumento contra persegui-los sem fazer a conta. E muda conforme o instrumento: uma chamada que financia R$ 5 milhões tem vantagem muito maior, e compensa mesmo com chance baixa.</p>
+<p><strong>Repare no que acabou de acontecer:</strong> a decisão não saiu da natureza do dinheiro, saiu da aritmética. É esse tipo de argumento que se espera na seção 4 do <a href="./trabalho-final.html">trabalho final</a>.</p>
+</div>
+</div>
+<section id="exercício-1-a-subvenção-que-vira-o-jogo" class="level3" data-number="6.1">
+<h3 data-number="6.1" class="anchored" data-anchor-id="exercício-1-a-subvenção-que-vira-o-jogo"><span class="header-section-number">6.1</span> Exercício 1 — a subvenção que vira o jogo</h3>
+<p>Volte ao Cenário A e aumente <code>subvencao</code> para 350. Recalcule os três VPLs e a tabela. A que valor a vantagem sobre o crédito passa a compensar uma chance de 10%?</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Dica">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Dica
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Depois de alterar <code>subvencao</code>, rode de novo o bloco do Cenário A, depois o bloco do confronto e por fim o bloco do ganho esperado. Os objetos são recalculados na ordem em que você executa.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="exercício-2-o-valuation-que-muda-tudo" class="level3" data-number="6.2">
+<h3 data-number="6.2" class="anchored" data-anchor-id="exercício-2-o-valuation-que-muda-tudo"><span class="header-section-number">6.2</span> Exercício 2 — o valuation que muda tudo</h3>
+<p>No Cenário C, altere <code>valuation_pre</code> para 4000 — uma empresa mais madura, avaliada em R$ 4 milhões antes do aporte.</p>
+<div class="cell" data-exercise="ex_valuation">
+<div>
+<div id="webr-8" class="exercise-cell">
+
+</div>
+<script type="webr-8-contents">
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoidmFsdWF0aW9uX3ByZSA8LSBfX19fX19cbnBhcnRpY2lwYWNhb19pbnZlc3RpZG9yIDwtIGFwb3J0ZSAvICh2YWx1YXRpb25fcHJlICsgYXBvcnRlKVxuY2F0KFwiUGFydGljaXBhw6fDo28gZG8gaW52ZXN0aWRvcjpcIiwgcm91bmQocGFydGljaXBhY2FvX2ludmVzdGlkb3IgKiAxMDAsIDEpLCBcIiVcXG5cIikifQ==
+</script>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Dica">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Dica</span>Dica
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>O enunciado pede 4000 — quatro milhões, na mesma unidade de milhares usada em toda a página.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Solução">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Solução
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>valuation_pre <span class="ot">&lt;-</span> <span class="dv">4000</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>participacao_investidor <span class="ot">&lt;-</span> aporte <span class="sc">/</span> (valuation_pre <span class="sc">+</span> aporte)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Participação do investidor:"</span>, <span class="fu">round</span>(participacao_investidor <span class="sc">*</span> <span class="dv">100</span>, <span class="dv">1</span>), <span class="st">"%</span><span class="sc">\n</span><span class="st">"</span>)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
+<p>A participação cai de 25% para 11%. <strong>O custo do equity não está no aporte: está no valor da empresa no momento em que ela capta.</strong> Captar cedo, quando a empresa vale pouco, é o que sai caro — e é por isso que se recomenda buscar equity depois de ter evidência de que o negócio funciona.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="exercício-3-o-seu-caso" class="level3" data-number="6.3">
+<h3 data-number="6.3" class="anchored" data-anchor-id="exercício-3-o-seu-caso"><span class="header-section-number">6.3</span> Exercício 3 — o seu caso</h3>
+<p>Volte aos <a href="./casos.html">dez casos</a> e escolha o que você vai usar no trabalho final. Substitua o investimento, os fluxos e as condições pelas dele. Não precisa de precisão contábil: precisa de ordem de grandeza defensável.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Aviso</span>Sobre as premissas
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Este laboratório está cheio delas: a taxa de desconto de 12%, o valor terminal de oito vezes o resultado, o custo administrativo de R$ 8 mil ao ano, as 80 horas de proposta. Todas discutíveis, e é por isso que estão em variáveis nomeadas, em blocos que você pode editar.</p>
+<p>Não é defeito do exercício — é a natureza da análise. <strong>Um plano honesto não é o que esconde as premissas: é o que as declara e mostra o que acontece quando mudam.</strong></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>O que você deve conseguir explicar depois deste laboratório
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>Por que a vantagem da subvenção sobre o crédito é menor do que a intuição sugere.</li>
+<li>Onde exatamente aparece o custo do equity, e por que ele não está no aporte.</li>
+<li>Como a probabilidade de aprovação entra numa decisão de captação — e quando ela recomenda não concorrer.</li>
+</ol>
+</div>
+</div>
+
+
+<script type="webr-data">
+eyJvcHRpb25zIjp7ImJhc2VVcmwiOiJodHRwczovL3dlYnIuci13YXNtLm9yZy92MC42LjAvIn0sInBhY2thZ2VzIjp7InBrZ3MiOlsiZXZhbHVhdGUiLCJrbml0ciIsImh0bWx0b29scyJdLCJyZXBvcyI6W119LCJyZW5kZXJfZGYiOiJkZWZhdWx0In0=
+</script>
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W3siY2VsbE5hbWUiOiJ3ZWJyLXdpZGdldC04IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoie1xyXG4gIC8vIFdhaXQgZm9yIG91dHB1dCB0byBiZSB3cml0dGVuIHRvIHRoZSBET00sIHRoZW4gdHJpZ2dlciB3aWRnZXQgcmVuZGVyaW5nXHJcbiAgYXdhaXQgX3dlYnJfdmFsdWVfODtcclxuICBpZiAod2luZG93LkhUTUxXaWRnZXRzKSB7XHJcbiAgICB3aW5kb3cuSFRNTFdpZGdldHMuc3RhdGljUmVuZGVyKCk7XHJcbiAgfVxyXG4gIGlmICh3aW5kb3cuUGFnZWRUYWJsZURvYykge1xyXG4gICAgd2luZG93LlBhZ2VkVGFibGVEb2MuaW5pdEFsbCgpO1xyXG4gIH1cclxufVxyXG4ifSx7ImNlbGxOYW1lIjoid2Vici04IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfd2Vicl9lZGl0b3JfOCA9IHtcclxuICBjb25zdCB7IFdlYlJFeGVyY2lzZUVkaXRvciwgYjY0RGVjb2RlIH0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xyXG4gIGNvbnN0IHNjcmlwdENvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwid2Vici04LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcclxuICBjb25zdCBibG9jayA9IEpTT04ucGFyc2UoYjY0RGVjb2RlKHNjcmlwdENvbnRlbnQpKTtcclxuXHJcbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHdlYnItOC1jb250ZW50c2AgfSwgYmxvY2suYXR0cik7XHJcbiAgY29uc3QgZWRpdG9yID0gbmV3IFdlYlJFeGVyY2lzZUVkaXRvcih3ZWJST2pzLndlYlJQcm9taXNlLCBibG9jay5jb2RlLCBvcHRpb25zKTtcclxuXHJcbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XHJcbn1cclxuX3dlYnJfdmFsdWVfOCA9IHdlYlJPanMucHJvY2Vzcyhfd2Vicl9lZGl0b3JfOCwge30pO1xyXG4ifSx7ImNlbGxOYW1lIjoid2Vici13aWRnZXQtNyIsImlubGluZSI6ZmFsc2UsIm1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6IntcclxuICAvLyBXYWl0IGZvciBvdXRwdXQgdG8gYmUgd3JpdHRlbiB0byB0aGUgRE9NLCB0aGVuIHRyaWdnZXIgd2lkZ2V0IHJlbmRlcmluZ1xyXG4gIGF3YWl0IF93ZWJyX3ZhbHVlXzc7XHJcbiAgaWYgKHdpbmRvdy5IVE1MV2lkZ2V0cykge1xyXG4gICAgd2luZG93LkhUTUxXaWRnZXRzLnN0YXRpY1JlbmRlcigpO1xyXG4gIH1cclxuICBpZiAod2luZG93LlBhZ2VkVGFibGVEb2MpIHtcclxuICAgIHdpbmRvdy5QYWdlZFRhYmxlRG9jLmluaXRBbGwoKTtcclxuICB9XHJcbn1cclxuIn0seyJjZWxsTmFtZSI6IndlYnItNyIsImlubGluZSI6ZmFsc2UsIm1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJzb3VyY2UiOiJ2aWV3b2YgX3dlYnJfZWRpdG9yXzcgPSB7XHJcbiAgY29uc3QgeyBXZWJSRXhlcmNpc2VFZGl0b3IsIGI2NERlY29kZSB9ID0gd2luZG93Ll9leGVyY2lzZV9vanNfcnVudGltZTtcclxuICBjb25zdCBzY3JpcHRDb250ZW50ID0gZG9jdW1lbnQucXVlcnlTZWxlY3Rvcihgc2NyaXB0W3R5cGU9XFxcIndlYnItNy1jb250ZW50c1xcXCJdYCkudGV4dENvbnRlbnQ7XHJcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XHJcblxyXG4gIGNvbnN0IG9wdGlvbnMgPSBPYmplY3QuYXNzaWduKHsgaWQ6IGB3ZWJyLTctY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xyXG4gIGNvbnN0IGVkaXRvciA9IG5ldyBXZWJSRXhlcmNpc2VFZGl0b3Iod2ViUk9qcy53ZWJSUHJvbWlzZSwgYmxvY2suY29kZSwgb3B0aW9ucyk7XHJcblxyXG4gIHJldHVybiBlZGl0b3IuY29udGFpbmVyO1xyXG59XHJcbl93ZWJyX3ZhbHVlXzcgPSB3ZWJST2pzLnByb2Nlc3MoX3dlYnJfZWRpdG9yXzcsIHt9KTtcclxuIn0seyJjZWxsTmFtZSI6IndlYnItd2lkZ2V0LTYiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJ7XHJcbiAgLy8gV2FpdCBmb3Igb3V0cHV0IHRvIGJlIHdyaXR0ZW4gdG8gdGhlIERPTSwgdGhlbiB0cmlnZ2VyIHdpZGdldCByZW5kZXJpbmdcclxuICBhd2FpdCBfd2Vicl92YWx1ZV82O1xyXG4gIGlmICh3aW5kb3cuSFRNTFdpZGdldHMpIHtcclxuICAgIHdpbmRvdy5IVE1MV2lkZ2V0cy5zdGF0aWNSZW5kZXIoKTtcclxuICB9XHJcbiAgaWYgKHdpbmRvdy5QYWdlZFRhYmxlRG9jKSB7XHJcbiAgICB3aW5kb3cuUGFnZWRUYWJsZURvYy5pbml0QWxsKCk7XHJcbiAgfVxyXG59XHJcbiJ9LHsiY2VsbE5hbWUiOiJ3ZWJyLTYiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0Iiwic291cmNlIjoidmlld29mIF93ZWJyX2VkaXRvcl82ID0ge1xyXG4gIGNvbnN0IHsgV2ViUkV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XHJcbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJ3ZWJyLTYtY29udGVudHNcXFwiXWApLnRleHRDb250ZW50O1xyXG4gIGNvbnN0IGJsb2NrID0gSlNPTi5wYXJzZShiNjREZWNvZGUoc2NyaXB0Q29udGVudCkpO1xyXG5cclxuICBjb25zdCBvcHRpb25zID0gT2JqZWN0LmFzc2lnbih7IGlkOiBgd2Vici02LWNvbnRlbnRzYCB9LCBibG9jay5hdHRyKTtcclxuICBjb25zdCBlZGl0b3IgPSBuZXcgV2ViUkV4ZXJjaXNlRWRpdG9yKHdlYlJPanMud2ViUlByb21pc2UsIGJsb2NrLmNvZGUsIG9wdGlvbnMpO1xyXG5cclxuICByZXR1cm4gZWRpdG9yLmNvbnRhaW5lcjtcclxufVxyXG5fd2Vicl92YWx1ZV82ID0gd2ViUk9qcy5wcm9jZXNzKF93ZWJyX2VkaXRvcl82LCB7fSk7XHJcbiJ9LHsiY2VsbE5hbWUiOiJ3ZWJyLXdpZGdldC01IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoie1xyXG4gIC8vIFdhaXQgZm9yIG91dHB1dCB0byBiZSB3cml0dGVuIHRvIHRoZSBET00sIHRoZW4gdHJpZ2dlciB3aWRnZXQgcmVuZGVyaW5nXHJcbiAgYXdhaXQgX3dlYnJfdmFsdWVfNTtcclxuICBpZiAod2luZG93LkhUTUxXaWRnZXRzKSB7XHJcbiAgICB3aW5kb3cuSFRNTFdpZGdldHMuc3RhdGljUmVuZGVyKCk7XHJcbiAgfVxyXG4gIGlmICh3aW5kb3cuUGFnZWRUYWJsZURvYykge1xyXG4gICAgd2luZG93LlBhZ2VkVGFibGVEb2MuaW5pdEFsbCgpO1xyXG4gIH1cclxufVxyXG4ifSx7ImNlbGxOYW1lIjoid2Vici01IiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfd2Vicl9lZGl0b3JfNSA9IHtcclxuICBjb25zdCB7IFdlYlJFeGVyY2lzZUVkaXRvciwgYjY0RGVjb2RlIH0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xyXG4gIGNvbnN0IHNjcmlwdENvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwid2Vici01LWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcclxuICBjb25zdCBibG9jayA9IEpTT04ucGFyc2UoYjY0RGVjb2RlKHNjcmlwdENvbnRlbnQpKTtcclxuXHJcbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHdlYnItNS1jb250ZW50c2AgfSwgYmxvY2suYXR0cik7XHJcbiAgY29uc3QgZWRpdG9yID0gbmV3IFdlYlJFeGVyY2lzZUVkaXRvcih3ZWJST2pzLndlYlJQcm9taXNlLCBibG9jay5jb2RlLCBvcHRpb25zKTtcclxuXHJcbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XHJcbn1cclxuX3dlYnJfdmFsdWVfNSA9IHdlYlJPanMucHJvY2Vzcyhfd2Vicl9lZGl0b3JfNSwge30pO1xyXG4ifSx7ImNlbGxOYW1lIjoid2Vici13aWRnZXQtNCIsImlubGluZSI6ZmFsc2UsIm1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6IntcclxuICAvLyBXYWl0IGZvciBvdXRwdXQgdG8gYmUgd3JpdHRlbiB0byB0aGUgRE9NLCB0aGVuIHRyaWdnZXIgd2lkZ2V0IHJlbmRlcmluZ1xyXG4gIGF3YWl0IF93ZWJyX3ZhbHVlXzQ7XHJcbiAgaWYgKHdpbmRvdy5IVE1MV2lkZ2V0cykge1xyXG4gICAgd2luZG93LkhUTUxXaWRnZXRzLnN0YXRpY1JlbmRlcigpO1xyXG4gIH1cclxuICBpZiAod2luZG93LlBhZ2VkVGFibGVEb2MpIHtcclxuICAgIHdpbmRvdy5QYWdlZFRhYmxlRG9jLmluaXRBbGwoKTtcclxuICB9XHJcbn1cclxuIn0seyJjZWxsTmFtZSI6IndlYnItNCIsImlubGluZSI6ZmFsc2UsIm1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJzb3VyY2UiOiJ2aWV3b2YgX3dlYnJfZWRpdG9yXzQgPSB7XHJcbiAgY29uc3QgeyBXZWJSRXhlcmNpc2VFZGl0b3IsIGI2NERlY29kZSB9ID0gd2luZG93Ll9leGVyY2lzZV9vanNfcnVudGltZTtcclxuICBjb25zdCBzY3JpcHRDb250ZW50ID0gZG9jdW1lbnQucXVlcnlTZWxlY3Rvcihgc2NyaXB0W3R5cGU9XFxcIndlYnItNC1jb250ZW50c1xcXCJdYCkudGV4dENvbnRlbnQ7XHJcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XHJcblxyXG4gIGNvbnN0IG9wdGlvbnMgPSBPYmplY3QuYXNzaWduKHsgaWQ6IGB3ZWJyLTQtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xyXG4gIGNvbnN0IGVkaXRvciA9IG5ldyBXZWJSRXhlcmNpc2VFZGl0b3Iod2ViUk9qcy53ZWJSUHJvbWlzZSwgYmxvY2suY29kZSwgb3B0aW9ucyk7XHJcblxyXG4gIHJldHVybiBlZGl0b3IuY29udGFpbmVyO1xyXG59XHJcbl93ZWJyX3ZhbHVlXzQgPSB3ZWJST2pzLnByb2Nlc3MoX3dlYnJfZWRpdG9yXzQsIHt9KTtcclxuIn0seyJjZWxsTmFtZSI6IndlYnItd2lkZ2V0LTMiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJ7XHJcbiAgLy8gV2FpdCBmb3Igb3V0cHV0IHRvIGJlIHdyaXR0ZW4gdG8gdGhlIERPTSwgdGhlbiB0cmlnZ2VyIHdpZGdldCByZW5kZXJpbmdcclxuICBhd2FpdCBfd2Vicl92YWx1ZV8zO1xyXG4gIGlmICh3aW5kb3cuSFRNTFdpZGdldHMpIHtcclxuICAgIHdpbmRvdy5IVE1MV2lkZ2V0cy5zdGF0aWNSZW5kZXIoKTtcclxuICB9XHJcbiAgaWYgKHdpbmRvdy5QYWdlZFRhYmxlRG9jKSB7XHJcbiAgICB3aW5kb3cuUGFnZWRUYWJsZURvYy5pbml0QWxsKCk7XHJcbiAgfVxyXG59XHJcbiJ9LHsiY2VsbE5hbWUiOiJ3ZWJyLTMiLCJpbmxpbmUiOmZhbHNlLCJtZXRob2ROYW1lIjoiaW50ZXJwcmV0Iiwic291cmNlIjoidmlld29mIF93ZWJyX2VkaXRvcl8zID0ge1xyXG4gIGNvbnN0IHsgV2ViUkV4ZXJjaXNlRWRpdG9yLCBiNjREZWNvZGUgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XHJcbiAgY29uc3Qgc2NyaXB0Q29udGVudCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYHNjcmlwdFt0eXBlPVxcXCJ3ZWJyLTMtY29udGVudHNcXFwiXWApLnRleHRDb250ZW50O1xyXG4gIGNvbnN0IGJsb2NrID0gSlNPTi5wYXJzZShiNjREZWNvZGUoc2NyaXB0Q29udGVudCkpO1xyXG5cclxuICBjb25zdCBvcHRpb25zID0gT2JqZWN0LmFzc2lnbih7IGlkOiBgd2Vici0zLWNvbnRlbnRzYCB9LCBibG9jay5hdHRyKTtcclxuICBjb25zdCBlZGl0b3IgPSBuZXcgV2ViUkV4ZXJjaXNlRWRpdG9yKHdlYlJPanMud2ViUlByb21pc2UsIGJsb2NrLmNvZGUsIG9wdGlvbnMpO1xyXG5cclxuICByZXR1cm4gZWRpdG9yLmNvbnRhaW5lcjtcclxufVxyXG5fd2Vicl92YWx1ZV8zID0gd2ViUk9qcy5wcm9jZXNzKF93ZWJyX2VkaXRvcl8zLCB7fSk7XHJcbiJ9LHsiY2VsbE5hbWUiOiJ3ZWJyLXdpZGdldC0yIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoie1xyXG4gIC8vIFdhaXQgZm9yIG91dHB1dCB0byBiZSB3cml0dGVuIHRvIHRoZSBET00sIHRoZW4gdHJpZ2dlciB3aWRnZXQgcmVuZGVyaW5nXHJcbiAgYXdhaXQgX3dlYnJfdmFsdWVfMjtcclxuICBpZiAod2luZG93LkhUTUxXaWRnZXRzKSB7XHJcbiAgICB3aW5kb3cuSFRNTFdpZGdldHMuc3RhdGljUmVuZGVyKCk7XHJcbiAgfVxyXG4gIGlmICh3aW5kb3cuUGFnZWRUYWJsZURvYykge1xyXG4gICAgd2luZG93LlBhZ2VkVGFibGVEb2MuaW5pdEFsbCgpO1xyXG4gIH1cclxufVxyXG4ifSx7ImNlbGxOYW1lIjoid2Vici0yIiwiaW5saW5lIjpmYWxzZSwibWV0aG9kTmFtZSI6ImludGVycHJldCIsInNvdXJjZSI6InZpZXdvZiBfd2Vicl9lZGl0b3JfMiA9IHtcclxuICBjb25zdCB7IFdlYlJFeGVyY2lzZUVkaXRvciwgYjY0RGVjb2RlIH0gPSB3aW5kb3cuX2V4ZXJjaXNlX29qc19ydW50aW1lO1xyXG4gIGNvbnN0IHNjcmlwdENvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwid2Vici0yLWNvbnRlbnRzXFxcIl1gKS50ZXh0Q29udGVudDtcclxuICBjb25zdCBibG9jayA9IEpTT04ucGFyc2UoYjY0RGVjb2RlKHNjcmlwdENvbnRlbnQpKTtcclxuXHJcbiAgY29uc3Qgb3B0aW9ucyA9IE9iamVjdC5hc3NpZ24oeyBpZDogYHdlYnItMi1jb250ZW50c2AgfSwgYmxvY2suYXR0cik7XHJcbiAgY29uc3QgZWRpdG9yID0gbmV3IFdlYlJFeGVyY2lzZUVkaXRvcih3ZWJST2pzLndlYlJQcm9taXNlLCBibG9jay5jb2RlLCBvcHRpb25zKTtcclxuXHJcbiAgcmV0dXJuIGVkaXRvci5jb250YWluZXI7XHJcbn1cclxuX3dlYnJfdmFsdWVfMiA9IHdlYlJPanMucHJvY2Vzcyhfd2Vicl9lZGl0b3JfMiwge30pO1xyXG4ifSx7ImNlbGxOYW1lIjoid2Vici13aWRnZXQtMSIsImlubGluZSI6ZmFsc2UsIm1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6IntcclxuICAvLyBXYWl0IGZvciBvdXRwdXQgdG8gYmUgd3JpdHRlbiB0byB0aGUgRE9NLCB0aGVuIHRyaWdnZXIgd2lkZ2V0IHJlbmRlcmluZ1xyXG4gIGF3YWl0IF93ZWJyX3ZhbHVlXzE7XHJcbiAgaWYgKHdpbmRvdy5IVE1MV2lkZ2V0cykge1xyXG4gICAgd2luZG93LkhUTUxXaWRnZXRzLnN0YXRpY1JlbmRlcigpO1xyXG4gIH1cclxuICBpZiAod2luZG93LlBhZ2VkVGFibGVEb2MpIHtcclxuICAgIHdpbmRvdy5QYWdlZFRhYmxlRG9jLmluaXRBbGwoKTtcclxuICB9XHJcbn1cclxuIn0seyJjZWxsTmFtZSI6IndlYnItMSIsImlubGluZSI6ZmFsc2UsIm1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJzb3VyY2UiOiJ2aWV3b2YgX3dlYnJfZWRpdG9yXzEgPSB7XHJcbiAgY29uc3QgeyBXZWJSRXhlcmNpc2VFZGl0b3IsIGI2NERlY29kZSB9ID0gd2luZG93Ll9leGVyY2lzZV9vanNfcnVudGltZTtcclxuICBjb25zdCBzY3JpcHRDb250ZW50ID0gZG9jdW1lbnQucXVlcnlTZWxlY3Rvcihgc2NyaXB0W3R5cGU9XFxcIndlYnItMS1jb250ZW50c1xcXCJdYCkudGV4dENvbnRlbnQ7XHJcbiAgY29uc3QgYmxvY2sgPSBKU09OLnBhcnNlKGI2NERlY29kZShzY3JpcHRDb250ZW50KSk7XHJcblxyXG4gIGNvbnN0IG9wdGlvbnMgPSBPYmplY3QuYXNzaWduKHsgaWQ6IGB3ZWJyLTEtY29udGVudHNgIH0sIGJsb2NrLmF0dHIpO1xyXG4gIGNvbnN0IGVkaXRvciA9IG5ldyBXZWJSRXhlcmNpc2VFZGl0b3Iod2ViUk9qcy53ZWJSUHJvbWlzZSwgYmxvY2suY29kZSwgb3B0aW9ucyk7XHJcblxyXG4gIHJldHVybiBlZGl0b3IuY29udGFpbmVyO1xyXG59XHJcbl93ZWJyX3ZhbHVlXzEgPSB3ZWJST2pzLnByb2Nlc3MoX3dlYnJfZWRpdG9yXzEsIHt9KTtcclxuIn0seyJjZWxsTmFtZSI6IndlYnItcHJlbHVkZSIsImlubGluZSI6ZmFsc2UsIm1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6IndlYlJPanMgPSB7XHJcbiAgY29uc3QgeyBXZWJSLCBDaGFubmVsVHlwZSB9ID0gd2luZG93Ll9leGVyY2lzZV9vanNfcnVudGltZS5XZWJSO1xyXG4gIGNvbnN0IHtcclxuICAgIFdlYlJFdmFsdWF0b3IsXHJcbiAgICBXZWJSRW52aXJvbm1lbnRNYW5hZ2VyLFxyXG4gICAgc2V0dXBSLFxyXG4gICAgYjY0RGVjb2RlLFxyXG4gICAgY29sbGFwc2VQYXRoXHJcbiAgfSA9IHdpbmRvdy5fZXhlcmNpc2Vfb2pzX3J1bnRpbWU7XHJcblxyXG4gIGNvbnN0IHN0YXR1c0NvbnRhaW5lciA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKFwiZXhlcmNpc2UtbG9hZGluZy1zdGF0dXNcIik7XHJcbiAgY29uc3QgaW5kaWNhdG9yQ29udGFpbmVyID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoXCJleGVyY2lzZS1sb2FkaW5nLWluZGljYXRvclwiKTtcclxuICBpbmRpY2F0b3JDb250YWluZXIuY2xhc3NMaXN0LnJlbW92ZShcImQtbm9uZVwiKTtcclxuXHJcbiAgbGV0IHN0YXR1c1RleHQgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KFwiZGl2XCIpXHJcbiAgc3RhdHVzVGV4dC5jbGFzc0xpc3QgPSBcImV4ZXJjaXNlLWxvYWRpbmctZGV0YWlsc1wiO1xyXG4gIHN0YXR1c1RleHQgPSBzdGF0dXNDb250YWluZXIuYXBwZW5kQ2hpbGQoc3RhdHVzVGV4dCk7XHJcbiAgc3RhdHVzVGV4dC50ZXh0Q29udGVudCA9IGBJbml0aWFsaXNlYDtcclxuXHJcbiAgLy8gSG9pc3QgaW5kaWNhdG9yIG91dCBmcm9tIGZpbmFsIHNsaWRlIHdoZW4gcnVubmluZyB1bmRlciByZXZlYWxcclxuICBjb25zdCByZXZlYWxTdGF0dXMgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLnJldmVhbCAuZXhlcmNpc2UtbG9hZGluZy1pbmRpY2F0b3JcIik7XHJcbiAgaWYgKHJldmVhbFN0YXR1cykge1xyXG4gICAgcmV2ZWFsU3RhdHVzLnJlbW92ZSgpO1xyXG4gICAgZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5yZXZlYWwgPiAuc2xpZGVzXCIpLmFwcGVuZENoaWxkKHJldmVhbFN0YXR1cyk7XHJcbiAgfVxyXG5cclxuICAvLyBNYWtlIGFueSByZXZlYWwgc2xpZGVzIHdpdGggbGl2ZSBjZWxscyBzY3JvbGxhYmxlXHJcbiAgZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbChcIi5yZXZlYWwgLmV4ZXJjaXNlLWNlbGxcIikuZm9yRWFjaCgoZWwpID0+IHtcclxuICAgIGVsLmNsb3Nlc3QoJ3NlY3Rpb24uc2xpZGUnKS5jbGFzc0xpc3QuYWRkKFwic2Nyb2xsYWJsZVwiKTtcclxuICB9KVxyXG5cclxuICAvLyB3ZWJSIHN1cHBsZW1lbnRhbCBkYXRhIGFuZCBvcHRpb25zXHJcbiAgY29uc3QgZGF0YUNvbnRlbnQgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKGBzY3JpcHRbdHlwZT1cXFwid2Vici1kYXRhXFxcIl1gKS50ZXh0Q29udGVudDtcclxuICBjb25zdCBkYXRhID0gSlNPTi5wYXJzZShiNjREZWNvZGUoZGF0YUNvbnRlbnQpKTtcclxuXHJcbiAgLy8gR3JhYiBsaXN0IG9mIHJlc291cmNlcyB0byBiZSBkb3dubG9hZGVkXHJcbiAgY29uc3QgZmlsZXNDb250ZW50ID0gZG9jdW1lbnQucXVlcnlTZWxlY3Rvcihgc2NyaXB0W3R5cGU9XFxcInZmcy1maWxlXFxcIl1gKS50ZXh0Q29udGVudDtcclxuICBjb25zdCBmaWxlcyA9IEpTT04ucGFyc2UoYjY0RGVjb2RlKGZpbGVzQ29udGVudCkpO1xyXG5cclxuICAvLyBJbml0aWFsaXNlIHdlYlIgYW5kIHNldHVwIGZvciBSIGNvZGUgZXZhbHVhdGlvblxyXG4gIGxldCB3ZWJSUHJvbWlzZSA9IChhc3luYyAod2ViUikgPT4ge1xyXG4gICAgc3RhdHVzVGV4dC50ZXh0Q29udGVudCA9IGBEb3dubG9hZGluZyB3ZWJSYDtcclxuICAgIGF3YWl0IHdlYlIuaW5pdCgpO1xyXG5cclxuICAgIC8vIEluc3RhbGwgcHJvdmlkZWQgbGlzdCBvZiBwYWNrYWdlc1xyXG4gICAgLy8gRW5zdXJlIHdlYlIgZGVmYXVsdCByZXBvIGlzIGluY2x1ZGVkXHJcbiAgICBkYXRhLnBhY2thZ2VzLnJlcG9zLnB1c2goXCJodHRwczovL3JlcG8uci13YXNtLm9yZ1wiKVxyXG4gICAgYXdhaXQgZGF0YS5wYWNrYWdlcy5wa2dzLm1hcCgocGtnKSA9PiAoKSA9PiB7XHJcbiAgICAgIHN0YXR1c1RleHQudGV4dENvbnRlbnQgPSBgRG93bmxvYWRpbmcgcGFja2FnZTogJHtwa2d9YDtcclxuICAgICAgcmV0dXJuIHdlYlIuZXZhbFJWb2lkKGBcclxuICAgICAgICB3ZWJyOjppbnN0YWxsKHBrZywgcmVwb3MgPSByZXBvcylcclxuICAgICAgICBsaWJyYXJ5KHBrZywgY2hhcmFjdGVyLm9ubHkgPSBUUlVFKVxyXG4gICAgICBgLCB7IGVudjoge1xyXG4gICAgICAgIHBrZzogcGtnLFxyXG4gICAgICAgIHJlcG9zOiBkYXRhLnBhY2thZ2VzLnJlcG9zLFxyXG4gICAgICB9fSk7XHJcbiAgICB9KS5yZWR1Y2UoKGN1ciwgbmV4dCkgPT4gY3VyLnRoZW4obmV4dCksIFByb21pc2UucmVzb2x2ZSgpKTtcclxuXHJcbiAgICAvLyBEb3dubG9hZCBhbmQgaW5zdGFsbCByZXNvdXJjZXNcclxuICAgIGF3YWl0IGZpbGVzLm1hcCgoZmlsZSkgPT4gYXN5bmMgKCkgPT4ge1xyXG4gICAgICBjb25zdCBuYW1lID0gZmlsZS5zdWJzdHJpbmcoZmlsZS5sYXN0SW5kZXhPZignLycpICsgMSk7XHJcbiAgICAgIHN0YXR1c1RleHQudGV4dENvbnRlbnQgPSBgRG93bmxvYWRpbmcgcmVzb3VyY2U6ICR7bmFtZX1gO1xyXG4gICAgICBjb25zdCByZXNwb25zZSA9IGF3YWl0IGZldGNoKGZpbGUpO1xyXG4gICAgICBpZiAoIXJlc3BvbnNlLm9rKSB7XHJcbiAgICAgICAgdGhyb3cgbmV3IEVycm9yKGBDYW4ndCBkb3dubG9hZCBcXGAke2ZpbGV9XFxgLiBFcnJvciAke3Jlc3BvbnNlLnN0YXR1c306IFwiJHtyZXNwb25zZS5zdGF0dXNUZXh0fVwiLmApO1xyXG4gICAgICB9XHJcbiAgICAgIGNvbnN0IGRhdGEgPSBhd2FpdCByZXNwb25zZS5hcnJheUJ1ZmZlcigpO1xyXG5cclxuICAgICAgLy8gU3RvcmUgVVJMcyBpbiB0aGUgY3dkIHdpdGhvdXQgYW55IHN1YmRpcmVjdG9yeSBzdHJ1Y3R1cmVcclxuICAgICAgaWYgKGZpbGUuaW5jbHVkZXMoXCI6Ly9cIikpIHtcclxuICAgICAgICBmaWxlID0gbmFtZTtcclxuICAgICAgfVxyXG5cclxuICAgICAgLy8gQ29sbGFwc2UgaGlnaGVyIGRpcmVjdG9yeSBzdHJ1Y3R1cmVcclxuICAgICAgZmlsZSA9IGNvbGxhcHNlUGF0aChmaWxlKTtcclxuXHJcbiAgICAgIC8vIENyZWF0ZSBkaXJlY3RvcnkgdHJlZSwgaWdub3JpbmcgXCJkaXJlY3RvcnkgZXhpc3RzXCIgVkZTIGVycm9yc1xyXG4gICAgICBjb25zdCBwYXJ0cyA9IGZpbGUuc3BsaXQoJy8nKS5zbGljZSgwLCAtMSk7XHJcbiAgICAgIGxldCBwYXRoID0gJyc7XHJcbiAgICAgIHdoaWxlIChwYXJ0cy5sZW5ndGggPiAwKSB7XHJcbiAgICAgICAgcGF0aCArPSBwYXJ0cy5zaGlmdCgpICsgJy8nO1xyXG4gICAgICAgIGNvbnN0IGFuYWx5c2lzID0gYXdhaXQgd2ViUi5GUy5hbmFseXplUGF0aChwYXRoKTtcclxuICAgICAgICBpZiAoIWFuYWx5c2lzLmV4aXN0cykge1xyXG4gICAgICAgICAgdHJ5IHtcclxuICAgICAgICAgICAgYXdhaXQgd2ViUi5GUy5ta2RpcihwYXRoKTtcclxuICAgICAgICAgIH0gY2F0Y2ggKGUpIHtcclxuICAgICAgICAgICAgdGhyb3cgbmV3IEVycm9yKGBGaWxlc3lzdGVtIEVycm9yOiBcIiR7ZS5tZXNzYWdlfVwiLmApO1xyXG4gICAgICAgICAgfVxyXG4gICAgICAgIH1cclxuICAgICAgfVxyXG5cclxuICAgICAgLy8gV3JpdGUgdGhpcyBmaWxlIHRvIHRoZSBWRlNcclxuICAgICAgcmV0dXJuIGF3YWl0IHdlYlIuRlMud3JpdGVGaWxlKGZpbGUsIG5ldyBVaW50OEFycmF5KGRhdGEpKTtcclxuICAgIH0pLnJlZHVjZSgoY3VyLCBuZXh0KSA9PiBjdXIudGhlbihuZXh0KSwgUHJvbWlzZS5yZXNvbHZlKCkpO1xyXG5cclxuICAgIHN0YXR1c1RleHQudGV4dENvbnRlbnQgPSBgSW5zdGFsbGluZyB3ZWJSIHNoaW1zYDtcclxuICAgIGF3YWl0IHdlYlIuZXZhbFJWb2lkKGB3ZWJyOjpzaGltX2luc3RhbGwoKWApO1xyXG5cclxuICAgIHN0YXR1c1RleHQudGV4dENvbnRlbnQgPSBgV2ViUiBlbnZpcm9ubWVudCBzZXR1cGA7XHJcbiAgICBhd2FpdCBzZXR1cFIod2ViUiwgZGF0YSk7XHJcblxyXG4gICAgc3RhdHVzVGV4dC5yZW1vdmUoKTtcclxuICAgIGlmIChzdGF0dXNDb250YWluZXIuY2hpbGRyZW4ubGVuZ3RoID09IDApIHtcclxuICAgICAgc3RhdHVzQ29udGFpbmVyLnBhcmVudE5vZGUucmVtb3ZlKCk7XHJcbiAgICB9XHJcbiAgICByZXR1cm4gd2ViUjtcclxuICB9KShuZXcgV2ViUihkYXRhLm9wdGlvbnMpKTtcclxuXHJcbiAgLy8gS2VlcCB0cmFjayBvZiBpbml0aWFsIE9KUyBibG9jayByZW5kZXJcclxuICBjb25zdCByZW5kZXJlZE9qcyA9IHt9O1xyXG5cclxuICBjb25zdCBwcm9jZXNzID0gYXN5bmMgKGNvbnRleHQsIGlucHV0cykgPT4ge1xyXG4gICAgY29uc3Qgd2ViUiA9IGF3YWl0IHdlYlJQcm9taXNlO1xyXG4gICAgY29uc3QgZXZhbHVhdG9yID0gbmV3IFdlYlJFdmFsdWF0b3Iod2ViUiwgY29udGV4dClcclxuICAgIGF3YWl0IGV2YWx1YXRvci5wcm9jZXNzKGlucHV0cyk7XHJcbiAgICByZXR1cm4gZXZhbHVhdG9yLmNvbnRhaW5lcjtcclxuICB9XHJcblxyXG4gIHJldHVybiB7XHJcbiAgICBwcm9jZXNzLFxyXG4gICAgd2ViUlByb21pc2UsXHJcbiAgICByZW5kZXJlZE9qcyxcclxuICB9O1xyXG59XHJcbiJ9XX0=
+</script>
+<div id="exercise-loading-indicator" class="exercise-loading-indicator d-none d-flex align-items-center gap-2">
+<div id="exercise-loading-status" class="d-flex gap-2">
+
+</div>
+<div class="spinner-grow spinner-grow-sm">
+
+</div>
+</div>
+<script type="vfs-file">
+WyJkYWRvcy8vQ09NTy1GT1JBTS1HRVJBRE9TLm1kIiwiZGFkb3MvL3Byb2pldG9faW5vdmFjYW8uY3N2IiwiZGFkb3MvL2ZvbWVudG9fc2ltLmNzdiIsImxvZ28tdW5lbWF0LnBuZyIsIm1vZGVsby1ub3RhLXRlY25pY2EuZG9jeCJd
+</script>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W119
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../..";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiada");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiada");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/DanielLindomar\.github\.io\/inovacao\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>Políticas e incentivos para a inovação e avaliação de impacto · Prof.&nbsp;Dr.&nbsp;Lindomar Pegorini Daniel · UNEMAT — Campus de Sinop</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
