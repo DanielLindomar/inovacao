@@ -1,0 +1,149 @@
+---
+title: "Roteiro de estudos"
+subtitle: "O que fazer, em que ordem e quanto tempo leva — o guia do aluno para as 30 horas da disciplina"
+author: "Prof. Dr. Lindomar Pegorini Daniel — UNEMAT, Campus de Sinop"
+engine: markdown
+number-sections: false
+---
+
+::: {.logo-topo}
+![](logo-unemat.png){width="110"}
+:::
+
+Esta disciplina tem 30 horas: 16 ao vivo, em dois sábados, e 14 que você faz sozinho, no seu ritmo, com este site. As 14 horas não são "o que sobrou": são elas que preparam os encontros e produzem o trabalho final. Este roteiro diz o que fazer em cada semana, quanto tempo cada coisa leva e para onde ir no site.
+
+::: {.callout-important}
+## As três regras que organizam tudo
+
+**Nada que está no site se repete ao vivo.** O tempo do encontro é para discussão, casos em grupo, leitura de um edital real e a oficina do seu plano. Quem chega sem ter lido as aulas acompanha pior — e essa é a regra, não a punição.
+
+**Um único instrumento de nota.** O plano de captação de recursos, entregue em PDF pela tarefa do SIGAA até **09/10/2026, 23h59**. Laboratórios e atividades em grupo não valem nota: valem pelo que você consegue defender no plano.
+
+**Cada coisa mora num lugar.** O conteúdo está aqui, no site. As gravações, os avisos e a entrega estão na turma virtual do SIGAA. Os encontros acontecem no Google Meet, e o que a turma escreve durante o dia fica no documento compartilhado, cujo link aparece no chat do Meet.
+:::
+
+## O calendário em uma tabela
+
+| Quando | O quê | Onde |
+|---|---|---|
+| até **11/09** | Preparação: ler as quatro aulas do sábado 1 e escolher um caso — cerca de 3 horas | site |
+| **sáb 12/09**, 8h–12h e 14h–18h | Encontro 1 — *Por que existe esse dinheiro* | Meet |
+| **13 a 25/09** | Laboratórios 1 e 2, releitura e três instrumentos para o seu projeto — cerca de 6 horas | site |
+| **sáb 26/09**, 8h–12h e 14h–18h | Encontro 2 — *De onde vem o dinheiro*, com a oficina do plano | Meet |
+| **27/09 a 09/10** | Laboratórios 3 e 4 e a redação do plano — cerca de 5 horas | site + modelo |
+| **sex 09/10, 23h59** | Entrega do PDF | tarefa no SIGAA |
+
+Três, seis e cinco: as 14 horas assíncronas, distribuídas onde rendem mais.
+
+## Antes do dia 12 — cerca de 3 horas
+
+O primeiro sábado começa com uma pergunta no documento compartilhado: *qual projeto você vai trabalhar nesta disciplina?* Chegue com a resposta pronta.
+
+- [ ] **Ler as quatro aulas do Sábado 1** — 2h30, cerca de 35 minutos cada. Na ordem: [Políticas públicas: conceito e ciclo](s1-01-politicas-publicas.qmd), [O sistema brasileiro de CT&I](s1-02-sistema-cti.qmd), [Avaliação: o que o financiador cobra](s1-03-avaliacao.qmd) e [O contrafactual](s1-04-contrafactual.qmd). São textos, não slides: foram escritos para serem lidos sozinho. Anote o que não convenceu — é isso que vale discutir ao vivo.
+- [ ] **Ler [os dez casos](casos.qmd) e escolher um candidato** — 20 minutos. Escolha pelo estágio do projeto e pelo porte da empresa, não pelo setor que você conhece. Se tem um projeto de inovação real, seu ou da sua empresa, ele é melhor do que qualquer caso: só precisa avisar o professor antes.
+- [ ] **Abrir o [Laboratório 1](lab01-explorando-dados.qmd) e clicar em Run Code uma vez** — 5 minutos. Na primeira execução o navegador baixa o R (cerca de 30 MB); depois fica em cache e é instantâneo. Faça isso numa conexão boa, com antecedência, e deixe carregar enquanto faz outra coisa.
+- [ ] **Conferir o link do Meet na turma virtual do SIGAA** — 5 minutos. É lá que ele será publicado, junto com os avisos.
+
+::: {.callout-tip}
+## Como ler uma página de aula
+
+Cada aula traz por extenso o conteúdo de um bloco do encontro: o raciocínio, os exemplos, os números. Leia com uma pergunta em mente — *o que isso muda para o meu projeto?* — e não tente memorizar nomes de programas: para isso existe o catálogo. Se um trecho parecer óbvio demais ou errado demais, anote: as objeções são a melhor matéria-prima da discussão ao vivo.
+:::
+
+## Sábado 12/09 — o que acontece
+
+Blocos de 50 minutos, pausa de 10. Metade dos blocos acontece em salas simultâneas, com câmera aberta; o produto do dia é o documento compartilhado.
+
+**De manhã**, políticas públicas e o sistema de CT&I, e a primeira atividade em grupo: o [Mapa de instrumentos](atividade-mapa.qmd) — seis situações de empresa, uma por grupo, respondidas com o catálogo aberto e com meia informação, de propósito. A terceira pergunta da atividade, *o que ficou sem resposta*, é o programa do dia 26.
+
+**À tarde**, avaliação e contrafactual, e a segunda atividade: [O caso da Lei do Bem](caso-lei-do-bem.qmd), quatro números e aritmética de escola para descobrir por que a comparação mais natural do mundo dá a resposta errada. Depois, lemos juntos um trecho de uma avaliação de verdade — a única leitura obrigatória da disciplina.
+
+O que trazer: o site aberto, o caso escolhido, câmera e um lugar onde dê para falar.
+
+## De 13 a 25/09 — cerca de 6 horas
+
+É a trilha combinada no fim do primeiro encontro. Sem entrega e sem nota: é o insumo da oficina do dia 26, e quem chega sem ela passa a oficina procurando o que os outros já trouxeram.
+
+- [ ] **Reler as quatro aulas com as anotações do encontro** — 1h30. Na segunda leitura, o que ficou vago no sábado costuma encaixar.
+- [ ] **[Laboratório 1 — Explorando os dados de um programa](lab01-explorando-dados.qmd)** — 1 hora. Quem são os beneficiários de um programa de fomento e por que a diferença bruta entre eles e os demais não mede o efeito de nada.
+- [ ] **[Laboratório 2 — Diferenças-em-diferenças](lab02-did.qmd)** — 1h30. O mesmo raciocínio do caso da Lei do Bem, com uma base de dados inteira em vez de quatro números, e uma vantagem que nenhuma avaliação real tem: como os dados são simulados, o efeito verdadeiro é conhecido. Você confere se o método acertou.
+- [ ] **Três instrumentos para o seu projeto** — 2 horas. Comece pela [escada do financiamento](cat-escada.qmd), que cruza instrumento e estágio; depois abra as fichas e anote, para cada instrumento, **nome, prazo, valor, contrapartida e critérios**. Confira a data de cada ficha e o prazo de cada chamada — chamada fecha. Esses três instrumentos são colados no documento do dia 26, na primeira meia hora.
+
+::: {.callout-note}
+## Nos laboratórios, rode os blocos na ordem
+
+Os primeiros blocos carregam os dados usados pelos seguintes; pular um deles produz erro no próximo. Os exercícios têm **Dica** e **Solução** escondidas: tente antes de abrir. Não é preciso instalar nada nem criar conta — o R roda no próprio navegador. Se a página travar, recarregue e rode de novo a partir do primeiro bloco.
+:::
+
+## Sábado 26/09 — o que acontece
+
+O dia inteiro caminha para a oficina do fim da tarde. Cada bloco alimenta uma seção do seu plano.
+
+**De manhã**, a retomada: cada um cola no documento os três instrumentos que encontrou e a turma lê o mural junto. Depois, fomento não reembolsável com um edital real aberto na tela, a EMBRAPII e os incentivos fiscais, com a atividade [Esta empresa pode usar a Lei do Bem?](atividade-elegibilidade.qmd) — cinco perfis, um veredicto por grupo.
+
+**À tarde**, crédito, capital privado e a escada — o mesmo projeto financiado de três jeitos — e a **oficina**: 50 minutos em salas, com o catálogo aberto, para rascunhar as seis seções do seu plano. Ao fim, cada grupo comenta o esqueleto de outro. Você sai do encontro com o plano desenhado; o que falta é escrevê-lo.
+
+O que trazer: os três instrumentos anotados, o caso (ou o projeto) definido e a [página do trabalho final](trabalho-final.qmd) aberta.
+
+## De 27/09 a 09/10 — cerca de 5 horas
+
+- [ ] **[Laboratório 3 — VPL, TIR e payback](lab03-vpl-tir.qmd)** — 45 minutos. O projeto se paga? Em quanto tempo? É a linguagem em que a Seção 4 do plano precisa ser escrita.
+- [ ] **[Laboratório 4 — O custo real de cada fonte](lab04-custo-das-fontes.qmd)** — 1h15. Subvenção, crédito ou equity: com qual sobra mais para o dono? Faça com os números do laboratório e depois **refaça com os números do seu projeto** — essa segunda passada é a sua Seção 4.
+- [ ] **Escrever o plano no modelo** — 2h30. Baixe o [modelo-nota-tecnica.docx](modelo-nota-tecnica.docx) e escreva as seções na ordem: 1 a 3 primeiro (projeto, mapa, escolha), a 4 com o Laboratório 4 ao lado, a 5 e a 6 por último. O esqueleto da oficina é o ponto de partida; o roteiro completo e a rubrica estão na [página do trabalho final](trabalho-final.qmd).
+- [ ] **Revisão de método e entrega** — 30 minutos. Toda informação de valor, prazo ou requisito tem fonte e data da consulta? As orientações em cinza do modelo foram apagadas? Exporte em PDF e envie pela tarefa do SIGAA. Novos envios são aceitos até o prazo: vale o último arquivo.
+
+## O trabalho final em uma página
+
+**O que:** um plano de captação de recursos para um projeto de inovação concreto — o do caso escolhido ou o seu. **Quanto:** 4 a 6 páginas, sem contar capa e referências. **Como:** PDF, individual ou em dupla, na tarefa da turma virtual, até **09/10/2026, 23h59**.
+
+Seis seções, nesta ordem, porque cada uma depende da anterior:
+
+1. **O projeto** — o que a empresa quer fazer, em que estágio está, o que precisa de dinheiro para quê e quanto. O erro mais comum: descrever a empresa e esquecer o projeto.
+2. **O mapa** — quais instrumentos cabem, e **por que os demais foram descartados**. Os descartes valem tanto quanto as escolhas.
+3. **A escolha** — um instrumento real, com nome e número: requisitos, contrapartida, prazos, o que a empresa precisa ter pronto. Se o edital já fechou, diga isso e diga quando se espera o próximo.
+4. **A conta** — quanto essa fonte custa de fato, comparada à segunda melhor opção. É o Laboratório 4 aplicado.
+5. **A medida** — que indicadores mostrariam que o recurso deu resultado, distinguindo produto (o que o projeto entrega) de resultado (o que muda na empresa).
+6. **Riscos e plano B** — o que pode dar errado e qual é a segunda fonte.
+
+| Critério | Peso |
+|---|---:|
+| Clareza do projeto e do que precisa ser financiado | 15% |
+| Pertinência do mapa e qualidade da justificativa dos descartes | 20% |
+| Realismo da escolha — o instrumento existe, está acessível e cabe no estágio | 20% |
+| Consistência da comparação de custo entre as fontes | 20% |
+| Coerência dos indicadores propostos | 15% |
+| Tratamento honesto dos riscos e do plano B | 10% |
+
+::: {.callout-tip}
+## O que aumenta a nota
+
+Um plano **correto** identifica um instrumento compatível e descreve seus requisitos. Um plano **bom** faz três coisas a mais: descarta com argumento, e não por omissão; **data as informações** que usa, porque juros e prazos de edital mudam; e admite o que não sabe. "A contrapartida não consta do release e não consegui abrir o edital" é uma frase que aumenta a nota, não que a diminui. Release de imprensa não substitui edital; página de consultoria não substitui norma.
+:::
+
+## Como usar cada parte do site
+
+**As aulas argumentam; o catálogo consulta.** As oito páginas de aula se leem de ponta a ponta, antes do encontro e depois, para revisar. As cinco páginas do [catálogo](cat-escada.qmd) não: são fichas — quem pode acessar, quanto, que contrapartida cobra, prazo e onde encontrar a chamada — que se abrem quando há uma decisão a tomar. Cada ficha diz de quando é a informação; confie na data, não na ficha.
+
+**As quatro cores dizem o que o dinheiro cobra.** <span class="nat nat-nr">Não reembolsável</span> não volta, mas exige contrapartida em dinheiro e prestação de contas. <span class="nat nat-fis">Fiscal</span> depende do regime tributário da empresa. <span class="nat nat-reemb">Crédito</span> cobra juros e garantias. <span class="nat nat-eq">Equity</span> custa participação na empresa. Não existe dinheiro sem contrapartida — muda a moeda em que se paga.
+
+**Os laboratórios são para defender números, não para aprender R.** Os scripts vêm prontos; o que se pede é ler a saída e entender o que ela diz — cada bloco importante tem uma nota *Como ler essa saída*. Os quatro juntos levam cerca de 4h30, já contadas na trilha acima.
+
+**Os slides são o roteiro do professor.** Servem para acompanhar o encontro e para rever a ordem das discussões; não substituem as aulas, e não têm nada que não esteja escrito por extenso nelas.
+
+**A [página de leituras](leituras.qmd)** reúne as fontes que sustentam o site. Só há uma leitura obrigatória em toda a disciplina — o estudo de avaliação da Lei do Bem lido em conjunto no dia 12 — e ela está lá, com as páginas indicadas.
+
+## Perguntas frequentes
+
+**Preciso instalar o R?** Não. Ele roda dentro do navegador, a partir do botão Run Code. Só a primeira execução é lenta.
+
+**O laboratório vale nota? E a atividade em grupo?** Não e não. A nota é o plano. Mas a Seção 4 do plano é indefensável sem o Laboratório 4, e o mapa da Seção 2 nasce da atividade do dia 12.
+
+**Posso usar um projeto real em vez de um caso?** Sim, e é melhor. Avise o professor antes do dia 12, pela turma virtual.
+
+**Posso fazer o plano em dupla?** Sim. A dupla entrega um único PDF, com os dois nomes na capa, e cada integrante envia o mesmo arquivo pela tarefa.
+
+**Perdi um sábado. E agora?** A gravação vai para o SIGAA. Assista, leia o documento compartilhado daquele dia e faça sozinho a atividade em grupo pela página dela — as duas do dia 12 têm roteiro e pistas completos no site. O que não se recupera é a discussão; o resto, sim.
+
+**O edital que eu escolhi já fechou.** Use-o mesmo assim, dizendo que fechou e quando se espera o próximo ciclo. Planejar para a próxima chamada é uma decisão legítima, desde que explícita.
+
+**Onde tiro dúvidas?** Pela turma virtual do SIGAA, para que a resposta sirva a todos. Metade das dúvidas se repete.

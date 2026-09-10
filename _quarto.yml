@@ -10,6 +10,8 @@ website:
     left:
       - href: index.qmd
         text: Início
+      - href: roteiro.qmd
+        text: Roteiro
       - text: "Aulas"
         menu:
           - text: "— Sábado 1 · 12/09 —"
