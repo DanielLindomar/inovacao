@@ -10,7 +10,7 @@ number-sections: false
 ![](logo-unemat.png){width="110"}
 :::
 
-Esta disciplina tem 30 horas: 16 ao vivo, em dois sábados, e 14 que você faz sozinho, no seu ritmo, com este site. As 14 horas não são "o que sobrou": são elas que preparam os encontros e produzem o trabalho final. Este roteiro diz o que fazer em cada semana, quanto tempo cada coisa leva e para onde ir no site.
+Esta disciplina tem 30 horas: 8 ao vivo — a manhã de 12/09 e a tarde de 26/09 — e 22 que você faz sozinho, no seu ritmo, com este site. As 22 horas não são "o que sobrou": são a maior parte da disciplina, e são elas que preparam os encontros e produzem o trabalho final. Este roteiro diz o que fazer em cada semana, quanto tempo cada coisa leva e para onde ir no site.
 
 ::: {.callout-important}
 ## As três regras que organizam tudo
@@ -27,13 +27,13 @@ Esta disciplina tem 30 horas: 16 ao vivo, em dois sábados, e 14 que você faz s
 | Quando | O quê | Onde |
 |---|---|---|
 | até **11/09** | Preparação: ler as quatro aulas do sábado 1 e escolher um caso — cerca de 3 horas | site |
-| **sáb 12/09**, 8h–12h e 14h–18h | Encontro 1 — *Por que existe esse dinheiro* | Meet |
-| **13 a 25/09** | Laboratórios 1 e 2, releitura e três instrumentos para o seu projeto — cerca de 6 horas | site |
-| **sáb 26/09**, 8h–12h e 14h–18h | Encontro 2 — *De onde vem o dinheiro*, com a oficina do plano | Meet |
-| **27/09 a 09/10** | Laboratórios 3 e 4 e a redação do plano — cerca de 5 horas | site + modelo |
+| **sáb 12/09**, 8h–12h | Encontro 1 — *Por que existe esse dinheiro*, com as Oficinas 1 e 2 do plano | Meet |
+| **13 a 25/09** | Aulas 3 a 8, o estudo da Lei do Bem, Laboratórios 1 e 2 e três instrumentos para o seu projeto — cerca de 10 horas | site |
+| **sáb 26/09**, 14h–18h | Encontro 2 — *De onde vem o dinheiro*, com as Oficinas 3 e 4 do plano | Meet |
+| **27/09 a 09/10** | Laboratórios 3 e 4 e a redação do plano — cerca de 9 horas | site + modelo |
 | **sex 09/10, 23h59** | Entrega do PDF | tarefa no SIGAA |
 
-Três, seis e cinco: as 14 horas assíncronas, distribuídas onde rendem mais.
+Três, dez e nove: as 22 horas assíncronas, distribuídas onde rendem mais.
 
 ## Antes do dia 12 — cerca de 3 horas
 
@@ -54,19 +54,22 @@ Cada aula traz por extenso o conteúdo de um bloco do encontro: o raciocínio, o
 
 Blocos de 50 minutos, pausa de 10. Metade dos blocos acontece em salas simultâneas, com câmera aberta; o produto do dia é o documento compartilhado.
 
-**De manhã**, políticas públicas e o sistema de CT&I; depois, em salas, o [Mapa de instrumentos](atividade-mapa.qmd) — seis situações de empresa, uma por grupo, com a solução recolhida na página: vinte minutos para tentar, abrir e conferir no catálogo. Em seguida a **Oficina 1**: escolher o caso e escrever a Seção 1 do seu plano, o projeto, em meia página, com o professor circulando pelas salas.
+Uma manhã, das 8h às 12h, em quatro blocos. **Na primeira metade**, políticas públicas e o sistema de CT&I em discussão; depois, em salas, o [Mapa de instrumentos](atividade-mapa.qmd) — seis situações de empresa, uma por grupo, com a solução recolhida na página: vinte minutos para tentar, abrir e conferir no catálogo. Em seguida a **Oficina 1**: escolher o caso e escrever a Seção 1 do seu plano, o projeto, em meia página, com o professor circulando pelas salas.
 
-**À tarde**, avaliação e contrafactual; em salas, [O caso da Lei do Bem](caso-lei-do-bem.qmd), quatro números e aritmética de escola, com solução; depois lemos juntos um trecho de uma avaliação de verdade — a única leitura obrigatória da disciplina — e fechamos com a **Oficina 2**: a Seção 5 do plano, os indicadores que mostrariam se o dinheiro fez diferença.
+**Na segunda metade**, avaliação e contrafactual; em salas, [O caso da Lei do Bem](caso-lei-do-bem.qmd), quatro números e aritmética de escola, com solução; e a **Oficina 2**: a Seção 5 do plano, os indicadores que mostrariam se o dinheiro fez diferença. A leitura do estudo real que fecha o caso — a única leitura obrigatória da disciplina — fica para casa, com as perguntas e a solução na página.
 
 O que trazer: o site aberto, o caso escolhido (a Seção 1 é escrita no encontro), câmera e um lugar onde dê para falar.
 
-## De 13 a 25/09 — cerca de 6 horas
+## De 13 a 25/09 — cerca de 10 horas
 
-É a trilha combinada no fim do primeiro encontro. Sem entrega e sem nota: é o insumo da oficina do dia 26, e quem chega sem ela passa a oficina procurando o que os outros já trouxeram.
+É a trilha combinada no fim do primeiro encontro — e a maior das três, porque a tarde do dia 12 e a manhã do dia 26 são suas. Sem entrega e sem nota: é o insumo das oficinas do dia 26, e quem chega sem ela passa as oficinas procurando o que os outros já trouxeram.
 
-- [ ] **Reler as quatro aulas e passar a limpo as Seções 1 e 5** rascunhadas nas oficinas — 1h30. Na segunda leitura, o que ficou vago no sábado costuma encaixar.
+- [ ] **Reler as aulas 1 e 2 e ler com calma as aulas 3 e 4** — 1h30. A manhã só tocou nelas; [Avaliação](s1-03-avaliacao.qmd) e [O contrafactual](s1-04-contrafactual.qmd) são o que sustenta a Seção 5 do seu plano.
+- [ ] **Ler o estudo da Lei do Bem** — 1 hora. Shimada, Kannebley Jr. e De Negri (2013), páginas 5 a 13, pelo link na página [do caso](caso-lei-do-bem.qmd), com as cinco perguntas e a solução logo abaixo. É a única leitura obrigatória da disciplina.
+- [ ] **Passar a limpo as Seções 1 e 5** rascunhadas nas oficinas — 30 minutos.
 - [ ] **[Laboratório 1 — Explorando os dados de um programa](lab01-explorando-dados.qmd)** — 1 hora. Quem são os beneficiários de um programa de fomento e por que a diferença bruta entre eles e os demais não mede o efeito de nada.
 - [ ] **[Laboratório 2 — Diferenças-em-diferenças](lab02-did.qmd)** — 1h30. O mesmo raciocínio do caso da Lei do Bem, com uma base de dados inteira em vez de quatro números, e uma vantagem que nenhuma avaliação real tem: como os dados são simulados, o efeito verdadeiro é conhecido. Você confere se o método acertou.
+- [ ] **Ler as quatro aulas do Sábado 2** — 2h30: [Fomento não reembolsável](s2-01-nao-reembolsavel.qmd), [EMBRAPII](s2-02-embrapii.qmd), [Incentivos fiscais](s2-03-incentivos-fiscais.qmd) e [Crédito e capital privado](s2-04-credito-e-capital-privado.qmd). Na tarde do dia 26 elas não serão expostas — serão usadas.
 - [ ] **Três instrumentos para o seu projeto** — 2 horas. Comece pela [escada do financiamento](cat-escada.qmd), que cruza instrumento e estágio; depois abra as fichas e anote, para cada instrumento, **nome, prazo, valor, contrapartida e critérios**. Confira a data de cada ficha e o prazo de cada chamada — chamada fecha. Esses três instrumentos são colados no documento do dia 26, na primeira meia hora.
 
 ::: {.callout-note}
@@ -79,18 +82,19 @@ Os primeiros blocos carregam os dados usados pelos seguintes; pular um deles pro
 
 O dia inteiro caminha para a oficina do fim da tarde. Cada bloco alimenta uma seção do seu plano.
 
-**De manhã**, a retomada: cada um cola no documento os três instrumentos que encontrou e a turma lê o mural junto. Depois, fomento não reembolsável com um edital real aberto na tela, a EMBRAPII e os incentivos fiscais; em salas, [Esta empresa pode usar a Lei do Bem?](atividade-elegibilidade.qmd) — seis perfis, um por grupo, com solução — e a **Oficina 3**: as Seções 2 e 3 do plano, o mapa dos instrumentos e a escolha, com o mural já na mesa.
+Uma tarde, das 14h às 18h, em quatro blocos, que parte do princípio de que as aulas 5 a 8 foram lidas. **Na primeira metade**, a retomada: cada um cola no documento os três instrumentos que encontrou e a turma lê o mural junto. Depois, um edital real aberto na tela, o que a EMBRAPII e os incentivos fiscais cobram; em salas, [Esta empresa pode usar a Lei do Bem?](atividade-elegibilidade.qmd) — seis perfis, um por grupo, com solução — e a **Oficina 3**: as Seções 2 e 3 do plano, o mapa dos instrumentos e a escolha, com o mural já na mesa.
 
-**À tarde**, crédito, capital privado e a escada — o mesmo projeto financiado de três jeitos — e a **Oficina 4**: a Seção 4, a conta, com o Laboratório 4 ao lado, e a Seção 6, riscos e plano B. Ao fim, cada grupo comenta o esqueleto de outro. Você sai do encontro com as seis seções rascunhadas; o que falta é passar a limpo.
+**Na segunda metade**, crédito, capital privado e a escada — o mesmo projeto financiado de três jeitos — e a **Oficina 4**: a Seção 4, a conta, com o Laboratório 4 ao lado, e a Seção 6, riscos e plano B. Ao fim, cada grupo comenta o esqueleto de outro. Você sai do encontro com as seis seções rascunhadas; o que falta é passar a limpo.
 
 O que trazer: os três instrumentos anotados, o caso (ou o projeto) definido e a [página do trabalho final](trabalho-final.qmd) aberta.
 
-## De 27/09 a 09/10 — cerca de 5 horas
+## De 27/09 a 09/10 — cerca de 9 horas
 
 - [ ] **[Laboratório 3 — VPL, TIR e payback](lab03-vpl-tir.qmd)** — 45 minutos. O projeto se paga? Em quanto tempo? É a linguagem em que a Seção 4 do plano precisa ser escrita.
-- [ ] **[Laboratório 4 — O custo real de cada fonte](lab04-custo-das-fontes.qmd)** — 1h15. Subvenção, crédito ou equity: com qual sobra mais para o dono? Faça com os números do laboratório e depois **refaça com os números do seu projeto** — essa segunda passada é a sua Seção 4.
-- [ ] **Passar o esqueleto a limpo no modelo** — 2h30. Baixe o [modelo-nota-tecnica.docx](modelo-nota-tecnica.docx) e transforme em texto o que foi rascunhado nas quatro oficinas, na ordem das seções; a Seção 4 se refaz com os números do seu projeto no Laboratório 4. O roteiro completo e a rubrica estão na [página do trabalho final](trabalho-final.qmd).
-- [ ] **Revisão de método e entrega** — 30 minutos. Toda informação de valor, prazo ou requisito tem fonte e data da consulta? As orientações em cinza do modelo foram apagadas? Exporte em PDF e envie pela tarefa do SIGAA. Novos envios são aceitos até o prazo: vale o último arquivo.
+- [ ] **[Laboratório 4 — O custo real de cada fonte](lab04-custo-das-fontes.qmd)** — 1h15. Subvenção, crédito ou equity: com qual sobra mais para o dono?
+- [ ] **Refazer o Laboratório 4 com os números do seu projeto** — 1 hora. Essa segunda passada é a sua Seção 4: o custo da fonte escolhida contra a segunda opção, em valor presente.
+- [ ] **Passar o esqueleto a limpo no modelo** — 5 horas, menos de uma por seção, com a fonte de cada número ao lado. Baixe o [modelo-nota-tecnica.docx](modelo-nota-tecnica.docx) e transforme em texto o que foi rascunhado nas quatro oficinas, na ordem das seções. O roteiro completo e a rubrica estão na [página do trabalho final](trabalho-final.qmd).
+- [ ] **Revisão de método e entrega** — 1 hora. Toda informação de valor, prazo ou requisito tem fonte e data da consulta? As orientações em cinza do modelo foram apagadas? Exporte em PDF e envie pela tarefa do SIGAA. Novos envios são aceitos até o prazo: vale o último arquivo.
 
 ## O trabalho final em uma página
 
@@ -132,7 +136,7 @@ Um plano **correto** identifica um instrumento compatível e descreve seus requi
 
 **Os slides são o roteiro do professor.** Servem para acompanhar o encontro e para rever a ordem das discussões; não substituem as aulas, e não têm nada que não esteja escrito por extenso nelas.
 
-**A [página de leituras](leituras.qmd)** reúne as fontes que sustentam o site. Só há uma leitura obrigatória em toda a disciplina — o estudo de avaliação da Lei do Bem lido em conjunto no dia 12 — e ela está lá, com as páginas indicadas.
+**A [página de leituras](leituras.qmd)** reúne as fontes que sustentam o site. Só há uma leitura obrigatória em toda a disciplina — o estudo de avaliação da Lei do Bem, lido em casa entre os dois encontros — e ela está lá, com as páginas indicadas e, na página do caso, as perguntas com solução.
 
 ## Perguntas frequentes
 

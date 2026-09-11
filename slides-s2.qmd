@@ -14,6 +14,24 @@ format:
     footer: "financiamento da inovação · UNEMAT"
 ---
 
+## O roteiro da tarde {.smaller}
+
+::: {.sala}
+Uma tarde, das 14h às 18h. As aulas 5 a 8 foram lidas antes — aqui só o que não está escrito: o edital na tela, as decisões e o seu plano.
+:::
+
+| | |
+|---|---|
+| 14h00 | Retomada — o mural dos instrumentos (20 min) |
+| 14h25 | Bloco 1 a 3 — não reembolsável com um edital real, EMBRAPII, incentivos fiscais (50 min) |
+| 15h15 | Pausa |
+| 15h25 | Esta empresa pode usar a Lei do Bem?, em salas (20 min) |
+| 15h50 | **Oficina 3** — Seções 2 e 3, o mapa e a escolha (35 min) |
+| 16h25 | Pausa |
+| 16h35 | Blocos 5 a 7 — crédito, capital privado e a escada (30 min) |
+| 17h05 | **Oficina 4** — Seções 4 e 6, a conta e os riscos (45 min) |
+| 17h50 | Encerramento e entrega |
+
 ## Retomada {.smaller}
 
 ::: {.sala}
@@ -307,7 +325,7 @@ O critério não é inovar. É ter base de cálculo para excluir.
 ## Oficina 3 · Seções 2 e 3 · O mapa e a escolha {.smaller}
 
 ::: {.sala}
-**40 minutos, em salas.** Com o catálogo e o mural abertos, no documento compartilhado:
+**35 minutos, em salas.** Com o catálogo e o mural abertos, no documento compartilhado:
 
 - **Seção 2 — o mapa.** Quais instrumentos cabem no seu projeto, e **por que os outros foram descartados**. Os descartes valem tanto quanto as escolhas.
 - **Seção 3 — a escolha.** Um instrumento real, com nome e número: requisitos, contrapartida, prazos, o que a empresa precisa ter pronto. Se o edital fechou, diga quando se espera o próximo.
@@ -436,7 +454,7 @@ Não é argumento contra editais. É argumento contra persegui-los sem fazer a c
 ## Seções 4 e 6 · A conta e os riscos {.smaller}
 
 ::: {.sala}
-**50 minutos, em salas.** No documento compartilhado, com o Laboratório 4 aberto:
+**45 minutos, em salas.** No documento compartilhado, com o Laboratório 4 aberto:
 
 - **Seção 4 — a conta.** Quanto a fonte escolhida custa de fato, comparada à segunda melhor opção: contrapartida em dinheiro, juros, diluição, tempo de prestação de contas. Não precisa ser sofisticado; precisa ser honesto e comparável.
 - **Seção 6 — riscos e plano B.** O que pode dar errado na submissão, na execução e na prestação de contas — e qual é a segunda fonte se a primeira não vier.

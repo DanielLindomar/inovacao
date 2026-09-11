@@ -14,7 +14,7 @@ engine: knitr
 
 Quatro números, aritmética de escola. Ao final você deve conseguir explicar, para alguém que não fez esta disciplina, **por que a comparação mais natural do mundo dá a resposta errada** — e o que fazer no lugar dela.
 
-Sem software. Sem nota. Vinte minutos em sala simultânea: façam as contas dos quatro passos e respondam às seis perguntas antes de abrir a **Solução**. Depois, no encontro, a leitura conjunta de um estudo real, conduzida pelo professor.
+Sem software. Sem nota. Vinte minutos em sala simultânea: façam as contas dos quatro passos e respondam às seis perguntas antes de abrir a **Solução**. Depois, em casa, a leitura de um estudo real — com as perguntas e a solução logo abaixo.
 :::
 
 ## A afirmação a ser examinada
@@ -83,9 +83,9 @@ Variação das beneficiárias: 1.150 − 820. Variação das não beneficiárias
 6. **Ameaça, sim.** Se a soja disparou e as beneficiárias são majoritariamente do agronegócio, elas teriam investido mais de qualquer forma; a trajetória delas divergiria da dos outros mesmo sem incentivo, e o DiD atribuiria ao programa um efeito que é da soja. A correção é comparar beneficiárias e não beneficiárias **dentro do mesmo setor**, ou controlar pelo choque de preço.
 :::
 
-## A leitura conjunta
+## A leitura do estudo — em casa, até 25/09
 
-Depois da atividade, lemos juntos, no encontro, um trecho de uma avaliação **de verdade** — para ver como pesquisadores enfrentam, com dados reais, o mesmo problema que vocês acabaram de resolver com quatro números.
+Depois da atividade, leia um trecho de uma avaliação **de verdade** — para ver como pesquisadores enfrentam, com dados reais, o mesmo problema que vocês acabaram de resolver com quatro números.
 
 ::: {.callout-note}
 ## O estudo

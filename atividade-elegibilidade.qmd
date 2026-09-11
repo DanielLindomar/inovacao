@@ -1,6 +1,6 @@
 ---
 title: "Esta empresa pode usar a Lei do Bem?"
-subtitle: "Atividade com solução — sábado 2, manhã"
+subtitle: "Atividade com solução — sábado 2, tarde"
 author: "Prof. Dr. Lindomar Pegorini Daniel — UNEMAT, Campus de Sinop"
 engine: knitr
 ---

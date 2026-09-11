@@ -32,8 +32,8 @@ O **catálogo** consulta. São fichas de instrumentos: quem pode acessar, quanto
 
 | | |
 |---|---|
-| **Encontros síncronos** | Sábados **12/09** e **26/09**, das **8h às 12h** e das **14h às 18h**, por Google Meet |
-| **Fora dos encontros** | 14 horas de leitura, laboratórios e produção do trabalho final, no seu ritmo — o [roteiro de estudos](roteiro.qmd) diz o que fazer em cada semana |
+| **Encontros síncronos** | **Sábado 12/09, das 8h às 12h**, e **sábado 26/09, das 14h às 18h**, por Google Meet |
+| **Fora dos encontros** | 22 horas de leitura, laboratórios e produção do trabalho final, no seu ritmo — o [roteiro de estudos](roteiro.qmd) diz o que fazer em cada semana |
 | **Avaliação** | Um único trabalho final, entregue em PDF na tarefa aberta no SIGAA |
 | **Gravações** | Publicadas no SIGAA após cada encontro |
 
@@ -122,9 +122,9 @@ A página de [leituras](leituras.qmd) reúne as fontes que sustentam o site: os 
 ::: {.callout-note}
 ## Como usar este site
 
-**Comece pelo [Roteiro de estudos](roteiro.qmd).** Ele diz o que fazer em cada semana, quanto tempo cada coisa leva e para onde ir no site — as 14 horas assíncronas, distribuídas.
+**Comece pelo [Roteiro de estudos](roteiro.qmd).** Ele diz o que fazer em cada semana, quanto tempo cada coisa leva e para onde ir no site — as 22 horas assíncronas, distribuídas.
 
-**Antes de cada sábado**, leia as quatro páginas de aula daquele encontro. São textos, não slides — foram escritos para serem lidos sozinho.
+**Antes de cada encontro**, leia as quatro páginas de aula daquele sábado. São textos, não slides — foram escritos para serem lidos sozinho, e o encontro parte do princípio de que foram lidos.
 
 **Nos laboratórios**, rode os blocos **na ordem**: os primeiros carregam os dados usados pelos seguintes. Os exercícios têm **Dica** e **Solução** — tente antes de abrir a solução.
 

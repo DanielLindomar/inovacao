@@ -19,12 +19,28 @@ format:
 ::: {.sala}
 **O combinado do dia**
 
-- Blocos de 50 minutos, pausa de 10. A pausa é de verdade — eu também saio.
+- Uma manhã, das 8h às 12h: quatro blocos de 50 minutos, três pausas de 10. A pausa é de verdade — eu também saio.
 - **Nada que está no site será repetido aqui.** O encontro é para o que só funciona ao vivo.
-- Metade dos blocos acontece em salas simultâneas. Câmera aberta lá e nas plenárias.
-- As atividades vêm com solução no site. O produto do dia é o **esqueleto do seu plano**: duas seções hoje, quatro no dia 26, no documento compartilhado.
+- Metade do tempo acontece em salas simultâneas. Câmera aberta lá.
+- As atividades vêm com solução no site. O produto da manhã é o **esqueleto do seu plano**: duas seções hoje, quatro no dia 26, no documento compartilhado.
+- A tarde é sua: as aulas 3 e 4 e a leitura do estudo ficam no site, com solução.
 - A gravação vai para o SIGAA.
 :::
+
+## O roteiro da manhã {.smaller}
+
+| | |
+|---|---|
+| 8h00 | Abertura e o seu projeto |
+| 8h15 | Blocos 1 e 2 — políticas públicas e quem é quem |
+| 9h05 | Pausa |
+| 9h15 | Mapa de instrumentos, em salas (20 min) e fechamento |
+| 9h45 | **Oficina 1** — Seção 1, o projeto (30 min) |
+| 10h15 | Pausa |
+| 10h25 | Blocos 5 e 6 — avaliação e contrafactual |
+| 11h00 | O caso da Lei do Bem, em salas (20 min) |
+| 11h20 | **Oficina 2** — Seção 5, a medida (30 min) |
+| 11h50 | Fechamento: até 25/09 |
 
 ---
 
@@ -203,7 +219,7 @@ Quatro. E em setembro de 2026 não há edital estadual de subvenção aberto em 
 ## Seção 1 · O projeto {.smaller}
 
 ::: {.sala}
-**40 minutos, em salas.** Cada um, no documento compartilhado:
+**30 minutos, em salas.** Cada um, no documento compartilhado:
 
 1. Escolha o caso (ou o projeto próprio).
 2. Escreva a **Seção 1** do seu plano em meia página: o que a empresa quer fazer, em que estágio está, **o que precisa de dinheiro para quê** e quanto.
@@ -319,7 +335,7 @@ Dispêndio médio anual em P&D, em R\$ mil:
 Façam as contas antes de abrir a **Solução**.
 :::
 
-# Bloco 8 · A decomposição, o estudo e a Oficina 2
+# Bloco 8 · A decomposição e a Oficina 2
 
 ## A decomposição {.smaller}
 
@@ -357,14 +373,14 @@ E se a soja tivesse disparado no período?
 A defesa não é estatística. É conhecer o setor.
 :::
 
-## A leitura conjunta {.smaller}
+## A leitura do estudo — em casa {.smaller}
 
 ::: {.sala}
-**Shimada, Kannebley Jr. e De Negri (2013), páginas 5 a 13** — site → *Avaliação · O caso da Lei do Bem · A leitura conjunta*.
+**Shimada, Kannebley Jr. e De Negri (2013), páginas 5 a 13** — site → *Avaliação · O caso da Lei do Bem · A leitura do estudo*. A única leitura obrigatória da disciplina, até 25/09.
 
 Três defesas contra a seleção: pareamento, efeitos fixos, tendência comum. Reconheçam as duas que vocês acabaram de fazer com quatro números.
 
-E o efeito que **não aparece** nos setores de alta tecnologia.
+E o efeito que **não aparece** nos setores de alta tecnologia. As cinco perguntas e a solução estão na página.
 :::
 
 ## Oficina 2 · Seção 5 · A medida {.smaller}
@@ -384,12 +400,14 @@ Todo edital cobra isso na prestação de contas. Quem pensa nos indicadores no f
 ## Até 25/09 {.smaller}
 
 ::: {.sala}
-**No site, cerca de 6 horas:**
+**No site, cerca de 10 horas:**
 
-1. Reler as quatro páginas de aula de hoje.
-2. Fazer os **Laboratórios 1 e 2** — R rodando no navegador, nada para instalar.
-3. Percorrer o **catálogo** e trazer **três instrumentos** aplicáveis ao seu projeto: prazo, valor, contrapartida, critérios.
-4. Passar a limpo as **Seções 1 e 5** rascunhadas hoje.
+1. Reler as aulas 1 e 2; ler com calma as aulas 3 e 4, que a manhã só tocou.
+2. Ler o **estudo** (páginas 5 a 13) com as cinco perguntas e a solução.
+3. Fazer os **Laboratórios 1 e 2** — R rodando no navegador, nada para instalar.
+4. Ler as **aulas 5 a 8** antes do dia 26 — na tarde do dia 26 elas não serão expostas, só usadas.
+5. Percorrer o **catálogo** e trazer **três instrumentos** aplicáveis ao seu projeto: prazo, valor, contrapartida, critérios.
+6. Passar a limpo as **Seções 1 e 5** rascunhadas hoje.
 
 Sem entrega e sem nota. É o insumo das oficinas do dia 26 — as Seções 2, 3, 4 e 6.
 :::
