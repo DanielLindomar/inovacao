@@ -1,6 +1,6 @@
 ---
 title: "Mapa de instrumentos"
-subtitle: "Atividade em grupo — sábado 1, ao fim da manhã"
+subtitle: "Atividade com solução — sábado 1, manhã"
 author: "Prof. Dr. Lindomar Pegorini Daniel — UNEMAT, Campus de Sinop"
 engine: knitr
 ---
@@ -18,7 +18,7 @@ Seis situações. Cada grupo recebe uma e volta com três respostas:
 2. **Por que os outros foram descartados?**
 3. **O que vocês não conseguiram responder** com o que sabem até agora?
 
-Quarenta minutos em sala simultânea, mais a plenária. Sem nota.
+Vinte minutos em sala simultânea: leiam a situação, tentem responder às três perguntas com o catálogo aberto, abram a **Dica** se travarem e, por fim, a **Solução** — e confiram cada afirmação dela nas fichas. Sem nota: o que se leva daqui é para o trabalho final.
 :::
 
 ::: {.callout-important}
@@ -29,7 +29,7 @@ Esta atividade acontece **antes** do segundo sábado, que é quando os instrumen
 Isso é intencional. A terceira pergunta — o que ficou sem resposta — é o programa do dia 26. Anotem com honestidade: dúvida bem formulada vale mais aqui do que resposta chutada.
 :::
 
-## Como responder
+## Como ler cada situação
 
 Antes de escolher o instrumento, respondam para vocês mesmos:
 
@@ -39,7 +39,7 @@ Antes de escolher o instrumento, respondam para vocês mesmos:
 
 A tabela da [escada do financiamento](cat-escada.qmd) responde às duas primeiras. A terceira é decisão de negócio.
 
-Escrevam na seção do grupo, no documento compartilhado.
+Não é preciso entregar nada: a solução está logo abaixo de cada situação, recolhida. O exercício é tentar antes de abrir — e, depois de abrir, discordar com argumento.
 
 ---
 
@@ -51,6 +51,26 @@ O presidente ouviu falar em "editais de inovação" e quer saber se vale a pena 
 
 ::: {.callout-tip collapse="true" title="Uma pista, se o grupo travar"}
 Prestem atenção em duas coisas: a tecnologia é **madura** — isso muda o enquadramento como P&D — e o gasto é quase todo em **equipamento**, não em desenvolvimento. Comparem com o que cada natureza de dinheiro costuma financiar.
+:::
+
+::: {.callout-note collapse="true" title="Solução"}
+**Instrumento recomendado.** Crédito: Desenvolve MT / Inovacred. Cooperativas com sede em Mato Grosso são elegíveis, e a linha financia exatamente o que o projeto precisa — equipamentos. Até R\$ 5 milhões por operação, TR + 6,068% ao ano para pequeno porte (TR + 6,605% para médio), até 96 meses com 24 de carência, informação de 28/08/2026. Complemento possível: Sebraetec, que subsidia 70% da consultoria de adaptação do processo, se a cooperativa se enquadrar como pequena empresa. A resposta ao presidente é que **não vale esperar edital**.
+
+**Por que os outros foram descartados.**
+
+- Subvenção (FINEP 774, Tecnova, Startup MT): tecnologia madura e gasto em equipamento não são P&D; a FINEP exige projeto de R\$ 5 milhões ou mais e ICT parceira; os editais estaduais estão fechados e, mesmo abertos, pagam equipamento só até 30% do valor, com teto de R\$ 150 mil.
+- EMBRAPII: exige desenvolvimento pré-competitivo (TRL 3 a 6) com contrapartida em dinheiro; adaptar uma tecnologia madura à escala da cooperativa dificilmente se enquadra.
+- Lei do Bem: não há P&D a excluir, e o gasto é investimento em ativo, não dispêndio de pesquisa.
+- Equity: cooperativa não vende participação, e o negócio não tem o perfil de retorno que o investidor exige.
+- Centelha: não é ideia nem empresa nova.
+
+**O que fica em aberto — pauta do dia 26.**
+
+- Se a linha da Desenvolve MT tem saldo agora: a disponibilidade de 2026 não está confirmada — (65) 3613-7900.
+- O enquadramento de porte e o regime tributário da cooperativa, que decidem o Sebraetec e a taxa de juros.
+- Se "adaptar à escala" pode ser descrito como desenvolvimento com incerteza técnica; se puder, a EMBRAPII volta ao mapa.
+
+*Solução escrita em setembro de 2026; prazos e condições vêm das fichas do [catálogo](cat-escada.qmd).*
 :::
 
 ---
@@ -65,6 +85,26 @@ O contador de uma delas disse que "sem CNPJ não dá para captar nada".
 O contador está certo para a maior parte do catálogo — e errado para pelo menos um instrumento. Procurem na coluna **Ideia** da escada e verifiquem a elegibilidade.
 :::
 
+::: {.callout-note collapse="true" title="Solução"}
+**Instrumento recomendado.** O instrumento desenhado para este estágio é o **Centelha**: pessoa física pode se inscrever, a empresa é constituída depois da aprovação, até R\$ 86 mil de subvenção mais bolsas em Mato Grosso. O contador está errado quanto a ele. Só que em setembro de 2026 o Centelha MT está fechado — a terceira edição está em execução, e os ciclos são de dois a três anos. A porta aberta agora é o capital privado de estágio inicial: constituir a empresa (ME ou Inova Simples) e procurar **investidor-anjo** (ticket médio de R\$ 114 mil em 2025) e um **programa de aceleração** (aportes de R\$ 80 a 250 mil por 5% a 10% de participação). Enquanto isso, validar com o mínimo: ninguém financia ideia, financia-se evidência de que a ideia funciona.
+
+**Por que os outros foram descartados.**
+
+- RHAE (CNPq): exige empresa cadastrada e bolsa de mestre ou doutor por 12 meses — só depois do CNPJ.
+- EMBRAPII: exige empresa e contrapartida em dinheiro.
+- Crédito: sem empresa, sem receita e sem garantias não há operação.
+- Lei do Bem: não há gasto nem apuração de imposto.
+- Startup Mato Grosso: encerrada em 31/07 e exige atividade operacional comprovada. FINEP 774: mínimo de R\$ 5 milhões.
+
+**O que fica em aberto — pauta do dia 26.**
+
+- Quando abre a quarta edição do Centelha MT.
+- Se existe anjo ou aceleradora com foco em saúde digital acessível a partir de Mato Grosso.
+- Quanto custa constituir e manter a empresa antes de ter receita — e se vale abrir CNPJ só para captar.
+
+*Solução escrita em setembro de 2026; prazos e condições vêm das fichas do [catálogo](cat-escada.qmd).*
+:::
+
 ---
 
 ## Situação 3 · A folha de pagamento que ninguém financia
@@ -73,6 +113,26 @@ Uma transportadora de grãos quer desenvolver um sistema de roteirização com p
 
 ::: {.callout-tip collapse="true" title="Uma pista, se o grupo travar"}
 Duas restrições atuam aqui ao mesmo tempo: o regime tributário fecha uma porta, e a natureza do gasto — pessoas, não equipamento — fecha outras. Procurem o instrumento que financia exatamente **gente qualificada dentro da empresa**.
+:::
+
+::: {.callout-note collapse="true" title="Solução"}
+**Instrumento recomendado.** **CNPq RHAE Inteligência Artificial — Chamada 29/2026**: paga bolsas para pesquisadores dentro da empresa, até R\$ 300 mil por proposta, contrapartida mínima de 20% que aceita recursos não financeiros, prazo 09/10/2026 e 30% dos recursos reservados a Norte, Nordeste e Centro-Oeste. Roteirização com previsão de demanda sobre cinco anos de dados é IA no sentido da chamada. Exige ao menos uma bolsa para mestre ou doutor por 12 meses — a "consultoria" vira um pesquisador contratado. A condição: a chamada só aceita micro e pequena empresa (LC 123) ou startup (LC 182). Se a transportadora for maior que isso, o caminho é a **EMBRAPII** com a Unidade do IFMT (tecnologias digitais para agro e indústria), que cobre até um terço do projeto — 50% se a receita for até R\$ 90 milhões — com contrapartida em dinheiro.
+
+**Por que os outros foram descartados.**
+
+- Lei do Bem: lucro presumido elimina, sem contorno.
+- Sebraetec: financia serviço de consultoria, não folha de analistas; e só para MPE.
+- Crédito (Desenvolve MT): financia consultoria e software, mas pagar salário com juros de TR + 6% ao ano é o caminho mais caro.
+- FINEP 774: mínimo de R\$ 5 milhões. Tecnova e Startup MT: fechados.
+- Equity: transportadora estabelecida não é caso de venture capital.
+
+**O que fica em aberto — pauta do dia 26.**
+
+- A receita bruta da empresa — é ela que decide entre RHAE e EMBRAPII.
+- Se vale migrar para o lucro real para acessar a Lei do Bem no futuro: pergunta de planejamento tributário.
+- Se um sistema para uso próprio, sem venda, é aceito como "solução de IA" pela chamada.
+
+*Solução escrita em setembro de 2026; prazos e condições vêm das fichas do [catálogo](cat-escada.qmd).*
 :::
 
 ---
@@ -87,6 +147,24 @@ O valor é grande demais para os instrumentos de pequeno porte e pequeno demais 
 Quando nenhuma fonte isolada resolve, a resposta costuma ser uma **combinação**. Pensem em qual parte do valor cada instrumento poderia cobrir, e verifiquem se as regras permitem somá-los.
 :::
 
+::: {.callout-note collapse="true" title="Solução"}
+**Instrumento recomendado.** Combinação, não fonte única. **(1) Lei do Bem** sobre todo o dispêndio de P&D: lucro real, lucro fiscal consistente e um projeto sem solução no mercado — exclusão de 60% a 80% × 34% dá entre R\$ 1,3 e 1,8 milhão de economia sobre R\$ 6,5 milhões, desde que haja lucro fiscal para absorver. **(2) FINEP Chamada 774**, Cadeias Agroindustriais Sustentáveis: o valor cabe (projetos de R\$ 5 a 25 milhões), há R\$ 90 milhões reservados ao Centro-Oeste, mas exige ICT parceira e o prazo é 30/09/2026. **(3)** Se a 774 não for viável no prazo: EMBRAPII (até um terço, ou 50% se a receita for até R\$ 90 milhões, com contrapartida em dinheiro) para a parte de desenvolvimento, mais crédito Desenvolve MT / Inovacred (até R\$ 5 milhões, TR + 6,605% ao ano, 96 meses) para o restante.
+
+**Por que os outros foram descartados.**
+
+- Instrumentos de pequeno porte (Startup MT, RHAE, Sebraetec): teto de R\$ 150 a 300 mil, ou só serviço — pequenos demais.
+- BNDES (mínimo de R\$ 20 milhões) e crédito direto da FINEP (a partir de R\$ 30 milhões, receita mínima de R\$ 90 milhões): grandes demais.
+- Equity: frigorífico não é caso de venture capital.
+
+**O que fica em aberto — pauta do dia 26.**
+
+- As regras de acumulação: a parcela paga com subvenção não deve entrar na base da Lei do Bem — conferir.
+- Se há tempo de montar a parceria com uma ICT até 30/09.
+- O saldo do Inovacred na Desenvolve MT.
+
+*Solução escrita em setembro de 2026; prazos e condições vêm das fichas do [catálogo](cat-escada.qmd).*
+:::
+
 ---
 
 ## Situação 5 · A empresa que já gasta e não sabe
@@ -97,6 +175,24 @@ O diretor quer saber onde captar recurso para o **próximo** projeto. Ninguém n
 
 ::: {.callout-tip collapse="true" title="Uma pista, se o grupo travar"}
 A pergunta do diretor é sobre o futuro. Antes de respondê-la, verifiquem se há algo a recuperar do **passado** — e qual o prazo para isso.
+:::
+
+::: {.callout-note collapse="true" title="Solução"}
+**Instrumento recomendado.** Antes do próximo projeto, o passado. Os R\$ 1,4 milhão gastos no ano passado eram dispêndio de P&D enquadrável na **Lei do Bem**: lucro real, lucro fiscal robusto, contabilidade por centro de custo e um pesquisador contratado em tempo integral, o que leva ao degrau de 80% — economia da ordem de **R\$ 380 mil** (1,4 milhão × 80% × 34%). O prazo, porém: o FormP&D do ano-base 2025 venceu em **31/08/2026** (Portaria MCTI 9.563/2025), e a ECF de 2025 já foi entregue. Confirmar com a contabilidade se a exclusão foi feita; se não foi, e o FormP&D não foi enviado, o benefício de 2025 está provavelmente perdido — doze dias antes desta aula. Para o próximo projeto: Lei do Bem desde o primeiro dia (documentação por projeto, FormP&D até 31/08/2027), EMBRAPII com a Unidade do IFMT para o desenvolvimento (até um terço, ou 50% até R\$ 90 milhões de receita) e crédito Desenvolve MT para equipamentos.
+
+**Por que os outros foram descartados.**
+
+- RHAE: a empresa provavelmente está acima do porte de MPE.
+- Startup MT: encerrada, e limitada a R\$ 150 mil. Sebraetec: só MPE, só serviço.
+- Equity: empresa madura de beneficiamento não é caso de venture capital.
+
+**O que fica em aberto — pauta do dia 26.**
+
+- Se a ECF de 2025 foi entregue com ou sem a exclusão, e se uma retificação teria efeito sem o FormP&D no prazo.
+- Se o próximo projeto passa de R\$ 5 milhões — se passar, a FINEP 774 entra no mapa.
+- Quanto custou não saber: é a pergunta para levar ao diretor.
+
+*Solução escrita em setembro de 2026; prazos e condições vêm das fichas do [catálogo](cat-escada.qmd).*
 :::
 
 ---
@@ -111,13 +207,30 @@ O instrumento estadual mais adequado ao perfil dela **encerrou as inscrições e
 Consultem a **agenda** no fim da página da [escada](cat-escada.qmd). Em setembro de 2026 não há edital estadual de subvenção aberto em Mato Grosso — e, ainda assim, há portas abertas. Quais?
 :::
 
+::: {.callout-note collapse="true" title="Solução"}
+**Instrumento recomendado.** Não esperar 2027. Portas abertas em setembro de 2026 para uma startup de quatro anos com R\$ 2,1 milhões de faturamento: **(1) EMBRAPII + SEBRAE**, sem edital — a EMBRAPII aporta até 50% e o SEBRAE cobre até 70% da contrapartida da empresa (cobertura combinada de cerca de 90%; teto SEBRAE de R\$ 150 mil para uma MPE), para o desenvolvimento do processo de produção com uma Unidade de bioprocessos; **(2) crédito** Desenvolve MT / Inovacred para fermentadores e área classificada (TR + 6,068% ao ano, 96 meses, 24 de carência); **(3) uma rodada de capital privado** — anjo ou seed agtech — para o que faltar, porque cepa validada em três safras e receita recorrente é o que o investidor quer ver. E planejar explicitamente o **Tecnova IV de 2027** (contrapartida de 5% para receita entre R\$ 360 mil e R\$ 4,8 milhões) como a etapa seguinte.
+
+**Por que os outros foram descartados.**
+
+- Lei do Bem: Simples Nacional elimina.
+- Startup MT: encerrada em 31/07 (resultado em 16/09). Tecnova: só em 2027. Centelha: empresa com mais de 12 meses.
+- FINEP 774 e BNDES: mínimos de R\$ 5 e 20 milhões.
+- RHAE: não há componente de inteligência artificial no projeto.
+
+**O que fica em aberto — pauta do dia 26.**
+
+- Qual Unidade EMBRAPII tem competência em bioprocessos e fermentação, e se atende empresa de Mato Grosso.
+- O custo e o prazo do registro no MAPA, que pode ser o gargalo real.
+- Se as fundadoras aceitam diluição — sem isso a rodada de equity não existe.
+
+*Solução escrita em setembro de 2026; prazos e condições vêm das fichas do [catálogo](cat-escada.qmd).*
+:::
+
 ---
 
-## Na plenária
+## Depois de conferir as soluções
 
-Três minutos por grupo: a situação em uma frase, a recomendação, e o descarte mais difícil.
-
-Depois, uma pergunta para todos: **quantos grupos chegaram a um instrumento que não tem edital?** A resposta costuma ser reveladora — e é o gancho para o segundo sábado.
+Uma contagem que vale fazer: das seis situações, **quantas chegaram a um instrumento que não tem edital?** Quatro — a cooperativa (crédito), a ideia sem empresa (anjo e aceleradora), a beneficiadora de sementes (Lei do Bem) e a startup de bioinsumos (EMBRAPII, crédito e equity). A transportadora depende de uma chamada aberta, e o frigorífico combina as duas coisas. Em setembro de 2026 não há edital estadual de subvenção aberto em Mato Grosso, e ainda assim cinco das seis situações têm caminho hoje. É o gancho do segundo sábado.
 
 ::: {.callout-note}
 ## O que você deve conseguir explicar depois desta atividade

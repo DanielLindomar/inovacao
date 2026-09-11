@@ -21,7 +21,7 @@ format:
 
 Cada um cola os **três instrumentos** que encontrou para o seu projeto: nome, prazo, valor, contrapartida.
 
-Vamos olhar o mural juntos: o que apareceu muito, o que não apareceu, e por quê.
+Vamos olhar o mural juntos: o que apareceu muito, o que não apareceu, e por quê. É o rascunho da **Seção 2** de vocês.
 :::
 
 . . .
@@ -283,9 +283,9 @@ Muito material ainda cita a Lei 8.666, revogada. Citar norma revogada custa cred
 ## Esta empresa pode usar a Lei do Bem? {.smaller}
 
 ::: {.sala}
-**40 minutos.** Cinco perfis, no site → *Avaliação · Esta empresa pode usar a Lei do Bem?*
+**20 minutos.** Seis perfis, um por grupo, no site → *Avaliação · Esta empresa pode usar a Lei do Bem?*
 
-Para cada um:
+Apliquem o teste das quatro perguntas e façam a conta de bolso **antes** de abrir a Solução.
 
 1. Pode? **Sim ou não.**
 2. Qual requisito decide?
@@ -294,8 +294,25 @@ Para cada um:
 
 . . .
 
+::: {.pergunta}
+Por que o frigorífico está dentro e a empresa de software está fora?
+:::
+
+. . .
+
 ::: {.rodape}
-Na plenária: por que o frigorífico está dentro e a empresa de software está fora?
+O critério não é inovar. É ter base de cálculo para excluir.
+:::
+
+## Oficina 3 · Seções 2 e 3 · O mapa e a escolha {.smaller}
+
+::: {.sala}
+**40 minutos, em salas.** Com o catálogo e o mural abertos, no documento compartilhado:
+
+- **Seção 2 — o mapa.** Quais instrumentos cabem no seu projeto, e **por que os outros foram descartados**. Os descartes valem tanto quanto as escolhas.
+- **Seção 3 — a escolha.** Um instrumento real, com nome e número: requisitos, contrapartida, prazos, o que a empresa precisa ter pronto. Se o edital fechou, diga quando se espera o próximo.
+
+Qual dos seis perfis mais se parece com a sua empresa? Comece por aí.
 :::
 
 # Bloco 5 · Crédito
@@ -414,21 +431,23 @@ Não é argumento contra editais. É argumento contra persegui-los sem fazer a c
 2. A **Lei do Bem** atravessa quase tudo, mas só a partir do piloto
 3. **Quase nenhum projeto se resolve com uma fonte só**
 
-# Bloco 8 · Oficina
+# Bloco 8 · Oficina 4
 
-## O esqueleto do seu plano {.smaller}
+## Seções 4 e 6 · A conta e os riscos {.smaller}
 
 ::: {.sala}
-**50 minutos, em salas.** Com o catálogo aberto.
+**50 minutos, em salas.** No documento compartilhado, com o Laboratório 4 aberto:
 
-1. O projeto — o que precisa de dinheiro, para quê, quanto
-2. O mapa — o que cabe, e **por que os outros não**
-3. A escolha — instrumento real, com nome e número
-4. A conta — quanto custa, comparado à segunda opção
-5. A medida — indicadores, e como apurá-los
-6. Riscos e plano B
+- **Seção 4 — a conta.** Quanto a fonte escolhida custa de fato, comparada à segunda melhor opção: contrapartida em dinheiro, juros, diluição, tempo de prestação de contas. Não precisa ser sofisticado; precisa ser honesto e comparável.
+- **Seção 6 — riscos e plano B.** O que pode dar errado na submissão, na execução e na prestação de contas — e qual é a segunda fonte se a primeira não vier.
 
-Ao fim, cada grupo comenta o esqueleto de outro.
+Ao fim, cada grupo lê o esqueleto inteiro de outro grupo — as seis seções — e deixa um comentário por integrante.
+:::
+
+. . .
+
+::: {.rodape}
+Vocês saem daqui com o plano rascunhado. O que falta é passar a limpo, com fonte e data em cada número.
 :::
 
 # Encerramento

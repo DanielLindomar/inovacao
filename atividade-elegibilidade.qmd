@@ -1,6 +1,6 @@
 ---
 title: "Esta empresa pode usar a Lei do Bem?"
-subtitle: "Atividade em grupo — sábado 2, ao fim da manhã"
+subtitle: "Atividade com solução — sábado 2, manhã"
 author: "Prof. Dr. Lindomar Pegorini Daniel — UNEMAT, Campus de Sinop"
 engine: knitr
 ---
@@ -18,7 +18,7 @@ Cinco empresas. Para cada uma, três perguntas:
 2. **Por quê?** Aponte o requisito que decide.
 3. **Se pode, quanto vale?** Ordem de grandeza, não centavos.
 
-Quarenta minutos em sala simultânea, mais a plenária. Sem nota.
+Vinte minutos em sala simultânea: apliquem o teste das quatro perguntas ao perfil do grupo e façam a conta de bolso antes de abrir a **Solução**. Sem nota.
 :::
 
 ## O teste, em quatro perguntas
@@ -54,7 +54,7 @@ Tem um departamento de engenharia com sete pessoas. No ano passado, três delas 
 
 O contador da empresa nunca ouviu falar em Lei do Bem. O diretor industrial acha que "P&D é coisa de laboratório".
 
-::: {.callout-note collapse="true" title="Depois da plenária — comentário"}
+::: {.callout-note collapse="true" title="Solução"}
 **Pode, e provavelmente é o caso mais claro dos cinco.** Lucro real, lucro fiscal, regularidade. E o projeto é **desenvolvimento experimental** no sentido da lei: há incerteza técnica, não há solução disponível, e busca-se avanço tecnológico.
 
 Com R\$ 2,1 milhões e exclusão de 60%, a economia fica na casa de **R\$ 430 mil**. Se as três pessoas dedicadas caracterizarem aumento de pesquisadores exclusivos acima de 5%, o degrau sobe para 80% e a economia passa de R\$ 570 mil.
@@ -72,7 +72,7 @@ Fatura R\$ 14 milhões e apura pelo **lucro presumido**. Regular com o fisco.
 
 Contratou uma consultoria e dois analistas por um ano para desenvolver um sistema de roteirização com previsão de demanda, a partir de cinco anos de dados próprios de viagem. Gastou R\$ 480 mil. O objetivo é reduzir o retorno vazio, hoje em 31% dos quilômetros rodados.
 
-::: {.callout-note collapse="true" title="Depois da plenária — comentário"}
+::: {.callout-note collapse="true" title="Solução"}
 **Não pode.** O lucro presumido elimina, e não há contorno dentro do instrumento — nem argumento de mérito, nem qualidade do projeto muda isso.
 
 A questão que sobra é de planejamento tributário, e ela é séria: **valeria a pena migrar para o lucro real?** A resposta depende da margem efetiva da empresa e não se decide pelo incentivo isoladamente. Mas é uma conversa que a empresa deveria estar tendo com o contador, e provavelmente não está.
@@ -90,7 +90,7 @@ Cinco anos de operação, R\$ 1,2 milhão de receita recorrente anual, 140 fazen
 
 Sete dos nove funcionários são desenvolvedores. A empresa lança versões novas continuamente e está construindo um módulo de previsão de produtividade por talhão, usando aprendizado de máquina sobre dados de safra. Investe praticamente toda a margem em desenvolvimento.
 
-::: {.callout-note collapse="true" title="Depois da plenária — comentário"}
+::: {.callout-note collapse="true" title="Solução"}
 **Não pode** — pelo mesmo motivo do perfil anterior, e o contraste é o ponto da atividade.
 
 É a empresa mais "de tecnologia" das cinco. Sete de nove funcionários são desenvolvedores. E, ainda assim, está fora do maior incentivo à inovação do país, enquanto o frigorífico do perfil 1 está dentro.
@@ -110,7 +110,7 @@ Fatura R\$ 8 milhões e apura pelo **lucro real**. Regular com o fisco. No últi
 
 Desenvolveu, com um engenheiro dedicado e um técnico em meio período, um sistema automatizado de limpeza de placas para as condições do cerrado — poeira intensa na seca, crosta após as primeiras chuvas. Os equipamentos importados disponíveis não funcionam bem nessas condições. Gastou R\$ 750 mil no ano.
 
-::: {.callout-note collapse="true" title="Depois da plenária — comentário"}
+::: {.callout-note collapse="true" title="Solução"}
 **Pode — mas o benefício é muito menor do que a conta ingênua sugere.** É o perfil mais sutil dos cinco.
 
 A conta de bolso daria R\$ 750 mil × 60% × 34% ≈ R\$ 153 mil. Só que o benefício é uma **exclusão da base de cálculo**, e a base disponível é o lucro fiscal de R\$ 120 mil. Não se pode excluir mais do que existe: a empresa aproveita, no máximo, o imposto correspondente àquela base — algo em torno de R\$ 40 mil — e **perde o restante**, porque a exclusão não gera crédito nem se transporta para exercícios seguintes.
@@ -130,7 +130,7 @@ Fatura R\$ 38 milhões, apura pelo **lucro real**, com lucro fiscal robusto nos 
 
 No ano passado desenvolveu um classificador de lotes por visão computacional. Tinha um agrônomo dedicado a testes de qualidade; contratou mais um engenheiro em tempo integral para o projeto. Gastou R\$ 1,4 milhão. **Depositou pedido de patente** do mecanismo de amostragem automatizada, ainda em análise no INPI.
 
-::: {.callout-note collapse="true" title="Depois da plenária — comentário"}
+::: {.callout-note collapse="true" title="Solução"}
 **Pode, e no melhor degrau disponível.**
 
 Passou de um para dois pesquisadores exclusivos — aumento de 100%, muito acima dos 5%. Vai ao degrau de **80%**: R\$ 1,4 milhão × 80% × 34% ≈ **R\$ 380 mil** de economia.
@@ -142,11 +142,33 @@ Note ainda que esta empresa cumpre o quarto requisito — contabilidade por cent
 
 ---
 
-## Na plenária
+## Perfil 6 · BioSolo Insumos
 
-Cada grupo apresenta um perfil, com as três respostas. Depois discutimos duas perguntas que atravessam todos:
+**Lucas do Rio Verde · bioinsumos para tratamento de solo · 11 funcionários**
+
+Startup com quatro anos, faturamento de R\$ 2,1 milhões, optante pelo **Simples Nacional**. Fundada por duas microbiologistas. Regular com o fisco.
+
+Tem uma cepa própria de bactéria solubilizadora de fósforo validada em laboratório e em três safras de teste a campo — a inovação mais nítida deste conjunto. Investe quase toda a margem no desenvolvimento e quer a planta piloto: R\$ 900 mil em 24 meses. (É a empresa do [caso 2](casos.qmd).)
+
+::: {.callout-note collapse="true" title="Solução"}
+**Não pode.** O Simples Nacional elimina, como o lucro presumido — e é a startup com a inovação mais clara do conjunto. O critério, de novo, não é inovar: é o regime.
+
+Para o projeto dela o mapa é outro, e está na [Situação 6 do Mapa de instrumentos](atividade-mapa.qmd): EMBRAPII com SEBRAE para o desenvolvimento do processo, crédito da Desenvolve MT para fermentadores e área classificada, capital privado para o restante e o Tecnova IV de 2027 como etapa seguinte.
+
+Trocar de regime por causa do incentivo é decisão que exige a conta inteira: o Simples costuma ser a escolha certa para o porte dela, e a economia de referência — a parcela de P&D do projeto × 60% × 34% — raramente compensa o que se perde no Simples.
+:::
+
+---
+
+## Depois de conferir as soluções
+
+Duas perguntas atravessam todos os perfis:
 
 **Por que o frigorífico está dentro e a empresa de software está fora?** A resposta diz mais sobre a lógica do instrumento do que qualquer definição.
+
+::: {.callout-note collapse="true" title="Solução"}
+Porque a Lei do Bem não é um prêmio a quem inova: é uma **exclusão da base de cálculo do IRPJ e da CSLL**, e só existe base para excluir em quem apura pelo lucro real e tem lucro fiscal. O frigorífico cumpre isso; a empresa de software, no lucro presumido, não tem base — por mais que sete de nove funcionários sejam desenvolvedores. O instrumento seleciona por regime tributário e por lucro, não por intensidade tecnológica, e é por isso que a maioria das empresas de tecnologia pequenas, quase sempre no Simples ou no presumido, fica de fora.
+:::
 
 **Qual dos cinco perfis mais se parece com a empresa do seu [caso](casos.qmd)?** Essa comparação já é meio caminho da seção 2 do [trabalho final](trabalho-final.qmd).
 

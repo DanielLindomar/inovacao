@@ -22,7 +22,7 @@ format:
 - Blocos de 50 minutos, pausa de 10. A pausa é de verdade — eu também saio.
 - **Nada que está no site será repetido aqui.** O encontro é para o que só funciona ao vivo.
 - Metade dos blocos acontece em salas simultâneas. Câmera aberta lá e nas plenárias.
-- Um documento compartilhado por sábado, uma seção por grupo. É o produto do dia.
+- As atividades vêm com solução no site. O produto do dia é o **esqueleto do seu plano**: duas seções hoje, quatro no dia 26, no documento compartilhado.
 - A gravação vai para o SIGAA.
 :::
 
@@ -171,31 +171,50 @@ Reparem na coluna **Ideia**. E reparem em quantos instrumentos **não têm edita
 ## Mapa de instrumentos {.smaller}
 
 ::: {.sala}
-**40 minutos. Grupos de quatro.**
+**20 minutos. Grupos de quatro.**
 
 Cada grupo recebe **uma das seis situações** — site → *Avaliação · Mapa de instrumentos*.
 
-Voltem com:
+Tentem responder às três perguntas com o catálogo aberto. Travou? Abram a **Dica**. Depois, a **Solução** — e confiram cada afirmação dela nas fichas.
 
-1. o instrumento que vocês recomendariam;
-2. **por que os outros foram descartados**;
-3. a pergunta que vocês não conseguiram responder.
-
-Escrevam na seção do grupo, no documento compartilhado.
+Voltem com uma discordância, se tiverem.
 :::
 
-# Bloco 4 · Plenária
+## O que o Mapa ensina {.smaller}
 
-## Três minutos por grupo
+- O **estágio** do projeto elimina metade das opções antes de qualquer mérito.
+- Uma situação em que o **regime tributário**, sozinho, decidiu a resposta.
+- "Esperar o edital" quase nunca é a estratégia certa.
 
-- O caso, em uma frase
-- A recomendação
-- O descarte mais difícil
+. . .
+
+::: {.pergunta}
+Quantas das seis situações chegaram a um instrumento **sem edital**?
+:::
 
 . . .
 
 ::: {.rodape}
-O que ficou sem resposta é o programa do sábado 2.
+Quatro. E em setembro de 2026 não há edital estadual de subvenção aberto em Mato Grosso.
+:::
+
+# Bloco 4 · Oficina 1
+
+## Seção 1 · O projeto {.smaller}
+
+::: {.sala}
+**40 minutos, em salas.** Cada um, no documento compartilhado:
+
+1. Escolha o caso (ou o projeto próprio).
+2. Escreva a **Seção 1** do seu plano em meia página: o que a empresa quer fazer, em que estágio está, **o que precisa de dinheiro para quê** e quanto.
+
+O erro mais comum: descrever a empresa e esquecer o projeto. O financiador não financia empresa — financia um projeto delimitado, com começo, meio e entrega.
+:::
+
+. . .
+
+::: {.rodape}
+Ao fim, leia a Seção 1 de um colega do grupo. Ele entendeu o que precisa de dinheiro?
 :::
 
 # Bloco 5 · O processo de avaliação
@@ -295,12 +314,12 @@ Dispêndio médio anual em P&D, em R\$ mil:
 | **Não beneficiárias** | 610 | 790 |
 
 ::: {.sala}
-**50 minutos.** Quatro passos, no site → *Avaliação · O caso da Lei do Bem*.
+**20 minutos.** Quatro passos e seis perguntas, no site → *Avaliação · O caso da Lei do Bem*.
 
-Escrevam as respostas das seis perguntas no documento compartilhado.
+Façam as contas antes de abrir a **Solução**.
 :::
 
-# Bloco 8 · Plenária
+# Bloco 8 · A decomposição, o estudo e a Oficina 2
 
 ## A decomposição {.smaller}
 
@@ -338,6 +357,28 @@ E se a soja tivesse disparado no período?
 A defesa não é estatística. É conhecer o setor.
 :::
 
+## A leitura conjunta {.smaller}
+
+::: {.sala}
+**Shimada, Kannebley Jr. e De Negri (2013), páginas 5 a 13** — site → *Avaliação · O caso da Lei do Bem · A leitura conjunta*.
+
+Três defesas contra a seleção: pareamento, efeitos fixos, tendência comum. Reconheçam as duas que vocês acabaram de fazer com quatro números.
+
+E o efeito que **não aparece** nos setores de alta tecnologia.
+:::
+
+## Oficina 2 · Seção 5 · A medida {.smaller}
+
+::: {.sala}
+**30 minutos, em salas.** No documento compartilhado, para o seu projeto:
+
+- que indicadores mostrariam que o recurso deu resultado;
+- como cada um seria apurado, e por quem;
+- qual é **produto** (o que o projeto entrega) e qual é **resultado** (o que muda na empresa).
+
+Todo edital cobra isso na prestação de contas. Quem pensa nos indicadores no fim do projeto os inventa; quem pensa no começo os mede.
+:::
+
 # Fechamento
 
 ## Até 25/09 {.smaller}
@@ -348,8 +389,9 @@ A defesa não é estatística. É conhecer o setor.
 1. Reler as quatro páginas de aula de hoje.
 2. Fazer os **Laboratórios 1 e 2** — R rodando no navegador, nada para instalar.
 3. Percorrer o **catálogo** e trazer **três instrumentos** aplicáveis ao seu projeto: prazo, valor, contrapartida, critérios.
+4. Passar a limpo as **Seções 1 e 5** rascunhadas hoje.
 
-Sem entrega e sem nota. É o insumo da oficina do dia 26.
+Sem entrega e sem nota. É o insumo das oficinas do dia 26 — as Seções 2, 3, 4 e 6.
 :::
 
 . . .
