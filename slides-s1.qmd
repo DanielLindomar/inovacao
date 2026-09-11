@@ -21,8 +21,8 @@ format:
 
 - Uma manhã, das 8h às 12h: quatro blocos de 50 minutos, três pausas de 10. A pausa é de verdade — eu também saio.
 - **Nada que está no site será repetido aqui.** O encontro é para o que só funciona ao vivo.
-- Metade do tempo acontece em salas simultâneas. Câmera aberta lá.
-- As atividades vêm com solução no site. O produto da manhã é o **esqueleto do seu plano**: duas seções hoje, quatro no dia 26, no documento compartilhado.
+- Ninguém sai desta sala: as atividades e as oficinas são individuais. Câmera aberta nas oficinas.
+- As atividades vêm com solução no site. O produto da manhã é o **esqueleto do seu plano**: duas seções hoje, quatro no dia 26, no seu documento — um por aluno.
 - A tarde é sua: as aulas 3 e 4 e a leitura do estudo ficam no site, com solução.
 - A gravação vai para o SIGAA.
 :::
@@ -34,11 +34,11 @@ format:
 | 8h00 | Abertura e o seu projeto |
 | 8h15 | Blocos 1 e 2 — políticas públicas e quem é quem |
 | 9h05 | Pausa |
-| 9h15 | Mapa de instrumentos, em salas (20 min) e fechamento |
+| 9h15 | Mapa de instrumentos, individual (20 min) e fechamento |
 | 9h45 | **Oficina 1** — Seção 1, o projeto (30 min) |
 | 10h15 | Pausa |
 | 10h25 | Blocos 5 e 6 — avaliação e contrafactual |
-| 11h00 | O caso da Lei do Bem, em salas (20 min) |
+| 11h00 | O caso da Lei do Bem, individual (20 min) |
 | 11h20 | **Oficina 2** — Seção 5, a medida (30 min) |
 | 11h50 | Fechamento: até 25/09 |
 
@@ -73,10 +73,10 @@ De onde vem o dinheiro — e o que ele cobra em troca?
 Como se sabe se aquele dinheiro fez diferença?
 :::
 
-## Agora, no documento compartilhado {.smaller}
+## Agora, no seu documento {.smaller}
 
 ::: {.sala}
-Uma frase, no seu nome:
+Abra a sua cópia do documento do encontro, escreva o nome e, na primeira tabela, uma linha:
 
 **qual projeto de inovação você vai trabalhar nesta disciplina?**
 
@@ -182,18 +182,18 @@ Duas perguntas de uma vez: em que estágio o projeto está, e o que aquele dinhe
 Reparem na coluna **Ideia**. E reparem em quantos instrumentos **não têm edital**.
 :::
 
-# Bloco 3 · Salas simultâneas
+# Bloco 3 · Mapa de instrumentos
 
 ## Mapa de instrumentos {.smaller}
 
 ::: {.sala}
-**20 minutos. Grupos de quatro.**
+**20 minutos, cada um por si.**
 
-Cada grupo recebe **uma das seis situações** — site → *Avaliação · Mapa de instrumentos*.
+Escolha **uma das seis situações** — a mais parecida com o seu projeto — em site → *Avaliação · Mapa de instrumentos*.
 
-Tentem responder às três perguntas com o catálogo aberto. Travou? Abram a **Dica**. Depois, a **Solução** — e confiram cada afirmação dela nas fichas.
+Responda às três perguntas com o catálogo aberto. Travou? Abra a **Dica**. Depois, a **Solução** — e confira cada afirmação dela nas fichas.
 
-Voltem com uma discordância, se tiverem.
+No fechamento, abro as seis soluções na tela: quem pegou aquela situação diz se discorda.
 :::
 
 ## O que o Mapa ensina {.smaller}
@@ -219,7 +219,7 @@ Quatro. E em setembro de 2026 não há edital estadual de subvenção aberto em 
 ## Seção 1 · O projeto {.smaller}
 
 ::: {.sala}
-**30 minutos, em salas.** Cada um, no documento compartilhado:
+**30 minutos, cada um no seu documento.** Câmera aberta; dúvida é pelo microfone.
 
 1. Escolha o caso (ou o projeto próprio).
 2. Escreva a **Seção 1** do seu plano em meia página: o que a empresa quer fazer, em que estágio está, **o que precisa de dinheiro para quê** e quanto.
@@ -230,7 +230,7 @@ O erro mais comum: descrever a empresa e esquecer o projeto. O financiador não 
 . . .
 
 ::: {.rodape}
-Ao fim, leia a Seção 1 de um colega do grupo. Ele entendeu o que precisa de dinheiro?
+Ao fim, releia a sua Seção 1 como se fosse o financiador. Dá para entender o que precisa de dinheiro?
 :::
 
 # Bloco 5 · O processo de avaliação
@@ -318,7 +318,7 @@ As beneficiárias já eram diferentes antes de existir incentivo.
 
 Se você não separa as duas, não sabe qual é qual.
 
-# Bloco 7 · Salas simultâneas
+# Bloco 7 · O caso da Lei do Bem
 
 ## O caso da Lei do Bem {.smaller}
 
@@ -330,9 +330,9 @@ Dispêndio médio anual em P&D, em R\$ mil:
 | **Não beneficiárias** | 610 | 790 |
 
 ::: {.sala}
-**20 minutos.** Quatro passos e seis perguntas, no site → *Avaliação · O caso da Lei do Bem*.
+**20 minutos, cada um por si.** Quatro passos e seis perguntas, no site → *Avaliação · O caso da Lei do Bem*.
 
-Façam as contas antes de abrir a **Solução**.
+Faça as contas no papel antes de abrir a **Solução**. Aos 15 minutos, abro a solução na tela e comparamos os números.
 :::
 
 # Bloco 8 · A decomposição e a Oficina 2
@@ -386,7 +386,7 @@ E o efeito que **não aparece** nos setores de alta tecnologia. As cinco pergunt
 ## Oficina 2 · Seção 5 · A medida {.smaller}
 
 ::: {.sala}
-**30 minutos, em salas.** No documento compartilhado, para o seu projeto:
+**30 minutos, cada um no seu documento.** Para o seu projeto:
 
 - que indicadores mostrariam que o recurso deu resultado;
 - como cada um seria apurado, e por quem;

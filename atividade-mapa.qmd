@@ -12,13 +12,13 @@ engine: knitr
 ::: {.callout-note}
 ## O que esta atividade resolve
 
-Seis situações. Cada grupo recebe uma e volta com três respostas:
+Seis situações. Escolha uma — a mais parecida com o seu projeto — e responda três coisas:
 
-1. **Qual instrumento** vocês recomendariam?
+1. **Qual instrumento** você recomendaria?
 2. **Por que os outros foram descartados?**
-3. **O que vocês não conseguiram responder** com o que sabem até agora?
+3. **O que você não conseguiu responder** com o que sabe até agora?
 
-Vinte minutos em sala simultânea: leiam a situação, tentem responder às três perguntas com o catálogo aberto, abram a **Dica** se travarem e, por fim, a **Solução** — e confiram cada afirmação dela nas fichas. Sem nota: o que se leva daqui é para o trabalho final.
+Vinte minutos, cada um por si: leia a situação, tente responder às três perguntas com o catálogo aberto, abra a **Dica** se travar e, por fim, a **Solução** — e confira cada afirmação dela nas fichas. No fechamento, o professor abre as seis soluções na tela. Sem nota: o que se leva daqui é para o trabalho final.
 :::
 
 ::: {.callout-important}
@@ -49,7 +49,7 @@ Uma cooperativa de leite com 340 associados quer processar o soro do queijo, hoj
 
 O presidente ouviu falar em "editais de inovação" e quer saber se vale a pena esperar um.
 
-::: {.callout-tip collapse="true" title="Uma pista, se o grupo travar"}
+::: {.callout-tip collapse="true" title="Uma pista, se travar"}
 Prestem atenção em duas coisas: a tecnologia é **madura** — isso muda o enquadramento como P&D — e o gasto é quase todo em **equipamento**, não em desenvolvimento. Comparem com o que cada natureza de dinheiro costuma financiar.
 :::
 
@@ -81,7 +81,7 @@ Duas médicas com experiência no interior desenharam um modelo de telemedicina 
 
 O contador de uma delas disse que "sem CNPJ não dá para captar nada".
 
-::: {.callout-tip collapse="true" title="Uma pista, se o grupo travar"}
+::: {.callout-tip collapse="true" title="Uma pista, se travar"}
 O contador está certo para a maior parte do catálogo — e errado para pelo menos um instrumento. Procurem na coluna **Ideia** da escada e verifiquem a elegibilidade.
 :::
 
@@ -111,7 +111,7 @@ O contador está certo para a maior parte do catálogo — e errado para pelo me
 
 Uma transportadora de grãos quer desenvolver um sistema de roteirização com previsão de demanda, a partir de cinco anos de dados próprios. O custo é de **R\$ 480 mil**, e mais de 80% disso é **pessoal qualificado** — dois analistas e uma consultoria por um ano. A empresa apura pelo **lucro presumido**.
 
-::: {.callout-tip collapse="true" title="Uma pista, se o grupo travar"}
+::: {.callout-tip collapse="true" title="Uma pista, se travar"}
 Duas restrições atuam aqui ao mesmo tempo: o regime tributário fecha uma porta, e a natureza do gasto — pessoas, não equipamento — fecha outras. Procurem o instrumento que financia exatamente **gente qualificada dentro da empresa**.
 :::
 
@@ -143,7 +143,7 @@ Um frigorífico de porte médio precisa de **R\$ 6,5 milhões** para desenvolver
 
 O valor é grande demais para os instrumentos de pequeno porte e pequeno demais para os mínimos das linhas de crédito direto.
 
-::: {.callout-tip collapse="true" title="Uma pista, se o grupo travar"}
+::: {.callout-tip collapse="true" title="Uma pista, se travar"}
 Quando nenhuma fonte isolada resolve, a resposta costuma ser uma **combinação**. Pensem em qual parte do valor cada instrumento poderia cobrir, e verifiquem se as regras permitem somá-los.
 :::
 
@@ -173,7 +173,7 @@ Uma beneficiadora de sementes gastou **R\$ 1,4 milhão** no ano passado desenvol
 
 O diretor quer saber onde captar recurso para o **próximo** projeto. Ninguém na empresa mencionou o projeto que já terminou.
 
-::: {.callout-tip collapse="true" title="Uma pista, se o grupo travar"}
+::: {.callout-tip collapse="true" title="Uma pista, se travar"}
 A pergunta do diretor é sobre o futuro. Antes de respondê-la, verifiquem se há algo a recuperar do **passado** — e qual o prazo para isso.
 :::
 
@@ -203,7 +203,7 @@ Uma startup de bioinsumos com quatro anos e R\$ 2,1 milhões de faturamento tem 
 
 O instrumento estadual mais adequado ao perfil dela **encerrou as inscrições em julho**, e o próximo ciclo só deve abrir em 2027. A empresa não pode esperar dois anos.
 
-::: {.callout-tip collapse="true" title="Uma pista, se o grupo travar"}
+::: {.callout-tip collapse="true" title="Uma pista, se travar"}
 Consultem a **agenda** no fim da página da [escada](cat-escada.qmd). Em setembro de 2026 não há edital estadual de subvenção aberto em Mato Grosso — e, ainda assim, há portas abertas. Quais?
 :::
 

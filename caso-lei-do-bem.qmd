@@ -50,7 +50,7 @@ Esta tabela foi construída para a atividade. As ordens de grandeza são plausí
 
 ## As seis perguntas
 
-Respondam, no papel ou em voz alta no grupo, antes de abrir a solução. São elas que separam quem fez a conta de quem entendeu a conta.
+Responda no papel antes de abrir a solução. São elas que separam quem fez a conta de quem entendeu a conta.
 
 1. Qual dos dois números — o do Passo 1 ou o do Passo 3 — vocês defenderiam diante de um gestor público? Por quê?
 2. Em quanto por cento a comparação ingênua **exagera** o efeito?
@@ -59,7 +59,7 @@ Respondam, no papel ou em voz alta no grupo, antes de abrir a solução. São el
 5. Que evidência vocês pediriam para acreditar nessa hipótese?
 6. Imaginem que, no período analisado, o preço da soja tenha disparado e as empresas do agronegócio — que são a maioria das beneficiárias — tenham ficado muito mais lucrativas. Isso ameaça a hipótese da pergunta 4? Como?
 
-::: {.callout-tip collapse="true" title="Dica — se o grupo travar no Passo 3"}
+::: {.callout-tip collapse="true" title="Dica — se travar no Passo 3"}
 Variação das beneficiárias: 1.150 − 820. Variação das não beneficiárias: 790 − 610. A estimativa é a diferença entre esses dois resultados.
 :::
 

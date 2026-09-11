@@ -19,7 +19,7 @@ Esta disciplina tem 30 horas: 8 ao vivo — a manhã de 12/09 e a tarde de 26/09
 
 **Um único instrumento de nota.** O plano de captação de recursos, entregue em PDF pela tarefa do SIGAA até **09/10/2026, 23h59**. Laboratórios e atividades com solução não valem nota: valem pelo que você consegue defender no plano.
 
-**Cada coisa mora num lugar.** O conteúdo está aqui, no site. As gravações, os avisos e a entrega estão na turma virtual do SIGAA. Os encontros acontecem no Google Meet, e o que a turma escreve durante o dia fica no documento compartilhado, cujo link aparece no chat do Meet.
+**Cada coisa mora num lugar.** O conteúdo está aqui, no site. As gravações, os avisos e a entrega estão na turma virtual do SIGAA. Os encontros acontecem no Google Meet, e o que você escreve durante o dia fica no **seu documento do encontro** — um arquivo por aluno, cujo modelo o professor publica na turma virtual e no chat do Meet: faça a sua cópia e preencha.
 :::
 
 ## O calendário em uma tabela
@@ -37,7 +37,7 @@ Três, dez e nove: as 22 horas assíncronas, distribuídas onde rendem mais.
 
 ## Antes do dia 12 — cerca de 3 horas
 
-O primeiro sábado começa com uma pergunta no documento compartilhado: *qual projeto você vai trabalhar nesta disciplina?* Chegue com a resposta pronta.
+O primeiro sábado começa com uma pergunta na primeira linha do seu documento: *qual projeto você vai trabalhar nesta disciplina?* Chegue com a resposta pronta.
 
 - [ ] **Ler as quatro aulas do Sábado 1** — 2h30, cerca de 35 minutos cada. Na ordem: [Políticas públicas: conceito e ciclo](s1-01-politicas-publicas.qmd), [O sistema brasileiro de CT&I](s1-02-sistema-cti.qmd), [Avaliação: o que o financiador cobra](s1-03-avaliacao.qmd) e [O contrafactual](s1-04-contrafactual.qmd). São textos, não slides: foram escritos para serem lidos sozinho. Anote o que não convenceu — é isso que vale discutir ao vivo.
 - [ ] **Ler [os dez casos](casos.qmd) e escolher um candidato** — 20 minutos. Escolha pelo estágio do projeto e pelo porte da empresa, não pelo setor que você conhece. Se tem um projeto de inovação real, seu ou da sua empresa, ele é melhor do que qualquer caso: só precisa avisar o professor antes.
@@ -52,11 +52,11 @@ Cada aula traz por extenso o conteúdo de um bloco do encontro: o raciocínio, o
 
 ## Sábado 12/09 — o que acontece
 
-Blocos de 50 minutos, pausa de 10. Metade dos blocos acontece em salas simultâneas, com câmera aberta; o produto do dia é o documento compartilhado.
+Blocos de 50 minutos, pausa de 10. Ninguém sai da sala do Meet: as atividades e as oficinas são individuais, com câmera aberta nas oficinas; o produto do dia é o seu documento do encontro.
 
-Uma manhã, das 8h às 12h, em quatro blocos. **Na primeira metade**, políticas públicas e o sistema de CT&I em discussão; depois, em salas, o [Mapa de instrumentos](atividade-mapa.qmd) — seis situações de empresa, uma por grupo, com a solução recolhida na página: vinte minutos para tentar, abrir e conferir no catálogo. Em seguida a **Oficina 1**: escolher o caso e escrever a Seção 1 do seu plano, o projeto, em meia página, com o professor circulando pelas salas.
+Uma manhã, das 8h às 12h, em quatro blocos. **Na primeira metade**, políticas públicas e o sistema de CT&I em discussão; depois, cada um por si, o [Mapa de instrumentos](atividade-mapa.qmd) — seis situações de empresa, escolha a mais parecida com o seu projeto, com a solução recolhida na página: vinte minutos para tentar, abrir e conferir no catálogo, e o professor passa pelas seis soluções na tela. Em seguida a **Oficina 1**: escolher o caso e escrever a Seção 1 do seu plano, o projeto, em meia página, no seu documento, com o professor na sala para dúvidas.
 
-**Na segunda metade**, avaliação e contrafactual; em salas, [O caso da Lei do Bem](caso-lei-do-bem.qmd), quatro números e aritmética de escola, com solução; e a **Oficina 2**: a Seção 5 do plano, os indicadores que mostrariam se o dinheiro fez diferença. A leitura do estudo real que fecha o caso — a única leitura obrigatória da disciplina — fica para casa, com as perguntas e a solução na página.
+**Na segunda metade**, avaliação e contrafactual; no papel, [O caso da Lei do Bem](caso-lei-do-bem.qmd), quatro números e aritmética de escola, com solução; e a **Oficina 2**: a Seção 5 do plano, os indicadores que mostrariam se o dinheiro fez diferença. A leitura do estudo real que fecha o caso — a única leitura obrigatória da disciplina — fica para casa, com as perguntas e a solução na página.
 
 O que trazer: o site aberto, o caso escolhido (a Seção 1 é escrita no encontro), câmera e um lugar onde dê para falar.
 
@@ -82,9 +82,9 @@ Os primeiros blocos carregam os dados usados pelos seguintes; pular um deles pro
 
 O dia inteiro caminha para a oficina do fim da tarde. Cada bloco alimenta uma seção do seu plano.
 
-Uma tarde, das 14h às 18h, em quatro blocos, que parte do princípio de que as aulas 5 a 8 foram lidas. **Na primeira metade**, a retomada: cada um cola no documento os três instrumentos que encontrou e a turma lê o mural junto. Depois, um edital real aberto na tela, o que a EMBRAPII e os incentivos fiscais cobram; em salas, [Esta empresa pode usar a Lei do Bem?](atividade-elegibilidade.qmd) — seis perfis, um por grupo, com solução — e a **Oficina 3**: as Seções 2 e 3 do plano, o mapa dos instrumentos e a escolha, com o mural já na mesa.
+Uma tarde, das 14h às 18h, em quatro blocos, que parte do princípio de que as aulas 5 a 8 foram lidas. **Na primeira metade**, a retomada: os três instrumentos que você encontrou vão para a primeira tabela do seu documento, e cada um escreve no chat do Meet o que mais o surpreendeu — o chat vira o mural da turma. Depois, um edital real aberto na tela, o que a EMBRAPII e os incentivos fiscais cobram; cada um por si, [Esta empresa pode usar a Lei do Bem?](atividade-elegibilidade.qmd) — seis perfis, pegue o mais parecido com a sua empresa, com solução — e a **Oficina 3**: as Seções 2 e 3 do plano, o mapa dos instrumentos e a escolha, com os seus três instrumentos já na mesa.
 
-**Na segunda metade**, crédito, capital privado e a escada — o mesmo projeto financiado de três jeitos — e a **Oficina 4**: a Seção 4, a conta, com o Laboratório 4 ao lado, e a Seção 6, riscos e plano B. Ao fim, cada grupo comenta o esqueleto de outro. Você sai do encontro com as seis seções rascunhadas; o que falta é passar a limpo.
+**Na segunda metade**, crédito, capital privado e a escada — o mesmo projeto financiado de três jeitos — e a **Oficina 4**: a Seção 4, a conta, com o Laboratório 4 ao lado, e a Seção 6, riscos e plano B. Ao fim, você relê o esqueleto inteiro e anota o que falta. Você sai do encontro com as seis seções rascunhadas; o que falta é passar a limpo.
 
 O que trazer: os três instrumentos anotados, o caso (ou o projeto) definido e a [página do trabalho final](trabalho-final.qmd) aberta.
 

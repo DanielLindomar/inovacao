@@ -18,7 +18,7 @@ Cinco empresas. Para cada uma, três perguntas:
 2. **Por quê?** Aponte o requisito que decide.
 3. **Se pode, quanto vale?** Ordem de grandeza, não centavos.
 
-Vinte minutos em sala simultânea: apliquem o teste das quatro perguntas ao perfil do grupo e façam a conta de bolso antes de abrir a **Solução**. Sem nota.
+Vinte minutos, cada um por si: aplique o teste das quatro perguntas a um dos perfis — o mais parecido com a sua empresa — e faça a conta de bolso antes de abrir a **Solução**. Sem nota.
 :::
 
 ## O teste, em quatro perguntas

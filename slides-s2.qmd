@@ -22,10 +22,10 @@ Uma tarde, das 14h às 18h. As aulas 5 a 8 foram lidas antes — aqui só o que 
 
 | | |
 |---|---|
-| 14h00 | Retomada — o mural dos instrumentos (20 min) |
+| 14h00 | Retomada — os instrumentos que vocês trouxeram (20 min) |
 | 14h25 | Bloco 1 a 3 — não reembolsável com um edital real, EMBRAPII, incentivos fiscais (50 min) |
 | 15h15 | Pausa |
-| 15h25 | Esta empresa pode usar a Lei do Bem?, em salas (20 min) |
+| 15h25 | Esta empresa pode usar a Lei do Bem?, individual (20 min) |
 | 15h50 | **Oficina 3** — Seções 2 e 3, o mapa e a escolha (35 min) |
 | 16h25 | Pausa |
 | 16h35 | Blocos 5 a 7 — crédito, capital privado e a escada (30 min) |
@@ -35,11 +35,9 @@ Uma tarde, das 14h às 18h. As aulas 5 a 8 foram lidas antes — aqui só o que 
 ## Retomada {.smaller}
 
 ::: {.sala}
-**No documento compartilhado, 20 minutos**
+**20 minutos.** Abra a sua cópia do documento do encontro: os **três instrumentos** que você encontrou ficam na primeira tabela — nome, prazo, valor, contrapartida.
 
-Cada um cola os **três instrumentos** que encontrou para o seu projeto: nome, prazo, valor, contrapartida.
-
-Vamos olhar o mural juntos: o que apareceu muito, o que não apareceu, e por quê. É o rascunho da **Seção 2** de vocês.
+No chat do Meet, cada um escreve **o instrumento que mais o surpreendeu**, em uma linha. O chat vira o mural: o que apareceu muito, o que não apareceu, e por quê. É o rascunho da **Seção 2** de vocês.
 :::
 
 . . .
@@ -296,14 +294,14 @@ Dispensa de licitação: **art. 75, V, da Lei 14.133/2021**
 Muito material ainda cita a Lei 8.666, revogada. Citar norma revogada custa credibilidade.
 :::
 
-# Bloco 4 · Salas simultâneas
+# Bloco 4 · Esta empresa pode usar a Lei do Bem?
 
 ## Esta empresa pode usar a Lei do Bem? {.smaller}
 
 ::: {.sala}
-**20 minutos.** Seis perfis, um por grupo, no site → *Avaliação · Esta empresa pode usar a Lei do Bem?*
+**20 minutos, cada um por si.** Seis perfis no site → *Avaliação · Esta empresa pode usar a Lei do Bem?* — pegue o mais parecido com a sua empresa.
 
-Apliquem o teste das quatro perguntas e façam a conta de bolso **antes** de abrir a Solução.
+Aplique o teste das quatro perguntas e faça a conta de bolso **antes** de abrir a Solução. No fechamento, passo pelos seis perfis na tela.
 
 1. Pode? **Sim ou não.**
 2. Qual requisito decide?
@@ -325,7 +323,7 @@ O critério não é inovar. É ter base de cálculo para excluir.
 ## Oficina 3 · Seções 2 e 3 · O mapa e a escolha {.smaller}
 
 ::: {.sala}
-**35 minutos, em salas.** Com o catálogo e o mural abertos, no documento compartilhado:
+**35 minutos, cada um no seu documento.** Com o catálogo e os seus três instrumentos abertos:
 
 - **Seção 2 — o mapa.** Quais instrumentos cabem no seu projeto, e **por que os outros foram descartados**. Os descartes valem tanto quanto as escolhas.
 - **Seção 3 — a escolha.** Um instrumento real, com nome e número: requisitos, contrapartida, prazos, o que a empresa precisa ter pronto. Se o edital fechou, diga quando se espera o próximo.
@@ -454,12 +452,12 @@ Não é argumento contra editais. É argumento contra persegui-los sem fazer a c
 ## Seções 4 e 6 · A conta e os riscos {.smaller}
 
 ::: {.sala}
-**45 minutos, em salas.** No documento compartilhado, com o Laboratório 4 aberto:
+**45 minutos, cada um no seu documento.** Com o Laboratório 4 aberto:
 
 - **Seção 4 — a conta.** Quanto a fonte escolhida custa de fato, comparada à segunda melhor opção: contrapartida em dinheiro, juros, diluição, tempo de prestação de contas. Não precisa ser sofisticado; precisa ser honesto e comparável.
 - **Seção 6 — riscos e plano B.** O que pode dar errado na submissão, na execução e na prestação de contas — e qual é a segunda fonte se a primeira não vier.
 
-Ao fim, cada grupo lê o esqueleto inteiro de outro grupo — as seis seções — e deixa um comentário por integrante.
+Ao fim, releia o esqueleto inteiro — as seis seções — e anote, no fim do documento, o que ainda falta para virar o plano.
 :::
 
 . . .
