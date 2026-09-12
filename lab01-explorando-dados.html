@@ -27,41 +27,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -339,16 +304,16 @@ background: #1E2761;
   <li><a href="#contexto-um-programa-de-incentivo-a-pd" id="toc-contexto-um-programa-de-incentivo-a-pd" class="nav-link active" data-scroll-target="#contexto-um-programa-de-incentivo-a-pd"><span class="header-section-number">1</span> Contexto: um programa de incentivo a P&amp;D</a></li>
   <li><a href="#abrindo-a-base" id="toc-abrindo-a-base" class="nav-link" data-scroll-target="#abrindo-a-base"><span class="header-section-number">2</span> Abrindo a base</a>
   <ul class="collapse">
-  <li><a href="#exercício-1-o-tamanho-da-base" id="toc-exercício-1-o-tamanho-da-base" class="nav-link" data-scroll-target="#exercício-1-o-tamanho-da-base"><span class="header-section-number">2.1</span> Exercício 1 — o tamanho da base</a></li>
+  <li><a href="#o-tamanho-da-base" id="toc-o-tamanho-da-base" class="nav-link" data-scroll-target="#o-tamanho-da-base"><span class="header-section-number">2.1</span> O tamanho da base</a></li>
   </ul></li>
   <li><a href="#quem-aderiu-ao-incentivo" id="toc-quem-aderiu-ao-incentivo" class="nav-link" data-scroll-target="#quem-aderiu-ao-incentivo"><span class="header-section-number">3</span> Quem aderiu ao incentivo</a>
   <ul class="collapse">
-  <li><a href="#exercício-2-adesão-por-porte" id="toc-exercício-2-adesão-por-porte" class="nav-link" data-scroll-target="#exercício-2-adesão-por-porte"><span class="header-section-number">3.1</span> Exercício 2 — adesão por porte</a></li>
+  <li><a href="#adesão-por-porte" id="toc-adesão-por-porte" class="nav-link" data-scroll-target="#adesão-por-porte"><span class="header-section-number">3.1</span> Adesão por porte</a></li>
   </ul></li>
   <li><a href="#o-dispêndio-médio-por-grupo" id="toc-o-dispêndio-médio-por-grupo" class="nav-link" data-scroll-target="#o-dispêndio-médio-por-grupo"><span class="header-section-number">4</span> O dispêndio médio, por grupo</a></li>
   <li><a href="#a-comparação-bruta" id="toc-a-comparação-bruta" class="nav-link" data-scroll-target="#a-comparação-bruta"><span class="header-section-number">5</span> A comparação bruta</a>
   <ul class="collapse">
-  <li><a href="#exercício-3-a-diferença-que-já-existia" id="toc-exercício-3-a-diferença-que-já-existia" class="nav-link" data-scroll-target="#exercício-3-a-diferença-que-já-existia"><span class="header-section-number">5.1</span> Exercício 3 — a diferença que já existia</a></li>
+  <li><a href="#a-diferença-que-já-existia" id="toc-a-diferença-que-já-existia" class="nav-link" data-scroll-target="#a-diferença-que-já-existia"><span class="header-section-number">5.1</span> A diferença que já existia</a></li>
   </ul></li>
   <li><a href="#um-gráfico-que-mostra-o-problema" id="toc-um-gráfico-que-mostra-o-problema" class="nav-link" data-scroll-target="#um-gráfico-que-mostra-o-problema"><span class="header-section-number">6</span> Um gráfico que mostra o problema</a></li>
   <li><a href="#antes-de-sair" id="toc-antes-de-sair" class="nav-link" data-scroll-target="#antes-de-sair"><span class="header-section-number">7</span> Antes de sair</a></li>
@@ -378,7 +343,7 @@ background: #1E2761;
 <p>Ao final deste laboratório você será capaz de:</p>
 <ul>
 <li>abrir uma base de dados e reconhecer sua estrutura;</li>
-<li>calcular médias por grupo e interpretá-las;</li>
+<li>ler médias por grupo e interpretá-las;</li>
 <li>descrever <strong>quem</strong> adere a um programa de incentivo, e por quê;</li>
 <li>calcular a comparação bruta entre beneficiários e não beneficiários;</li>
 <li>explicar por que essa comparação, sozinha, não mede o efeito do programa.</li>
@@ -424,11 +389,12 @@ background: #1E2761;
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Importante</span>Comece pelo bloco 1
+<span class="screen-reader-only">Importante</span>Comece pelo bloco 1 — e não há nada para digitar
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <p>Todos os blocos compartilham a mesma sessão do R. Rode o <strong>primeiro</strong> antes dos demais: é ele que cria o objeto <code>dados</code>, usado em toda a página.</p>
+<p>Nenhum bloco pede que você escreva código: cada um vem pronto. O trabalho é clicar em <strong>Run Code</strong>, olhar a saída e ler a nota <em>Como ler essa saída</em> logo abaixo — é nela que está o que interessa. Você não precisa saber R; precisa saber o que os números dizem.</p>
 </div>
 </div>
 </section>
@@ -459,50 +425,30 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiZGFkb3MgPC0gcmVhZC5jc3Yo
 <p>As colunas: <code>empresa</code> identifica; <code>ano</code> e <code>pos</code> marcam o momento (<code>pos = 0</code> antes, <code>pos = 1</code> depois); <code>beneficiaria</code> diz se a empresa aderiu ao incentivo; <code>setor</code>, <code>porte</code>, <code>faturamento_mi</code> e <code>lucro_real</code> descrevem a empresa; e <code>pd</code> é o que queremos explicar.</p>
 </div>
 </div>
-<section id="exercício-1-o-tamanho-da-base" class="level3" data-number="2.1">
-<h3 data-number="2.1" class="anchored" data-anchor-id="exercício-1-o-tamanho-da-base"><span class="header-section-number">2.1</span> Exercício 1 — o tamanho da base</h3>
-<p>Descubra quantas linhas a base tem. Lembre: são duas linhas por empresa.</p>
-<div class="cell" data-exercise="ex_nrow">
+<section id="o-tamanho-da-base" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="o-tamanho-da-base"><span class="header-section-number">2.1</span> O tamanho da base</h3>
+<p><code>nrow()</code> devolve o número de linhas de um <em>data frame</em>; <code>ncol()</code>, o número de colunas.</p>
+<div class="cell">
 <div>
 <div id="webr-2" class="exercise-cell">
 
 </div>
 <script type="webr-2-contents">
-eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiX19fX19fKGRhZG9zKSJ9
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoibnJvdyhkYWRvcylcbm5jb2woZGFkb3MpIn0=
 </script>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled" title="Dica">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Dica</span>Dica
+<span class="screen-reader-only">Dica</span>Como ler essa saída
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><code>nrow()</code> devolve o número de linhas de um <em>data frame</em>. A prima dela, <code>ncol()</code>, devolve o número de colunas.</p>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-note callout-titled" title="Solução">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Nota</span>Solução
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-7" class="callout-7-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(dados)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
-<p>São 3.000 linhas: 1.500 empresas × 2 anos.</p>
-</div>
+<p>São 3.000 linhas — 1.500 empresas × 2 anos — e 9 colunas. Cada empresa ocupa duas linhas porque é observada em dois momentos. Se a base tivesse uma linha por empresa, não haveria como comparar o antes com o depois, e é essa comparação que o Laboratório 2 vai explorar.</p>
 </div>
 </div>
 </section>
@@ -545,51 +491,31 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoidGFibGUoYW50ZXMkbHVjcm9f
 <p>A diferença é enorme — e não é acaso. O incentivo simplesmente não está disponível para quem não apura pelo lucro real. Guarde essa observação: ela é a semente do problema deste laboratório.</p>
 </div>
 </div>
-<section id="exercício-2-adesão-por-porte" class="level3" data-number="3.1">
-<h3 data-number="3.1" class="anchored" data-anchor-id="exercício-2-adesão-por-porte"><span class="header-section-number">3.1</span> Exercício 2 — adesão por porte</h3>
-<p>Faça o mesmo cruzamento, agora entre <code>porte</code> e <code>beneficiaria</code>.</p>
-<div class="cell" data-exercise="ex_porte">
+<section id="adesão-por-porte" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="adesão-por-porte"><span class="header-section-number">3.1</span> Adesão por porte</h3>
+<p>O mesmo cruzamento, agora entre <code>porte</code> e <code>beneficiaria</code>. A segunda linha do bloco transforma as contagens em proporções por linha — o <code>1</code> no final pede “por linha”.</p>
+<div class="cell">
 <div>
 <div id="webr-5" class="exercise-cell">
 
 </div>
 <script type="webr-5-contents">
-eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoidGFibGUoYW50ZXMkX19fX19fLCBhbnRlcyRiZW5lZmljaWFyaWEpIn0=
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoidGFibGUoYW50ZXMkcG9ydGUsIGFudGVzJGJlbmVmaWNpYXJpYSlcbnJvdW5kKHByb3AudGFibGUodGFibGUoYW50ZXMkcG9ydGUsIGFudGVzJGJlbmVmaWNpYXJpYSksIDEpLCAyKSJ9
 </script>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled" title="Dica">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Dica</span>Dica
+<span class="screen-reader-only">Dica</span>Como ler essa saída
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-9" class="callout-9-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>A coluna se chama <code>porte</code>. Depois de rodar, experimente <code>prop.table(table(antes$porte, antes$beneficiaria), 1)</code> — o <code>1</code> pede as proporções por linha.</p>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-note callout-titled" title="Solução">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Nota</span>Solução
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-10" class="callout-10-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(antes<span class="sc">$</span>porte, antes<span class="sc">$</span>beneficiaria)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">prop.table</span>(<span class="fu">table</span>(antes<span class="sc">$</span>porte, antes<span class="sc">$</span>beneficiaria), <span class="dv">1</span>)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
-<p>A adesão cresce com o porte. Empresas médias aderem muito mais que microempresas.</p>
-</div>
+<p>A segunda tabela é a que importa. Entre as empresas <strong>médias</strong>, 74% aderiram ao incentivo; entre as <strong>pequenas</strong>, 30%; entre as <strong>micro</strong>, 14%. A adesão cresce com o porte — e não porque empresa grande “gosta mais” de inovar: é que porte, regime tributário e estrutura contábil andam juntos, e o incentivo exige os três.</p>
+<p>Junte isso ao cruzamento anterior e o retrato está pronto: quem adere é maior, apura pelo lucro real e já tinha condições de investir. O grupo das beneficiárias não é uma amostra aleatória das empresas — é uma seleção.</p>
 </div>
 </div>
 </section>
@@ -618,7 +544,7 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiYWdncmVnYXRlKHBkIH4gYmVu
 </div>
 <div class="callout-body-container callout-body">
 <p>Quatro números — os mesmos quatro do <a href="./caso-lei-do-bem.html">caso discutido em aula</a>, agora calculados a partir de 3.000 observações reais da base.</p>
-<p>Leia com atenção a linha em que <code>pos = 0</code>, ou seja, <strong>antes de qualquer incentivo existir</strong>. As beneficiárias já gastavam mais? Quanto mais?</p>
+<p>Leia com atenção as duas linhas em que <code>pos = 0</code>, ou seja, <strong>antes de qualquer incentivo existir</strong>: as beneficiárias já gastavam cerca de 792 mil por ano, contra 537 mil das demais — 255 mil a mais.</p>
 <p>Essa diferença aconteceu antes do programa. Ela não pode ser efeito dele.</p>
 </div>
 </div>
@@ -646,56 +572,36 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiZGVwb2lzIDwtIGRhZG9zW2Rh
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>A diferença que você acabou de calcular seria manchete: “empresas beneficiárias investem X a mais em P&amp;D”.</p>
+<p>A diferença que acabou de aparecer — cerca de 393 mil reais — seria manchete: “empresas beneficiárias investem quase 400 mil a mais em P&amp;D”.</p>
 <p>Ela é aritmeticamente correta e causalmente inútil. Você já viu por quê: os dois grupos <strong>já eram diferentes antes</strong>, e essa diferença prévia continua embutida no número final.</p>
-<p>Quanto do que você calculou é efeito do programa e quanto é a diferença que já existia? O <a href="./lab02-did.html">Laboratório 2</a> separa os dois.</p>
+<p>Quanto desse número é efeito do programa e quanto é a diferença que já existia? O bloco seguinte mede a segunda parcela; o <a href="./lab02-did.html">Laboratório 2</a> separa as duas.</p>
 </div>
 </div>
-<section id="exercício-3-a-diferença-que-já-existia" class="level3" data-number="5.1">
-<h3 data-number="5.1" class="anchored" data-anchor-id="exercício-3-a-diferença-que-já-existia"><span class="header-section-number">5.1</span> Exercício 3 — a diferença que já existia</h3>
-<p>Calcule a mesma diferença entre os grupos, mas <strong>no período anterior</strong> (<code>pos == 0</code>). Esse número é o viés de seleção.</p>
-<div class="cell" data-exercise="ex_vies">
+<section id="a-diferença-que-já-existia" class="level3" data-number="5.1">
+<h3 data-number="5.1" class="anchored" data-anchor-id="a-diferença-que-já-existia"><span class="header-section-number">5.1</span> A diferença que já existia</h3>
+<p>A mesma conta, agora <strong>no período anterior</strong> (<code>pos == 0</code>), antes de o programa existir. Esse número tem nome: viés de seleção.</p>
+<div class="cell">
 <div>
 <div id="webr-8" class="exercise-cell">
 
 </div>
 <script type="webr-8-contents">
-eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiYW50ZXMgPC0gZGFkb3NbZGFkb3MkX19fX19fID09IDAsIF1cbm1lYW4oYW50ZXMkcGRbYW50ZXMkYmVuZWZpY2lhcmlhID09IDFdKSAtIG1lYW4oYW50ZXMkcGRbYW50ZXMkYmVuZWZpY2lhcmlhID09IDBdKSJ9
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiYW50ZXMgPC0gZGFkb3NbZGFkb3MkcG9zID09IDAsIF1cbnZpZXMgPC0gbWVhbihhbnRlcyRwZFthbnRlcyRiZW5lZmljaWFyaWEgPT0gMV0pIC0gbWVhbihhbnRlcyRwZFthbnRlcyRiZW5lZmljaWFyaWEgPT0gMF0pXG5yb3VuZCh2aWVzLCAxKSJ9
 </script>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled" title="Dica">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Dica</span>Dica
+<span class="screen-reader-only">Dica</span>Como ler esse número
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-13" class="callout-13-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>A coluna que marca o momento é <code>pos</code>. Vale 0 no período anterior e 1 no posterior.</p>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-note callout-titled" title="Solução">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Nota</span>Solução
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-14" class="callout-14-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>antes <span class="ot">&lt;-</span> dados[dados<span class="sc">$</span>pos <span class="sc">==</span> <span class="dv">0</span>, ]</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(antes<span class="sc">$</span>pd[antes<span class="sc">$</span>beneficiaria <span class="sc">==</span> <span class="dv">1</span>]) <span class="sc">-</span> <span class="fu">mean</span>(antes<span class="sc">$</span>pd[antes<span class="sc">$</span>beneficiaria <span class="sc">==</span> <span class="dv">0</span>])</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
-<p>O resultado fica em torno de 255 mil reais. <strong>Toda essa diferença é anterior ao programa</strong> — e continua dentro da comparação bruta que você calculou acima.</p>
-</div>
+<p>Cerca de <strong>255 mil reais</strong>. As beneficiárias já gastavam isso a mais em P&amp;D em 2022, quando o incentivo ainda não existia. <strong>Toda essa diferença é anterior ao programa</strong> — e continua dentro da comparação bruta de 393 mil calculada acima.</p>
+<p>Faça a subtração de cabeça: 393 menos 255 deixa algo em torno de 138. É o quanto sobra para o programa, no máximo, depois de descontar o que já era diferente. O Laboratório 2 chega a esse número por dois caminhos e mostra por que ele ainda é uma estimativa, não uma certeza.</p>
 </div>
 </div>
 </section>

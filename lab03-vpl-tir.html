@@ -27,41 +27,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -369,12 +334,12 @@ window.Quarto = {
   <li><a href="#por-que-não-basta-somar" id="toc-por-que-não-basta-somar" class="nav-link" data-scroll-target="#por-que-não-basta-somar"><span class="header-section-number">2</span> Por que não basta somar</a></li>
   <li><a href="#valor-presente-líquido" id="toc-valor-presente-líquido" class="nav-link" data-scroll-target="#valor-presente-líquido"><span class="header-section-number">3</span> Valor presente líquido</a>
   <ul class="collapse">
-  <li><a href="#exercício-1-a-sensibilidade-à-taxa" id="toc-exercício-1-a-sensibilidade-à-taxa" class="nav-link" data-scroll-target="#exercício-1-a-sensibilidade-à-taxa"><span class="header-section-number">3.1</span> Exercício 1 — a sensibilidade à taxa</a></li>
+  <li><a href="#a-sensibilidade-à-taxa" id="toc-a-sensibilidade-à-taxa" class="nav-link" data-scroll-target="#a-sensibilidade-à-taxa"><span class="header-section-number">3.1</span> A sensibilidade à taxa</a></li>
   </ul></li>
   <li><a href="#taxa-interna-de-retorno" id="toc-taxa-interna-de-retorno" class="nav-link" data-scroll-target="#taxa-interna-de-retorno"><span class="header-section-number">4</span> Taxa interna de retorno</a></li>
   <li><a href="#prazo-de-retorno" id="toc-prazo-de-retorno" class="nav-link" data-scroll-target="#prazo-de-retorno"><span class="header-section-number">5</span> Prazo de retorno</a>
   <ul class="collapse">
-  <li><a href="#exercício-2-payback-descontado" id="toc-exercício-2-payback-descontado" class="nav-link" data-scroll-target="#exercício-2-payback-descontado"><span class="header-section-number">5.1</span> Exercício 2 — payback descontado</a></li>
+  <li><a href="#payback-descontado" id="toc-payback-descontado" class="nav-link" data-scroll-target="#payback-descontado"><span class="header-section-number">5.1</span> Payback descontado</a></li>
   </ul></li>
   <li><a href="#um-gráfico-do-fluxo-acumulado" id="toc-um-gráfico-do-fluxo-acumulado" class="nav-link" data-scroll-target="#um-gráfico-do-fluxo-acumulado"><span class="header-section-number">6</span> Um gráfico do fluxo acumulado</a></li>
   <li><a href="#por-que-isso-importa-para-a-captação" id="toc-por-que-isso-importa-para-a-captação" class="nav-link" data-scroll-target="#por-que-isso-importa-para-a-captação"><span class="header-section-number">7</span> Por que isso importa para a captação</a></li>
@@ -403,10 +368,10 @@ window.Quarto = {
 <div class="callout-body-container callout-body">
 <p>Ao final deste laboratório você será capaz de:</p>
 <ul>
-<li>montar o fluxo de caixa de um projeto de inovação;</li>
-<li>calcular e interpretar o valor presente líquido;</li>
-<li>calcular a taxa interna de retorno e dizer o que ela significa;</li>
-<li>calcular o prazo de retorno, com e sem desconto;</li>
+<li>ler o fluxo de caixa de um projeto de inovação;</li>
+<li>interpretar o valor presente líquido;</li>
+<li>dizer o que a taxa interna de retorno significa;</li>
+<li>ler o prazo de retorno, com e sem desconto;</li>
 <li>explicar por que a taxa de desconto escolhida muda a decisão.</li>
 </ul>
 </div>
@@ -414,7 +379,7 @@ window.Quarto = {
 <section id="contexto-o-projeto-de-r-500-mil" class="level2" data-number="1">
 <h2 data-number="1" class="anchored" data-anchor-id="contexto-o-projeto-de-r-500-mil"><span class="header-section-number">1</span> Contexto: o projeto de R$ 500 mil</h2>
 <p>Uma empresa quer desenvolver um produto novo. O investimento inicial é de <strong>R$ 500 mil</strong>. Nos anos seguintes há custeio — manutenção, equipe, insumos — e receita incremental gerada pelo produto.</p>
-<p>Todos os valores estão em <strong>milhares de reais</strong>. Rode o primeiro bloco antes dos demais.</p>
+<p>Todos os valores estão em <strong>milhares de reais</strong>. Rode o primeiro bloco antes dos demais; como nos laboratórios anteriores, não há nada para digitar — cada bloco vem pronto, e o que se pede é ler a saída.</p>
 <div class="cell">
 <div>
 <div id="webr-1" class="exercise-cell">
@@ -467,7 +432,7 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoic3VtKHByb2pldG8kZmx1eG9f
 
 </div>
 <script type="webr-3-contents">
-eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoidnBsIDwtIGZ1bmN0aW9uKGZsdXhvcywgcikge1xuICBzdW0oZmx1eG9zIC8gKDEgKyByKV4oc2VxX2Fsb25nKGZsdXhvcykgLSAxKSlcbn1cblxuciA8LSAwLjEyICAgICAgICAgICAgICAgICAgICAgICAgIyBBTFRFUkUgQVFVSTogdGF4YSBkZSBkZXNjb250byBhbyBhbm9cbnZwbChwcm9qZXRvJGZsdXhvX2xpcXVpZG8sIHIpIn0=
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoidnBsIDwtIGZ1bmN0aW9uKGZsdXhvcywgcikge1xuICBzdW0oZmx1eG9zIC8gKDEgKyByKV4oc2VxX2Fsb25nKGZsdXhvcykgLSAxKSlcbn1cblxuciA8LSAwLjEyICAgICAgICAgICAgICAgICAgICAgICAgIyB0YXhhIGRlIGRlc2NvbnRvOiAxMiUgYW8gYW5vXG52cGwocHJvamV0byRmbHV4b19saXF1aWRvLCByKSJ9
 </script>
 </div>
 </div>
@@ -483,55 +448,33 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoidnBsIDwtIGZ1bmN0aW9uKGZs
 <div class="callout-body-container callout-body">
 <p>O VPL é positivo, em torno de R$ 183 mil. Significa: <strong>depois de remunerar o capital a 12% ao ano, ainda sobram R$ 183 mil em valor de hoje.</strong></p>
 <p>A regra de decisão é direta: VPL positivo, o projeto cria valor; negativo, destrói. Zero significa que o projeto rende exatamente a taxa exigida, nem mais nem menos.</p>
-<p>Volte ao bloco, troque <code>r</code> por 0.20 e rode de novo. Depois por 0.25. Veja a que altura o número muda de sinal.</p>
+<p>Esse número depende inteiramente dos 12%. O bloco seguinte repete a conta para várias taxas de uma vez, para mostrar a que altura ele muda de sinal.</p>
 </div>
 </div>
-<section id="exercício-1-a-sensibilidade-à-taxa" class="level3" data-number="3.1">
-<h3 data-number="3.1" class="anchored" data-anchor-id="exercício-1-a-sensibilidade-à-taxa"><span class="header-section-number">3.1</span> Exercício 1 — a sensibilidade à taxa</h3>
-<p>Calcule o VPL para várias taxas de uma vez, usando <code>sapply()</code>.</p>
-<div class="cell" data-exercise="ex_sens">
+<section id="a-sensibilidade-à-taxa" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="a-sensibilidade-à-taxa"><span class="header-section-number">3.1</span> A sensibilidade à taxa</h3>
+<p>O mesmo VPL, calculado para seis taxas de desconto de uma vez (<code>sapply()</code> aplica a função a cada taxa da lista).</p>
+<div class="cell">
 <div>
 <div id="webr-4" class="exercise-cell">
 
 </div>
 <script type="webr-4-contents">
-eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoidGF4YXMgPC0gYygwLjA2LCAwLjEwLCAwLjEyLCAwLjE4LCAwLjIyLCAwLjI2KVxucmVzdWx0YWRvIDwtIHNhcHBseSh0YXhhcywgZnVuY3Rpb24odCkgdnBsKHByb2pldG8kX19fX19fLCB0KSlcbmRhdGEuZnJhbWUodGF4YSA9IHRheGFzLCB2cGwgPSByb3VuZChyZXN1bHRhZG8sIDEpKSJ9
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoidGF4YXMgPC0gYygwLjA2LCAwLjEwLCAwLjEyLCAwLjE4LCAwLjIyLCAwLjI2KVxucmVzdWx0YWRvIDwtIHNhcHBseSh0YXhhcywgZnVuY3Rpb24odCkgdnBsKHByb2pldG8kZmx1eG9fbGlxdWlkbywgdCkpXG5kYXRhLmZyYW1lKHRheGEgPSB0YXhhcywgdnBsID0gcm91bmQocmVzdWx0YWRvLCAxKSkifQ==
 </script>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled" title="Dica">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Dica</span>Dica
+<span class="screen-reader-only">Dica</span>Como ler essa tabela
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>A coluna com os fluxos líquidos chama-se <code>fluxo_liquido</code>.</p>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-note callout-titled" title="Solução">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Nota</span>Solução
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>taxas <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">0.06</span>, <span class="fl">0.10</span>, <span class="fl">0.12</span>, <span class="fl">0.18</span>, <span class="fl">0.22</span>, <span class="fl">0.26</span>)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>resultado <span class="ot">&lt;-</span> <span class="fu">sapply</span>(taxas, <span class="cf">function</span>(t) <span class="fu">vpl</span>(projeto<span class="sc">$</span>fluxo_liquido, t))</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">data.frame</span>(<span class="at">taxa =</span> taxas, <span class="at">vpl =</span> <span class="fu">round</span>(resultado, <span class="dv">1</span>))</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
-<p>O VPL cai à medida que a taxa sobe, e em algum ponto entre 22% e 26% ele cruza o zero. Esse ponto tem nome.</p>
-</div>
+<p>O VPL cai à medida que a taxa sobe: 336 mil a 6%, 183 mil a 12%, 65 mil a 18%, praticamente zero a 22% e negativo a 26%. O mesmo projeto, com os mesmos fluxos, “vale a pena” ou não conforme o custo do dinheiro — e é por isso que a taxa de desconto precisa estar declarada em qualquer plano. Entre 22% e 26% o VPL cruza o zero; esse ponto tem nome, e é o próximo bloco.</p>
 </div>
 </div>
 </section>
@@ -590,57 +533,34 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiYWN1bXVsYWRvIDwtIGN1bXN1
 </div>
 <div class="callout-body-container callout-body">
 <p>Percorra a coluna <code>acumulado</code> de cima para baixo e localize onde ela deixa de ser negativa. Aquele é o ano do retorno.</p>
-<p>Esse cálculo, porém, ignora o valor do dinheiro no tempo — soma reais de anos diferentes como se fossem iguais. O exercício abaixo corrige isso.</p>
+<p>O acumulado deixa de ser negativo no <strong>ano 4</strong>, quando chega a 220. Esse cálculo, porém, ignora o valor do dinheiro no tempo — soma reais de anos diferentes como se fossem iguais. O bloco abaixo corrige isso.</p>
 </div>
 </div>
-<section id="exercício-2-payback-descontado" class="level3" data-number="5.1">
-<h3 data-number="5.1" class="anchored" data-anchor-id="exercício-2-payback-descontado"><span class="header-section-number">5.1</span> Exercício 2 — payback descontado</h3>
-<p>Calcule o acumulado dos fluxos <strong>descontados</strong> a 12% e veja em que ano ele cruza o zero.</p>
-<div class="cell" data-exercise="ex_payback">
+<section id="payback-descontado" class="level3" data-number="5.1">
+<h3 data-number="5.1" class="anchored" data-anchor-id="payback-descontado"><span class="header-section-number">5.1</span> Payback descontado</h3>
+<p>A mesma tabela, com cada fluxo trazido a valor presente a 12% antes de ser acumulado.</p>
+<div class="cell">
 <div>
 <div id="webr-7" class="exercise-cell">
 
 </div>
 <script type="webr-7-contents">
-eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiciA8LSAwLjEyXG5kZXNjb250YWRvcyA8LSBwcm9qZXRvJGZsdXhvX2xpcXVpZG8gLyAoMSArIHIpXihwcm9qZXRvJGFubylcbmRhdGEuZnJhbWUoYW5vID0gcHJvamV0byRhbm8sXG4gICAgICAgICAgIGRlc2NvbnRhZG8gPSByb3VuZChkZXNjb250YWRvcywgMSksXG4gICAgICAgICAgIGFjdW11bGFkbyAgPSByb3VuZChfX19fX18oZGVzY29udGFkb3MpLCAxKSkifQ==
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiciA8LSAwLjEyXG5kZXNjb250YWRvcyA8LSBwcm9qZXRvJGZsdXhvX2xpcXVpZG8gLyAoMSArIHIpXihwcm9qZXRvJGFubylcbmRhdGEuZnJhbWUoYW5vID0gcHJvamV0byRhbm8sXG4gICAgICAgICAgIGRlc2NvbnRhZG8gPSByb3VuZChkZXNjb250YWRvcywgMSksXG4gICAgICAgICAgIGFjdW11bGFkbyAgPSByb3VuZChjdW1zdW0oZGVzY29udGFkb3MpLCAxKSkifQ==
 </script>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled" title="Dica">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Dica</span>Dica
+<span class="screen-reader-only">Dica</span>Como ler essa tabela
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-8" class="callout-8-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>A função que acumula uma soma ao longo de um vetor é <code>cumsum()</code>.</p>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-note callout-titled" title="Solução">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Nota</span>Solução
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-9" class="callout-9-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fl">0.12</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>descontados <span class="ot">&lt;-</span> projeto<span class="sc">$</span>fluxo_liquido <span class="sc">/</span> (<span class="dv">1</span> <span class="sc">+</span> r)<span class="sc">^</span>(projeto<span class="sc">$</span>ano)</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">data.frame</span>(<span class="at">ano =</span> projeto<span class="sc">$</span>ano,</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>           <span class="at">descontado =</span> <span class="fu">round</span>(descontados, <span class="dv">1</span>),</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>           <span class="at">acumulado  =</span> <span class="fu">round</span>(<span class="fu">cumsum</span>(descontados), <span class="dv">1</span>))</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
-<p>O payback descontado é mais longo que o simples. A diferença é o custo de esperar — e é a razão de projetos com retorno distante serem mais difíceis de financiar.</p>
-</div>
+<p>O acumulado descontado também vira positivo no ano 4 — mas <strong>por um fio</strong>: fecha o ano com 1,4 mil, contra 220 mil na conta sem desconto. Bastaria a receita atrasar alguns meses para o retorno escorregar para o ano 5. A diferença entre as duas colunas é o custo de esperar, e é a razão de projetos com retorno distante serem mais difíceis de financiar: quem empresta ou investe faz exatamente esta conta.</p>
+<p>A última linha da coluna <code>acumulado</code>, 182,9, é o VPL — o mesmo número da seção anterior, agora visto como o que sobra no fim.</p>
 </div>
 </div>
 </section>

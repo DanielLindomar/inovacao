@@ -27,41 +27,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -339,15 +304,15 @@ background: #1E2761;
   <li><a href="#o-que-já-sabemos" id="toc-o-que-já-sabemos" class="nav-link active" data-scroll-target="#o-que-já-sabemos"><span class="header-section-number">1</span> O que já sabemos</a></li>
   <li><a href="#as-duas-diferenças-na-mão" id="toc-as-duas-diferenças-na-mão" class="nav-link" data-scroll-target="#as-duas-diferenças-na-mão"><span class="header-section-number">2</span> As duas diferenças, na mão</a>
   <ul class="collapse">
-  <li><a href="#exercício-1-a-decomposição" id="toc-exercício-1-a-decomposição" class="nav-link" data-scroll-target="#exercício-1-a-decomposição"><span class="header-section-number">2.1</span> Exercício 1 — a decomposição</a></li>
+  <li><a href="#a-decomposição-conferida" id="toc-a-decomposição-conferida" class="nav-link" data-scroll-target="#a-decomposição-conferida"><span class="header-section-number">2.1</span> A decomposição, conferida</a></li>
   </ul></li>
   <li><a href="#a-mesma-conta-por-regressão" id="toc-a-mesma-conta-por-regressão" class="nav-link" data-scroll-target="#a-mesma-conta-por-regressão"><span class="header-section-number">3</span> A mesma conta, por regressão</a>
   <ul class="collapse">
-  <li><a href="#exercício-2-o-intervalo-de-confiança" id="toc-exercício-2-o-intervalo-de-confiança" class="nav-link" data-scroll-target="#exercício-2-o-intervalo-de-confiança"><span class="header-section-number">3.1</span> Exercício 2 — o intervalo de confiança</a></li>
+  <li><a href="#o-intervalo-de-confiança" id="toc-o-intervalo-de-confiança" class="nav-link" data-scroll-target="#o-intervalo-de-confiança"><span class="header-section-number">3.1</span> O intervalo de confiança</a></li>
   </ul></li>
   <li><a href="#a-verificação-que-nenhuma-avaliação-real-permite" id="toc-a-verificação-que-nenhuma-avaliação-real-permite" class="nav-link" data-scroll-target="#a-verificação-que-nenhuma-avaliação-real-permite"><span class="header-section-number">4</span> A verificação que nenhuma avaliação real permite</a>
   <ul class="collapse">
-  <li><a href="#exercício-3-a-estimativa-ingênua-por-regressão" id="toc-exercício-3-a-estimativa-ingênua-por-regressão" class="nav-link" data-scroll-target="#exercício-3-a-estimativa-ingênua-por-regressão"><span class="header-section-number">4.1</span> Exercício 3 — a estimativa ingênua, por regressão</a></li>
+  <li><a href="#a-estimativa-ingênua-com-aparência-de-rigor" id="toc-a-estimativa-ingênua-com-aparência-de-rigor" class="nav-link" data-scroll-target="#a-estimativa-ingênua-com-aparência-de-rigor"><span class="header-section-number">4.1</span> A estimativa ingênua, com aparência de rigor</a></li>
   </ul></li>
   <li><a href="#e-se-as-tendências-não-fossem-paralelas" id="toc-e-se-as-tendências-não-fossem-paralelas" class="nav-link" data-scroll-target="#e-se-as-tendências-não-fossem-paralelas"><span class="header-section-number">5</span> E se as tendências não fossem paralelas?</a></li>
   <li><a href="#antes-de-sair" id="toc-antes-de-sair" class="nav-link" data-scroll-target="#antes-de-sair"><span class="header-section-number">6</span> Antes de sair</a></li>
@@ -376,8 +341,8 @@ background: #1E2761;
 <div class="callout-body-container callout-body">
 <p>Ao final deste laboratório você será capaz de:</p>
 <ul>
-<li>calcular a estimativa de diferenças-em-diferenças a partir de quatro médias;</li>
-<li>obter a mesma estimativa por regressão, e ler a tabela de resultados;</li>
+<li>ler a estimativa de diferenças-em-diferenças construída a partir de quatro médias;</li>
+<li>reconhecer a mesma estimativa numa tabela de regressão;</li>
 <li>interpretar o coeficiente de interesse e a sua incerteza;</li>
 <li><strong>verificar se o método acertou</strong>, comparando com o efeito verdadeiro;</li>
 <li>explicar em que condição o método deixaria de funcionar.</li>
@@ -387,7 +352,7 @@ background: #1E2761;
 <section id="o-que-já-sabemos" class="level2" data-number="1">
 <h2 data-number="1" class="anchored" data-anchor-id="o-que-já-sabemos"><span class="header-section-number">1</span> O que já sabemos</h2>
 <p>No <a href="./lab01-explorando-dados.html">Laboratório 1</a> você descobriu duas coisas incômodas: as empresas que aderem ao incentivo <strong>já gastavam mais antes</strong>, e a diferença entre os grupos no período final embute essa vantagem prévia.</p>
-<p>Aqui separamos as duas parcelas. Rode o primeiro bloco antes dos demais.</p>
+<p>Aqui separamos as duas parcelas. Rode o primeiro bloco antes dos demais — e, como no Laboratório 1, não há nada para digitar: cada bloco vem pronto, e o que se pede é ler a saída.</p>
 <div class="cell">
 <div>
 <div id="webr-1" class="exercise-cell">
@@ -426,53 +391,30 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiYl9hbnRlcyAgPC0gbWVkaWFz
 <p>E veja a proporção. A maior parte do que a comparação bruta chamaria de “efeito do programa” é, na verdade, a diferença que já existia entre os grupos antes de o programa começar.</p>
 </div>
 </div>
-<section id="exercício-1-a-decomposição" class="level3" data-number="2.1">
-<h3 data-number="2.1" class="anchored" data-anchor-id="exercício-1-a-decomposição"><span class="header-section-number">2.1</span> Exercício 1 — a decomposição</h3>
-<p>Verifique a identidade no R: some o viés e a estimativa de diferenças-em-diferenças e compare com a diferença bruta.</p>
-<div class="cell" data-exercise="ex_decomp">
+<section id="a-decomposição-conferida" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="a-decomposição-conferida"><span class="header-section-number">2.1</span> A decomposição, conferida</h3>
+<p>O bloco soma o viés e a estimativa de diferenças-em-diferenças e compara com a diferença bruta.</p>
+<div class="cell">
 <div>
 <div id="webr-3" class="exercise-cell">
 
 </div>
 <script type="webr-3-contents">
-eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoidmllcyAgPC0gYl9hbnRlcyAtIF9fX19fX1xuYnJ1dGEgPC0gYl9kZXBvaXMgLSBuX2RlcG9pc1xuXG5jYXQoXCJ2acOpcyArIGRpZCA9XCIsIHJvdW5kKHZpZXMgKyBkaWQsIDEpLCBcIlxcblwiKVxuY2F0KFwiYnJ1dGEgICAgICA9XCIsIHJvdW5kKGJydXRhLCAxKSwgXCJcXG5cIikifQ==
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoidmllcyAgPC0gYl9hbnRlcyAtIG5fYW50ZXNcbmJydXRhIDwtIGJfZGVwb2lzIC0gbl9kZXBvaXNcblxuY2F0KFwidmnDqXMgKyBkaWQgPVwiLCByb3VuZCh2aWVzICsgZGlkLCAxKSwgXCJcXG5cIilcbmNhdChcImJydXRhICAgICAgPVwiLCByb3VuZChicnV0YSwgMSksIFwiXFxuXCIpIn0=
 </script>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled" title="Dica">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Dica</span>Dica
+<span class="screen-reader-only">Dica</span>Como ler essa saída
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>O viés é a diferença entre os dois grupos <strong>no período anterior</strong>. Você já tem os dois objetos: <code>b_antes</code> e <code>n_antes</code>.</p>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-note callout-titled" title="Solução">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Nota</span>Solução
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>vies  <span class="ot">&lt;-</span> b_antes <span class="sc">-</span> n_antes</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>bruta <span class="ot">&lt;-</span> b_depois <span class="sc">-</span> n_depois</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"viés + did ="</span>, <span class="fu">round</span>(vies <span class="sc">+</span> did, <span class="dv">1</span>), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"bruta      ="</span>, <span class="fu">round</span>(bruta, <span class="dv">1</span>), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Os dois valores são idênticos. A comparação bruta é a soma de duas coisas — e só uma delas tem a ver com o programa.</p>
-</div>
+<p>Os dois valores são idênticos: 254,6 + 138,0 = 392,6. A comparação bruta é a soma de duas coisas — e só uma delas tem a ver com o programa. Quase dois terços do que a manchete chamaria de “efeito” são a diferença que já existia em 2022.</p>
 </div>
 </div>
 </section>
@@ -512,50 +454,30 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoibW9kZWxvIDwtIGxtKHBkIH4g
 <p>Na coluna <code>Pr(&gt;|t|)</code>, o valor do termo de interação indica a probabilidade de observar um efeito desse tamanho se o efeito verdadeiro fosse zero. Valores pequenos sugerem que o resultado não é fruto do acaso amostral.</p>
 </div>
 </div>
-<section id="exercício-2-o-intervalo-de-confiança" class="level3" data-number="3.1">
-<h3 data-number="3.1" class="anchored" data-anchor-id="exercício-2-o-intervalo-de-confiança"><span class="header-section-number">3.1</span> Exercício 2 — o intervalo de confiança</h3>
-<p>Uma estimativa pontual esconde a incerteza. Peça o intervalo de confiança dos coeficientes.</p>
-<div class="cell" data-exercise="ex_ic">
+<section id="o-intervalo-de-confiança" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="o-intervalo-de-confiança"><span class="header-section-number">3.1</span> O intervalo de confiança</h3>
+<p>Uma estimativa pontual esconde a incerteza. A função <code>confint()</code> devolve, para cada coeficiente, a faixa de valores compatível com os dados.</p>
+<div class="cell">
 <div>
 <div id="webr-5" class="exercise-cell">
 
 </div>
 <script type="webr-5-contents">
-eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiX19fX19fKG1vZGVsbykifQ==
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiY29uZmludChtb2RlbG8pIn0=
 </script>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled" title="Dica">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Dica</span>Dica
+<span class="screen-reader-only">Dica</span>Como ler essa saída
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>A função é <code>confint()</code>. Ela aceita o objeto do modelo como argumento.</p>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-note callout-titled" title="Solução">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Nota</span>Solução
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-7" class="callout-7-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">confint</span>(modelo)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Olhe a linha <code>beneficiaria:pos</code>. O intervalo é largo — algumas dezenas de milhares de reais para cada lado. É honesto reportar essa faixa, e não apenas o valor central.</p>
-</div>
+<p>Olhe a linha <code>beneficiaria:pos</code>: o intervalo vai de cerca de <strong>101 a 175 mil reais</strong>. A estimativa central é 138, mas os dados são compatíveis com um efeito bem menor ou bem maior — algumas dezenas de milhares para cada lado. É honesto reportar essa faixa, e não apenas o valor central; um relatório que diz “o programa aumentou o P&amp;D em 138 mil” está fingindo uma precisão que não tem.</p>
 </div>
 </div>
 </section>
@@ -585,56 +507,34 @@ eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiRUZFSVRPX1ZFUkRBREVJUk8g
 <p>O efeito verdadeiro, usado para construir esta base, é <strong>150 mil reais</strong>.</p>
 <p>A comparação bruta erra por uma margem enorme — atribui ao programa quase o triplo do que ele fez. O diferenças-em-diferenças chega perto do valor correto, com um resto pequeno que é apenas ruído amostral.</p>
 <p>Nenhuma avaliação com dados reais permite essa conferência: o efeito verdadeiro nunca é conhecido. É por isso que se estuda o método com dados simulados — para ver, uma vez, que ele funciona.</p>
-<p>E repare que o DiD <strong>não acerta na mosca</strong>. Erra um pouco, e erraria diferente com outra amostra. É exatamente o que o intervalo de confiança do Exercício 2 estava dizendo.</p>
+<p>E repare que o DiD <strong>não acerta na mosca</strong>. Erra um pouco, e erraria diferente com outra amostra. É exatamente o que o intervalo de confiança do bloco anterior estava dizendo — e repare que o valor verdadeiro, 150, está dentro dele.</p>
 </div>
 </div>
-<section id="exercício-3-a-estimativa-ingênua-por-regressão" class="level3" data-number="4.1">
-<h3 data-number="4.1" class="anchored" data-anchor-id="exercício-3-a-estimativa-ingênua-por-regressão"><span class="header-section-number">4.1</span> Exercício 3 — a estimativa ingênua, por regressão</h3>
-<p>Rode uma regressão usando <strong>apenas os dados do período final</strong>, explicando <code>pd</code> por <code>beneficiaria</code>. É a versão “modelo estatístico” da comparação bruta.</p>
-<div class="cell" data-exercise="ex_ingenuo">
+<section id="a-estimativa-ingênua-com-aparência-de-rigor" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="a-estimativa-ingênua-com-aparência-de-rigor"><span class="header-section-number">4.1</span> A estimativa ingênua, com aparência de rigor</h3>
+<p>O bloco roda uma regressão usando <strong>apenas os dados do período final</strong>, explicando <code>pd</code> por <code>beneficiaria</code>. É a versão “modelo estatístico” da comparação bruta.</p>
+<div class="cell">
 <div>
 <div id="webr-7" class="exercise-cell">
 
 </div>
 <script type="webr-7-contents">
-eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiZGVwb2lzIDwtIGRhZG9zW2RhZG9zJHBvcyA9PSBfX19fX18sIF1cbm1vZGVsb19pbmdlbnVvIDwtIGxtKHBkIH4gYmVuZWZpY2lhcmlhLCBkYXRhID0gZGVwb2lzKVxuc3VtbWFyeShtb2RlbG9faW5nZW51bykifQ==
+eyJhdHRyIjp7ImVkaXQiOnRydWUsImV2YWwiOnRydWV9LCJjb2RlIjoiZGVwb2lzIDwtIGRhZG9zW2RhZG9zJHBvcyA9PSAxLCBdXG5tb2RlbG9faW5nZW51byA8LSBsbShwZCB+IGJlbmVmaWNpYXJpYSwgZGF0YSA9IGRlcG9pcylcbnN1bW1hcnkobW9kZWxvX2luZ2VudW8pIn0=
 </script>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled" title="Dica">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Dica</span>Dica
+<span class="screen-reader-only">Dica</span>Como ler essa tabela
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-9" class="callout-9-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>O período final é marcado por <code>pos</code> igual a 1.</p>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-note callout-titled" title="Solução">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Nota</span>Solução
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-10" class="callout-10-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>depois <span class="ot">&lt;-</span> dados[dados<span class="sc">$</span>pos <span class="sc">==</span> <span class="dv">1</span>, ]</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>modelo_ingenuo <span class="ot">&lt;-</span> <span class="fu">lm</span>(pd <span class="sc">~</span> beneficiaria, <span class="at">data =</span> depois)</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(modelo_ingenuo)</span></code></pre></div><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></div>
-<p>O coeficiente de <code>beneficiaria</code> reproduz a comparação bruta — e vem com estrelas de significância, erro-padrão pequeno e aparência de rigor.</p>
-<p><strong>Guarde isto:</strong> uma regressão pode estar tecnicamente impecável e responder à pergunta errada. Significância estatística não é evidência de causalidade.</p>
-</div>
+<p>O coeficiente de <code>beneficiaria</code> é 392,6 — a comparação bruta, reproduzida com três estrelas de significância, erro-padrão pequeno e um valor-p minúsculo. Tudo tecnicamente correto, e a resposta continua errada por mais de 240 mil reais.</p>
+<p><strong>Guarde isto:</strong> uma regressão pode estar impecável e responder à pergunta errada. Significância estatística não é evidência de causalidade. Quando um relatório apresentar uma tabela assim, a pergunta a fazer é a do Laboratório 1: os grupos já eram diferentes antes?</p>
 </div>
 </div>
 </section>
