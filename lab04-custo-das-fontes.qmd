@@ -14,8 +14,8 @@ engine: knitr
 
 Ao final deste laboratório você será capaz de:
 
-- montar o fluxo de caixa **do dono** sob três formas de financiamento;
-- calcular o custo efetivo da contrapartida, dos juros e da diluição;
+- ler o fluxo de caixa **do dono** sob três formas de financiamento;
+- reconhecer o custo efetivo da contrapartida, dos juros e da diluição;
 - comparar as três fontes por um critério único e defensável;
 - incorporar a probabilidade de aprovação a uma decisão de captação;
 - reconhecer quais premissas mudam a resposta.
@@ -33,7 +33,7 @@ O mesmo projeto de R\$ 500 mil do [Laboratório 3](lab03-vpl-tir.qmd), financiad
 
 A pergunta não é "qual é mais barata", e sim: **em qual delas sobra mais para o dono?**
 
-Rode o primeiro bloco antes dos demais.
+Rode o primeiro bloco antes dos demais. Como nos outros laboratórios, não há nada para digitar: os números do exemplo estão em variáveis nomeadas, visíveis no código, e a página mostra o que acontece quando dois deles mudam.
 
 ```{webr}
 projeto <- read.csv("dados/projeto_inovacao.csv")
@@ -50,7 +50,7 @@ fluxo
 
 No ano 5 o projeto não acaba — a empresa continua existindo e gerando resultado. Sem contabilizar isso, o equity pareceria barato: o investidor levaria uma fatia de apenas cinco anos de fluxo.
 
-Vamos supor que, ao fim do ano 5, a empresa valha **oito vezes** o resultado daquele ano. É uma convenção grosseira, e o objetivo é justamente deixá-la visível — você poderá alterá-la e ver o que muda.
+Vamos supor que, ao fim do ano 5, a empresa valha **oito vezes** o resultado daquele ano. É uma convenção grosseira, e o objetivo é justamente deixá-la visível: é uma premissa, e um plano honesto declara as suas.
 :::
 
 ```{webr}
@@ -63,8 +63,8 @@ valor_terminal
 A subvenção reduz o desembolso inicial do dono. Em compensação, há custo administrativo: prestação de contas, relatórios, conciliação — estimemos duas anuidades de R\$ 8 mil.
 
 ```{webr}
-subvencao <- 150                                  # ALTERE AQUI
-custo_adm <- c(0, -8, -8, 0, 0, 0)                # ALTERE AQUI
+subvencao <- 150                                  # teto da chamada, em R$ mil
+custo_adm <- c(0, -8, -8, 0, 0, 0)                # prestacao de contas nos anos 1 e 2
 
 fluxo_a <- fluxo + custo_adm
 fluxo_a[1] <- fluxo_a[1] + subvencao              # ano 0: sai menos dinheiro
@@ -81,7 +81,7 @@ O banco entra com os R\$ 500 mil no ano 0 — o dono não desembolsa nada de in�
 
 ```{webr}
 principal <- 500
-i         <- 0.0607                               # ALTERE AQUI: taxa ao ano
+i         <- 0.0607                               # taxa de juros ao ano
 n         <- 4                                    # anos de amortizacao
 
 juros_carencia <- principal * i
@@ -106,7 +106,7 @@ O investidor aporta os R\$ 500 mil. Não há parcela nem juros. O dono, porém, 
 Se a empresa vale R\$ 1,5 milhão antes do aporte, passa a valer R\$ 2 milhões depois — e o investidor fica com um quarto dela.
 
 ```{webr}
-valuation_pre <- 1500                             # ALTERE AQUI
+valuation_pre <- 1500                             # valor da empresa antes do aporte
 aporte        <- 500
 participacao_investidor <- aporte / (valuation_pre + aporte)
 fatia_dono    <- 1 - participacao_investidor
@@ -150,7 +150,7 @@ A comparação acima supõe que a subvenção foi **obtida**. Mas a chamada da F
 
 ```{webr}
 vantagem <- vpl_a - vpl_b                # ganho da subvencao sobre o credito
-horas_proposta <- 80                     # ALTERE AQUI
+horas_proposta <- 80                     # horas para escrever a proposta
 valor_hora     <- 0.15                   # R$ mil por hora (R$ 150)
 custo_proposta <- horas_proposta * valor_hora
 
@@ -171,48 +171,70 @@ Isso não é argumento contra editais. É argumento contra persegui-los sem faze
 **Repare no que acabou de acontecer:** a decisão não saiu da natureza do dinheiro, saiu da aritmética. É esse tipo de argumento que se espera na seção 4 do [trabalho final](trabalho-final.qmd).
 :::
 
-### Exercício 1 — a subvenção que vira o jogo
+## A subvenção que vira o jogo
 
-Volte ao Cenário A e aumente `subvencao` para 350. Recalcule os três VPLs e a tabela. A que valor a vantagem sobre o crédito passa a compensar uma chance de 10%?
-
-::: {.callout-tip collapse="true" title="Dica"}
-Depois de alterar `subvencao`, rode de novo o bloco do Cenário A, depois o bloco do confronto e por fim o bloco do ganho esperado. Os objetos são recalculados na ordem em que você executa.
-:::
-
-### Exercício 2 — o valuation que muda tudo
-
-No Cenário C, altere `valuation_pre` para 4000 — uma empresa mais madura, avaliada em R\$ 4 milhões antes do aporte.
+E se a chamada cobrisse **R\$ 350 mil** em vez de 150? O bloco refaz o Cenário A com esse valor e recalcula o ganho esperado de concorrer.
 
 ```{webr}
-#| exercise: ex_valuation
-valuation_pre <- ______
-participacao_investidor <- aporte / (valuation_pre + aporte)
-cat("Participação do investidor:", round(participacao_investidor * 100, 1), "%\n")
+subvencao_maior <- 350
+fluxo_a2 <- fluxo + custo_adm
+fluxo_a2[1] <- fluxo_a2[1] + subvencao_maior
+fluxo_a2[6] <- fluxo_a2[6] + valor_terminal
+vpl_a2 <- vpl(fluxo_a2)
+
+vantagem2 <- vpl_a2 - vpl_b
+cat("VPL para o dono com subvenção de 350:", round(vpl_a2, 1), "\n")
+cat("Vantagem sobre o crédito:            ", round(vantagem2, 1), "  (era", round(vantagem, 1), "com 150)\n\n")
+for (p in c(0.05, 0.10, 0.25, 0.50)) {
+  cat(sprintf("chance de %3.0f%%  ->  ganho esperado = %7.1f mil\n",
+              p * 100, p * vantagem2 - custo_proposta))
+}
 ```
 
-::: {.callout-tip collapse="true" title="Dica"}
-O enunciado pede 4000 — quatro milhões, na mesma unidade de milhares usada em toda a página.
+::: {.callout-tip}
+## Como ler essa saída
+
+Com R\$ 350 mil a fundo perdido, a vantagem da subvenção sobre o crédito salta de cerca de 56 mil para cerca de 256 mil — e o ganho esperado fica positivo já com 5% de chance de aprovação. A mesma proposta, o mesmo custo de escrevê-la: o que mudou foi quanto do projeto o instrumento cobre.
+
+É por isso que "vale a pena concorrer?" não tem resposta geral. Depende do tamanho da vantagem, da chance de aprovação e do custo da proposta — três números que a Seção 4 do plano precisa declarar.
 :::
 
-::: {.callout-note collapse="true" title="Solução"}
-```r
-valuation_pre <- 4000
-participacao_investidor <- aporte / (valuation_pre + aporte)
-cat("Participação do investidor:", round(participacao_investidor * 100, 1), "%\n")
+## O valuation que muda tudo
+
+No Cenário C, o investidor ficou com um quarto da empresa porque ela valia R\$ 1,5 milhão antes do aporte. O bloco refaz a conta para uma empresa mais madura, avaliada em **R\$ 4 milhões**.
+
+```{webr}
+valuation_madura <- 4000
+participacao_madura <- aporte / (valuation_madura + aporte)
+fatia_dono_madura   <- 1 - participacao_madura
+
+fluxo_c2    <- fluxo
+fluxo_c2[1] <- 0
+fluxo_c2[2:6] <- fluxo_c2[2:6] * fatia_dono_madura
+fluxo_c2[6] <- fluxo_c2[6] + valor_terminal * fatia_dono_madura
+vpl_c2 <- vpl(fluxo_c2)
+
+cat("Participação do investidor com valuation de 1.500:", round(participacao_investidor * 100, 1), "%\n")
+cat("Participação do investidor com valuation de 4.000:", round(participacao_madura * 100, 1), "%\n")
+cat("VPL para o dono: ", round(vpl_c, 1), " ->", round(vpl_c2, 1), "\n")
 ```
-A participação cai de 25% para 11%. **O custo do equity não está no aporte: está no valor da empresa no momento em que ela capta.** Captar cedo, quando a empresa vale pouco, é o que sai caro — e é por isso que se recomenda buscar equity depois de ter evidência de que o negócio funciona.
+
+::: {.callout-tip}
+## Como ler essa saída
+
+A participação cai de 25% para 11%, e o VPL do dono sobe de cerca de 1.602 para cerca de 1.898 — o equity, que era a pior das três fontes, passa a superar o crédito e a subvenção de 150. **O custo do equity não está no aporte: está no valor da empresa no momento em que ela capta.** Captar cedo, quando a empresa vale pouco, é o que sai caro — e é por isso que se recomenda buscar equity depois de ter evidência de que o negócio funciona.
 :::
 
-### Exercício 3 — o seu caso
+## Para o seu plano
 
-Volte aos [dez casos](casos.qmd) e escolha o que você vai usar no trabalho final. Substitua o investimento, os fluxos e as condições pelas dele. Não precisa de precisão contábil: precisa de ordem de grandeza defensável.
+A Seção 4 do [trabalho final](trabalho-final.qmd) pede esta mesma comparação para o seu projeto: a fonte escolhida contra a segunda melhor opção, em valor presente. Os números são os do seu [caso](casos.qmd) — o investimento, quanto a fonte cobre, os juros ou a participação —, e a conta não precisa de R: cabe numa planilha, ou à mão, com ordem de grandeza defensável e cada premissa declarada. Quem quiser pode trocar os valores nas variáveis nomeadas dos blocos acima (`subvencao`, `principal`, `i`, `valuation_pre`) e rodar de novo, mas isso é um atalho, não uma exigência.
 
 ::: {.callout-warning}
 ## Sobre as premissas
 
-Este laboratório está cheio delas: a taxa de desconto de 12%, o valor terminal de oito vezes o resultado, o custo administrativo de R\$ 8 mil ao ano, as 80 horas de proposta. Todas discutíveis, e é por isso que estão em variáveis nomeadas, em blocos que você pode editar.
+Este laboratório está cheio delas: a taxa de desconto de 12%, o valor terminal de oito vezes o resultado, o custo administrativo de R\$ 8 mil ao ano, as 80 horas de proposta. Todas discutíveis, e é por isso que estão em variáveis nomeadas, visíveis no código — e por isso a página mostrou o que acontece quando duas delas mudam.
 
-Não é defeito do exercício — é a natureza da análise. **Um plano honesto não é o que esconde as premissas: é o que as declara e mostra o que acontece quando mudam.**
+Não é defeito da análise — é a natureza dela. **Um plano honesto não é o que esconde as premissas: é o que as declara e mostra o que acontece quando mudam.**
 :::
 
 ::: {.callout-note}

@@ -14,10 +14,10 @@ engine: knitr
 
 Ao final deste laboratório você será capaz de:
 
-- montar o fluxo de caixa de um projeto de inovação;
-- calcular e interpretar o valor presente líquido;
-- calcular a taxa interna de retorno e dizer o que ela significa;
-- calcular o prazo de retorno, com e sem desconto;
+- ler o fluxo de caixa de um projeto de inovação;
+- interpretar o valor presente líquido;
+- dizer o que a taxa interna de retorno significa;
+- ler o prazo de retorno, com e sem desconto;
 - explicar por que a taxa de desconto escolhida muda a decisão.
 :::
 
@@ -25,7 +25,7 @@ Ao final deste laboratório você será capaz de:
 
 Uma empresa quer desenvolver um produto novo. O investimento inicial é de **R\$ 500 mil**. Nos anos seguintes há custeio — manutenção, equipe, insumos — e receita incremental gerada pelo produto.
 
-Todos os valores estão em **milhares de reais**. Rode o primeiro bloco antes dos demais.
+Todos os valores estão em **milhares de reais**. Rode o primeiro bloco antes dos demais; como nos laboratórios anteriores, não há nada para digitar — cada bloco vem pronto, e o que se pede é ler a saída.
 
 ```{webr}
 projeto <- read.csv("dados/projeto_inovacao.csv")
@@ -65,7 +65,7 @@ vpl <- function(fluxos, r) {
   sum(fluxos / (1 + r)^(seq_along(fluxos) - 1))
 }
 
-r <- 0.12                        # ALTERE AQUI: taxa de desconto ao ano
+r <- 0.12                        # taxa de desconto: 12% ao ano
 vpl(projeto$fluxo_liquido, r)
 ```
 
@@ -76,31 +76,23 @@ O VPL é positivo, em torno de R\$ 183 mil. Significa: **depois de remunerar o c
 
 A regra de decisão é direta: VPL positivo, o projeto cria valor; negativo, destrói. Zero significa que o projeto rende exatamente a taxa exigida, nem mais nem menos.
 
-Volte ao bloco, troque `r` por 0.20 e rode de novo. Depois por 0.25. Veja a que altura o número muda de sinal.
+Esse número depende inteiramente dos 12%. O bloco seguinte repete a conta para várias taxas de uma vez, para mostrar a que altura ele muda de sinal.
 :::
 
-### Exercício 1 — a sensibilidade à taxa
+### A sensibilidade à taxa
 
-Calcule o VPL para várias taxas de uma vez, usando `sapply()`.
+O mesmo VPL, calculado para seis taxas de desconto de uma vez (`sapply()` aplica a função a cada taxa da lista).
 
 ```{webr}
-#| exercise: ex_sens
-taxas <- c(0.06, 0.10, 0.12, 0.18, 0.22, 0.26)
-resultado <- sapply(taxas, function(t) vpl(projeto$______, t))
-data.frame(taxa = taxas, vpl = round(resultado, 1))
-```
-
-::: {.callout-tip collapse="true" title="Dica"}
-A coluna com os fluxos líquidos chama-se `fluxo_liquido`.
-:::
-
-::: {.callout-note collapse="true" title="Solução"}
-```r
 taxas <- c(0.06, 0.10, 0.12, 0.18, 0.22, 0.26)
 resultado <- sapply(taxas, function(t) vpl(projeto$fluxo_liquido, t))
 data.frame(taxa = taxas, vpl = round(resultado, 1))
 ```
-O VPL cai à medida que a taxa sobe, e em algum ponto entre 22% e 26% ele cruza o zero. Esse ponto tem nome.
+
+::: {.callout-tip}
+## Como ler essa tabela
+
+O VPL cai à medida que a taxa sobe: 336 mil a 6%, 183 mil a 12%, 65 mil a 18%, praticamente zero a 22% e negativo a 26%. O mesmo projeto, com os mesmos fluxos, "vale a pena" ou não conforme o custo do dinheiro — e é por isso que a taxa de desconto precisa estar declarada em qualquer plano. Entre 22% e 26% o VPL cruza o zero; esse ponto tem nome, e é o próximo bloco.
 :::
 
 ## Taxa interna de retorno
@@ -148,35 +140,27 @@ data.frame(ano = projeto$ano,
 
 Percorra a coluna `acumulado` de cima para baixo e localize onde ela deixa de ser negativa. Aquele é o ano do retorno.
 
-Esse cálculo, porém, ignora o valor do dinheiro no tempo — soma reais de anos diferentes como se fossem iguais. O exercício abaixo corrige isso.
+O acumulado deixa de ser negativo no **ano 4**, quando chega a 220. Esse cálculo, porém, ignora o valor do dinheiro no tempo — soma reais de anos diferentes como se fossem iguais. O bloco abaixo corrige isso.
 :::
 
-### Exercício 2 — payback descontado
+### Payback descontado
 
-Calcule o acumulado dos fluxos **descontados** a 12% e veja em que ano ele cruza o zero.
+A mesma tabela, com cada fluxo trazido a valor presente a 12% antes de ser acumulado.
 
 ```{webr}
-#| exercise: ex_payback
-r <- 0.12
-descontados <- projeto$fluxo_liquido / (1 + r)^(projeto$ano)
-data.frame(ano = projeto$ano,
-           descontado = round(descontados, 1),
-           acumulado  = round(______(descontados), 1))
-```
-
-::: {.callout-tip collapse="true" title="Dica"}
-A função que acumula uma soma ao longo de um vetor é `cumsum()`.
-:::
-
-::: {.callout-note collapse="true" title="Solução"}
-```r
 r <- 0.12
 descontados <- projeto$fluxo_liquido / (1 + r)^(projeto$ano)
 data.frame(ano = projeto$ano,
            descontado = round(descontados, 1),
            acumulado  = round(cumsum(descontados), 1))
 ```
-O payback descontado é mais longo que o simples. A diferença é o custo de esperar — e é a razão de projetos com retorno distante serem mais difíceis de financiar.
+
+::: {.callout-tip}
+## Como ler essa tabela
+
+O acumulado descontado também vira positivo no ano 4 — mas **por um fio**: fecha o ano com 1,4 mil, contra 220 mil na conta sem desconto. Bastaria a receita atrasar alguns meses para o retorno escorregar para o ano 5. A diferença entre as duas colunas é o custo de esperar, e é a razão de projetos com retorno distante serem mais difíceis de financiar: quem empresta ou investe faz exatamente esta conta.
+
+A última linha da coluna `acumulado`, 182,9, é o VPL — o mesmo número da seção anterior, agora visto como o que sobra no fim.
 :::
 
 ## Um gráfico do fluxo acumulado

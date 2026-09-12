@@ -15,7 +15,7 @@ engine: knitr
 Ao final deste laboratório você será capaz de:
 
 - abrir uma base de dados e reconhecer sua estrutura;
-- calcular médias por grupo e interpretá-las;
+- ler médias por grupo e interpretá-las;
 - descrever **quem** adere a um programa de incentivo, e por quê;
 - calcular a comparação bruta entre beneficiários e não beneficiários;
 - explicar por que essa comparação, sozinha, não mede o efeito do programa.
@@ -46,9 +46,11 @@ Consequências práticas: a primeira execução leva de alguns segundos a alguns
 :::
 
 ::: {.callout-important}
-## Comece pelo bloco 1
+## Comece pelo bloco 1 — e não há nada para digitar
 
 Todos os blocos compartilham a mesma sessão do R. Rode o **primeiro** antes dos demais: é ele que cria o objeto `dados`, usado em toda a página.
+
+Nenhum bloco pede que você escreva código: cada um vem pronto. O trabalho é clicar em **Run Code**, olhar a saída e ler a nota *Como ler essa saída* logo abaixo — é nela que está o que interessa. Você não precisa saber R; precisa saber o que os números dizem.
 :::
 
 ## Abrindo a base
@@ -68,24 +70,19 @@ Cada linha é **uma empresa em um ano** — por isso cada empresa aparece duas v
 As colunas: `empresa` identifica; `ano` e `pos` marcam o momento (`pos = 0` antes, `pos = 1` depois); `beneficiaria` diz se a empresa aderiu ao incentivo; `setor`, `porte`, `faturamento_mi` e `lucro_real` descrevem a empresa; e `pd` é o que queremos explicar.
 :::
 
-### Exercício 1 — o tamanho da base
+### O tamanho da base
 
-Descubra quantas linhas a base tem. Lembre: são duas linhas por empresa.
+`nrow()` devolve o número de linhas de um *data frame*; `ncol()`, o número de colunas.
 
 ```{webr}
-#| exercise: ex_nrow
-______(dados)
-```
-
-::: {.callout-tip collapse="true" title="Dica"}
-`nrow()` devolve o número de linhas de um *data frame*. A prima dela, `ncol()`, devolve o número de colunas.
-:::
-
-::: {.callout-note collapse="true" title="Solução"}
-```r
 nrow(dados)
+ncol(dados)
 ```
-São 3.000 linhas: 1.500 empresas × 2 anos.
+
+::: {.callout-tip}
+## Como ler essa saída
+
+São 3.000 linhas — 1.500 empresas × 2 anos — e 9 colunas. Cada empresa ocupa duas linhas porque é observada em dois momentos. Se a base tivesse uma linha por empresa, não haveria como comparar o antes com o depois, e é essa comparação que o Laboratório 2 vai explorar.
 :::
 
 ## Quem aderiu ao incentivo
@@ -112,25 +109,21 @@ As linhas são o regime tributário (0 = fora do lucro real, 1 = lucro real) e a
 A diferença é enorme — e não é acaso. O incentivo simplesmente não está disponível para quem não apura pelo lucro real. Guarde essa observação: ela é a semente do problema deste laboratório.
 :::
 
-### Exercício 2 — adesão por porte
+### Adesão por porte
 
-Faça o mesmo cruzamento, agora entre `porte` e `beneficiaria`.
+O mesmo cruzamento, agora entre `porte` e `beneficiaria`. A segunda linha do bloco transforma as contagens em proporções por linha — o `1` no final pede "por linha".
 
 ```{webr}
-#| exercise: ex_porte
-table(antes$______, antes$beneficiaria)
-```
-
-::: {.callout-tip collapse="true" title="Dica"}
-A coluna se chama `porte`. Depois de rodar, experimente `prop.table(table(antes$porte, antes$beneficiaria), 1)` — o `1` pede as proporções por linha.
-:::
-
-::: {.callout-note collapse="true" title="Solução"}
-```r
 table(antes$porte, antes$beneficiaria)
-prop.table(table(antes$porte, antes$beneficiaria), 1)
+round(prop.table(table(antes$porte, antes$beneficiaria), 1), 2)
 ```
-A adesão cresce com o porte. Empresas médias aderem muito mais que microempresas.
+
+::: {.callout-tip}
+## Como ler essa saída
+
+A segunda tabela é a que importa. Entre as empresas **médias**, 74% aderiram ao incentivo; entre as **pequenas**, 30%; entre as **micro**, 14%. A adesão cresce com o porte — e não porque empresa grande "gosta mais" de inovar: é que porte, regime tributário e estrutura contábil andam juntos, e o incentivo exige os três.
+
+Junte isso ao cruzamento anterior e o retrato está pronto: quem adere é maior, apura pelo lucro real e já tinha condições de investir. O grupo das beneficiárias não é uma amostra aleatória das empresas — é uma seleção.
 :::
 
 ## O dispêndio médio, por grupo
@@ -146,7 +139,7 @@ aggregate(pd ~ beneficiaria + pos, data = dados, FUN = mean)
 
 Quatro números — os mesmos quatro do [caso discutido em aula](caso-lei-do-bem.qmd), agora calculados a partir de 3.000 observações reais da base.
 
-Leia com atenção a linha em que `pos = 0`, ou seja, **antes de qualquer incentivo existir**. As beneficiárias já gastavam mais? Quanto mais?
+Leia com atenção as duas linhas em que `pos = 0`, ou seja, **antes de qualquer incentivo existir**: as beneficiárias já gastavam cerca de 792 mil por ano, contra 537 mil das demais — 255 mil a mais.
 
 Essa diferença aconteceu antes do programa. Ela não pode ser efeito dele.
 :::
@@ -168,33 +161,29 @@ cat("Diferença bruta:  ", round(media_benef - media_naobenef, 1), "\n")
 ::: {.callout-warning}
 ## Este número está errado — e é o número que costuma ser publicado
 
-A diferença que você acabou de calcular seria manchete: "empresas beneficiárias investem X a mais em P&D".
+A diferença que acabou de aparecer — cerca de 393 mil reais — seria manchete: "empresas beneficiárias investem quase 400 mil a mais em P&D".
 
 Ela é aritmeticamente correta e causalmente inútil. Você já viu por quê: os dois grupos **já eram diferentes antes**, e essa diferença prévia continua embutida no número final.
 
-Quanto do que você calculou é efeito do programa e quanto é a diferença que já existia? O [Laboratório 2](lab02-did.qmd) separa os dois.
+Quanto desse número é efeito do programa e quanto é a diferença que já existia? O bloco seguinte mede a segunda parcela; o [Laboratório 2](lab02-did.qmd) separa as duas.
 :::
 
-### Exercício 3 — a diferença que já existia
+### A diferença que já existia
 
-Calcule a mesma diferença entre os grupos, mas **no período anterior** (`pos == 0`). Esse número é o viés de seleção.
+A mesma conta, agora **no período anterior** (`pos == 0`), antes de o programa existir. Esse número tem nome: viés de seleção.
 
 ```{webr}
-#| exercise: ex_vies
-antes <- dados[dados$______ == 0, ]
-mean(antes$pd[antes$beneficiaria == 1]) - mean(antes$pd[antes$beneficiaria == 0])
-```
-
-::: {.callout-tip collapse="true" title="Dica"}
-A coluna que marca o momento é `pos`. Vale 0 no período anterior e 1 no posterior.
-:::
-
-::: {.callout-note collapse="true" title="Solução"}
-```r
 antes <- dados[dados$pos == 0, ]
-mean(antes$pd[antes$beneficiaria == 1]) - mean(antes$pd[antes$beneficiaria == 0])
+vies <- mean(antes$pd[antes$beneficiaria == 1]) - mean(antes$pd[antes$beneficiaria == 0])
+round(vies, 1)
 ```
-O resultado fica em torno de 255 mil reais. **Toda essa diferença é anterior ao programa** — e continua dentro da comparação bruta que você calculou acima.
+
+::: {.callout-tip}
+## Como ler esse número
+
+Cerca de **255 mil reais**. As beneficiárias já gastavam isso a mais em P&D em 2022, quando o incentivo ainda não existia. **Toda essa diferença é anterior ao programa** — e continua dentro da comparação bruta de 393 mil calculada acima.
+
+Faça a subtração de cabeça: 393 menos 255 deixa algo em torno de 138. É o quanto sobra para o programa, no máximo, depois de descontar o que já era diferente. O Laboratório 2 chega a esse número por dois caminhos e mostra por que ele ainda é uma estimativa, não uma certeza.
 :::
 
 ## Um gráfico que mostra o problema
