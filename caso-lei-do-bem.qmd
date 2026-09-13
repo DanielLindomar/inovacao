@@ -1,6 +1,6 @@
 ---
 title: "O caso da Lei do Bem"
-subtitle: "Atividade com solução — sábado 1, tarde"
+subtitle: "Atividade com solução — sábado 1, manhã"
 author: "Prof. Dr. Lindomar Pegorini Daniel — UNEMAT, Campus de Sinop"
 engine: knitr
 ---
@@ -14,7 +14,7 @@ engine: knitr
 
 Quatro números, aritmética de escola. Ao final você deve conseguir explicar, para alguém que não fez esta disciplina, **por que a comparação mais natural do mundo dá a resposta errada** — e o que fazer no lugar dela.
 
-Sem software. Sem nota. Vinte minutos em sala simultânea: façam as contas dos quatro passos e respondam às seis perguntas antes de abrir a **Solução**. Depois, em casa, a leitura de um estudo real — com as perguntas e a solução logo abaixo.
+Sem software. Sem nota. Vinte minutos, cada um por si e no papel: faça as contas dos quatro passos e responda às seis perguntas antes de abrir a **Solução**. Depois, em casa, a leitura de um estudo real — com as perguntas e a solução logo abaixo.
 :::
 
 ## A afirmação a ser examinada
@@ -52,12 +52,12 @@ Esta tabela foi construída para a atividade. As ordens de grandeza são plausí
 
 Responda no papel antes de abrir a solução. São elas que separam quem fez a conta de quem entendeu a conta.
 
-1. Qual dos dois números — o do Passo 1 ou o do Passo 3 — vocês defenderiam diante de um gestor público? Por quê?
+1. Qual dos dois números — o do Passo 1 ou o do Passo 3 — você defenderia diante de um gestor público? Por quê?
 2. Em quanto por cento a comparação ingênua **exagera** o efeito?
-3. O número do Passo 2 tem nome. Qual é, e por que ele existe neste caso específico? Pensem em que tipo de empresa consegue usar a Lei do Bem.
-4. O resultado do Passo 3 só é confiável se uma hipótese for verdadeira. Que hipótese é essa? Escrevam-na com as próprias palavras, sem jargão.
-5. Que evidência vocês pediriam para acreditar nessa hipótese?
-6. Imaginem que, no período analisado, o preço da soja tenha disparado e as empresas do agronegócio — que são a maioria das beneficiárias — tenham ficado muito mais lucrativas. Isso ameaça a hipótese da pergunta 4? Como?
+3. O número do Passo 2 tem nome. Qual é, e por que ele existe neste caso específico? Pense em que tipo de empresa consegue usar a Lei do Bem.
+4. O resultado do Passo 3 só é confiável se uma hipótese for verdadeira. Que hipótese é essa? Escreva-a com as próprias palavras, sem jargão.
+5. Que evidência você pediria para acreditar nessa hipótese?
+6. Imagine que, no período analisado, o preço da soja tenha disparado e as empresas do agronegócio — que são a maioria das beneficiárias — tenham ficado muito mais lucrativas. Isso ameaça a hipótese da pergunta 4? Como?
 
 ::: {.callout-tip collapse="true" title="Dica — se travar no Passo 3"}
 Variação das beneficiárias: 1.150 − 820. Variação das não beneficiárias: 790 − 610. A estimativa é a diferença entre esses dois resultados.
@@ -85,7 +85,7 @@ Variação das beneficiárias: 1.150 − 820. Variação das não beneficiárias
 
 ## A leitura do estudo — em casa, até 25/09
 
-Depois da atividade, leia um trecho de uma avaliação **de verdade** — para ver como pesquisadores enfrentam, com dados reais, o mesmo problema que vocês acabaram de resolver com quatro números.
+Depois da atividade, leia um trecho de uma avaliação **de verdade** — para ver como pesquisadores enfrentam, com dados reais, o mesmo problema que você acabou de resolver com quatro números.
 
 ::: {.callout-note}
 ## O estudo
@@ -94,7 +94,7 @@ SHIMADA, E.; KANNEBLEY JR., S.; DE NEGRI, F. **Efetividade da Lei do Bem no est�
 
 [PDF livre, em português](https://www.anpec.org.br/encontro/2013/files_I/i9-10d0885d8e8543656887a8a4cb6c4466.pdf)
 
-**Leiam as páginas 5 a 13** — a seção de procedimentos metodológicos e os resultados, incluindo a Tabela 4. Não é preciso entender cada estimador para acompanhar o argumento.
+**Leia as páginas 5 a 13** — a seção de procedimentos metodológicos e os resultados, incluindo a Tabela 4. Não é preciso entender cada estimador para acompanhar o argumento.
 
 Uma versão posterior saiu em periódico: *Pesquisa e Planejamento Econômico* (IPEA), v. 46, n. 3, 2016.
 :::
@@ -105,7 +105,7 @@ Combinando dados da PINTEC, da PIA, da RAIS e do MCTI num painel de 1999 a 2009,
 
 Um detalhe que vale a discussão: o efeito **não é significante nos setores de alta intensidade tecnológica**. Justamente onde se esperaria mais.
 
-### Como eles resolveram o problema que vocês acabaram de ver
+### Como eles resolveram o problema que você acabou de ver
 
 Este é o motivo da leitura. Os autores não usam a comparação bruta — eles empilham **três defesas**:
 
@@ -116,7 +116,7 @@ Este é o motivo da leitura. Os autores não usam a comparação bruta — eles 
 ::: {.callout-tip}
 ## Reconheceram alguma coisa?
 
-A terceira defesa é exatamente a hipótese que vocês discutiram na pergunta 4 da atividade. A segunda é o que vocês fizeram quando subtraíram a variação de um grupo da variação do outro.
+A terceira defesa é exatamente a hipótese que você formulou na pergunta 4 da atividade. A segunda é o que você fez quando subtraiu a variação de um grupo da variação do outro.
 
 A diferença entre a atividade e o artigo não é conceitual — é de escala e de cuidado. O raciocínio é o mesmo.
 :::
@@ -130,12 +130,12 @@ As autoras usam pareamento, mas **sem a dimensão temporal** — sem as duas dif
 ### Perguntas para a leitura
 
 1. Por que os autores precisaram de **três** defesas contra a seleção, e não só de uma?
-2. Qual delas corresponde ao que vocês fizeram com os quatro números?
+2. Qual delas corresponde ao que você fez com os quatro números?
 3. O que a verificação de tendência comum antes de 2006 estava tentando provar — e por que ela não prova de vez?
-4. O efeito não aparece nos setores de alta tecnologia. Que explicações vocês dariam?
+4. O efeito não aparece nos setores de alta tecnologia. Que explicações você daria?
 5. Um estudo acha 86% a 108%; outro não acha efeito nenhum. Isso significa que um deles está errado?
 
-::: {.callout-note collapse="true" title="Solução — leitura do professor, para discutir"}
+::: {.callout-note collapse="true" title="Solução — leitura do professor"}
 1. Porque a seleção age por mais de um canal. O pareamento cuida das diferenças **observáveis** antes do programa; os efeitos fixos cuidam das diferenças **fixas e não observáveis** de cada empresa, como a própria disposição de se candidatar; e a verificação de tendência comum testa se, mesmo depois disso, os grupos caminhavam juntos. Cada defesa fecha uma porta que as outras deixam aberta.
 2. A segunda — os efeitos fixos de firma. Subtrair a variação de um grupo da variação do outro é o que os efeitos fixos fazem em escala, empresa por empresa.
 3. Que os dois grupos evoluíam em paralelo **antes** de a lei valer — o que torna plausível supor que continuariam em paralelo sem ela. Não prova de vez porque o passado paralelo não garante o futuro paralelo: um choque que atinja só um dos grupos depois de 2006 (a pergunta 6 da atividade) não aparece nesse teste.
@@ -145,6 +145,6 @@ As autoras usam pareamento, mas **sem a dimensão temporal** — sem as duas dif
 
 ## Depois da aula
 
-O [Laboratório 2](lab02-did.qmd) refaz este mesmo raciocínio em R, com dados de 2.000 empresas em vez de quatro números — e com uma vantagem que nenhuma avaliação real tem: como os dados são simulados, **o efeito verdadeiro é conhecido**. Você vai poder verificar se o método acertou.
+O [Laboratório 2](lab02-did.qmd) refaz este mesmo raciocínio em R, com dados de 1.500 empresas em vez de quatro números — e com uma vantagem que nenhuma avaliação real tem: como os dados são simulados, **o efeito verdadeiro é conhecido**. Você vai poder verificar se o método acertou.
 
 É a única circunstância em que isso é possível. Aproveite.

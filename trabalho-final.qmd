@@ -16,7 +16,7 @@ engine: knitr
 **Extensão:** 4 a 6 páginas, sem contar capa e referências.
 **Formato:** PDF.
 **Individual ou em dupla.**
-**Onde entregar:** na tarefa aberta no SIGAA.
+**Onde entregar:** na tarefa aberta no SIGAA, até **sexta-feira, 09/10/2026, 23h59**.
 **Peso:** é o único instrumento de nota da disciplina.
 :::
 
@@ -34,7 +34,7 @@ Escolha um dos [dez casos](casos.qmd). Se você tem um projeto de inovação pr�
 
 ## O roteiro
 
-São seis seções. Sigam a ordem: cada uma depende da anterior.
+São seis seções. Siga a ordem: cada uma depende da anterior.
 
 ### 1 · O projeto
 

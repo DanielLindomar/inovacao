@@ -12,7 +12,7 @@ engine: knitr
 ::: {.callout-note}
 ## O que esta atividade resolve
 
-Cinco empresas. Para cada uma, três perguntas:
+Seis empresas. Para cada uma, três perguntas:
 
 1. **Pode usar a Lei do Bem?** Sim ou não, sem meio-termo.
 2. **Por quê?** Aponte o requisito que decide.
@@ -39,7 +39,7 @@ O benefício não é o percentual sobre o gasto — é a **redução do imposto*
 
 > economia ≈ gasto em P&D × percentual de exclusão × 34%
 
-Um gasto de R\$ 1 milhão com exclusão de 60% gera cerca de R\$ 204 mil de economia. É essa a conta que se espera de vocês — não a apuração completa.
+Um gasto de R\$ 1 milhão com exclusão de 60% gera cerca de R\$ 204 mil de economia. É essa a conta que se espera de você — não a apuração completa.
 :::
 
 ---
@@ -55,7 +55,7 @@ Tem um departamento de engenharia com sete pessoas. No ano passado, três delas 
 O contador da empresa nunca ouviu falar em Lei do Bem. O diretor industrial acha que "P&D é coisa de laboratório".
 
 ::: {.callout-note collapse="true" title="Solução"}
-**Pode, e provavelmente é o caso mais claro dos cinco.** Lucro real, lucro fiscal, regularidade. E o projeto é **desenvolvimento experimental** no sentido da lei: há incerteza técnica, não há solução disponível, e busca-se avanço tecnológico.
+**Pode, e provavelmente é o caso mais claro dos seis.** Lucro real, lucro fiscal, regularidade. E o projeto é **desenvolvimento experimental** no sentido da lei: há incerteza técnica, não há solução disponível, e busca-se avanço tecnológico.
 
 Com R\$ 2,1 milhões e exclusão de 60%, a economia fica na casa de **R\$ 430 mil**. Se as três pessoas dedicadas caracterizarem aumento de pesquisadores exclusivos acima de 5%, o degrau sobe para 80% e a economia passa de R\$ 570 mil.
 
@@ -93,7 +93,7 @@ Sete dos nove funcionários são desenvolvedores. A empresa lança versões nova
 ::: {.callout-note collapse="true" title="Solução"}
 **Não pode** — pelo mesmo motivo do perfil anterior, e o contraste é o ponto da atividade.
 
-É a empresa mais "de tecnologia" das cinco. Sete de nove funcionários são desenvolvedores. E, ainda assim, está fora do maior incentivo à inovação do país, enquanto o frigorífico do perfil 1 está dentro.
+É a empresa mais "de tecnologia" das seis. Sete de nove funcionários são desenvolvedores. E, ainda assim, está fora do maior incentivo à inovação do país, enquanto o frigorífico do perfil 1 está dentro.
 
 **O critério não é ser inovadora. É o regime tributário.** Quem imagina a Lei do Bem como um instrumento para empresas de tecnologia entende o instrumento ao contrário.
 
@@ -111,7 +111,7 @@ Fatura R\$ 8 milhões e apura pelo **lucro real**. Regular com o fisco. No últi
 Desenvolveu, com um engenheiro dedicado e um técnico em meio período, um sistema automatizado de limpeza de placas para as condições do cerrado — poeira intensa na seca, crosta após as primeiras chuvas. Os equipamentos importados disponíveis não funcionam bem nessas condições. Gastou R\$ 750 mil no ano.
 
 ::: {.callout-note collapse="true" title="Solução"}
-**Pode — mas o benefício é muito menor do que a conta ingênua sugere.** É o perfil mais sutil dos cinco.
+**Pode — mas o benefício é muito menor do que a conta ingênua sugere.** É o perfil mais sutil dos seis.
 
 A conta de bolso daria R\$ 750 mil × 60% × 34% ≈ R\$ 153 mil. Só que o benefício é uma **exclusão da base de cálculo**, e a base disponível é o lucro fiscal de R\$ 120 mil. Não se pode excluir mais do que existe: a empresa aproveita, no máximo, o imposto correspondente àquela base — algo em torno de R\$ 40 mil — e **perde o restante**, porque a exclusão não gera crédito nem se transporta para exercícios seguintes.
 
@@ -170,7 +170,7 @@ Duas perguntas atravessam todos os perfis:
 Porque a Lei do Bem não é um prêmio a quem inova: é uma **exclusão da base de cálculo do IRPJ e da CSLL**, e só existe base para excluir em quem apura pelo lucro real e tem lucro fiscal. O frigorífico cumpre isso; a empresa de software, no lucro presumido, não tem base — por mais que sete de nove funcionários sejam desenvolvedores. O instrumento seleciona por regime tributário e por lucro, não por intensidade tecnológica, e é por isso que a maioria das empresas de tecnologia pequenas, quase sempre no Simples ou no presumido, fica de fora.
 :::
 
-**Qual dos cinco perfis mais se parece com a empresa do seu [caso](casos.qmd)?** Essa comparação já é meio caminho da seção 2 do [trabalho final](trabalho-final.qmd).
+**Qual dos seis perfis mais se parece com a empresa do seu [caso](casos.qmd)?** Essa comparação já é meio caminho da seção 2 do [trabalho final](trabalho-final.qmd).
 
 ::: {.callout-note}
 ## O que você deve conseguir explicar depois desta atividade

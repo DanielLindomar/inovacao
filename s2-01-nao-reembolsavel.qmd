@@ -1,6 +1,6 @@
 ---
 title: "Fomento não reembolsável"
-subtitle: "Sábado 2 · Bloco 1 — subvenção, editais e como se lê um edital de verdade"
+subtitle: "Aula 5 · Sábado 2 — subvenção, editais e como se lê um edital de verdade"
 author: "Prof. Dr. Lindomar Pegorini Daniel — UNEMAT, Campus de Sinop"
 engine: knitr
 ---
@@ -27,7 +27,7 @@ Ao final deste bloco você será capaz de:
 
 A palavra que importa é *sem devolução*. Não é empréstimo. Não é compra de participação. O dinheiro entra na empresa e fica.
 
-Isso soa estranho da primeira vez que se ouve. O Estado está dando dinheiro a uma empresa que existe para dar lucro aos donos. A justificativa está no [primeiro bloco do sábado passado](s1-01-politicas-publicas.qmd): parte do valor gerado por P&D privada escapa da empresa que a financiou e beneficia terceiros. Se ninguém compensar essa diferença, investe-se menos do que seria socialmente desejável.
+Isso soa estranho da primeira vez que se ouve. O Estado está dando dinheiro a uma empresa que existe para dar lucro aos donos. A justificativa está na [Aula 1](s1-01-politicas-publicas.qmd): parte do valor gerado por P&D privada escapa da empresa que a financiou e beneficia terceiros. Se ninguém compensar essa diferença, investe-se menos do que seria socialmente desejável.
 
 A subvenção compensa exatamente essa diferença. E é por isso que ela **nunca cobre 100% do projeto** — se cobrisse, o Estado estaria pagando também pela parte que a empresa captura sozinha. Daí a contrapartida obrigatória, que aparece em toda chamada de subvenção do país.
 

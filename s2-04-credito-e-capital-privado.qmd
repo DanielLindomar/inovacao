@@ -1,6 +1,6 @@
 ---
 title: "Crédito e capital privado"
-subtitle: "Sábado 2 · Bloco 4 — dívida, equity e a escada do financiamento"
+subtitle: "Aula 8 · Sábado 2 — dívida, equity e a escada do financiamento"
 author: "Prof. Dr. Lindomar Pegorini Daniel — UNEMAT, Campus de Sinop"
 engine: knitr
 ---
@@ -96,7 +96,7 @@ Três leituras que só aparecem quando se olha a tabela como um todo:
 
 ## Atividade do bloco
 
-Apresentação do [Laboratório 4](lab04-custo-das-fontes.qmd) ao vivo, com a turma acompanhando as três simulações. Em seguida, a oficina do [trabalho final](trabalho-final.qmd): cada um monta o esqueleto do próprio plano com o [catálogo](cat-escada.qmd) aberto.
+Apresentação do [Laboratório 4](lab04-custo-das-fontes.qmd) ao vivo, com a turma acompanhando as três simulações. Em seguida, a Oficina 4 do [trabalho final](trabalho-final.qmd): cada um escreve, na própria cópia do documento do encontro, as Seções 4 e 6 do plano — a conta e os riscos — com o Laboratório 4 e o [catálogo](cat-escada.qmd) abertos.
 
 ::: {.callout-note}
 ## O que você deve conseguir explicar depois deste bloco

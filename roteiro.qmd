@@ -15,7 +15,7 @@ Esta disciplina tem 30 horas: 8 ao vivo — a manhã de 12/09 e a tarde de 26/09
 ::: {.callout-important}
 ## As três regras que organizam tudo
 
-**Nada que está no site se repete ao vivo.** O tempo do encontro é para as atividades com solução, a leitura de um edital e de um estudo reais, e as quatro oficinas em que o seu plano é rascunhado, seção por seção. Quem chega sem ter lido as aulas acompanha pior — e essa é a regra, não a punição.
+**Nada que está no site se repete ao vivo.** O tempo do encontro é para as atividades com solução, a leitura de um edital real e as quatro oficinas em que o seu plano é rascunhado, seção por seção. Quem chega sem ter lido as aulas acompanha pior — e essa é a regra, não a punição.
 
 **Um único instrumento de nota.** O plano de captação de recursos, entregue em PDF pela tarefa do SIGAA até **09/10/2026, 23h59**. Laboratórios e atividades com solução não valem nota: valem pelo que você consegue defender no plano.
 
@@ -80,7 +80,7 @@ Os primeiros blocos carregam os dados usados pelos seguintes; pular um deles pro
 
 ## Sábado 26/09 — o que acontece
 
-O dia inteiro caminha para a oficina do fim da tarde. Cada bloco alimenta uma seção do seu plano.
+A tarde inteira caminha para a Oficina 4, no fim. Cada bloco alimenta uma seção do seu plano.
 
 Uma tarde, das 14h às 18h, em quatro blocos, que parte do princípio de que as aulas 5 a 8 foram lidas. **Na primeira metade**, a retomada: os três instrumentos que você encontrou vão para a primeira tabela do seu documento, e cada um escreve no chat do Meet o que mais o surpreendeu — o chat vira o mural da turma. Depois, um edital real aberto na tela, o que a EMBRAPII e os incentivos fiscais cobram; cada um por si, [Esta empresa pode usar a Lei do Bem?](atividade-elegibilidade.qmd) — seis perfis, pegue o mais parecido com a sua empresa, com solução — e a **Oficina 3**: as Seções 2 e 3 do plano, o mapa dos instrumentos e a escolha, com os seus três instrumentos já na mesa.
 

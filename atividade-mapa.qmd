@@ -22,16 +22,16 @@ Vinte minutos, cada um por si: leia a situação, tente responder às três perg
 :::
 
 ::: {.callout-important}
-## Vocês ainda não sabem tudo — e é de propósito
+## Você ainda não sabe tudo — e é de propósito
 
-Esta atividade acontece **antes** do segundo sábado, que é quando os instrumentos são discutidos um a um. Vocês vão responder com o [catálogo](cat-escada.qmd) aberto e com meia informação.
+Esta atividade acontece **antes** do segundo sábado, que é quando os instrumentos são discutidos um a um. Você vai responder com o [catálogo](cat-escada.qmd) aberto e com meia informação.
 
-Isso é intencional. A terceira pergunta — o que ficou sem resposta — é o programa do dia 26. Anotem com honestidade: dúvida bem formulada vale mais aqui do que resposta chutada.
+Isso é intencional. A terceira pergunta — o que ficou sem resposta — é o programa do dia 26. Anote com honestidade: dúvida bem formulada vale mais aqui do que resposta chutada.
 :::
 
 ## Como ler cada situação
 
-Antes de escolher o instrumento, respondam para vocês mesmos:
+Antes de escolher o instrumento, responda para você mesmo:
 
 - **em que estágio** está o projeto: ideia, protótipo, piloto, produção ou escala;
 - **qual o porte e o regime tributário** da empresa;
@@ -50,7 +50,7 @@ Uma cooperativa de leite com 340 associados quer processar o soro do queijo, hoj
 O presidente ouviu falar em "editais de inovação" e quer saber se vale a pena esperar um.
 
 ::: {.callout-tip collapse="true" title="Uma pista, se travar"}
-Prestem atenção em duas coisas: a tecnologia é **madura** — isso muda o enquadramento como P&D — e o gasto é quase todo em **equipamento**, não em desenvolvimento. Comparem com o que cada natureza de dinheiro costuma financiar.
+Preste atenção em duas coisas: a tecnologia é **madura** — isso muda o enquadramento como P&D — e o gasto é quase todo em **equipamento**, não em desenvolvimento. Compare com o que cada natureza de dinheiro costuma financiar.
 :::
 
 ::: {.callout-note collapse="true" title="Solução"}
@@ -82,7 +82,7 @@ Duas médicas com experiência no interior desenharam um modelo de telemedicina 
 O contador de uma delas disse que "sem CNPJ não dá para captar nada".
 
 ::: {.callout-tip collapse="true" title="Uma pista, se travar"}
-O contador está certo para a maior parte do catálogo — e errado para pelo menos um instrumento. Procurem na coluna **Ideia** da escada e verifiquem a elegibilidade.
+O contador está certo para a maior parte do catálogo — e errado para pelo menos um instrumento. Procure na coluna **Ideia** da escada e verifique a elegibilidade.
 :::
 
 ::: {.callout-note collapse="true" title="Solução"}
@@ -112,7 +112,7 @@ O contador está certo para a maior parte do catálogo — e errado para pelo me
 Uma transportadora de grãos quer desenvolver um sistema de roteirização com previsão de demanda, a partir de cinco anos de dados próprios. O custo é de **R\$ 480 mil**, e mais de 80% disso é **pessoal qualificado** — dois analistas e uma consultoria por um ano. A empresa apura pelo **lucro presumido**.
 
 ::: {.callout-tip collapse="true" title="Uma pista, se travar"}
-Duas restrições atuam aqui ao mesmo tempo: o regime tributário fecha uma porta, e a natureza do gasto — pessoas, não equipamento — fecha outras. Procurem o instrumento que financia exatamente **gente qualificada dentro da empresa**.
+Duas restrições atuam aqui ao mesmo tempo: o regime tributário fecha uma porta, e a natureza do gasto — pessoas, não equipamento — fecha outras. Procure o instrumento que financia exatamente **gente qualificada dentro da empresa**.
 :::
 
 ::: {.callout-note collapse="true" title="Solução"}
@@ -144,7 +144,7 @@ Um frigorífico de porte médio precisa de **R\$ 6,5 milhões** para desenvolver
 O valor é grande demais para os instrumentos de pequeno porte e pequeno demais para os mínimos das linhas de crédito direto.
 
 ::: {.callout-tip collapse="true" title="Uma pista, se travar"}
-Quando nenhuma fonte isolada resolve, a resposta costuma ser uma **combinação**. Pensem em qual parte do valor cada instrumento poderia cobrir, e verifiquem se as regras permitem somá-los.
+Quando nenhuma fonte isolada resolve, a resposta costuma ser uma **combinação**. Pense em qual parte do valor cada instrumento poderia cobrir, e verifique se as regras permitem somá-los.
 :::
 
 ::: {.callout-note collapse="true" title="Solução"}
@@ -174,7 +174,7 @@ Uma beneficiadora de sementes gastou **R\$ 1,4 milhão** no ano passado desenvol
 O diretor quer saber onde captar recurso para o **próximo** projeto. Ninguém na empresa mencionou o projeto que já terminou.
 
 ::: {.callout-tip collapse="true" title="Uma pista, se travar"}
-A pergunta do diretor é sobre o futuro. Antes de respondê-la, verifiquem se há algo a recuperar do **passado** — e qual o prazo para isso.
+A pergunta do diretor é sobre o futuro. Antes de respondê-la, verifique se há algo a recuperar do **passado** — e qual o prazo para isso.
 :::
 
 ::: {.callout-note collapse="true" title="Solução"}
@@ -204,7 +204,7 @@ Uma startup de bioinsumos com quatro anos e R\$ 2,1 milhões de faturamento tem 
 O instrumento estadual mais adequado ao perfil dela **encerrou as inscrições em julho**, e o próximo ciclo só deve abrir em 2027. A empresa não pode esperar dois anos.
 
 ::: {.callout-tip collapse="true" title="Uma pista, se travar"}
-Consultem a **agenda** no fim da página da [escada](cat-escada.qmd). Em setembro de 2026 não há edital estadual de subvenção aberto em Mato Grosso — e, ainda assim, há portas abertas. Quais?
+Consulte a **agenda** no fim da página da [escada](cat-escada.qmd). Em setembro de 2026 não há edital estadual de subvenção aberto em Mato Grosso — e, ainda assim, há portas abertas. Quais?
 :::
 
 ::: {.callout-note collapse="true" title="Solução"}

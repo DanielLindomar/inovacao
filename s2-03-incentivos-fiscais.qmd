@@ -1,6 +1,6 @@
 ---
 title: "Incentivos fiscais"
-subtitle: "Sábado 2 · Bloco 3 — Lei do Bem, Lei de TICs e encomenda tecnológica"
+subtitle: "Aula 7 · Sábado 2 — Lei do Bem, Lei de TICs e encomenda tecnológica"
 author: "Prof. Dr. Lindomar Pegorini Daniel — UNEMAT, Campus de Sinop"
 engine: knitr
 ---
@@ -24,7 +24,7 @@ Ao final deste bloco você será capaz de:
 
 ## Duas formas de o Estado apoiar a mesma coisa
 
-No bloco anterior, o Estado transferiu dinheiro: escolheu projetos, assinou convênios, cobrou prestação de contas. Aqui ele faz o oposto — **não escolhe ninguém e não transfere nada**. Apenas deixa de cobrar tributo de quem investiu em pesquisa.
+Nas duas aulas anteriores, o Estado transferiu dinheiro: escolheu projetos, assinou convênios, cobrou prestação de contas. Aqui ele faz o oposto — **não escolhe ninguém e não transfere nada**. Apenas deixa de cobrar tributo de quem investiu em pesquisa.
 
 A diferença é maior do que parece.
 
@@ -50,7 +50,7 @@ Um projeto que só acontece se alguém pagar precisa de subvenção ou crédito.
 
 O detalhamento está na [ficha do catálogo](cat-fiscais.qmd). O que interessa aqui é o teste rápido:
 
-1. **A empresa apura pelo lucro real?** Se está no Simples ou no lucro presumido, para aqui. Esta pergunta sozinha elimina a maior parte das empresas brasileiras — e três dos [nossos dez casos](casos.qmd).
+1. **A empresa apura pelo lucro real?** Se está no Simples ou no lucro presumido, para aqui. Esta pergunta sozinha elimina a maior parte das empresas brasileiras — e quatro dos [nossos dez casos](casos.qmd).
 2. **Teve lucro fiscal no ano-base?** O benefício é exclusão da base de cálculo, não crédito. Empresa no prejuízo não tem de que abater.
 3. **Está regular com o fisco federal?**
 4. **Consegue mostrar os custos separados por projeto?** Não é exigência formal de sistema, é exigência de rastreabilidade.
@@ -130,7 +130,7 @@ Citar dispositivo revogado numa proposta ao poder público é o tipo de erro que
 
 ## Atividade do bloco
 
-Em salas simultâneas: [**cinco perfis de empresa**](atividade-elegibilidade.qmd). Para cada um, decidam se pode usar a Lei do Bem, digam qual requisito decide e estimem a ordem de grandeza do benefício. Depois, para os que não podem, apontem o que sobra no [catálogo](cat-escada.qmd).
+No encontro, cada um por si: [**seis perfis de empresa**](atividade-elegibilidade.qmd) — pegue o mais parecido com a sua. Decida se pode usar a Lei do Bem, diga qual requisito decide e estime a ordem de grandeza do benefício; a solução está na página. Depois, para os que não podem, aponte o que sobra no [catálogo](cat-escada.qmd).
 
 ::: {.callout-note}
 ## O que você deve conseguir explicar depois deste bloco

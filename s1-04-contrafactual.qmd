@@ -1,6 +1,6 @@
 ---
 title: "O contrafactual"
-subtitle: "Sábado 1 · Bloco 4 — por que \"quem usou o incentivo inova mais\" não prova nada"
+subtitle: "Aula 4 · Sábado 1 — por que \"quem usou o incentivo inova mais\" não prova nada"
 author: "Prof. Dr. Lindomar Pegorini Daniel — UNEMAT, Campus de Sinop"
 engine: knitr
 ---
@@ -108,11 +108,11 @@ Você provavelmente não vai estimar impacto. Vai **ler** avaliações, e às ve
 2. **Desconfie de comparação bruta entre quem entrou e quem não entrou.** Peça a trajetória anterior dos dois grupos.
 3. **Pergunte a quem o resultado se aplica.** Efeito estimado sobre grandes empresas do lucro real não vale para a sua micro empresa de Sinop.
 
-## Atividade da tarde
+## Atividade do bloco
 
-Em salas simultâneas: [o caso da Lei do Bem](caso-lei-do-bem.qmd). Quatro números, aritmética simples, e a decomposição que separa o efeito do viés. Depois, plenária com a leitura de um trecho de avaliação publicada.
+No encontro, cada um por si e no papel: [o caso da Lei do Bem](caso-lei-do-bem.qmd). Quatro números, aritmética simples, e a decomposição que separa o efeito do viés — com a solução na página. Depois, em casa, a leitura de um trecho de uma avaliação publicada, com as perguntas e a solução na mesma página.
 
-No período entre os encontros, o [Laboratório 2](lab02-did.qmd) refaz o raciocínio em R com 2.000 empresas — e, por serem dados simulados, com o efeito verdadeiro conhecido. Você vai poder verificar se o método acertou, o que nenhuma avaliação real permite.
+No período entre os encontros, o [Laboratório 2](lab02-did.qmd) refaz o raciocínio em R com 1.500 empresas — e, por serem dados simulados, com o efeito verdadeiro conhecido. Você vai poder verificar se o método acertou, o que nenhuma avaliação real permite.
 
 ::: {.callout-note}
 ## O que você deve conseguir explicar depois deste bloco

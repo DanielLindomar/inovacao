@@ -34,7 +34,7 @@ A pergunta de fundo é a da disciplina inteira: **o incentivo aumentou o investi
 
 Esta base foi gerada por computador, com um efeito verdadeiro **conhecido**. No [Laboratório 2](lab02-did.qmd) esse número será revelado, e você poderá conferir se o método acertou.
 
-Nenhuma avaliação com dados reais permite isso. É a mesma ideia das *Aplicações* do site de Econometria: reconstruir a situação com parâmetros conhecidos para poder verificar o método.
+Nenhuma avaliação com dados reais permite isso. É a mesma ideia das *Aplicações* do [site de Econometria](https://daniellindomar.github.io/econometria/): reconstruir a situação com parâmetros conhecidos para poder verificar o método.
 :::
 
 ::: {.callout-important}
@@ -137,7 +137,7 @@ aggregate(pd ~ beneficiaria + pos, data = dados, FUN = mean)
 ::: {.callout-tip}
 ## Como ler essa saída
 
-Quatro números — os mesmos quatro do [caso discutido em aula](caso-lei-do-bem.qmd), agora calculados a partir de 3.000 observações reais da base.
+Quatro números, com a mesma estrutura do [caso discutido no encontro](caso-lei-do-bem.qmd) — dois grupos, antes e depois —, agora calculados a partir das 3.000 observações da base. Os valores não são os do caso, que foi arredondado para a conta de cabeça; a lógica é idêntica.
 
 Leia com atenção as duas linhas em que `pos = 0`, ou seja, **antes de qualquer incentivo existir**: as beneficiárias já gastavam cerca de 792 mil por ano, contra 537 mil das demais — 255 mil a mais.
 

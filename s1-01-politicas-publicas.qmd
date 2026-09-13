@@ -1,6 +1,6 @@
 ---
 title: "Políticas públicas: conceito e ciclo"
-subtitle: "Sábado 1 · Bloco 1 — por que o Estado financia pesquisa que a empresa poderia pagar sozinha"
+subtitle: "Aula 1 · Sábado 1 — por que o Estado financia pesquisa que a empresa poderia pagar sozinha"
 author: "Prof. Dr. Lindomar Pegorini Daniel — UNEMAT, Campus de Sinop"
 engine: knitr
 ---
@@ -59,7 +59,7 @@ O ciclo é um modelo analítico, não uma descrição da realidade — na práti
 
 **4 · Implementação.** A política encontra a realidade. Sistemas eletrônicos, prazos, capacidade das equipes, disponibilidade orçamentária. É a fase em que mais política morre: aprovada no papel e inexequível na prática.
 
-**5 · Avaliação.** Funcionou? A que custo? Comparado a quê? É o tema do [terceiro bloco](s1-03-avaliacao.qmd) — e a razão de existir da segunda metade desta disciplina.
+**5 · Avaliação.** Funcionou? A que custo? Comparado a quê? É o tema da [Aula 3](s1-03-avaliacao.qmd) — e a razão de existir da segunda metade da manhã do dia 12.
 
 ::: {.callout-important}
 ## O ciclo explica a agenda de editais
@@ -90,7 +90,7 @@ Três razões adicionais reforçam o argumento:
 
 O argumento acima é o mais aceito, mas não é consenso, e um bom gestor conhece as críticas:
 
-**Peso morto.** Parte do incentivo paga pesquisa que aconteceria de qualquer forma. Se uma empresa ia investir R\$ 1 milhão e recebe R\$ 300 mil de benefício para investir R\$ 1 milhão, o dinheiro público virou lucro, não pesquisa adicional. **É exatamente isso que a avaliação de impacto mede** — e a razão de a segunda metade do primeiro sábado existir.
+**Peso morto.** Parte do incentivo paga pesquisa que aconteceria de qualquer forma. Se uma empresa ia investir R\$ 1 milhão e recebe R\$ 300 mil de benefício para investir R\$ 1 milhão, o dinheiro público virou lucro, não pesquisa adicional. **É exatamente isso que a avaliação de impacto mede** — e a razão de a segunda metade da manhã do dia 12 existir.
 
 **Captura.** Quem já sabe navegar o sistema capta melhor. Instrumentos de acesso complexo tendem a beneficiar empresas maiores e mais organizadas, não necessariamente as mais inovadoras.
 

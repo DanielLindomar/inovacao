@@ -1,6 +1,6 @@
 ---
 title: "Avaliação: o que o financiador cobra"
-subtitle: "Sábado 1 · Bloco 3 — teoria de mudança, indicadores e a diferença entre monitorar e avaliar"
+subtitle: "Aula 3 · Sábado 1 — teoria de mudança, indicadores e a diferença entre monitorar e avaliar"
 author: "Prof. Dr. Lindomar Pegorini Daniel — UNEMAT, Campus de Sinop"
 engine: knitr
 ---
@@ -50,7 +50,7 @@ Relatórios de programas de fomento costumam apresentar números de execução c
 
 Nada disso responde à pergunta que interessa. São indicadores de **produto** — dizem o que o programa fez, não o que mudou por causa dele.
 
-Guarde esta distinção: ela é o eixo do [próximo bloco](s1-04-contrafactual.qmd) e da atividade da tarde.
+Guarde esta distinção: ela é o eixo da [próxima aula](s1-04-contrafactual.qmd) e do caso da Lei do Bem, no encontro.
 :::
 
 ## A cadeia de resultados
@@ -103,11 +103,11 @@ A pergunta determina o método. Quatro tipos, e confundi-los é a origem de meta
 **De impacto.** Depois, e com uma exigência a mais: isolar o efeito causal do programa, separando-o de tudo o mais que aconteceu no período. É a mais difícil, a mais cara e a única que responde de fato "funcionou?".
 
 ::: {.callout-warning}
-## A pergunta que o próximo bloco responde
+## A pergunta que a próxima aula responde
 
 Uma avaliação de resultado bem-feita mostra que as empresas beneficiárias da Lei do Bem aumentaram o investimento em P&D. Um relatório honesto, com dados corretos.
 
-E ainda assim ela **não prova** que o incentivo funcionou. Falta uma coisa — e essa coisa é o assunto do [Bloco 4](s1-04-contrafactual.qmd).
+E ainda assim ela **não prova** que o incentivo funcionou. Falta uma coisa — e essa coisa é o assunto da [Aula 4](s1-04-contrafactual.qmd).
 :::
 
 ## O que isso muda no seu plano

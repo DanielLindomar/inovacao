@@ -1,6 +1,6 @@
 ---
 title: "EMBRAPII: o instrumento sem edital"
-subtitle: "Sábado 2 · Bloco 2 — cofinanciamento, contrapartida em dinheiro e a Unidade do IFMT"
+subtitle: "Aula 6 · Sábado 2 — cofinanciamento, contrapartida em dinheiro e a Unidade do IFMT"
 author: "Prof. Dr. Lindomar Pegorini Daniel — UNEMAT, Campus de Sinop"
 engine: knitr
 ---
@@ -97,7 +97,7 @@ Um instrumento bem compreendido é um instrumento que você sabe descartar:
 
 ## Atividade do bloco
 
-Em salas simultâneas: dos [dez casos](casos.qmd), quais são candidatos à EMBRAPII e quais não são? Para cada candidato, estimem o aporte da empresa nos dois cenários — regra geral e a exceção aplicável. Para cada descarte, digam qual das razões acima o elimina.
+Para fazer sozinho, com os [dez casos](casos.qmd) abertos: quais são candidatos à EMBRAPII e quais não são? Para cada candidato, estime o aporte da empresa nos dois cenários — regra geral e a exceção aplicável. Para cada descarte, diga qual das razões acima o elimina. No encontro, a pergunta volta em uma linha no chat: o seu caso é candidato?
 
 ::: {.callout-note}
 ## O que você deve conseguir explicar depois deste bloco

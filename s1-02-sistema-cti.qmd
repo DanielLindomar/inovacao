@@ -1,6 +1,6 @@
 ---
 title: "O sistema brasileiro de CT&I"
-subtitle: "Sábado 1 · Bloco 2 — quem é quem, e o que cada um faz com o dinheiro"
+subtitle: "Aula 2 · Sábado 1 — quem é quem, e o que cada um faz com o dinheiro"
 author: "Prof. Dr. Lindomar Pegorini Daniel — UNEMAT, Campus de Sinop"
 engine: knitr
 ---
@@ -107,7 +107,7 @@ O caminho direto é mais rápido, mas as chamadas federais têm pisos de valor q
 
 ## Atividade do bloco
 
-Com o [catálogo](cat-escada.qmd) aberto, em salas simultâneas: [**seis situações concretas**](atividade-mapa.qmd), uma por grupo. Cada grupo volta com o instrumento que recomendaria, os descartes justificados, e — o item mais importante nesta altura do curso — a pergunta que não conseguiu responder.
+No encontro, com o [catálogo](cat-escada.qmd) aberto e cada um por si: [**seis situações concretas**](atividade-mapa.qmd) — escolha a mais parecida com o seu projeto e volte com o instrumento que recomendaria, os descartes justificados, e — o item mais importante nesta altura do curso — a pergunta que não conseguiu responder. A solução de cada situação está na página, recolhida; no fechamento, o professor abre as seis na tela.
 
 ::: {.callout-note}
 ## O que você deve conseguir explicar depois deste bloco

@@ -23,7 +23,7 @@ Um projeto de inovação raramente é pago só com o caixa da empresa. Ele é mo
 ::: {.callout-tip}
 ## Aulas e Catálogo — qual é a diferença
 
-As **aulas** argumentam. Cada página traz por extenso o conteúdo de um bloco do encontro síncrono: o raciocínio, os exemplos, os números. Você lê antes para chegar preparado e depois para revisar — a aula não é a única chance de aprender aquilo.
+As **aulas** argumentam. Cada página traz por extenso o conteúdo de um bloco da disciplina — parte discutido ao vivo, parte lido por sua conta: o raciocínio, os exemplos, os números. Você lê antes para chegar preparado e depois para revisar — a aula não é a única chance de aprender aquilo.
 
 O **catálogo** consulta. São fichas de instrumentos: quem pode acessar, quanto, que contrapartida cobra, qual o prazo e onde encontrar a chamada. Não se lê de ponta a ponta; abre-se quando há uma decisão a tomar. É a parte do site que continua útil depois que a disciplina acabar.
 :::
@@ -37,7 +37,7 @@ O **catálogo** consulta. São fichas de instrumentos: quem pode acessar, quanto
 | **Avaliação** | Um único trabalho final, entregue em PDF na tarefa aberta no SIGAA |
 | **Gravações** | Publicadas no SIGAA após cada encontro |
 
-Nos encontros **não se repete o que já está escrito aqui**. O tempo ao vivo é para as atividades com solução, a leitura de um edital e de um estudo reais, e as quatro oficinas do plano de captação — o trabalho final, escrito em partes ao longo dos dois encontros. Quem chega sem ter lido acompanha pior — e essa é a regra, não a punição.
+Nos encontros **não se repete o que já está escrito aqui**. O tempo ao vivo é para as atividades com solução, a leitura de um edital real e as quatro oficinas do plano de captação — o trabalho final, escrito em partes ao longo dos dois encontros. Quem chega sem ter lido acompanha pior — e essa é a regra, não a punição.
 
 ## Aulas
 
