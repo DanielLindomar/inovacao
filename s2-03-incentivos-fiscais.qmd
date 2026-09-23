@@ -128,6 +128,12 @@ Boa parte do material disponível na internet — inclusive manuais oficiais pub
 Citar dispositivo revogado numa proposta ao poder público é o tipo de erro que custa credibilidade antes de qualquer discussão de mérito. E ilustra por que a disciplina insiste em fonte primária: a Lei 14.133 está no Planalto, e leva três minutos para conferir.
 :::
 
+::: {.callout-note}
+## Caso real
+
+Os nomes não são públicos, mas os dados abertos do MCTI mostram quem usa a Lei do Bem no Centro-Oeste: 129 empresas em 2021, R\$ 868 milhões declarados em P&D — indústria, bancos, tecnologia da informação, quatro produtoras de soja e um frigorífico. Nenhuma no Simples, por definição. Números, fontes e o que ensina em [Casos reais](casos-reais.qmd#lei-do-bem).
+:::
+
 ## Atividade do bloco
 
 No encontro, cada um por si: [**seis perfis de empresa**](atividade-elegibilidade.qmd) — pegue o mais parecido com a sua. Decida se pode usar a Lei do Bem, diga qual requisito decide e estime a ordem de grandeza do benefício; a solução está na página. Depois, para os que não podem, aponte o que sobra no [catálogo](cat-escada.qmd).

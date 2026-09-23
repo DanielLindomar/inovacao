@@ -94,6 +94,12 @@ Três leituras que só aparecem quando se olha a tabela como um todo:
 
 **Quase nenhum projeto se resolve com uma fonte só.** O desenho realista combina: subvenção ou EMBRAPII para o desenvolvimento, incentivo fiscal para o custeio recorrente, crédito para o equipamento, equity só se o perfil do negócio pedir.
 
+::: {.callout-note}
+## Caso real
+
+Dois lados da escada com nome e data: uma hortifruti de Juara financiou 70% de um sistema hidropônico na Desenvolve MT, com 12 meses de carência até a primeira colheita; e a Produzindo Certo, de Rio Verde (GO), levantou uma Série A de R\$ 20,7 milhões depois de ter 10.700 propriedades e 40 clientes corporativos na plataforma. Números, fontes e o que ensina em [Casos reais](casos-reais.qmd#desenvolve-mt).
+:::
+
 ## Atividade do bloco
 
 Apresentação do [Laboratório 4](lab04-custo-das-fontes.qmd) ao vivo, com a turma acompanhando as três simulações. Em seguida, a Oficina 4 do [trabalho final](trabalho-final.qmd): cada um escreve, na própria cópia do documento do encontro, as Seções 4 e 6 do plano — a conta e os riscos — com o Laboratório 4 e o [catálogo](cat-escada.qmd) abertos.

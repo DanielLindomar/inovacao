@@ -95,6 +95,12 @@ Um instrumento bem compreendido é um instrumento que você sabe descartar:
 - quando não existe Unidade com a competência técnica necessária;
 - para montadoras (CNAE 29.1 e 29.2), que não contratam individualmente.
 
+::: {.callout-note}
+## Caso real
+
+O primeiro projeto do Polo EMBRAPII do IFTM, com a IOTIC Consultoria, custou R\$ 907 mil: a EMBRAPII entrou com 50%, a Unidade com 29,9% e a empresa com 20,1% — um equipamento NIR para analisar milho sem destruir a amostra, contratado sem edital. Números, fontes e o que ensina em [Casos reais](casos-reais.qmd#embrapii).
+:::
+
 ## Atividade do bloco
 
 Para fazer sozinho, com os [dez casos](casos.qmd) abertos: quais são candidatos à EMBRAPII e quais não são? Para cada candidato, estime o aporte da empresa nos dois cenários — regra geral e a exceção aplicável. Para cada descarte, diga qual das razões acima o elimina. No encontro, a pergunta volta em uma linha no chat: o seu caso é candidato?

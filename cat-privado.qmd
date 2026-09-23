@@ -42,6 +42,12 @@ Menos negócios, cheques maiores, e uma exigência crescente de aderência estra
 **Brasil em 2025:** US\$ 4,5 bilhões captados, queda de 13%, em 459 rodadas, queda de 22%. Desse total, US\$ 2,4 bilhões foram dívida (FIDCs) e US\$ 1,74 bilhão, equity propriamente dito. O ticket médio latino-americano subiu de US\$ 5,2 para US\$ 6,1 milhões, e os múltiplos comprimiram: SaaS em Série A ou B negocia a 8–14 vezes a receita, contra 25–35 vezes no pico de 2021.
 
 ::: {.callout-important}
+::: {.callout-note}
+## Caso real
+
+A Produzindo Certo, agtech de Rio Verde (GO), fechou em outubro de 2025 uma Série A de R\$ 20,7 milhões com SP Ventures, Arar Capital, The Yield Lab, Agroven e a SLC Ventures — o corporate venture da SLC Agrícola. O que sustentou a rodada: 10.700 propriedades, 8,6 milhões de hectares monitorados e 40 clientes corporativos. Detalhes em [Casos reais](casos-reais.qmd#produzindo-certo).
+:::
+
 ## Quando um projeto NÃO é caso de venture capital
 
 Este é provavelmente o conteúdo mais útil desta página, e vem de um fundo brasileiro explicando publicamente quando **não** procurá-lo.

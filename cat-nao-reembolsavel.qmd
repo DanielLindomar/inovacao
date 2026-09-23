@@ -73,6 +73,12 @@ Nenhuma dessas chamadas aceita projeto abaixo de R\$ 5 milhões. Para a maior pa
 
 Chamadas: [finep.gov.br/chamadas-publicas](http://www.finep.gov.br/chamadas-publicas) — a 774 está em `/chamadapublica/774`
 
+::: {.callout-note}
+## Casos reais desta família
+
+A subvenção regional da Finep de 2026 (568 propostas para R\$ 300 milhões), o funil do Centelha 3 em Mato Grosso, as dez vagas do Startup Mato Grosso, o prêmio Inova MT que paga um mestre por empresa e um projeto EMBRAPII com a divisão real do custo estão em [Casos reais](casos-reais.qmd).
+:::
+
 ## CNPq — RHAE, pesquisador na empresa {.ficha .nr}
 
 **Chamada 29/2026 — RHAE Inteligência Artificial.** O instrumento federal mais acessível a MPE aberto neste momento.

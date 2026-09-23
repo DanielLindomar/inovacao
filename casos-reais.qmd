@@ -1,0 +1,213 @@
+---
+title: "Casos reais de financiamento"
+subtitle: "Oito histórias com número, fonte e data — uma para cada porta do catálogo"
+author: "Prof. Dr. Lindomar Pegorini Daniel — UNEMAT, Campus de Sinop"
+engine: knitr
+---
+
+::: {.logo-topo}
+![](logo-unemat.png){width="110"}
+:::
+
+::: {.callout-note}
+## O que esta página resolve
+
+Os [dez casos](casos.qmd) da disciplina são fictícios de propósito: servem para praticar sem constranger ninguém. Esta página faz o contrário — junta situações **reais**, com nomes, valores e datas públicas, uma para cada natureza do dinheiro. Cada caso termina com o que ele ensina e com o lugar do site em que a lição é usada.
+
+Todos os números vêm de fontes abertas, citadas ao fim de cada caso, e foram levantados em **23/09/2026**. Valores, prazos e condições envelhecem; confira na fonte antes de usar num plano.
+:::
+
+| Caso | Natureza | O número que fica |
+|---|---|---|
+| [Finep Subvenção Regional 2026](#finep-regional) | [Não reembolsável]{.nat .nat-nr} | R\$ 2,18 bilhões pedidos para R\$ 300 milhões |
+| [Centelha 3 — Mato Grosso](#centelha) | [Não reembolsável]{.nat .nat-nr} | 813 ideias, 47 financiadas |
+| [Startup Mato Grosso](#startup-mt) | [Não reembolsável]{.nat .nat-nr} | 10 vagas de R\$ 150 mil |
+| [Inova Mato Grosso](#inova-mt) | [Não reembolsável]{.nat .nat-nr} | um mestre por empresa, doze meses |
+| [IOTIC + Polo EMBRAPII do IFTM](#embrapii) | [Não reembolsável]{.nat .nat-nr} | R\$ 907 mil: 50% · 20% · 30% |
+| [Desenvolve MT e a hidroponia de Juara](#desenvolve-mt) | [Reembolsável]{.nat .nat-reemb} | 70% financiado, carência até a colheita |
+| [Produzindo Certo](#produzindo-certo) | [Equity]{.nat .nat-eq} | Série A de R\$ 20,7 milhões |
+| [Lei do Bem no Centro-Oeste](#lei-do-bem) | [Fiscal]{.nat .nat-fis} | 129 empresas, R\$ 868 milhões em P&D |
+
+## Finep Subvenção Econômica Regional 2026 — a chance de aprovação com número real {#finep-regional .ficha .nr}
+
+Em fevereiro de 2026 a Finep abriu, com a SUDAM, a SUDENE, a SUDECO e o Sebrae, um edital de subvenção só para empresas do Norte, do Nordeste e do Centro-Oeste. É a chamada mais próxima do perfil desta turma que existiu no ano — e o que ela ensina está no que aconteceu depois do prazo.
+
+| | |
+|---|---|
+| **Recursos** | R\$ 300 milhões, não reembolsáveis: R\$ 50 milhões para o Norte, R\$ 150 milhões para o Nordeste e **R\$ 100 milhões para o Centro-Oeste** |
+| **Por proposta** | De R\$ 2 milhões a R\$ 5 milhões |
+| **Quem pode** | Empresa com sede nas três regiões e receita bruta anual até R\$ 90 milhões; cerca de 30% dos recursos reservados a micro e pequenas (receita até R\$ 4,8 milhões) |
+| **Contrapartida** | 5% do valor concedido |
+| **Temas** | As missões da Nova Indústria Brasil: transição energética, cadeias industriais, saúde, tecnologias digitais, defesa, transformação mineral, economia circular, cidades sustentáveis, mobilidade, semicondutores e agricultura familiar |
+| **Prazo** | 07/04/2026 |
+| **Demanda** | **568 propostas, pedindo R\$ 2,18 bilhões** — 7,3 vezes o orçamento. 432 propostas (76%) de empresas com receita até R\$ 4,8 milhões; 483 (85%) com uma ICT parceira, somando R\$ 239 milhões destinados às ICTs |
+
+**A conta.** R\$ 300 milhões para R\$ 2,18 bilhões pedidos é 13,8% do dinheiro. Se todas as propostas pedissem o mesmo valor, a chance de uma delas ser contemplada seria de cerca de **uma em sete** — antes de qualquer juízo de mérito. É exatamente o número que o [Laboratório 4](lab04-custo-das-fontes.qmd) pede para calcular o ganho esperado de concorrer, e é por isso que o custo de escrever a proposta entra na conta.
+
+::: {.callout-tip}
+## O que este caso ensina
+
+Três coisas. Primeiro, que subvenção federal de porte existe para o Centro-Oeste, e a SUDECO está na mesa. Segundo, que "quanto pede" e "quanto há" andam muito longe um do outro — 7 para 1 num edital regional, com apoio de aceleração do Sebrae na conta. Terceiro, que 85% das propostas chegaram com uma ICT parceira: para um edital assim, a parceria com universidade ou instituto não é enfeite, é requisito de competitividade. Usado na [Aula 5](s2-01-nao-reembolsavel.qmd) e no Laboratório 4.
+:::
+
+Fontes: [Campo Grande News, 18/02/2026](https://www.campograndenews.com.br/economia/ms-disputa-r-100-milhoes-de-subvencao-para-inovacao-de-empresas-no-centro-oeste) · [Agência Sebrae de Notícias, 03/04/2026](https://agenciasebrae.com.br/inovacao-e-tecnologia/ultimos-dias-edital-de-r-300-mi-da-finep-seleciona-startups-do-norte-nordeste-e-centro-oeste/) · [Finep, notícia sobre a demanda, maio de 2026](https://www.finep.gov.br/noticias/todas-noticias/7152-edital-de-subvencao-economica-regional-568-propostas-recebidas-e-demanda-de-r-2-18-bi) · [Rocha Marques, 01/05/2026](https://rochamarques.com.br/edital-de-subvencao-economica-regional-supera-expectativas-e-registra-demanda-de-r-218-bilhoes/)
+
+## Centelha 3 — Mato Grosso: o funil de um programa estadual {#centelha .ficha .nr}
+
+O Centelha financia ideias de quem ainda não tem empresa. A terceira edição mato-grossense, lançada em 20/10/2025 pela Seciteci e pela Fapemat com recursos da Finep, mostra o formato do funil melhor do que qualquer definição.
+
+| Etapa | Número |
+|---|---|
+| Ideias inscritas | **813**, de 1.832 empreendedores em 45 municípios — 116,8% mais do que na edição anterior |
+| Aprovadas na fase 1 | 200 |
+| Financiadas | **47** projetos (resultado em 02/07/2026) |
+| Por projeto | Até **R\$ 86 mil** de subvenção, mais bolsa de até R\$ 50 mil do CNPq |
+| Total | R\$ 6,1 milhões |
+| Setores mais frequentes entre os aprovados | Farmoquímico e farmacêutico (40%); meio ambiente e bioeconomia (9%); eletroeletrônica, borracha e plástico, segurança e defesa (6% cada) |
+| Edições anteriores | Mais de 873 ideias e 75 startups criadas |
+
+**A conta.** 47 em 813 é **5,8%**. A fase 1 corta três em cada quatro; a fase 2, três em cada quatro de novo. Quem entende o funil não se inscreve com a ideia crua: usa a capacitação entre as fases, que faz parte do programa, para chegar à segunda etapa com modelo de negócio e pitch prontos.
+
+::: {.callout-tip}
+## O que este caso ensina
+
+O tíquete é pequeno e a disputa é grande, mas é a única porta do sistema que aceita pessoa física — o CNPJ vem depois da aprovação. Para quem tem ideia e não tem empresa, o Centelha é o começo da [escada](cat-escada.qmd), e o ciclo é de dois a três anos: a quarta edição é a que vale acompanhar. Usado na [Aula 5](s2-01-nao-reembolsavel.qmd) e na ficha do [catálogo](cat-nao-reembolsavel.qmd#centelha).
+:::
+
+Fontes: [Programa Centelha, resultados da 3ª edição em MT, 02/07/2026](https://programacentelha.com.br/centelha-mato-grosso-confira-os-principais-resultados-da-terceira-edicao-do-programa-no-estado/) · [FolhaMax, 18/02/2026](https://www.folhamax.com/cidades/lista-traz-aprovados-para-a-3-edicao-do-programa-centelha/537433)
+
+## Startup Mato Grosso — dez vagas de R\$ 150 mil {#startup-mt .ficha .nr}
+
+É o edital dissecado item por item na [Aula 5](s2-01-nao-reembolsavel.qmd). Aqui ficam só os números de cabeçalho, para comparação com os outros casos.
+
+| | |
+|---|---|
+| **Chamada** | Fapemat, Chamada Pública nº 04/2026 — Startup Mato Grosso, lançada em 03/07/2026 |
+| **Recursos** | R\$ 1,5 milhão, não reembolsáveis |
+| **Por empresa** | Até R\$ 150 mil; até **10 empresas** |
+| **Quem pode** | Empresa com sede ou filial em Mato Grosso, entre 2 e 10 anos de existência, receita bruta até R\$ 16 milhões, atividade operacional comprovada em 2025; aceita o regime Inova Simples |
+| **Calendário** | Inscrições até 31/07/2026; avaliação em agosto e início de setembro; **resultado em 16/09/2026**; contratação a partir de 17/09 |
+
+::: {.callout-tip}
+## O que este caso ensina
+
+Compare com o Centelha: dez vezes o valor por projeto, mas para empresa já operando há pelo menos dois anos. Cada degrau da escada tem o seu edital, e o erro mais comum é concorrer no degrau errado. A lista das dez selecionadas saiu em 16/09; confira no site da Fapemat — e note quantas das dez são de fora de Cuiabá.
+:::
+
+Fontes: [CenárioMT, 03/07/2026](https://cenariomt.com.br/mato-grosso/edital-startup-mato-grosso-vai-injetar-r-15-milhao-em-empresas-inovadoras/) · [Fapemat, 03/07/2026](https://www.fapemat.mt.gov.br/w/fapemat-lan%C3%A7a-edital-de-r-1-5-milh%C3%A3o-para-impulsionar-inova%C3%A7%C3%A3o-e-fortalecer-empresas-no-estado)
+
+## Inova Mato Grosso — quando o financiamento é uma pessoa {#inova-mt .ficha .nr}
+
+Nem todo apoio não reembolsável é um cheque. Na quarta edição do prêmio Inova Mato Grosso (abril de 2025), Fapemat, Seciteci e Parque Tecnológico destinaram **R\$ 540 mil** a nove empresas — e o apoio veio na forma de um **bolsista com mestrado trabalhando dentro da empresa por doze meses**, além de missões de benchmarking e entrada no ecossistema do Parque.
+
+| Categoria | Empresas premiadas |
+|---|---|
+| Microempresas | Namaskar Comunicação e Projetos (Rondonópolis) · Thotia Corp (Alto Araguaia) · Agrosolo (Nova Mutum) · Escopo Soluções (Alta Floresta) · Quero + Alimentos (Barra do Garças) |
+| Pequenas empresas | Avante Assessoria Contábil e Empresarial (Cuiabá) · Ganmaq (Primavera do Leste) · **Spectrax (Sinop)** · Piolê (Cuiabá) |
+
+::: {.callout-tip}
+## O que este caso ensina
+
+Lembre da situação do [Mapa de instrumentos](atividade-mapa.qmd) em que o gasto era em gente, não em equipamento: este é o instrumento que financia gente. Sessenta mil reais por empresa não compram máquina, mas pagam um ano de um profissional qualificado dedicado a um problema — e nove das dez cidades da lista estão fora da capital. O parente federal é o [RHAE do CNPq](cat-nao-reembolsavel.qmd), com a mesma lógica.
+:::
+
+Fonte: [FolhaMax, 11/04/2025](https://www.folhamax.com/economia/empresas-de-todas-as-regioes-do-estado-sao-premiadas-no-inova-mt/486058)
+
+## IOTIC Consultoria e o Polo EMBRAPII do IFTM — os três terços na prática {#embrapii .ficha .nr}
+
+O primeiro projeto contratado pelo Polo de Inovação do Instituto Federal do Triângulo Mineiro, em Uberaba (MG), é um equipamento de **espectroscopia no infravermelho próximo (NIR)** para analisar parâmetros do milho de forma instantânea, sem destruir a amostra e sem reagentes químicos. A empresa é a IOTIC Consultoria; a divisão do custo é a que interessa.
+
+| | Valor | Parcela |
+|---|---|---|
+| **Total do projeto** | R\$ 907.392,86 | 100% |
+| EMBRAPII | R\$ 453.696 | **50%** |
+| IOTIC Consultoria (empresa) | R\$ 182.114 | **20,07%** |
+| Polo IFTM (Unidade) | R\$ 271.583 | **29,93%** |
+
+A EMBRAPII entrou com metade — a regra dos 50% para empresa com receita até R\$ 90 milhões — e a Unidade cobriu quase 30% com sua própria estrutura, o que deixou à empresa cerca de um quinto do projeto em dinheiro. Não houve edital: a empresa procurou a Unidade e contratou.
+
+**E em Mato Grosso.** O IFMT foi credenciado em abril de 2026 como a primeira Unidade EMBRAPII do estado, em tecnologias digitais para a agroindústria. Na média da rede, segundo a própria EMBRAPII, a divisão é 34% EMBRAPII, 49,9% empresas e 15% Unidades; desde a criação foram 3.982 projetos com 2.709 empresas e R\$ 7,8 bilhões em P&D.
+
+::: {.callout-tip}
+## O que este caso ensina
+
+A conta da [Aula 6](s2-02-embrapii.qmd) com um projeto de verdade: para uma empresa pequena, o aporte em dinheiro pode ficar perto de 20% se a Unidade trouxer estrutura e equipe. O detalhe que decide é a contrapartida **em dinheiro** — horas de equipe da empresa não contam. E o projeto tem cara de agro mato-grossense: milho, análise de grão, sem laboratório. Usado na Aula 6 e na ficha da [EMBRAPII](cat-nao-reembolsavel.qmd).
+:::
+
+Fontes: [Polo de Inovação do IFTM, projeto 01](https://iftm.edu.br/embrapii/projetos/projeto-01/) · [MT Play, 20/04/2026](https://mtplay.com.br/agronegocio/primeira-unidade-embrapii-em-mt-sera-voltada-a-tecnologias-digitais-para-agroindustria/)
+
+## Desenvolve MT e a hidroponia de Juara — dívida com carência casada com a colheita {#desenvolve-mt .ficha .reemb}
+
+Dois lados do mesmo balcão. Em setembro de 2025 a Desenvolve MT anunciou **R\$ 43 milhões** da linha Inovacred, com funding da Finep, para empresas e cooperativas de Mato Grosso: até R\$ 5 milhões por operação, até 120 meses de prazo, até 24 meses de carência, juros de TR + 6,068% ao ano para micro e pequenas e TR + 6,606% para médias e grandes (as condições vigentes estão na ficha do [catálogo](cat-credito.qmd), que muda com frequência).
+
+Três meses antes, em junho de 2025, a mesma agência divulgou um contrato pequeno e didático: a **Hortifruti Vovó Vaci**, de Juara, no noroeste do estado, financiou pela linha Desenvolve Empresarial a implantação de um sistema hidropônico — estufas, estruturas, irrigação e dois poços artesianos, mais de 3.000 m² de área útil.
+
+| | |
+|---|---|
+| **O que foi financiado** | Estufas, estruturas, sistema de irrigação, dois poços artesianos |
+| **Quanto** | Cerca de **70% do custo total** do projeto (o valor não foi divulgado) |
+| **Prazo** | Até 120 meses, com **12 meses de carência** |
+| **Produção** | Alface, rúcula, cebolinha, coentro, salsa, tomate-cereja e mais de 400 variedades de ervas; venda direta e entrega a mercados e residências |
+| **Calendário** | Contrato divulgado em 28/06/2025; primeiras colheitas previstas para o fim de agosto de 2025 |
+
+::: {.callout-tip}
+## O que este caso ensina
+
+Crédito serve para o que a subvenção quase nunca paga: obra, estufa, poço, equipamento — e serve porque tem carência. Os doze meses sem parcela cobrem o intervalo entre o investimento e a primeira colheita; é a carência que faz a dívida caber no fluxo de caixa, e é o que a [Aula 8](s2-04-credito-e-capital-privado.qmd) e o [Laboratório 4](lab04-custo-das-fontes.qmd) pedem que se calcule. Repare também no que a fonte não diz: o valor. Toda notícia de crédito esconde o número que mais importa.
+:::
+
+Fontes: [Desenvolve MT, 06/09/2025 (R\$ 43 milhões)](https://desenvolve.mt.gov.br/noticias/empresas-de-mato-grosso-terao-r-43-milhoes-disponiveis-para-inovacao-pela-desenvolve-mt) · [Desenvolve MT, 28/06/2025 (Juara)](https://desenvolve.mt.gov.br/noticias/credito-da-desenvolve-mt-viabiliza-inovacao-tecnologica-com-implantacao-de-hidroponia-em-juara-1)
+
+## Produzindo Certo — o que o investidor compra {#produzindo-certo .ficha .eq}
+
+Uma agtech do Centro-Oeste com uma rodada de porte. A Produzindo Certo, de Rio Verde (GO), verifica e gerencia a sustentabilidade de cadeias agrícolas com uma plataforma que combina visitas de campo e monitoramento remoto. Em outubro de 2025 fechou a primeira rodada institucional.
+
+| | |
+|---|---|
+| **Rodada** | Série A de **R\$ 20,7 milhões** — a meta inicial era R\$ 10 milhões |
+| **Quem investiu** | Arar Capital e SP Ventures, na liderança; The Yield Lab Latam, Agroven e **SLC Ventures**, o braço de corporate venture da SLC Agrícola |
+| **O que o dinheiro compra** | Equipe de tecnologia, comercial e marketing; produto e operação em agricultura regenerativa e pecuária sustentável |
+| **A tração que sustentou a rodada** | Mais de 10.700 propriedades cadastradas, 8,6 milhões de hectares monitorados, mais de 3,5 milhões de hectares de vegetação nativa conservada, 40 clientes corporativos — entre eles Unilever, Nestlé, ADM, Bunge e Brasilseg |
+
+::: {.callout-tip}
+## O que este caso ensina
+
+O investidor não comprou uma ideia: comprou 10.700 propriedades, 8,6 milhões de hectares e 40 contratos com grandes compradores. Rodada assim vem depois da tração, não antes — o que explica por que a maioria dos bons projetos de inovação desta turma **não** é caso de venture capital, e não é defeito do projeto. E note a SLC Ventures: o próprio agro investindo em agtech, o corporate venture da [Aula 8](s2-04-credito-e-capital-privado.qmd) e da ficha de [capital privado](cat-privado.qmd).
+:::
+
+Fonte: [AgFeed, 24/10/2025](https://agfeed.com.br/agtech/produzindo-certo-colhe-r-207-milhoes-em-rodada-com-grandes-nomes-do-investimento-agtech/)
+
+## Lei do Bem no Centro-Oeste — quem usa, sem os nomes {#lei-do-bem .ficha .fis}
+
+Os nomes das empresas que usam a Lei do Bem não são públicos: o MCTI divulga os dados abertos **sem identificação**, uma linha por empresa, com região, CNAE, número de projetos e dispêndio declarado em P&D (série 2015–2021). Mesmo assim, a base diz muito sobre quem consegue usar o incentivo aqui perto.
+
+| Centro-Oeste, ano-base | Empresas | Projetos | Dispêndio declarado |
+|---|---|---|---|
+| 2015 | 35 | 130 | R\$ 138 milhões |
+| 2017 | 67 | 308 | R\$ 337 milhões |
+| 2019 | 93 | 275 | R\$ 446 milhões |
+| 2021 | **129** | **384** | **R\$ 868 milhões** |
+
+Em 2021, no Centro-Oeste: a **indústria** (41 empresas) declarou R\$ 364 milhões; os **bancos** (11 empresas), R\$ 146 milhões; as empresas de **tecnologia da informação** (23), R\$ 93 milhões. A **agropecuária** apareceu com sete empresas — quatro produtoras de soja (uma delas com R\$ 56 milhões em dois projetos), duas de pecuária de corte e uma de pós-colheita; um **frigorífico** de bovinos declarou R\$ 22,5 milhões num único projeto; o comércio atacadista de defensivos, R\$ 26 milhões em seis projetos. A empresa mediana declarou R\$ 2 milhões, e 49 das 129 ficaram abaixo de R\$ 1 milhão.
+
+No país, o ano-base 2024 fechou com 4.252 empresas, R\$ 51,6 bilhões em P&D e R\$ 12 bilhões de renúncia estimada — os números da [ficha](cat-fiscais.qmd).
+
+::: {.callout-tip}
+## O que este caso ensina
+
+O retrato é o da atividade de [elegibilidade](atividade-elegibilidade.qmd): quem usa a Lei do Bem no Centro-Oeste é a indústria, o banco, a grande produtora de soja e o frigorífico — empresas no lucro real, com lucro fiscal e contabilidade por projeto. As 129 do Centro-Oeste eram 4,3% das 3.012 empresas do país em 2021, e nenhuma delas está no Simples, por definição. Quem apura pelo presumido não aparece na base porque não pode aparecer. Usado na [Aula 7](s2-03-incentivos-fiscais.qmd).
+:::
+
+Fontes: [MCTI, dados abertos — Beneficiários dos incentivos fiscais da Lei do Bem, 2015–2021 (agregação própria)](https://dados.gov.br/dados/conjuntos-dados/beneficiarios-dos-inventivos-fiscais-da-lei-do-bem) · [MCTI, Relatório Anual ano-base 2015](https://antigo.mctic.gov.br/mctic/export/sites/institucional/tecnologia/Lei_do_bem/arquivos/RelatorioAnual/Relatorio-Anual-Lei-11196-05-Ano-Base-2015.pdf) · números de 2024 na [ficha de incentivos fiscais](cat-fiscais.qmd)
+
+## Antes de sair
+
+::: {.callout-note}
+## O que você deve conseguir explicar depois desta página
+
+1. Por que a chance de aprovação de um edital é um número que se calcula — e onde ele entra na decisão de concorrer.
+2. Como a divisão de um projeto EMBRAPII pode deixar à empresa pequena só um quinto do custo, e o que conta como contrapartida.
+3. O que a carência faz por um projeto financiado com dívida, e por que a notícia de crédito nunca diz o valor.
+4. O que um investidor de Série A comprou na Produzindo Certo — e por que isso não descreve o seu projeto.
+5. Quem aparece na base da Lei do Bem do Centro-Oeste, e quem não pode aparecer.
+:::

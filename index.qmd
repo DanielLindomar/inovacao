@@ -64,6 +64,7 @@ Nos encontros **não se repete o que já está escrito aqui**. O tempo ao vivo �
 | Página | O que traz |
 |---|---|
 | [A escada do financiamento](cat-escada.qmd) | A matriz instrumento × estágio e o que está aberto agora |
+| [Casos reais](casos-reais.qmd) | Oito histórias verdadeiras, uma por porta: subvenção, EMBRAPII, crédito, equity e Lei do Bem, com fonte e data |
 | [Não reembolsável](cat-nao-reembolsavel.qmd) <span class="nat nat-nr">não volta</span> | EMBRAPII, FINEP, CNPq, FAPEMAT, Centelha, Sebraetec |
 | [Incentivos fiscais](cat-fiscais.qmd) <span class="nat nat-fis">o Estado abre mão</span> | Lei do Bem, Lei de TICs, encomenda tecnológica |
 | [Crédito](cat-credito.qmd) <span class="nat nat-reemb">dívida</span> | Desenvolve MT, FINEP Inovacred, BNDES |

@@ -158,6 +158,25 @@ Projeto cujo custo principal é a folha interna não se financia aqui.
 
 Corte: média ponderada de 3,0. Desempate pelo critério 1 — e, persistindo, **quem enviou primeiro**.
 
+## Caso real · quanto pedem, quanto há {.smaller}
+
+**Finep Subvenção Regional 2026** — com a SUDECO: R\$ 300 milhões, R\$ 100 milhões para o Centro-Oeste, tíquetes de R\$ 2 a 5 milhões, receita até R\$ 90 milhões.
+
+. . .
+
+::: {.numerao}
+568
+:::
+::: {.numerao-leg}
+propostas, pedindo **R\$ 2,18 bilhões** — 7,3 vezes o orçamento. 76% de micro e pequenas; 85% com uma ICT parceira
+:::
+
+. . .
+
+::: {.rodape}
+E no Centelha 3 de Mato Grosso: 813 ideias, 200 na fase 1, **47 financiadas** — até R\$ 86 mil cada. Site → *Catálogo · Casos reais*.
+:::
+
 # Bloco 2 · EMBRAPII
 
 ---
@@ -202,6 +221,23 @@ Primeira do estado. Mais seis no Centro-Oeste.
 
 ::: {.rodape}
 Faixa de maturidade: TRL 3 a 6. Ideia sem prova de conceito é cedo; produto pronto é tarde.
+:::
+
+## Caso real · os três terços na prática {.smaller}
+
+**IOTIC Consultoria + Polo EMBRAPII do IFTM** (Uberaba, MG) — equipamento NIR para analisar milho sem destruir a amostra. Sem edital.
+
+| | |
+|---|---:|
+| Total do projeto | **R\$ 907.392,86** |
+| EMBRAPII | 50% |
+| Unidade (Polo IFTM) | 29,9% |
+| Empresa, em dinheiro | **20,1%** |
+
+. . .
+
+::: {.rodape}
+Média da rede, segundo a EMBRAPII: 34% EMBRAPII, 49,9% empresas, 15% Unidades. A empresa pequena paga menos quando a Unidade traz estrutura.
 :::
 
 # Bloco 3 · Incentivos fiscais
@@ -259,6 +295,24 @@ das empresas que investem em inovação não usam incentivo fiscal nenhum — Fi
 
 ::: {.numerao-leg}
 PINTEC: só 26,4% das industriais inovadoras com 100+ empregados usaram a Lei do Bem
+:::
+
+## Caso real · quem usa, aqui perto {.smaller}
+
+Dados abertos do MCTI, Centro-Oeste, ano-base 2021 — sem nomes, uma linha por empresa:
+
+| | Empresas | P&D declarado |
+|---|---:|---:|
+| Indústria | 41 | R\$ 364 mi |
+| Bancos | 11 | R\$ 146 mi |
+| Tecnologia da informação | 23 | R\$ 93 mi |
+| Agropecuária | 7 | R\$ 77 mi |
+| **Total** | **129** | **R\$ 868 mi** |
+
+. . .
+
+::: {.rodape}
+Quatro produtoras de soja (uma com R\$ 56 mi em dois projetos), duas de gado de corte, um frigorífico com R\$ 22,5 mi. Eram 35 empresas em 2015. Nenhuma no Simples — por definição.
 :::
 
 ## Por quê {.smaller}
@@ -355,6 +409,20 @@ Em jan/2025: TR + 4,236% com 120 meses. As condições mudaram duas vezes em 18 
 **Todo dado de crédito no seu plano precisa vir datado.**
 :::
 
+## Caso real · a carência e a colheita {.smaller}
+
+**Hortifruti Vovó Vaci, Juara** — Desenvolve MT, junho de 2025: sistema hidropônico com estufas, irrigação e dois poços, mais de 3.000 m².
+
+- cerca de **70% do projeto** financiado
+- até 120 meses, **12 de carência**
+- primeira colheita prevista para o fim de agosto — quando a carência ainda corre
+
+. . .
+
+::: {.pergunta}
+O que a notícia não diz? O valor. Toda notícia de crédito esconde o número que mais importa.
+:::
+
 ## Quatro razões
 
 1. **Contrapartida** — a subvenção também exige caixa
@@ -406,6 +474,26 @@ O fundo não pode investir numa empresa que "só" dê certo.
 
 ::: {.pergunta}
 A maioria dos bons projetos não é venture-backable. Não é defeito do projeto.
+:::
+
+## Caso real · o que o investidor comprou {.smaller}
+
+**Produzindo Certo**, Rio Verde (GO) — Série A de **R\$ 20,7 milhões**, outubro de 2025. Meta inicial: R\$ 10 milhões.
+
+SP Ventures e Arar Capital na liderança; The Yield Lab, Agroven e **SLC Ventures** — o agro investindo em agtech.
+
+. . .
+
+| O que sustentou a rodada | |
+|---|---:|
+| Propriedades na plataforma | 10.700 |
+| Hectares monitorados | 8,6 milhões |
+| Clientes corporativos | 40 — Unilever, Nestlé, ADM, Bunge |
+
+. . .
+
+::: {.rodape}
+Rodada assim vem depois da tração, não antes. Compare com o seu caso.
 :::
 
 # Bloco 7 · A escada

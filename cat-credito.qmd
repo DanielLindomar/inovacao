@@ -43,6 +43,12 @@ Trate a linha como **ativa, com saldo não divulgado**. Antes de contar com ela 
 
 [Desenvolve Inovacred](https://desenvolve.mt.gov.br/linhasdecredito/inovacred)
 
+::: {.callout-note}
+## Caso real
+
+Uma hortifruti de Juara financiou na Desenvolve MT cerca de 70% de um sistema hidropônico — estufas, irrigação e dois poços — em até 120 meses, com 12 de carência casados com a primeira colheita. O valor não foi divulgado, e isso também ensina. Detalhes em [Casos reais](casos-reais.qmd#desenvolve-mt).
+:::
+
 ## FINEP — crédito {.ficha .reemb}
 
 ### Crédito direto — fora do alcance da maioria

@@ -28,6 +28,7 @@ website:
       - text: "Catálogo"
         menu:
           - cat-escada.qmd
+          - casos-reais.qmd
           - cat-nao-reembolsavel.qmd
           - cat-fiscais.qmd
           - cat-credito.qmd

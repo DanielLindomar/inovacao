@@ -160,6 +160,12 @@ E o último desempate premia quem envia antes. Não é burocracia: é uma inform
 
 **6 · O que desclassifica.** Aqui a etapa formal é explícita e lista cinco itens: elegibilidade, teto do valor solicitado, contrapartida mínima, prazo de execução e aderência aos temas. Nenhum deles envolve julgar a qualidade do projeto.
 
+::: {.callout-note}
+## Caso real
+
+Em 2026 a Finep abriu, com a SUDECO, R\$ 100 milhões de subvenção para o Centro-Oeste, em tíquetes de R\$ 2 a 5 milhões. Chegaram 568 propostas pedindo R\$ 2,18 bilhões para R\$ 300 milhões — 7,3 vezes o orçamento, antes de qualquer juízo de mérito. E no Centelha 3 de Mato Grosso, 813 ideias viraram 47 projetos financiados. Números, fontes e o que ensina em [Casos reais](casos-reais.qmd#finep-regional).
+:::
+
 ## Atividade do bloco
 
 Vamos abrir um edital real em tela e percorrê-lo juntos, nesta ordem — elegibilidade, objeto, valores, contrapartida, critérios, desclassificação. Traga o caso que você escolheu na página de [casos](casos.qmd): a pergunta ao final é se aquela empresa concorreria, e por quê.

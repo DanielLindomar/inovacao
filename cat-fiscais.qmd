@@ -65,6 +65,12 @@ Para a empresa isso significa uma coisa prática: **sem governança documental d
 
 ### Os números, e o que eles escondem
 
+::: {.callout-note}
+## Quem usa no Centro-Oeste
+
+Os dados abertos do MCTI (sem nomes) mostram 129 empresas do Centro-Oeste na Lei do Bem em 2021, com R\$ 868 milhões declarados em P&D: indústria, bancos, tecnologia da informação, quatro produtoras de soja e um frigorífico. Eram 35 em 2015. A leitura completa está em [Casos reais](casos-reais.qmd#lei-do-bem).
+:::
+
 Ano-base 2024: **R\$ 51,6 bilhões** em P&D amparados, cerca de 14 mil projetos, mais de 4.200 empresas, **R\$ 12 bilhões** de renúncia fiscal estimada.
 
 A série mostra crescimento consistente — 3.012 empresas em 2021, 3.492 em 2022, 3.878 em 2023, mais de 4.200 em 2024. E, ainda assim:
